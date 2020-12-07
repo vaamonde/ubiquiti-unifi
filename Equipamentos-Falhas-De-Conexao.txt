@@ -1,0 +1,12 @@
+# Autor: Robson Vaamonde
+# Site: www.vaamonde.com.br
+# Facebook: facebook.com/ProcedimentosEmTI
+# Facebook: facebook.com/BoraParaPratica
+# YouTube: youtube.com/BoraParaPratica
+# Instagram: instagram.com/procedimentoem/
+# Data de criação: 07/12/2019
+# Data de atualização: 07/12/2020
+# Versão: 0.01
+
+Usuário 			Fabricante/Marca		Modelo			OS			Versão		2.4Ghz		5.0Ghz		Gerenciador de Energia
+Exemplo01			Asus					ASUS_A007		Android		6.0.1		Sim			Não			Normal
