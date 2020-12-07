@@ -1,0 +1,19 @@
+# Autor: Robson Vaamonde
+# Site: www.vaamonde.com.br
+# Facebook: facebook.com/ProcedimentosEmTI
+# Facebook: facebook.com/BoraParaPratica
+# YouTube: youtube.com/BoraParaPratica
+# Instagram: instagram.com/procedimentoem/
+# Data de criação: 07/12/2019
+# Data de atualização: 07/12/2020
+# Versão: 0.01
+
+Software utilizados para analise da Rede Sem-Fio (Wi-Fi ou Wireless)
+
+Software Android: Unifi WiFiman: https://play.google.com/store/apps/details?id=com.ubnt.usurvey&hl=pt_BR&gl=US
+Software iOS: Unifi WiFiman: https://apps.apple.com/br/app/ubiquiti-wifiman/id1385561119
+Software Linux ou Windows: Unifi WiFiman Desktop: https://community.ui.com/releases/WiFiman-Desktop-0-2-2/74d8bc1d-6735-444b-a7fc-0ea2584ccb89
+Software Linux: LinSSID: https://sourceforge.net/projects/linssid/
+Software Linux: Kismet: https://kismetwireless.net/
+Software Linux: Sparrow-wifi: https://github.com/ghostop14/sparrow-wifi
+Software Linux: Wavemon: https://github.com/uoaerg/wavemon
