@@ -1,0 +1,210 @@
+# Autor: Robson Vaamonde
+# Site: www.vaamonde.com.br
+# Facebook: facebook.com/ProcedimentosEmTI
+# Facebook: facebook.com/BoraParaPratica
+# YouTube: youtube.com/BoraParaPratica
+# Instagram: instagram.com/procedimentoem/
+# Data de criação: 07/12/2019
+# Data de atualização: 07/12/2020
+# Versão: 0.01
+
+Hardware utilizados no projeto de Rede Sem-Fio (Wi-Fi - Wireless):
+
+02 (dois) Ubiquiti Unifi UAP-AC-LR (Firmware 4.3.21.11325)
+01 (um) TP-Link TL-SG1005P Switch PoE
+01 (um) TP-Link T-1600G-28TS Switch
+Unifi Controller (Windows 10 - Version 6.0.41.0 - Build: atag_6.0.41_14327)
+
+Settings:
+		Site:
+			Site Configuration:
+					Site Name: SITE_EMPRESA
+					Country or Territory: Brazil
+					Timezone: -03:00 America/Sao_Paulo
+			Led and Scree Settings:
+					LED/Scree: ON
+					Screen Brightness: 100%
+					Rack Multi-Screen: ON
+					Screen Timeout: 300 seconds
+			Services:
+					Advanced Features: ON
+					Automatic Upgrades: OFF
+					Alerts: OFF
+					Speed Test: OFF
+					Uplink Connectivity Monitor: OFF
+					Remote Logging: OFF
+					DHCP Snooping: OFF
+			Provider Capabilities:
+					Download: 100Mbps
+					Upload: 100Mbps
+			Auto-Optimize Network:
+					Automatically Optimize: OFF
+			Device Authentication:
+					SSH Authentication: ON
+					Username: USUÁRIO_EMPRESA
+					Password: SENHA_USUÁRIO
+		Wireless Network:
+			SSID_NAME: SSID_EMPRESA
+					Enable: ON
+					Security: WPA Personal
+					Security Key: SENHA_SSID
+					Guest Policy: OFF
+					Network: LAN
+			Advanced Options:
+					WiFi Band: Both
+					Broadcasting APs: All 2 APs UAP-AC-LR
+					Multicast and Broadcast Filtering: OFF
+					Fast Roaming: OFF
+					Hide SSID: OFF
+					WPA Mode: WPA2 Only - AES/CCMP Only
+					Group Rekey Interval: ON - 1800 seconds
+					User Group: Default
+					UAPSD: OFF
+					Scheduled: OFF
+					Multicast Enhancement: ON
+					High Performance Devices: OFF
+					Beacon Country: OFF
+					BSS Transition: ON
+					TDLS Prohibit: OFF
+					Point to Point: OFF
+					Proxy ARP: OFF
+					L2 Isolation: OFF
+					Legacy Support: OFF
+					PMF: Disabled
+			802.11 Rate and Beacon Controls:
+					DTIM Mode: OFF
+					DTIM 2G Period: 3
+					DTIM 5G Period: 3
+					2G Data Rate Control: ON
+					Lower Density: 12Mbps
+					5G Data Rate Control: OFF
+			MAC Filter:
+					Enabled: OFF
+			RADIUS MAC Authentication:
+					Enabled: OFF
+		Networks:
+			Edit Network - LAN
+					Name: LAN
+					Purpose: Corporate
+					Interface: LAN
+					Gateway Type: Default
+					Gateway IP/Subnet: 192.168.0.1/24
+					Domain Name: DOMÍNIO_EMPRESA
+					IGMP Snooping: OFF
+					DHCP Mode: OFF
+			Routing & Firewall:
+					SEM UTILIZAÇÃO NO PROJETO, CONFIGURAÇÃO PADRÃO DO UNIFI
+			Threat Management:
+					Protection Mode: OFF
+		DPI:
+			Deep Packet Inspection:
+					Enable DPI: ON
+		Guest Control:
+			Guest Policies:
+					Guest Portal: OFF
+		Profiles:
+			SEM UTILIZAÇÃO NO PROJETO, CONFIGURAÇÃO PADRÃO DO UNIFI
+		Services:
+			SEM UTILIZAÇÃO NO PROJETO, CONFIGURAÇÃO PADRÃO DO UNIFI
+		Admins:
+			Username: USUÁRIO_EMPRESA
+		Users Groups:
+			Groupname: default
+		Controller:
+			Controller Settings:
+					Controller name: EMPRESA_CONTROLLER
+					Controller Hostname/IP: HOSTNAME_EMPRESA
+					Network Discovery: OFF
+					Real-time Updates in Web Browser: Automatically
+					Analytics & Improvements: ON
+			Floorplan Settings:
+					Google Maps API Key: OFF
+			Mail Server:
+					Cloud Email: OFF
+		User Interface:
+			CONFIGURAÇÃO PADRÃO DO UNIFI
+		Notification:
+			SEM UTILIZAÇÃO NO PROJETO, CONFIGURAÇÃO PADRÃO DO UNIFI
+		Remote Access:
+			Controller:
+					Enable Remote Access: ON
+					Enable Local Login with UBNT Account: ON
+		Elite Device:
+			SEM UTILIZAÇÃO NO PROJETO, CONFIGURAÇÃO PADRÃO DO UNIFI
+		Maintenance:
+			SEM UTILIZAÇÃO NO PROJETO, CONFIGURAÇÃO PADRÃO DO UNIFI
+		Backup:
+			Auto Backup:
+					Enable Auto Backup: ON
+					CONFIGURAÇÃO PADRÃO DO UNIFI
+Devices:
+		UAP-AC-LR-01
+			General:
+				Alias: AP-1-Esquerda
+				LED: Use site settings
+			Radios:
+				Radio 2G (11n/b/g)
+					Channel Width: VHT20
+					Channel: 6
+					Transmit Power: Medium
+					Advanced Options:
+						Enable MinimumRSSI: ON
+							RSSI (dBm): -80dBm
+				Radio 5G (11n/a/ac):
+					Channel Width: VHT80
+					Channel: 157
+					Transmit Power: Medium
+					Advanced Options:
+						Enable Airtime Fairness: ON
+						Enable MinimumRSSI: ON
+							RSSI (dBm): -80dBm
+							Interference Blocker (will reduce rage): OFF
+				Band Steering:
+					Prefer 5G: ON
+				Services:
+					Management VLAN: LAN
+					SNMP: OFF
+				Network:
+					Configure IP: Static IP
+					IP Address: 192.168.0.252
+					Subnetmask: 255.255.255.0
+					Gateway: 192.168.0.1
+					Preferred DNS: 8.8.8.8
+					Alternate DNS: 8.8.4.4
+				Manage Device:
+					CONFIGURAÇÃO PADRÃO DO UNIFI
+		UAP-AC-LR-02
+			General:
+				Alias: AP-2-Direita
+				LED: Use site settings
+			Radios:
+				Radio 2G (11n/b/g):
+					Channel Width: VHT20
+					Channel: 11
+					Transmit Power: Medium
+					Advanced Options:
+						Enable MinimumRSSI: ON
+							RSSI (dBm): -80dBm
+				Radio 5G (11n/a/ac)
+					Channel Width: VHT80
+					Channel: 153
+					Transmit Power: Medium
+					Advanced Options:
+						Enable Airtime Fairness: ON
+						Enable MinimumRSSI: ON
+							RSSI (dBm): -80dBm
+							Interference Blocker (will reduce rage): OFF
+				Band Steering: 
+					Prefer 5G: ON
+				Services:
+					Management VLAN: LAN
+					SNMP: OFF
+				Network:
+					Configure IP: Static IP
+					IP Address: 192.168.0.253
+					Subnetmask: 255.255.255.0
+					Gateway: 192.168.0.1
+					Preferred DNS: 8.8.8.8
+					Alternate DNS: 8.8.4.4
+				Manage Device:
+					CONFIGURAÇÃO PADRÃO DO UNIFI
