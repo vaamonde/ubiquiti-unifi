@@ -8,5 +8,5 @@
 # Data de atualização: 07/12/2020
 # Versão: 0.01
 
-Usuário 			Fabricante/Marca		Modelo			OS			Versão		2.4Ghz		5.0Ghz		Gerenciador de Energia
-Exemplo01			Asus					ASUS_A007		Android		6.0.1		Sim			Não			Normal
+Usuário		Fabricante	Modelo		OS			Versão		2.4Ghz		5.0Ghz		Gerenciador de Energia
+Exemplo01	Asus		ASUS_A007	Android		6.0.1		Sim			Não			Normal
