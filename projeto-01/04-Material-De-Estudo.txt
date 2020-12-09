@@ -1,0 +1,54 @@
+# Autor: Robson Vaamonde
+# Site: www.vaamonde.com.br
+# Facebook: facebook.com/ProcedimentosEmTI
+# Facebook: facebook.com/BoraParaPratica
+# YouTube: youtube.com/BoraParaPratica
+# Instagram: instagram.com/procedimentoem/
+# Linkedin: linkedin.com/in/robson-vaamonde-0b029028/
+# Data de criação: 07/12/2020
+# Data de atualização: 07/12/2020
+# Versão: 0.01
+
+Material técnico utilizado para projetar a Rede Sem-Fio (Wi-Fi ou Wireless)
+
+01. Como o Sinal Wi-Fi é Propagado na Natureza? 
+https://medium.com/ubntbr/como-o-sinal-wifi-%C3%A9-propagado-na-natureza-d87daef39575
+
+02. Planejamento de Canais em Redes Wi-Fi: Como Fazer? 
+https://medium.com/ubntbr/planejamento-de-canais-em-wlan-wifi-como-fazer-673233cccc6f
+
+03. Qual a Quantidade Ideal de SSIDs em Redes Wi-Fi Corporativas? 
+https://medium.com/ubntbr/qual-a-quantidade-ideal-de-ssids-em-redes-wifi-corporativas-b4067bf77528
+
+04. Minimum RSSI: Como Definir a Qualidade do Sinal dos Clientes e Otimizar o Roaming na Rede Wi-Fi? 
+https://medium.com/ubntbr/minimum-rssi-como-definir-a-qualidade-do-sinal-dos-clientes-e-otimizar-o-roaming-na-rede-wifi-8d590f2ab09
+
+05. Band Steering: Como Otimizar a Banda 5G em Redes Wi-Fi?
+https://medium.com/ubntbr/band-steering-como-otimizar-o-desempenho-da-rede-wifi-e402fef2224a
+
+06. Como Limitar a Banda dos Dispositivos Conectados na Rede Wi-Fi e Preservar o Link de Internet
+https://medium.com/ubntbr/como-limitar-a-banda-dos-dispositivos-conectados-na-rede-wifi-e-preservar-o-link-de-internet-49c5202882ed
+
+07. UniFi Controller: Como Fazer o Backup e Restauração das Configurações?
+https://medium.com/ubntbr/unifi-controller-como-fazer-o-backup-e-restaura%C3%A7%C3%A3o-das-configura%C3%A7%C3%B5es-6cf5ef7097af
+
+08. UniFi Controller: Como Atualizar o Firmware dos Dispositivos?
+https://medium.com/ubntbr/unifi-controller-como-atualizar-o-firmware-dos-dispositivos-9fa55a6987a7
+
+09. Problemas de Desconexão na Rede Wi-Fi? Talvez Seja a Função Sleep dos Clientes.
+https://medium.com/ubntbr/problemas-de-desconex%C3%A3o-na-rede-wifi-talvez-seja-a-fun%C3%A7%C3%A3o-sleep-dos-clientes-a622b96c970b
+
+10. UniFi Controller: Entenda as Estatísticas de Falhas de Associação do Novo Dashboard v5.9
+https://medium.com/ubntbr/unifi-controller-entenda-as-estat%C3%ADsticas-de-falhas-de-autentica%C3%A7%C3%A3o-do-novo-dashboard-v5-9-cf8b2db1cbdf
+
+11. Entenda os Diferentes Tipos de Site Survey em Redes Wi-Fi: Como o App WiFiman (Gratuito) Pode Ajudar na Varredura do Espectro?
+https://medium.com/ubntbr/entenda-os-diferentes-tipos-de-site-survey-em-redes-wi-fi-como-o-app-wifiman-gratuito-pode-8826ecacb5bb
+
+12. Tecnologia Power over Ethernet (PoE): Suporte aos Diferentes Padrões PoE nos Switches UniFi e Compatibilidade nos APs
+https://medium.com/ubntbr/tecnologia-power-over-ethernet-poe-5ea49cc93a1d
+
+13. Como Funciona a Velocidade no Wi-Fi?
+https://medium.com/ubntbr/como-funciona-a-velocidade-no-wi-fi-d2eb5e53d36b
+
+14. Nova Versão 6 do Software UniFi
+https://medium.com/ubntbr/importante-nova-vers%C3%A3o-6-do-software-unifi-5180fc303e18

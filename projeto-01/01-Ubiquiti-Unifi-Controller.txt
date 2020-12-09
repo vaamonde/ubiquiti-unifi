@@ -6,10 +6,10 @@
 # Instagram: instagram.com/procedimentoem/
 # Linkedin: linkedin.com/in/robson-vaamonde-0b029028/
 # Data de criação: 07/12/2020
-# Data de atualização: 07/12/2020
-# Versão: 0.01
+# Data de atualização: 09/12/2020
+# Versão: 0.02
 
-Hardware utilizados no projeto de Rede Sem-Fio (Wi-Fi - Wireless):
+Hardware utilizados no Projeto-01 de Rede Sem-Fio (Wi-Fi - Wireless):
 
 02 (dois) Ubiquiti Unifi UAP-AC-LR (Firmware 4.3.21.11325)
 01 (um) TP-Link TL-SG1005P Switch PoE
@@ -170,8 +170,8 @@ Devices:
 					IP Address: 192.168.0.252
 					Subnetmask: 255.255.255.0
 					Gateway: 192.168.0.1
-					Preferred DNS: 8.8.8.8
-					Alternate DNS: 8.8.4.4
+					Preferred DNS: 8.8.8.8 (ATUALIZAR APÓS A IMPLEMENTAÇÃO DO FIREWALL)
+					Alternate DNS: 8.8.4.4 (REMOVER APÓS A IMPLEMENTAÇÃO FO FIREWALL)
 				Manage Device:
 					CONFIGURAÇÃO PADRÃO DO UNIFI
 		UAP-AC-LR-02
@@ -205,7 +205,7 @@ Devices:
 					IP Address: 192.168.0.253
 					Subnetmask: 255.255.255.0
 					Gateway: 192.168.0.1
-					Preferred DNS: 8.8.8.8
-					Alternate DNS: 8.8.4.4
+					Preferred DNS: 8.8.8.8 (ATUALIZAR APÓS A IMPLEMENTAÇÃO DO FIREWALL)
+					Alternate DNS: 8.8.4.4 (REMOVER APÓS A IMPLEMENTAÇÃO FO FIREWALL)
 				Manage Device:
 					CONFIGURAÇÃO PADRÃO DO UNIFI

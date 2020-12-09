@@ -1,0 +1,30 @@
+# Autor: Robson Vaamonde
+# Site: www.vaamonde.com.br
+# Facebook: facebook.com/ProcedimentosEmTI
+# Facebook: facebook.com/BoraParaPratica
+# YouTube: youtube.com/BoraParaPratica
+# Instagram: instagram.com/procedimentoem/
+# Linkedin: linkedin.com/in/robson-vaamonde-0b029028/
+# Data de criação: 07/12/2020
+# Data de atualização: 07/12/2020
+# Versão: 0.01
+
+Material técnico utilizado para projetar a Rede Sem-Fio (Wi-Fi ou Wireless)
+
+Links do Fórum PT-BR ou EN do Ubiquiti Unifi (https://community.ui.com/questions - https://forum-pt.ui.com/)
+
+
+Links de How-To pesquisados na Internet
+
+01. Data Rates UniFi – Controle de Sinais
+http://www.entelco.com.br/blog/data-rates-unifi-controle-de-sinais/
+
+02. UniFi - Fast Roaming
+https://help.ui.com/hc/en-us/articles/115004662107-UniFi-Fast-Roaming
+
+03. Problemas com notificação WhatsApp
+https://faq.whatsapp.com/android/troubleshooting/notification-problems
+
+04. UniFi - Troubleshooting Connectivity Issues
+https://help.ui.com/hc/en-us/articles/221029967-UniFi-Debugging-Intermittent-Connectivity-Issues-on-your-UAP
+
