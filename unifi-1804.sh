@@ -12,8 +12,8 @@
 #
 # O software UniFi Controller que vem com o sistema Ubiquiti UniFi tem uma interface baseada em Web que facilita
 # a administração, configuração e gerenciamento dos dispositivos Unifi (Access Point AP, Switch, Router, USG, etc).
-# O sistema Unifi e baseado na arquitetura SDN (Software defined networking) possibilitando o gerenciamento 
-# centralizado de todos os equipamentos da infraestrutura da rede utilizando o Unifi Controller Internamente ou 
+# O sistema Unifi e baseado na arquitetura SDN (Software defined networking) que possibilita o gerenciamento 
+# centralizado de todos os equipamentos da infraestrutura da rede utilizando o Unifi Controller Localmente ou 
 # Remotamente, ou seja, não há necessidade de configurar individualmente cada um dos dispositivos na rede.
 #
 # Informações que serão solicitadas na configuração via Web do Unifi Controller
@@ -43,6 +43,8 @@
 # Site Oficial do Ubiquiti Unifi: https://unifi-network.ui.com/
 # Site Oficial do Unifi Software: https://www.ui.com/download/unifi
 # Site Oficial do Unifi ID-SSO: https://account.ui.com
+# Blog Oficial do Unifi Brasil: https://medium.com/ubntbr
+# Canal do YouTUBE Ubiquiti BR: https://www.youtube.com/channel/UCb_mHuP7q75OrckBcNn3p2Q
 #
 # Vídeo de instalação do GNU/Linux Ubuntu Server 18.04.x LTS: https://www.youtube.com/watch?v=zDdCrqNhIXI
 # Vídeo de atualização do GNU/Linux Ubuntu Server 18.04.x LTS: https://www.youtube.com/watch?v=esnu8TAepHU&t
@@ -223,7 +225,7 @@ echo -e "Instalando o Java OpenJDK e OpenJRE, aguarde..."
   	apt -y install openjdk-8-jdk openjdk-8-jre &>> $LOG
     java -version &>> $LOG
 	update-java-alternatives -l &>> $LOG
-echo -e "OpenJDK e OPenJRE instalado com sucesso!!!, continuando com o script..."
+echo -e "OpenJDK e OpenJRE instalado com sucesso!!!, continuando com o script..."
 sleep 5
 echo
 #
