@@ -60,13 +60,14 @@ HORAINICIAL=`date +%T`
 # Variáveis para validar o ambiente, verificando se o usuário é "root", versão do ubuntu e kernel
 # opções do comando id: -u (user)
 # opções do comando: lsb_release: -r (release), -s (short), 
-# opões do comando uname: -m (machine)
+# opões do comando uname: -m (machine), -r (kernel release), opções do comando cut: -d (delimiter), -f (fields) 
 # opções do comando cut: -d (delimiter), -f (fields)
 # opção do shell script: piper | = Conecta a saída padrão com a entrada padrão de outro comando
 # opção do shell script: acento crase ` ` = Executa comandos numa subshell, retornando o resultado
 USUARIO=`id -u`
 UBUNTU=`lsb_release -rs`
 ARQUITETURA=`uname -m`
+KERNEL=`uname -r | cut -d'.' -f1,2`
 #
 # Variável do caminho do Log dos Script utilizado nesse curso (VARIÁVEL MELHORADA)
 # opções do comando cut: -d (delimiter), -f (fields)
@@ -80,14 +81,15 @@ KEYUNIFI="https://dl.ui.com/unifi/unifi-repo.gpg"
 # Exportando o recurso de Noninteractive do Debconf para não solicitar telas de configuração
 export DEBIAN_FRONTEND="noninteractive"
 #
-# Verificando se o usuário é Root, se a Distribuição é >= 18.04 e se a Arquitetura é ARM64 <IF MELHORADO)
+# Verificando se o usuário é Root, se a Distribuição é >= 18.04 e se a Arquitetura é ARM64 e Kernel 5.4 <IF MELHORADO)
 # [ ] = teste de expressão, && = operador lógico AND, == comparação de string, exit 1 = A maioria dos erros comuns na execução
 clear
-if [ "$USUARIO" == "0" ] && [ "$UBUNTU" == "18.04" ] && [ "$ARQUITETURA" == "aarch64" ]
+if [ "$USUARIO" == "0" ] && [ "$UBUNTU" == "18.04" ] && [ "$ARQUITETURA" == "aarch64" ] && [ "$KERNEL" == "5.4" ]
 	then
 		echo -e "O usuário é Root, continuando com o script..."
-		echo -e "Distribuição é >= 18.04.x, continuando com o script..."
+		echo -e "A distribuição é >= 18.04.x, continuando com o script..."
         echo -e "A arquitetura é ARM64, continuando com o script..."
+        echo -e "O kernel é 5.4.x, continuando com o script..."
 		sleep 5
 	else
 		echo -e "Usuário não é Root ($USUARIO), a Distribuição não é >= 18.04.x ($UBUNTU) e a Arquitetura não é ARM64 ($ARQUITETURA)"

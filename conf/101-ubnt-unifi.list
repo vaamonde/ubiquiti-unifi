@@ -1,0 +1,2 @@
+#deb https://www.ui.com/downloads/unifi/debian stable ubiquiti
+deb [arch=armhf] https://www.ui.com/downloads/unifi/debian stable ubiquiti
