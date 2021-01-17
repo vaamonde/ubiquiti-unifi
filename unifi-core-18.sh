@@ -7,7 +7,7 @@
 # Data de criação: 17/01/2021
 # Data de atualização: 17/01/2021
 # Versão: 0.01
-# Testado e homologado para a versão do Ubuntu Server Core 18.04.x LTS x64
+# Testado e homologado para a versão do GNU/Linux Ubuntu Server Core 18.x LTS ARM64
 # Testado e homologado para a versão do Unifi Controller 6.0.x, MongoDB 3.6.x, OpenJDK e OpenJRE 8.x
 #
 # O software UniFi Controller que vem com o sistema Ubiquiti UniFi tem uma interface baseada em Web que facilita
@@ -53,41 +53,30 @@
 HORAINICIAL=`date +%T`
 #
 # Variáveis para validar o ambiente, verificando se o usuário é "root", versão do ubuntu e kernel
-# opções do comando id: -u (user)
 # opções do comando: lsb_release: -r (release), -s (short), 
-# opões do comando uname: -r (kernel release)
-# opções do comando cut: -d (delimiter), -f (fields)
-# opção do shell script: piper | = Conecta a saída padrão com a entrada padrão de outro comando
 # opção do shell script: acento crase ` ` = Executa comandos numa subshell, retornando o resultado
-# opção do shell script: aspas simples ' ' = Protege uma string completamente (nenhum caractere é especial)
-# opção do shell script: aspas duplas " " = Protege uma string, mas reconhece $, \ e ` como especiais
-USUARIO=`id -u`
 UBUNTU=`lsb_release -rs`
+ARQUITETURA=`uname -m`
 #
 # Variável do caminho do Log dos Script utilizado nesse curso (VARIÁVEL MELHORADA)
 # opções do comando cut: -d (delimiter), -f (fields)
 # $0 (variável de ambiente do nome do comando)
 LOG="/var/log/$(echo $0 | cut -d'/' -f2)"
 #
-# Declarando as variáveis de download do Unifi (Links atualizados no dia 06/01/2021)
-KEYSRVMONGODB="https://www.mongodb.org/static/pgp/server-3.4.asc"
-KEYUNIFI="https://dl.ui.com/unifi/unifi-repo.gpg"
+# Declarando as variáveis de download do Unifi (Links atualizados no dia 17/01/2021)
+UNIFI="unifi --edge"
+SYSTEM="/var/lib/unifi/system.properties"
 #
-# Exportando o recurso de Noninteractive do Debconf para não solicitar telas de configuração
-export DEBIAN_FRONTEND="noninteractive"
-#
-# Verificando se o usuário é Root e se a Distribuição é >= 18.04 <IF MELHORADO)
+# Verificando se a Distribuição é >= Core 18 e se a Arquitetura é ARM64 <IF MELHORADO)
 # [ ] = teste de expressão, && = operador lógico AND, == comparação de string, exit 1 = A maioria dos erros comuns na execução
 clear
-if [ "$USUARIO" == "0" ] && [ "$UBUNTU" == "18.04" ]
+if [ "$UBUNTU" == "18" ] && [ "$ARQUITETURA" == "arm64" ]
 	then
-		echo -e "O usuário é Root, continuando com o script..."
-		echo -e "Distribuição é >= 18.04.x, continuando com o script..."
+		echo -e "Distribuição é >= Core 18 e a arquitetura é ARM64, continuando com o script..."
 		sleep 5
 	else
-		echo -e "Usuário não é Root ($USUARIO) ou a Distribuição não é >= 18.04.x ($UBUNTU)"
-		echo -e "Caso você não tenha executado o script com o comando: sudo -i"
-		echo -e "Execute novamente o script para verificar o ambiente."
+		echo -e "Distribuição não é >= Core 18 ($UBUNTU) e a arquitetura não é ARM64 ($ARQUITETURA)"
+		echo -e "Verifique a distrição e execute novamente o script para validar o ambiente."
 		exit 1
 fi
 #	
@@ -126,7 +115,7 @@ if [ "$(nc -vz 127.0.0.1 27017 ; echo $?)" == "0" ]
         sleep 3
 fi
 #
-# Script de instalação do Unifi Controller no GNU/Linux Ubuntu Server 18.04.x
+# Script de instalação do Unifi Controller no GNU/Linux Ubuntu Core 18
 # opção do comando echo: -e (enable interpretation of backslash escapes), \n (new line)
 # opção do comando hostname: -I (all IP address)
 # opção do comando date: + (format), %d (day), %m (month), %Y (year 1970), %H (hour 24), %M (minute 60)
@@ -142,108 +131,33 @@ echo -e "A comunidade do Unifi recomenda utilizar o Navegador Google Chrome para
 echo -e "Aguarde, esse processo demora um pouco dependendo do seu Link de Internet...\n"
 sleep 5
 #
-echo -e "Adicionando o Repositório Universal do Apt, aguarde..."
-	# opção do comando: &>> (redirecionar a saída padrão)
-	add-apt-repository universe &>> $LOG
-echo -e "Repositório adicionado com sucesso!!!, continuando com o script..."
-sleep 5
-echo
-#
-echo -e "Adicionando o Repositório Multiversão do Apt, aguarde..."
-	# opção do comando: &>> (redirecionar a saída padrão)
-	add-apt-repository multiverse &>> $LOG
-echo -e "Repositório adicionado com sucesso!!!, continuando com o script..."
-sleep 5
-echo
-#
-echo -e "Atualizando as listas do Apt, aguarde..."
+echo -e "Atualizando as opções de software do Snap, aguarde..."
 	#opção do comando: &>> (redirecionar a saída padrão)
-	apt update &>> $LOG
-echo -e "Listas atualizadas com sucesso!!!, continuando com o script..."
+	sudo snap refresh &>> $LOG
+echo -e "Opções de software atualizadas com sucesso!!!, continuando com o script..."
 sleep 5
 echo
 #
-echo -e "Atualizando todo o sistema, aguarde..."
+echo -e "Localizando o Snap do Unifi Controller, aguarde..."
 	# opção do comando: &>> (redirecionar a saída padrão)
-	# opção do comando apt: -y (yes)
-	apt -y upgrade &>> $LOG
-    apt -y full-upgrade &>> $LOG
-    apt -y dist-upgrade &>> $LOG
+	sudo snap find unifi | grep UniFi &>> $LOG
 echo -e "Sistema atualizado com sucesso!!!, continuando com o script..."
-sleep 5
-echo
-#
-echo -e "Removendo os software desnecessários, aguarde..."
-	# opção do comando: &>> (redirecionar a saída padrão)
-	# opção do comando apt: -y (yes)
-	apt -y autoremove &>> $LOG
-    apt -y autoclean &>> $LOG
-echo -e "Software desnecessários removidos com sucesso!!!, continuando com o script..."
 sleep 5
 echo
 #
 echo -e "Instalando o Unifi Controller, aguarde...\n"
 #
-echo -e "Adicionando o repositório do MongoDB, aguarde..."
-	# opção do comando: &>> (redirecionar a saída padrão)
-	# opção do comando wget: -q (quiet), -O (output document file)
-	# opção do comando cp: -v (verbose)
-	wget -qO - $KEYSRVMONGODB | apt-key add - &>> $LOG
-	cp -v conf/mongodb-org-3.4.list /etc/apt/sources.list.d/ &>> $LOG
-echo -e "Repositório do MongoDB adicionado com sucesso!!!, continuando com o script..."
-sleep 5
-echo
-#
-echo -e "Adicionando o repositório do Unifi Controller, aguarde..."
-	# opção do comando: &>> (redirecionar a saída padrão)
-    # opção do comando wget: -O (output document file)
-	# opção do comando cp: -v (verbose)
-    wget -O /etc/apt/trusted.gpg.d/unifi-repo.gpg $KEYUNIFI &>> $LOG
-	cp -v conf/100-ubnt-unifi.list /etc/apt/sources.list.d/ &>> $LOG
-echo -e "Repositório do Unifi Controller adicionado com sucesso!!!, continuando com o script..."
-sleep 5
-echo
-#
-echo -e "Instalando as dependências do Unifi Controller, aguarde..."
-	# opção do comando: &>> (redirecionar a saída padrão)
-	# opção do comando apt: -y (yes)
-	apt update &>> $LOG
-  	apt -y install ca-certificates apt-transport-https &>> $LOG
-echo -e "Dependências do Unifi Controller instaladas com sucesso!!!, continuando com o script..."
-sleep 5
-echo
-#
-echo -e "Instalando o Java OpenJDK e OpenJRE, aguarde..."
-	# opção do comando: &>> (redirecionar a saída padrão)
-	# opção do comando apt: -y (yes)
-	# opção do comando update-java-alternatives: -l (list)
-  	apt -y install openjdk-8-jdk openjdk-8-jre &>> $LOG
-    java -version &>> $LOG
-	update-java-alternatives -l &>> $LOG
-echo -e "OpenJDK e OpenJRE instalado com sucesso!!!, continuando com o script..."
-sleep 5
-echo
-#
 echo -e "Instalando o Unifi Controller, aguarde..."
 	# opção do comando: &>> (redirecionar a saída padrão)
-	# opção do comando apt: -y (yes)
-	apt install -y unifi &>> $LOG
+	sudo snap install $UNIFI &>> $LOG
 echo -e "Unifi Controller instalado com sucesso!!!, continuando com o script..."
-sleep 5
-echo
-#
-echo -e "Habilitando o Serviço do Unifi Controller, aguarde..."
-	# opção do comando: &>> (redirecionar a saída padrão)
-	systemctl enable unifi &>> $LOG
-	systemctl restart unifi &>> $LOG
-echo -e "Serviço do Unifi Controller habilitado com sucesso!!!, continuando com o script..."
 sleep 5
 echo
 #
 echo -e "Verificando as portas de conexões do MongoDB e do Unifi Controller, aguarde..."
 	# opção do comando netstat: -a (all), -n (numeric)
 	# opção do comando grep: \| (função OU)
-	netstat -an | grep '27017\|8080\|8443'
+	ss -tua | grep '27017\|8080\|8443'
 echo -e "Portas de conexões verificadas com sucesso!!!, continuando com o script..."
 sleep 5
 echo
