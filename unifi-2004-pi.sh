@@ -206,7 +206,7 @@ echo -e "Adicionando o repositório do Unifi Controller, aguarde..."
     # opção do comando wget: -O (output document file)
 	# opção do comando cp: -v (verbose)
     wget -O /etc/apt/trusted.gpg.d/unifi-repo.gpg $KEYUNIFI &>> $LOG
-	cp -v conf/100-ubnt-unifi.list /etc/apt/sources.list.d/ &>> $LOG
+	cp -v conf/101-ubnt-unifi.list /etc/apt/sources.list.d/ &>> $LOG
 echo -e "Repositório do Unifi Controller adicionado com sucesso!!!, continuando com o script..."
 sleep 5
 echo
