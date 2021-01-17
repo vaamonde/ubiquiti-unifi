@@ -4,10 +4,10 @@
 # Facebook: facebook.com/ProcedimentosEmTI
 # Facebook: facebook.com/BoraParaPratica
 # YouTube: youtube.com/BoraParaPratica
-# Data de criação: 06/01/2021
-# Data de atualização: 16/01/2021
-# Versão: 0.03
-# Testado e homologado para a versão do Ubuntu Server 18.04.x LTS x64
+# Data de criação: 17/01/2021
+# Data de atualização: 17/01/2021
+# Versão: 0.01
+# Testado e homologado para a versão do Ubuntu Server Core 18.04.x LTS x64
 # Testado e homologado para a versão do Unifi Controller 6.0.x, MongoDB 3.6.x, OpenJDK e OpenJRE 8.x
 #
 # O software UniFi Controller que vem com o sistema Ubiquiti UniFi tem uma interface baseada em Web que facilita
@@ -46,12 +46,7 @@
 # Blog Oficial do Unifi Brasil: https://medium.com/ubntbr
 # Canal do YouTUBE Ubiquiti BR: https://www.youtube.com/channel/UCb_mHuP7q75OrckBcNn3p2Q
 #
-# Vídeo de instalação do GNU/Linux Ubuntu Server 18.04.x LTS: https://www.youtube.com/watch?v=zDdCrqNhIXI
-# Vídeo de atualização do GNU/Linux Ubuntu Server 18.04.x LTS: https://www.youtube.com/watch?v=esnu8TAepHU&t
-# Vídeo de configuração da Placa de Rede do GNU/Linux Ubuntu Server 18.04.x LTS: https://www.youtube.com/watch?v=zSUd4k108Zk
-# Vídeo de configuração do Hostname do GNU/Linux Ubuntu Server 18.04.x LTS: https://www.youtube.com/watch?v=J7eyb5ynjZA
-# Vídeo de configuração do Locale e Timezone do GNU/Linux Ubuntu Server 18.04.x LTS: https://www.youtube.com/watch?v=laiuH1zgg3U&t
-# Vídeo de configuração do OpenSSH Server no GNU/Linux Ubuntu Server 18.04.x LTS: https://www.youtube.com/watch?v=ecuol8Uf1EE
+# Vídeo de instalação do GNU/Linux Ubuntu Server Core 18.04.x LTS: 
 #
 # Variável da Data Inicial para calcular o tempo de execução do script (VARIÁVEL MELHORADA)
 # opção do comando date: +%T (Time)
@@ -81,7 +76,7 @@ KEYUNIFI="https://dl.ui.com/unifi/unifi-repo.gpg"
 # Exportando o recurso de Noninteractive do Debconf para não solicitar telas de configuração
 export DEBIAN_FRONTEND="noninteractive"
 #
-# Verificando se o usuário é Root e se a Distribuição é >=18.04 <IF MELHORADO)
+# Verificando se o usuário é Root e se a Distribuição é >= 18.04 <IF MELHORADO)
 # [ ] = teste de expressão, && = operador lógico AND, == comparação de string, exit 1 = A maioria dos erros comuns na execução
 clear
 if [ "$USUARIO" == "0" ] && [ "$UBUNTU" == "18.04" ]
@@ -140,7 +135,7 @@ echo -e "Início do script $0 em: `date +%d/%m/%Y-"("%H:%M")"`\n" &>> $LOG
 clear
 #
 echo
-echo -e "Instalação do Unifi Controller no GNU/Linux Ubuntu Server 18.04.x\n"
+echo -e "Instalação do Unifi Controller no GNU/Linux Ubuntu Core Server 18.04.x\n"
 echo -e "Após a instalação do Unifi Controller acessar a URL: https://`hostname -I | cut -d' ' -f1`:8443/\n"
 echo -e "Para finalizar a instalação via Web você precisa de uma conta (ID-SSO) no https://account.ui.com\n"
 echo -e "A comunidade do Unifi recomenda utilizar o Navegador Google Chrome para sua configuração\n"
