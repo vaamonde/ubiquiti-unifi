@@ -1,4 +1,5 @@
 #!/bin/bash
+# ===================== EM DESENVOLVIMENTO - AINDA NÃO FUNCIONANDO PARA PRODUÇÃO =====================
 # Autor: Robson Vaamonde
 # Site: www.procedimentosemti.com.br
 # Facebook: facebook.com/ProcedimentosEmTI
