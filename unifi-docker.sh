@@ -72,6 +72,13 @@
 # Site oficial: https://www.docker.com/docker-community
 # Site oficial: https://portainer.io/
 #
+# Storage com suporte ao Docker e Portainer
+# OpenMediaVault: https://www.openmediavault.org/
+# Rockstor: http://rockstor.com/
+# FreeNAS e TrueNAS: https://www.freenas.org/
+# QNAP: https://www.qnap.com/
+# Synology: https://www.synology.com/en-global
+#
 # Vídeo de instalação do GNU/Linux Ubuntu Server 18.04.x LTS: https://www.youtube.com/watch?v=zDdCrqNhIXI
 # Vídeo de instalação e configuração do Docker e Portainer.io: https://www.youtube.com/watch?v=ixgLCHX_7QA
 #
