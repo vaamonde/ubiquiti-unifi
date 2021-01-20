@@ -1,13 +1,13 @@
 #!/bin/bash
-# ===================== EM DESENVOLVIMENTO - AINDA NÃO FUNCIONANDO PARA PRODUÇÃO =====================
+# ===================== EM DESENVOLVIMENTO - AINDA NÃO ESTÁ FUNCIONANDO PARA PRODUÇÃO =====================
 # Autor: Robson Vaamonde
 # Site: www.procedimentosemti.com.br
 # Facebook: facebook.com/ProcedimentosEmTI
 # Facebook: facebook.com/BoraParaPratica
 # YouTube: youtube.com/BoraParaPratica
 # Data de criação: 17/01/2021
-# Data de atualização: 17/01/2021
-# Versão: 0.01
+# Data de atualização: 20/01/2021
+# Versão: 0.02
 # Testado e homologado para a versão do GNU/Linux Ubuntu Server Core 18.x LTS ARM64
 # Testado e homologado para a versão do Unifi Controller 6.0.x, MongoDB 3.6.x, OpenJDK e OpenJRE 8.x
 #
@@ -16,6 +16,16 @@
 # O sistema Unifi e baseado na arquitetura SDN (Software defined networking) que possibilita o gerenciamento 
 # centralizado de todos os equipamentos da infraestrutura da rede utilizando o Unifi Controller Localmente ou 
 # Remotamente, ou seja, não há necessidade de configurar individualmente cada um dos dispositivos na rede.
+#
+# O Ubuntu Core é Ubuntu para IoT e ambientes integrados, otimizado para atualizações de segurança e confiáveis.
+# Seu sistema de arquivos raiz somente leitura é construído a partir dos mesmos pacotes usados ​​para construir o 
+# conjunto mais amplo das distribuições do Ubuntu, ele só difere na forma como os pacotes são instalados e atualizados. 
+#
+# O Snappy ou simplesmente Snap é um software de implantação e um gerenciador de pacotes originalmente projetado e 
+# construído pela Canonical para o sistema operacional Ubuntu Phone. Os pacotes, chamados de 'snaps' e a ferramenta 
+# para usá-los, 'snapd', funcionam por toda uma gama de distribuições Linux e, portanto, permitem implantação de 
+# software 'upstream' de forma distro-agnostic (independente da distribuição). O sistema é projetado para funcionar 
+# em smartphones, nuvem, internet das coisas e ambiente de desktop.
 #
 # Informações que serão solicitadas na configuração via Web do Unifi Controller
 # Step 1 of 6:
@@ -46,6 +56,7 @@
 # Site Oficial do Unifi ID-SSO: https://account.ui.com
 # Blog Oficial do Unifi Brasil: https://medium.com/ubntbr
 # Canal do YouTUBE Ubiquiti BR: https://www.youtube.com/channel/UCb_mHuP7q75OrckBcNn3p2Q
+# Site Oficial do Snapcraft: https://snapcraft.io/
 #
 # Vídeo de instalação do GNU/Linux Ubuntu Server Core 18.04.x LTS: 
 #

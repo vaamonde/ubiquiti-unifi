@@ -5,8 +5,8 @@
 # Facebook: facebook.com/BoraParaPratica
 # YouTube: youtube.com/BoraParaPratica
 # Data de criação: 17/01/2021
-# Data de atualização: 18/01/2021
-# Versão: 0.01
+# Data de atualização: 20/01/2021
+# Versão: 0.02
 # Testado e homologado para a versão do GNU/Linux Ubuntu Server 18.x LTS x64
 # Testado e homologado para a versão do Docker 20.10.x, Portainer 1.24.x
 # Testado e homologado para a versão do Unifi Controller 6.0.x
@@ -25,6 +25,10 @@
 #
 # O Portainer.io uma solução de gerenciamento para o Docker, com ele é possível gerenciar facilmente os seus hosts Docker e 
 # clusters com Docker Swarm através de uma interface web limpa, simples e intuitiva.
+#
+# O Docker Compose é uma ferramenta para definir e executar aplicativos Docker de vários contêineres. Com o Compose, você usa 
+# um arquivo YAML (Ain't Markup Language) para configurar os serviços do seu aplicativo. Então, com um único comando, você cria
+# e inicia todos os serviços de sua configuração.
 #
 # Informações que serão solicitadas na configuração via Web do Portainer.io
 # http://IP_DO_SERVIDOR:9000
@@ -69,8 +73,9 @@
 # Blog Oficial do Unifi Brasil: https://medium.com/ubntbr
 # Canal do YouTUBE Ubiquiti BR: https://www.youtube.com/channel/UCb_mHuP7q75OrckBcNn3p2Q
 # Github do Docker Unifi: https://github.com/linuxserver/docker-unifi-controller
-# Site oficial: https://www.docker.com/docker-community
-# Site oficial: https://portainer.io/
+# Site Oficial do Docker: https://www.docker.com/docker-community
+# Site Oficial Docker Compose: https://docs.docker.com/compose/
+# Site oficial do Portainer: https://portainer.io/
 #
 # Storage com suporte ao Docker e Portainer
 # OpenMediaVault: https://www.openmediavault.org/
@@ -80,7 +85,12 @@
 # Synology: https://www.synology.com/en-global
 #
 # Vídeo de instalação do GNU/Linux Ubuntu Server 18.04.x LTS: https://www.youtube.com/watch?v=zDdCrqNhIXI
+# Vídeo de configuração da Placa de Rede do GNU/Linux Ubuntu Server 18.04.x LTS: https://www.youtube.com/watch?v=zSUd4k108Zk
+# Vídeo de configuração do Hostname do GNU/Linux Ubuntu Server 18.04.x LTS: https://www.youtube.com/watch?v=J7eyb5ynjZA
+# Vídeo de configuração do Locale e Timezone do GNU/Linux Ubuntu Server 18.04.x LTS: https://www.youtube.com/watch?v=laiuH1zgg3U&t
+# Vídeo de configuração do OpenSSH Server no GNU/Linux Ubuntu Server 18.04.x LTS: https://www.youtube.com/watch?v=ecuol8Uf1EE
 # Vídeo de instalação e configuração do Docker e Portainer.io: https://www.youtube.com/watch?v=ixgLCHX_7QA
+# Vídeo de instalação e configuração do Unifi Controller no GNU/Linux Ubuntu Server 18.04.x LTS: https://www.youtube.com/watch?v=rrcwiZSBHkg
 #
 ---
 version: "2.1"
