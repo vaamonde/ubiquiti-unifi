@@ -10,6 +10,7 @@ Facebook Procedimentos em TI: https://www.facebook.com/ProcedimentosEmTi<br>
 Facebook Bora para Prática: https://www.facebook.com/boraparapratica<br>
 Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
+LinkedIn Robson Vaamonde: https://www.linkedin.com/in/robson-vaamonde-0b029028/<br>
 
 ## **Links Oficiais do Ubiquiti Unifi Brasil:**
 Site Oficial do Ubiquiti Unifi: https://unifi-network.ui.com/<br>
