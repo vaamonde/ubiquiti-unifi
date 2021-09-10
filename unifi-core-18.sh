@@ -6,10 +6,10 @@
 # Facebook: facebook.com/BoraParaPratica
 # YouTube: youtube.com/BoraParaPratica
 # Data de criação: 17/01/2021
-# Data de atualização: 20/01/2021
+# Data de atualização: 10/09/2021
 # Versão: 0.02
 # Testado e homologado para a versão do GNU/Linux Ubuntu Server Core 18.x LTS ARM64
-# Testado e homologado para a versão do Unifi Controller 6.0.x, MongoDB 3.6.x, OpenJDK e OpenJRE 8.x
+# Testado e homologado para a versão do Unifi Controller 6.2.x, MongoDB 3.6.x, OpenJDK e OpenJRE 8.x
 #
 # O software UniFi Controller que vem com o sistema Ubiquiti UniFi tem uma interface baseada em Web que facilita
 # a administração, configuração e gerenciamento dos dispositivos Unifi (Access Point AP, Switch, Router, USG, etc).
@@ -58,17 +58,17 @@
 # Canal do YouTUBE Ubiquiti BR: https://www.youtube.com/channel/UCb_mHuP7q75OrckBcNn3p2Q
 # Site Oficial do Snapcraft: https://snapcraft.io/
 #
-# Vídeo de instalação do GNU/Linux Ubuntu Server Core 18.04.x LTS: 
+# Vídeo de instalação do GNU/Linux Ubuntu Server Core 18.x LTS: 
 #
 # Variável da Data Inicial para calcular o tempo de execução do script (VARIÁVEL MELHORADA)
 # opção do comando date: +%T (Time)
-HORAINICIAL=`date +%T`
+HORAINICIAL=$(date +%T)
 #
 # Variáveis para validar o ambiente, verificando se o usuário é "root", versão do ubuntu e kernel
 # opções do comando: lsb_release: -r (release), -s (short), 
 # opção do shell script: acento crase ` ` = Executa comandos numa subshell, retornando o resultado
-UBUNTU=`lsb_release -rs`
-ARQUITETURA=`uname -m`
+UBUNTU=$(lsb_release -rs)
+ARQUITETURA=$(uname -m)
 #
 # Variável do caminho do Log dos Script utilizado nesse curso (VARIÁVEL MELHORADA)
 # opções do comando cut: -d (delimiter), -f (fields)
@@ -132,12 +132,12 @@ fi
 # opção do comando hostname: -I (all IP address)
 # opção do comando date: + (format), %d (day), %m (month), %Y (year 1970), %H (hour 24), %M (minute 60)
 # opção do comando cut: -d (delimiter), -f (fields)
-echo -e "Início do script $0 em: `date +%d/%m/%Y-"("%H:%M")"`\n" &>> $LOG
+echo -e "Início do script $0 em: $(date +%d/%m/%Y-"("%H:%M")")\n" &>> $LOG
 clear
 #
 echo
-echo -e "Instalação do Unifi Controller no GNU/Linux Ubuntu Core Server 18.04.x\n"
-echo -e "Após a instalação do Unifi Controller acessar a URL: https://`hostname -I | cut -d' ' -f1`:8443/\n"
+echo -e "Instalação do Unifi Controller no GNU/Linux Ubuntu Core Server 18.x\n"
+echo -e "Após a instalação do Unifi Controller acessar a URL: https://$(hostname -I | cut -d' ' -f1):8443/\n"
 echo -e "Para finalizar a instalação via Web você precisa de uma conta (ID-SSO) no https://account.ui.com\n"
 echo -e "A comunidade do Unifi recomenda utilizar o Navegador Google Chrome para sua configuração\n"
 echo -e "Aguarde, esse processo demora um pouco dependendo do seu Link de Internet...\n"
@@ -146,25 +146,23 @@ sleep 5
 echo -e "Atualizando as opções de software do Snap, aguarde..."
 	#opção do comando: &>> (redirecionar a saída padrão)
 	sudo snap refresh &>> $LOG
-echo -e "Opções de software atualizadas com sucesso!!!, continuando com o script..."
+echo -e "Opções de software atualizadas com sucesso!!!, continuando com o script...\n"
 sleep 5
-echo
 #
 echo -e "Localizando o Snap do Unifi Controller, aguarde..."
 	# opção do comando: &>> (redirecionar a saída padrão)
 	sudo snap find unifi | grep UniFi &>> $LOG
-echo -e "Sistema atualizado com sucesso!!!, continuando com o script..."
+echo -e "Sistema atualizado com sucesso!!!, continuando com o script...\n"
 sleep 5
-echo
 #
 echo -e "Instalando o Unifi Controller, aguarde...\n"
 #
 echo -e "Instalando o Unifi Controller, aguarde..."
 	# opção do comando: &>> (redirecionar a saída padrão)
+	sudo snap install core &>> $LOG
 	sudo snap install $UNIFI &>> $LOG
-echo -e "Unifi Controller instalado com sucesso!!!, continuando com o script..."
+echo -e "Unifi Controller instalado com sucesso!!!, continuando com o script...\n"
 sleep 5
-echo
 #
 echo -e "Verificando as portas de conexões do MongoDB e do Unifi Controller, aguarde..."
 	# opção do comando netstat: -a (all), -n (numeric)
@@ -177,16 +175,16 @@ echo
 echo -e "Instalação do Unifi Controller feita com Sucesso!!!."
 	# script para calcular o tempo gasto (SCRIPT MELHORADO, CORRIGIDO FALHA DE HORA:MINUTO:SEGUNDOS)
 	# opção do comando date: +%T (Time)
-	HORAFINAL=`date +%T`
+	HORAFINAL=$(date +%T)
 	# opção do comando date: -u (utc), -d (date), +%s (second since 1970)
 	HORAINICIAL01=$(date -u -d "$HORAINICIAL" +"%s")
 	HORAFINAL01=$(date -u -d "$HORAFINAL" +"%s")
 	# opção do comando date: -u (utc), -d (date), 0 (string command), sec (force second), +%H (hour), %M (minute), %S (second), 
-	TEMPO=`date -u -d "0 $HORAFINAL01 sec - $HORAINICIAL01 sec" +"%H:%M:%S"`
+	TEMPO=$(date -u -d "0 $HORAFINAL01 sec - $HORAINICIAL01 sec" +"%H:%M:%S")
 	# $0 (variável de ambiente do nome do comando)
 	echo -e "Tempo gasto para execução do script $0: $TEMPO"
 echo -e "Pressione <Enter> para concluir o processo."
 # opção do comando date: + (format), %d (day), %m (month), %Y (year 1970), %H (hour 24), %M (minute 60)
-echo -e "Fim do script $0 em: `date +%d/%m/%Y-"("%H:%M")"`\n" &>> $LOG
+echo -e "Fim do script $0 em: $(date +%d/%m/%Y-"("%H:%M")")\n" &>> $LOG
 read
 exit 1

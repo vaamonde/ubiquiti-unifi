@@ -5,11 +5,11 @@
 # Facebook: facebook.com/BoraParaPratica
 # YouTube: youtube.com/BoraParaPratica
 # Data de criação: 17/01/2021
-# Data de atualização: 20/01/2021
+# Data de atualização: 10/09/2021
 # Versão: 0.02
 # Testado e homologado para a versão do GNU/Linux Ubuntu Server 18.x LTS x64
 # Testado e homologado para a versão do Docker 20.10.x, Portainer 1.24.x
-# Testado e homologado para a versão do Unifi Controller 6.0.x
+# Testado e homologado para a versão do Unifi Controller 6.2.x
 #
 # O software UniFi Controller que vem com o sistema Ubiquiti UniFi tem uma interface baseada em Web que facilita
 # a administração, configuração e gerenciamento dos dispositivos Unifi (Access Point AP, Switch, Router, USG, etc).

@@ -5,10 +5,10 @@
 # Facebook: facebook.com/BoraParaPratica
 # YouTube: youtube.com/BoraParaPratica
 # Data de criação: 06/01/2021
-# Data de atualização: 17/01/2021
-# Versão: 0.01
+# Data de atualização: 10/09/2021
+# Versão: 0.02
 # Testado e homologado para a versão do  GNU/Linux Ubuntu Server 20.04.x LTS ARM64 Raspberry Pi 3 e 4
-# Testado e homologado para a versão do Unifi Controller 6.0.x, MongoDB 3.6.x, OpenJDK e OpenJRE 8.x
+# Testado e homologado para a versão do Unifi Controller 6.2.x, MongoDB 3.6.x, OpenJDK e OpenJRE 8.x
 #
 # O software UniFi Controller que vem com o sistema Ubiquiti UniFi tem uma interface baseada em Web que facilita
 # a administração, configuração e gerenciamento dos dispositivos Unifi (Access Point AP, Switch, Router, USG, etc).
@@ -55,7 +55,7 @@
 #
 # Variável da Data Inicial para calcular o tempo de execução do script (VARIÁVEL MELHORADA)
 # opção do comando date: +%T (Time)
-HORAINICIAL=`date +%T`
+HORAINICIAL=$(date +%T)
 #
 # Variáveis para validar o ambiente, verificando se o usuário é "root", versão do ubuntu e kernel
 # opções do comando id: -u (user)
@@ -64,10 +64,10 @@ HORAINICIAL=`date +%T`
 # opções do comando cut: -d (delimiter), -f (fields)
 # opção do shell script: piper | = Conecta a saída padrão com a entrada padrão de outro comando
 # opção do shell script: acento crase ` ` = Executa comandos numa subshell, retornando o resultado
-USUARIO=`id -u`
-UBUNTU=`lsb_release -rs`
-ARQUITETURA=`uname -m`
-KERNEL=`uname -r | cut -d'.' -f1,2`
+USUARIO=$(id -u)
+UBUNTU=$(lsb_release -rs)
+ARQUITETURA=$(uname -m)
+KERNEL=$(uname -r | cut -d'.' -f1,2)
 #
 # Variável do caminho do Log dos Script utilizado nesse curso (VARIÁVEL MELHORADA)
 # opções do comando cut: -d (delimiter), -f (fields)
@@ -81,18 +81,18 @@ KEYUNIFI="https://dl.ui.com/unifi/unifi-repo.gpg"
 # Exportando o recurso de Noninteractive do Debconf para não solicitar telas de configuração
 export DEBIAN_FRONTEND="noninteractive"
 #
-# Verificando se o usuário é Root, se a Distribuição é >= 18.04 e se a Arquitetura é ARM64 e Kernel 5.4 <IF MELHORADO)
+# Verificando se o usuário é Root, se a Distribuição é >= 20.04 e se a Arquitetura é ARM64 e Kernel 5.4 <IF MELHORADO)
 # [ ] = teste de expressão, && = operador lógico AND, == comparação de string, exit 1 = A maioria dos erros comuns na execução
 clear
-if [ "$USUARIO" == "0" ] && [ "$UBUNTU" == "18.04" ] && [ "$ARQUITETURA" == "aarch64" ] && [ "$KERNEL" == "5.4" ]
+if [ "$USUARIO" == "0" ] && [ "$UBUNTU" == "20.04" ] && [ "$ARQUITETURA" == "aarch64" ] && [ "$KERNEL" == "5.4" ]
 	then
 		echo -e "O usuário é Root, continuando com o script..."
-		echo -e "A distribuição é >= 18.04.x, continuando com o script..."
+		echo -e "A distribuição é >= 20.04.x, continuando com o script..."
         echo -e "A arquitetura é ARM64, continuando com o script..."
         echo -e "O kernel é 5.4.x, continuando com o script..."
 		sleep 5
 	else
-		echo -e "Usuário não é Root ($USUARIO), a Distribuição não é >= 18.04.x ($UBUNTU) e a Arquitetura não é ARM64 ($ARQUITETURA)"
+		echo -e "Usuário não é Root ($USUARIO), a Distribuição não é >= 20.04.x ($UBUNTU) e a Arquitetura não é ARM64 ($ARQUITETURA)"
 		echo -e "Caso você não tenha executado o script com o comando: sudo -i"
 		echo -e "Execute novamente o script para verificar o ambiente."
 		exit 1
@@ -138,12 +138,12 @@ fi
 # opção do comando hostname: -I (all IP address)
 # opção do comando date: + (format), %d (day), %m (month), %Y (year 1970), %H (hour 24), %M (minute 60)
 # opção do comando cut: -d (delimiter), -f (fields)
-echo -e "Início do script $0 em: `date +%d/%m/%Y-"("%H:%M")"`\n" &>> $LOG
+echo -e "Início do script $0 em: $(date +%d/%m/%Y-"("%H:%M")")\n" &>> $LOG
 clear
 #
 echo
 echo -e "Instalação do Unifi Controller no GNU/Linux Ubuntu Server 20.04.x LTS ARM64 Raspberry Pi 3 e 4\n"
-echo -e "Após a instalação do Unifi Controller acessar a URL: https://`hostname -I | cut -d' ' -f1`:8443/\n"
+echo -e "Após a instalação do Unifi Controller acessar a URL: https://$(hostname -I | cut -d' ' -f1):8443/\n"
 echo -e "Para finalizar a instalação via Web você precisa de uma conta (ID-SSO) no https://account.ui.com\n"
 echo -e "A comunidade do Unifi recomenda utilizar o Navegador Google Chrome para sua configuração\n"
 echo -e "Aguarde, esse processo demora um pouco dependendo do seu Link de Internet...\n"
@@ -152,23 +152,20 @@ sleep 5
 echo -e "Adicionando o Repositório Universal do Apt, aguarde..."
 	# opção do comando: &>> (redirecionar a saída padrão)
 	add-apt-repository universe &>> $LOG
-echo -e "Repositório adicionado com sucesso!!!, continuando com o script..."
+echo -e "Repositório adicionado com sucesso!!!, continuando com o script...\n"
 sleep 5
-echo
 #
 echo -e "Adicionando o Repositório Multiversão do Apt, aguarde..."
 	# opção do comando: &>> (redirecionar a saída padrão)
 	add-apt-repository multiverse &>> $LOG
-echo -e "Repositório adicionado com sucesso!!!, continuando com o script..."
+echo -e "Repositório adicionado com sucesso!!!, continuando com o script...\n"
 sleep 5
-echo
 #
 echo -e "Atualizando as listas do Apt, aguarde..."
 	#opção do comando: &>> (redirecionar a saída padrão)
 	apt update &>> $LOG
-echo -e "Listas atualizadas com sucesso!!!, continuando com o script..."
+echo -e "Listas atualizadas com sucesso!!!, continuando com o script...\n"
 sleep 5
-echo
 #
 echo -e "Atualizando todo o sistema, aguarde..."
 	# opção do comando: &>> (redirecionar a saída padrão)
@@ -176,18 +173,16 @@ echo -e "Atualizando todo o sistema, aguarde..."
 	apt -y upgrade &>> $LOG
     apt -y full-upgrade &>> $LOG
     apt -y dist-upgrade &>> $LOG
-echo -e "Sistema atualizado com sucesso!!!, continuando com o script..."
+echo -e "Sistema atualizado com sucesso!!!, continuando com o script...\n"
 sleep 5
-echo
 #
 echo -e "Removendo os software desnecessários, aguarde..."
 	# opção do comando: &>> (redirecionar a saída padrão)
 	# opção do comando apt: -y (yes)
 	apt -y autoremove &>> $LOG
     apt -y autoclean &>> $LOG
-echo -e "Software desnecessários removidos com sucesso!!!, continuando com o script..."
+echo -e "Software desnecessários removidos com sucesso!!!, continuando com o script...\n"
 sleep 5
-echo
 #
 echo -e "Instalando o Unifi Controller, aguarde...\n"
 #
@@ -197,9 +192,8 @@ echo -e "Adicionando o repositório do MongoDB, aguarde..."
 	# opção do comando cp: -v (verbose)
 	wget -qO - $KEYSRVMONGODB | apt-key add - &>> $LOG
 	cp -v conf/mongodb-org-3.4.list /etc/apt/sources.list.d/ &>> $LOG
-echo -e "Repositório do MongoDB adicionado com sucesso!!!, continuando com o script..."
+echo -e "Repositório do MongoDB adicionado com sucesso!!!, continuando com o script...\n"
 sleep 5
-echo
 #
 echo -e "Adicionando o repositório do Unifi Controller, aguarde..."
 	# opção do comando: &>> (redirecionar a saída padrão)
@@ -207,18 +201,16 @@ echo -e "Adicionando o repositório do Unifi Controller, aguarde..."
 	# opção do comando cp: -v (verbose)
     wget -O /etc/apt/trusted.gpg.d/unifi-repo.gpg $KEYUNIFI &>> $LOG
 	cp -v conf/101-ubnt-unifi.list /etc/apt/sources.list.d/ &>> $LOG
-echo -e "Repositório do Unifi Controller adicionado com sucesso!!!, continuando com o script..."
+echo -e "Repositório do Unifi Controller adicionado com sucesso!!!, continuando com o script...\n"
 sleep 5
-echo
 #
 echo -e "Instalando as dependências do Unifi Controller, aguarde..."
 	# opção do comando: &>> (redirecionar a saída padrão)
 	# opção do comando apt: -y (yes)
 	apt update &>> $LOG
   	apt -y install ca-certificates apt-transport-https &>> $LOG
-echo -e "Dependências do Unifi Controller instaladas com sucesso!!!, continuando com o script..."
+echo -e "Dependências do Unifi Controller instaladas com sucesso!!!, continuando com o script...\n"
 sleep 5
-echo
 #
 echo -e "Instalando o Java OpenJDK e OpenJRE, aguarde..."
 	# opção do comando: &>> (redirecionar a saída padrão)
@@ -227,47 +219,43 @@ echo -e "Instalando o Java OpenJDK e OpenJRE, aguarde..."
   	apt -y install openjdk-8-jdk openjdk-8-jre &>> $LOG
     java -version &>> $LOG
 	update-java-alternatives -l &>> $LOG
-echo -e "OpenJDK e OpenJRE instalado com sucesso!!!, continuando com o script..."
+echo -e "OpenJDK e OpenJRE instalado com sucesso!!!, continuando com o script...\n"
 sleep 5
-echo
 #
 echo -e "Instalando o Unifi Controller, aguarde..."
 	# opção do comando: &>> (redirecionar a saída padrão)
 	# opção do comando apt: -y (yes)
 	apt install -y unifi &>> $LOG
-echo -e "Unifi Controller instalado com sucesso!!!, continuando com o script..."
+echo -e "Unifi Controller instalado com sucesso!!!, continuando com o script...\n"
 sleep 5
-echo
 #
 echo -e "Habilitando o Serviço do Unifi Controller, aguarde..."
 	# opção do comando: &>> (redirecionar a saída padrão)
 	systemctl enable unifi &>> $LOG
 	systemctl restart unifi &>> $LOG
-echo -e "Serviço do Unifi Controller habilitado com sucesso!!!, continuando com o script..."
+echo -e "Serviço do Unifi Controller habilitado com sucesso!!!, continuando com o script...\n"
 sleep 5
-echo
 #
 echo -e "Verificando as portas de conexões do MongoDB e do Unifi Controller, aguarde..."
 	# opção do comando netstat: -a (all), -n (numeric)
 	# opção do comando grep: \| (função OU)
 	netstat -an | grep '27017\|8080\|8443'
-echo -e "Portas de conexões verificadas com sucesso!!!, continuando com o script..."
+echo -e "Portas de conexões verificadas com sucesso!!!, continuando com o script...\n"
 sleep 5
-echo
 #
 echo -e "Instalação do Unifi Controller feita com Sucesso!!!."
 	# script para calcular o tempo gasto (SCRIPT MELHORADO, CORRIGIDO FALHA DE HORA:MINUTO:SEGUNDOS)
 	# opção do comando date: +%T (Time)
-	HORAFINAL=`date +%T`
+	HORAFINAL=$(date +%T)
 	# opção do comando date: -u (utc), -d (date), +%s (second since 1970)
 	HORAINICIAL01=$(date -u -d "$HORAINICIAL" +"%s")
 	HORAFINAL01=$(date -u -d "$HORAFINAL" +"%s")
 	# opção do comando date: -u (utc), -d (date), 0 (string command), sec (force second), +%H (hour), %M (minute), %S (second), 
-	TEMPO=`date -u -d "0 $HORAFINAL01 sec - $HORAINICIAL01 sec" +"%H:%M:%S"`
+	TEMPO=$(date -u -d "0 $HORAFINAL01 sec - $HORAINICIAL01 sec" +"%H:%M:%S")
 	# $0 (variável de ambiente do nome do comando)
 	echo -e "Tempo gasto para execução do script $0: $TEMPO"
 echo -e "Pressione <Enter> para concluir o processo."
 # opção do comando date: + (format), %d (day), %m (month), %Y (year 1970), %H (hour 24), %M (minute 60)
-echo -e "Fim do script $0 em: `date +%d/%m/%Y-"("%H:%M")"`\n" &>> $LOG
+echo -e "Fim do script $0 em: $(date +%d/%m/%Y-"("%H:%M")")\n" &>> $LOG
 read
 exit 1
