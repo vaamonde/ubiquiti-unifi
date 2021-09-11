@@ -208,7 +208,7 @@ echo -e "Instalando as dependências do Unifi Controller, aguarde..."
 	# opção do comando: &>> (redirecionar a saída padrão)
 	# opção do comando apt: -y (yes)
 	apt update &>> $LOG
-  	apt -y install ca-certificates apt-transport-https &>> $LOG
+  	apt -y install ca-certificates apt-transport-https net-tools &>> $LOG
 echo -e "Dependências do Unifi Controller instaladas com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
