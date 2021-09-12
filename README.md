@@ -66,8 +66,8 @@ Raspberry Pi é uma série de computadores de placa única do tamanho reduzido, 
 
 ![Raspberry Pi 3](pi3.png)
 
-[![Unifi Controller no Raspberry](http://img.youtube.com/vi//0.jpg)]( "Unifi Controller no Raspberry")
+[![Unifi Controller no Raspberry](http://img.youtube.com/vi/DCToYDsxgyQ/0.jpg)](https://www.youtube.com/watch?v=DCToYDsxgyQ "Unifi Controller no Raspberry")
 
-Link da vídeo aula: 
+Link da vídeo aula: https://www.youtube.com/watch?v=DCToYDsxgyQ
 
 Link do script utilizado nesse vídeo: https://github.com/vaamonde/ubiquiti-unifi/blob/main/unifi-2004-pi.sh
