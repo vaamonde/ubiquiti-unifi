@@ -22,6 +22,9 @@ Canal do YouTUBE Ubiquiti BR: https://www.youtube.com/channel/UCb_mHuP7q75OrckBc
 ## **Playlist do YouTUBE com todos os Vídeos do Ubiquiti Unifi:**
 Link da Playlist: https://www.youtube.com/playlist?list=PLozhsZB1lLUO293mVoY_aqOpMKmTPRQ02
 
+## **Unifi UAP utilizado nos vídeos**
+![Unifi UAP](swx-uap.png)
+
 ## **📡 COMO instalar o UNIFI CONTROLLER no GNU/Linux Ubuntu Server 18.04.x LTS**
 
 Vídeo mostrando os procedimentos básicos para instalar o Unifi Controller no GNU/Linux Ubuntu Server 18.04 LTS
