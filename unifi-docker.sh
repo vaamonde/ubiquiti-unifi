@@ -5,8 +5,8 @@
 # Facebook: facebook.com/BoraParaPratica
 # YouTube: youtube.com/BoraParaPratica
 # Data de criação: 17/01/2021
-# Data de atualização: 10/09/2021
-# Versão: 0.02
+# Data de atualização: 12/09/2021
+# Versão: 0.03
 # Testado e homologado para a versão do GNU/Linux Ubuntu Server 18.x LTS x64
 # Testado e homologado para a versão do Docker 20.10.x, Portainer 1.24.x
 # Testado e homologado para a versão do Unifi Controller 6.2.x
@@ -84,6 +84,10 @@
 # QNAP: https://www.qnap.com/
 # Synology: https://www.synology.com/en-global
 #
+# Download do Wifiman Desktop: https://community.ui.com/releases/WiFiman-Desktop-0-2-2/74d8bc1d-6735-444b-a7fc-0ea2584ccb89
+# Site do Wifiman: http://wifiman.com/
+# Site do SIMET: https://beta.simet.nic.br/
+#
 # Vídeo de instalação do GNU/Linux Ubuntu Server 18.04.x LTS: https://www.youtube.com/watch?v=zDdCrqNhIXI
 # Vídeo de configuração da Placa de Rede do GNU/Linux Ubuntu Server 18.04.x LTS: https://www.youtube.com/watch?v=zSUd4k108Zk
 # Vídeo de configuração do Hostname do GNU/Linux Ubuntu Server 18.04.x LTS: https://www.youtube.com/watch?v=J7eyb5ynjZA
@@ -92,6 +96,7 @@
 # Vídeo de instalação e configuração do Docker e Portainer.io: https://www.youtube.com/watch?v=ixgLCHX_7QA
 # Vídeo de instalação e configuração do Unifi Controller no GNU/Linux Ubuntu Server 18.04.x LTS: https://www.youtube.com/watch?v=rrcwiZSBHkg
 #
+#Script de criação do Conteiner do Unifi Controller no Docker e Portainer
 ---
 version: "2.1"
 services:

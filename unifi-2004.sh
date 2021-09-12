@@ -5,8 +5,8 @@
 # Facebook: facebook.com/BoraParaPratica
 # YouTube: youtube.com/BoraParaPratica
 # Data de criação: 17/01/2021
-# Data de atualização: 10/09/2021
-# Versão: 0.02
+# Data de atualização: 12/09/2021
+# Versão: 0.03
 # Testado e homologado para a versão do Ubuntu Server 20.04.x LTS x64
 # Testado e homologado para a versão do Unifi Controller 6.2.x, MongoDB 3.6.x, OpenJDK e OpenJRE 8.x
 #
@@ -45,6 +45,10 @@
 # Site Oficial do Unifi ID-SSO: https://account.ui.com
 # Blog Oficial do Unifi Brasil: https://medium.com/ubntbr
 # Canal do YouTUBE Ubiquiti BR: https://www.youtube.com/channel/UCb_mHuP7q75OrckBcNn3p2Q
+#
+# Download do Wifiman Desktop: https://community.ui.com/releases/WiFiman-Desktop-0-2-2/74d8bc1d-6735-444b-a7fc-0ea2584ccb89
+# Site do Wifiman: http://wifiman.com/
+# Site do SIMET: https://beta.simet.nic.br/
 #
 # Vídeo de instalação do GNU/Linux Ubuntu Server 20.04.x LTS: https://www.youtube.com/watch?v=zZf_uzGpod4&t
 #
@@ -99,31 +103,31 @@ clear
 if [ "$(nc -vz 127.0.0.1 8080 ; echo $?)" == "0" ]
 	then
 		echo -e "A porta: 8080 já está sendo utilizada nesse servidor.\n"
-        echo -e "Verifique a porta e o serviço associada a ela e execute novamente esse script.\n"
+		echo -e "Verifique a porta e o serviço associada a ela e execute novamente esse script.\n"
 		exit 1
 	else
 		echo -e "A porta: 8080 está disponível, continuando com o script..."
-        sleep 3
+		sleep 5
 fi
 #
 if [ "$(nc -vz 127.0.0.1 8443 ; echo $?)" == "0" ]
 	then
 		echo -e "A porta: 8443 já está sendo utilizada nesse servidor.\n"
-        echo -e "Verifique a porta e o serviço associada a ela e execute novamente esse script.\n"
+		echo -e "Verifique a porta e o serviço associada a ela e execute novamente esse script.\n"
 		exit 1
 	else
 		echo -e "A porta: 8443 está disponível, continuando com o script..."
-        sleep 3
+		sleep 5
 fi
 #
 if [ "$(nc -vz 127.0.0.1 27017 ; echo $?)" == "0" ]
 	then
 		echo -e "A porta: 27017 já está sendo utilizada nesse servidor.\n"
-        echo -e "Verifique a porta e o serviço associada a ela e execute novamente esse script.\n"
+		echo -e "Verifique a porta e o serviço associada a ela e execute novamente esse script.\n"
 		exit 1
 	else
 		echo -e "A porta: 27017 está disponível, continuando com o script..."
-        sleep 3
+		sleep 5
 fi
 #
 # Script de instalação do Unifi Controller no GNU/Linux Ubuntu Server 20.04.x
@@ -164,8 +168,8 @@ echo -e "Atualizando todo o sistema, aguarde..."
 	# opção do comando: &>> (redirecionar a saída padrão)
 	# opção do comando apt: -y (yes)
 	apt -y upgrade &>> $LOG
-    apt -y full-upgrade &>> $LOG
-    apt -y dist-upgrade &>> $LOG
+	apt -y full-upgrade &>> $LOG
+	apt -y dist-upgrade &>> $LOG
 echo -e "Sistema atualizado com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
@@ -173,7 +177,7 @@ echo -e "Removendo os software desnecessários, aguarde..."
 	# opção do comando: &>> (redirecionar a saída padrão)
 	# opção do comando apt: -y (yes)
 	apt -y autoremove &>> $LOG
-    apt -y autoclean &>> $LOG
+	apt -y autoclean &>> $LOG
 echo -e "Software desnecessários removidos com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
@@ -192,7 +196,7 @@ echo -e "Adicionando o repositório do Unifi Controller, aguarde..."
 	# opção do comando: &>> (redirecionar a saída padrão)
     # opção do comando wget: -O (output document file)
 	# opção do comando cp: -v (verbose)
-    wget -O /etc/apt/trusted.gpg.d/unifi-repo.gpg $KEYUNIFI &>> $LOG
+	wget -O /etc/apt/trusted.gpg.d/unifi-repo.gpg $KEYUNIFI &>> $LOG
 	cp -v conf/100-ubnt-unifi.list /etc/apt/sources.list.d/ &>> $LOG
 echo -e "Repositório do Unifi Controller adicionado com sucesso!!!, continuando com o script...\n"
 sleep 5
@@ -201,7 +205,7 @@ echo -e "Instalando as dependências do Unifi Controller, aguarde..."
 	# opção do comando: &>> (redirecionar a saída padrão)
 	# opção do comando apt: -y (yes)
 	apt update &>> $LOG
-  	apt -y install ca-certificates apt-transport-https &>> $LOG
+	apt -y install ca-certificates apt-transport-https &>> $LOG
 echo -e "Dependências do Unifi Controller instaladas com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
@@ -209,8 +213,8 @@ echo -e "Instalando o Java OpenJDK e OpenJRE, aguarde..."
 	# opção do comando: &>> (redirecionar a saída padrão)
 	# opção do comando apt: -y (yes)
 	# opção do comando update-java-alternatives: -l (list)
-  	apt -y install openjdk-8-jdk openjdk-8-jre &>> $LOG
-    java -version &>> $LOG
+	apt -y install openjdk-8-jdk openjdk-8-jre &>> $LOG
+	java -version &>> $LOG
 	update-java-alternatives -l &>> $LOG
 echo -e "OpenJDK e OpenJRE instalado com sucesso!!!, continuando com o script...\n"
 sleep 5

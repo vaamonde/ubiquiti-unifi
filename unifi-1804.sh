@@ -5,8 +5,8 @@
 # Facebook: facebook.com/BoraParaPratica
 # YouTube: youtube.com/BoraParaPratica
 # Data de criação: 06/01/2021
-# Data de atualização: 10/09/2021
-# Versão: 0.05
+# Data de atualização: 12/09/2021
+# Versão: 0.06
 # Testado e homologado para a versão do Ubuntu Server 18.04.x LTS x64
 # Testado e homologado para a versão do Unifi Controller 6.2.x, MongoDB 3.6.x, OpenJDK e OpenJRE 8.x
 #
@@ -45,6 +45,10 @@
 # Site Oficial do Unifi ID-SSO: https://account.ui.com
 # Blog Oficial do Unifi Brasil: https://medium.com/ubntbr
 # Canal do YouTUBE Ubiquiti BR: https://www.youtube.com/channel/UCb_mHuP7q75OrckBcNn3p2Q
+#
+# Download do Wifiman Desktop: https://community.ui.com/releases/WiFiman-Desktop-0-2-2/74d8bc1d-6735-444b-a7fc-0ea2584ccb89
+# Site do Wifiman: http://wifiman.com/
+# Site do SIMET: https://beta.simet.nic.br/
 #
 # Vídeo de instalação do GNU/Linux Ubuntu Server 18.04.x LTS: https://www.youtube.com/watch?v=zDdCrqNhIXI
 # Vídeo de atualização do GNU/Linux Ubuntu Server 18.04.x LTS: https://www.youtube.com/watch?v=esnu8TAepHU&t
@@ -95,7 +99,7 @@ if [ "$USUARIO" == "0" ] && [ "$UBUNTU" == "18.04" ]
 		echo -e "Execute novamente o script para verificar o ambiente."
 		exit 1
 fi
-#	
+#
 # Verificando se as portas 27017, 8080 e 8443 não estão sendo utilizadas no servidor
 # [ ] = teste de expressão, == comparação de string, exit 1 = A maioria dos erros comuns na execução,
 # $? código de retorno do último comando executado, ; execução de comando, opção do comando nc: -v (verbose)
@@ -104,31 +108,31 @@ clear
 if [ "$(nc -vz 127.0.0.1 8080 ; echo $?)" == "0" ]
 	then
 		echo -e "A porta: 8080 já está sendo utilizada nesse servidor.\n"
-        echo -e "Verifique a porta e o serviço associada a ela e execute novamente esse script.\n"
+		echo -e "Verifique a porta e o serviço associada a ela e execute novamente esse script.\n"
 		exit 1
 	else
 		echo -e "A porta: 8080 está disponível, continuando com o script..."
-        sleep 3
+		sleep 5
 fi
 #
 if [ "$(nc -vz 127.0.0.1 8443 ; echo $?)" == "0" ]
 	then
 		echo -e "A porta: 8443 já está sendo utilizada nesse servidor.\n"
-        echo -e "Verifique a porta e o serviço associada a ela e execute novamente esse script.\n"
+		echo -e "Verifique a porta e o serviço associada a ela e execute novamente esse script.\n"
 		exit 1
 	else
 		echo -e "A porta: 8443 está disponível, continuando com o script..."
-        sleep 3
+		sleep 5
 fi
 #
 if [ "$(nc -vz 127.0.0.1 27017 ; echo $?)" == "0" ]
 	then
 		echo -e "A porta: 27017 já está sendo utilizada nesse servidor.\n"
-        echo -e "Verifique a porta e o serviço associada a ela e execute novamente esse script.\n"
+		echo -e "Verifique a porta e o serviço associada a ela e execute novamente esse script.\n"
 		exit 1
 	else
 		echo -e "A porta: 27017 está disponível, continuando com o script..."
-        sleep 3
+		sleep 5
 fi
 #
 # Script de instalação do Unifi Controller no GNU/Linux Ubuntu Server 18.04.x
