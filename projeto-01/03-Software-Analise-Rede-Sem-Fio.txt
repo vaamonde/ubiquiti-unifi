@@ -18,3 +18,4 @@ Software Linux: LinSSID: https://sourceforge.net/projects/linssid/
 Software Linux: Kismet: https://kismetwireless.net/
 Software Linux: Sparrow-wifi: https://github.com/ghostop14/sparrow-wifi
 Software Linux: Wavemon: https://github.com/uoaerg/wavemon
+Software Linux: nmcli: https://developer-old.gnome.org/NetworkManager/stable/nmcli.html

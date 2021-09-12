@@ -5,9 +5,9 @@
 # Facebook: facebook.com/BoraParaPratica
 # YouTube: youtube.com/BoraParaPratica
 # Data de criação: 06/01/2021
-# Data de atualização: 10/09/2021
-# Versão: 0.02
-# Testado e homologado para a versão do  GNU/Linux Ubuntu Server 20.04.x LTS ARM64 Raspberry Pi 3 e 4
+# Data de atualização: 12/09/2021
+# Versão: 0.03
+# Testado e homologado para a versão do  GNU/Linux Ubuntu Server 20.04.x LTS ARM64 x64 Raspberry Pi 3 e 4
 # Testado e homologado para a versão do Unifi Controller 6.2.x, MongoDB 3.6.x, OpenJDK e OpenJRE 8.x
 #
 # O software UniFi Controller que vem com o sistema Ubiquiti UniFi tem uma interface baseada em Web que facilita
@@ -109,7 +109,7 @@ if [ "$(nc -vz 127.0.0.1 8080 ; echo $?)" == "0" ]
         echo -e "Verifique a porta e o serviço associada a ela e execute novamente esse script.\n"
 		exit 1
 	else
-		echo -e "A porta: 8080 está disponível, continuando com o script..."
+		echo -e "A porta: 8080 está disponível, continuando com o script...\n"
         sleep 3
 fi
 #
@@ -119,7 +119,7 @@ if [ "$(nc -vz 127.0.0.1 8443 ; echo $?)" == "0" ]
         echo -e "Verifique a porta e o serviço associada a ela e execute novamente esse script.\n"
 		exit 1
 	else
-		echo -e "A porta: 8443 está disponível, continuando com o script..."
+		echo -e "A porta: 8443 está disponível, continuando com o script...\n"
         sleep 3
 fi
 #
@@ -130,7 +130,7 @@ if [ "$(nc -vz 127.0.0.1 27017 ; echo $?)" == "0" ]
 		exit 1
 	else
 		echo -e "A porta: 27017 está disponível, continuando com o script..."
-        sleep 3
+        sleep 5
 fi
 #
 # Script de instalação do Unifi Controller no GNU/Linux Ubuntu Server 20.04.x LTS ARM64 Raspberry Pi 3 e 4
