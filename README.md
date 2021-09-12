@@ -56,9 +56,9 @@ Link da vídeo aula: https://www.youtube.com/watch?v=8tjGFWwpYdI
 
 Link do script utilizado nesse vídeo: https://github.com/vaamonde/ubiquiti-unifi/blob/main/unifi-docker.sh
 
-## **📡 COMO instalar o UNIFI CONTROLLER no GNU/Linux UBUNTU SERVER 20.04.x no Raspberry Pi 3**
+## **📡 COMO instalar o UNIFI CONTROLLER no GNU/Linux UBUNTU SERVER 20.04.x utilizando o Raspberry Pi 3**
 
-Vídeo mostrando os procedimentos básicos para instalar e configurar o Unifi Controller no GNU/Linux Ubuntu Server 20.04.x LTS ARM x64 no Raspberry Pi3
+Vídeo mostrando os procedimentos básicos para instalar e configurar o Unifi Controller no GNU/Linux Ubuntu Server 20.04.x LTS ARM x64 utilizando o Raspberry Pi 3.
 
 O software UniFi Controller que vem com o sistema Ubiquiti UniFi tem uma interface baseada em Web que facilita a administração, configuração e gerenciamento dos dispositivos Unifi (Access Point AP, Switch, Router, USG, etc). O sistema Unifi e baseado na arquitetura SDN (Software defined networking) que possibilita o gerenciamento centralizado de todos os equipamentos da infraestrutura da rede utilizando o Unifi Controller Localmente ou Remotamente, ou seja, não há necessidade de configurar individualmente cada um dos dispositivos na rede.
 
