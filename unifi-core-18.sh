@@ -1,14 +1,15 @@
 #!/bin/bash
 # ===================== EM DESENVOLVIMENTO - AINDA NÃO ESTÁ FUNCIONANDO PARA PRODUÇÃO =====================
 # =================== NÃO RECOMENDO PARA PRODUÇÃO, VERSÃO DISPONÍVEL NO SNAPCRAFT 5.13.X ==================
+# =============== LINK DE APOIO PARA A NOVA VERSÃO: https://github.com/hairychris/unifi-snap ==============
 # Autor: Robson Vaamonde
 # Site: www.procedimentosemti.com.br
 # Facebook: facebook.com/ProcedimentosEmTI
 # Facebook: facebook.com/BoraParaPratica
 # YouTube: youtube.com/BoraParaPratica
 # Data de criação: 17/01/2021
-# Data de atualização: 12/09/2021
-# Versão: 0.03
+# Data de atualização: 13/09/2021
+# Versão: 0.04
 # Testado e homologado para a versão do GNU/Linux Ubuntu Server Core 18.x LTS ARM64
 # Testado e homologado para a versão do Unifi Controller 6.2.x, MongoDB 3.6.x, OpenJDK e OpenJRE 8.x
 #

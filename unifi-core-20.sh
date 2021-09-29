@@ -1,16 +1,17 @@
 #!/bin/bash
 # ===================== EM DESENVOLVIMENTO - AINDA NÃO ESTÁ FUNCIONANDO PARA PRODUÇÃO =====================
 # =================== NÃO RECOMENDO PARA PRODUÇÃO, VERSÃO DISPONÍVEL NO SNAPCRAFT 5.13.X ==================
+# =============== LINK DE APOIO PARA A NOVA VERSÃO: https://github.com/hairychris/unifi-snap ==============
 # Autor: Robson Vaamonde
 # Site: www.procedimentosemti.com.br
 # Facebook: facebook.com/ProcedimentosEmTI
 # Facebook: facebook.com/BoraParaPratica
 # YouTube: youtube.com/BoraParaPratica
 # Data de criação: 10/09/2021
-# Data de atualização: 12/09/2021
-# Versão: 0.02
+# Data de atualização: 13/09/2021
+# Versão: 0.03
 # Testado e homologado para a versão do GNU/Linux Ubuntu Server Core 20.x LTS ARM64
-# Testado e homologado para a versão do Unifi Controller 5.13.x
+# Testado e homologado para a versão do Unifi Controller 
 #
 # O software UniFi Controller que vem com o sistema Ubiquiti UniFi tem uma interface baseada em Web que facilita
 # a administração, configuração e gerenciamento dos dispositivos Unifi (Access Point AP, Switch, Router, USG, etc).
@@ -69,17 +70,21 @@
 # Para finalizar a instalação via Web você precisa de uma conta (ID-SSO) no https://account.ui.com"
 # A comunidade do Unifi recomenda utilizar o Navegador Google Chrome para sua configuração
 #
-# Atualizando as opções de software do Snap
+# Atualizando as opções de software do Snappy
 sudo snap refresh
 #
-# Localizando no Snap a versão do Unifi Controller
-sudo snap find unifi
+# Instalando o Snappy Core
+sudo snap install core --edge
 #
-# Instalando o Snap Core
-sudo snap install core
+# Instalando o Snappy Classic
+sudo snap install --channel=18/edge classic
+#
+# Executando o modo Classic
+sudo classic
+#
+# Localizando no Snappy a versão do Unifi Controller
+sudo snap find unifi
+sudo snap info unifi
 #
 # Instalando o Unifi Controller
-sudo snap install unifi --edge
-
-# Verificando as portas do Unifi Controller
-ss -tua | grep '27017\|8080\|8443'
+sudo snap install unifi --classic --edge
