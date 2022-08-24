@@ -39,7 +39,7 @@
 #           Add stack:
 #               Name: unifi-controller
 #               Web editor: (copiar o docker-compose do Unifi Controller)
-#               Enable Access Controll: OFF
+#               Enable Access Control: OFF
 #               Deploy the Stack.
 #
 # Informações que serão solicitadas na configuração via Web do Unifi Controller
@@ -47,7 +47,7 @@
 # Step 1 of 6:
 #   Name Your Controller
 #       Controller Name: Vaamonde
-#       By selecting this you are agreeing to end user licence agreement and the terms of service: ON <Next>
+#       By selecting this you are agreeing to end user license agreement and the terms of service: ON <Next>
 # Step 2 of 6:
 #   Sign in with your Ubiquiti Account
 #       Username: usuário Id-SSO https://account.ui.com
@@ -96,7 +96,7 @@
 # Vídeo de instalação e configuração do Docker e Portainer.io: https://www.youtube.com/watch?v=ixgLCHX_7QA
 # Vídeo de instalação e configuração do Unifi Controller no GNU/Linux Ubuntu Server 18.04.x LTS: https://www.youtube.com/watch?v=rrcwiZSBHkg
 #
-#Script de criação do Conteiner do Unifi Controller no Docker e Portainer
+#Script de criação do Container do Unifi Controller no Docker e Portainer
 ---
 version: "2.1"
 services:

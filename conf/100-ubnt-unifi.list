@@ -4,8 +4,8 @@
 # Facebook: facebook.com/BoraParaPratica
 # YouTube: youtube.com/BoraParaPratica
 # Data de criação: 06/01/2021
-# Data de atualização: 12/09/2021
-# Versão: 0.02
+# Data de atualização: 28/07/2022
+# Versão: 0.03
 #
 #Source List do Ubiquiti Unifi Controller no Ubuntu Server 18.04.x ou 20.04.x x64 Bits
 #
@@ -20,4 +20,7 @@ deb https://www.ui.com/downloads/unifi/debian stable ubiquiti
 #
 #Versão antiga do Unifi Controller: version 4
 #deb https://www.ui.com/downloads/unifi/debian unifi4 ubiquiti
+#
+#Versão antiga do Unifi Controller: version 3
+#deb https://www.ui.com/downloads/unifi/debian unifi3 ubiquiti
 #

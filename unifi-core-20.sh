@@ -33,7 +33,7 @@
 # Step 1 of 6:
 #   Name Your Controller
 #       Controller Name: Vaamonde
-#       By selecting this you are agreeing to end user licence agreement and the terms of service: ON <Next>
+#       By selecting this you are agreeing to end user license agreement and the terms of service: ON <Next>
 # Step 2 of 6:
 #   Sign in with your Ubiquiti Account
 #       Username: usuário Id-SSO https://account.ui.com

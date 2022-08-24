@@ -20,7 +20,7 @@
 # Step 1 of 6:
 #   Name Your Controller
 #       Controller Name: Vaamonde
-#       By selecting this you are agreeing to end user licence agreement and the terms of service: ON <Next>
+#       By selecting this you are agreeing to end user license agreement and the terms of service: ON <Next>
 # Step 2 of 6:
 #   Sign in with your Ubiquiti Account
 #       Username: usuário Id-SSO https://account.ui.com
@@ -188,7 +188,7 @@ echo -e "Adicionando o repositório do MongoDB, aguarde..."
 	# opção do comando wget: -q (quiet), -O (output document file)
 	# opção do comando cp: -v (verbose)
 	wget -qO - $KEYSRVMONGODB | apt-key add - &>> $LOG
-	cp -v conf/mongodb-org-3.4.list /etc/apt/sources.list.d/ &>> $LOG
+	cp -v conf/mongodb-org.list /etc/apt/sources.list.d/ &>> $LOG
 echo -e "Repositório do MongoDB adicionado com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
