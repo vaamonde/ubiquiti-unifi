@@ -4,11 +4,11 @@
 # Facebook: facebook.com/ProcedimentosEmTI
 # Facebook: facebook.com/BoraParaPratica
 # YouTube: youtube.com/BoraParaPratica
-# Data de criação: 17/01/2021
+# Data de criação: 27/08/2022
 # Data de atualização: 27/08/2022
-# Versão: 0.04
-# Testado e homologado para a versão do Ubuntu Server 20.04.x LTS x64
-# Testado e homologado para a versão do Unifi Controller 6.2.x, MongoDB 3.6.x, OpenJDK e OpenJRE 11.x
+# Versão: 0.02
+# Testado e homologado para a versão do Linux Mint 20.x x64
+# Testado e homologado para a versão do Unifi Controller 7.2.x, MongoDB 3.6.x, OpenJDK e OpenJRE 11.x
 #
 # O software UniFi Controller que vem com o sistema Ubiquiti UniFi tem uma interface baseada
 # em Web que facilita a administração, configuração e gerenciamento dos dispositivos Unifi 
@@ -51,15 +51,13 @@
 # Site do Wifiman: http://wifiman.com/
 # Site do SIMET: https://beta.simet.nic.br/
 #
-# Vídeo de instalação do GNU/Linux Ubuntu Server 20.04.x LTS: https://www.youtube.com/watch?v=zZf_uzGpod4&t
-#
 # Variável da Data Inicial para calcular o tempo de execução do script (VARIÁVEL MELHORADA)
 # opção do comando date: +%T (Time)
 HORAINICIAL=$(date +%T)
 #
 # Variáveis para validar o ambiente, verificando se o usuário é "root", versão do ubuntu e kernel
 # opções do comando id: -u (user)
-# opções do comando: lsb_release: -r (release), -s (short), 
+# opções do comando: lsb_release: -r (Distributor ID), -s (short), 
 # opões do comando uname: -r (kernel release)
 # opções do comando cut: -d (delimiter), -f (fields)
 # opção do shell script: piper | = Conecta a saída padrão com a entrada padrão de outro comando
@@ -67,30 +65,30 @@ HORAINICIAL=$(date +%T)
 # opção do shell script: aspas simples ' ' = Protege uma string completamente (nenhum caractere é especial)
 # opção do shell script: aspas duplas " " = Protege uma string, mas reconhece $, \ e ` como especiais
 USUARIO=$(id -u)
-UBUNTU=$(lsb_release -rs)
+LINUXMINT=$(lsb_release -is)
 #
 # Variável do caminho do Log dos Script utilizado nesse curso (VARIÁVEL MELHORADA)
 # opções do comando cut: -d (delimiter), -f (fields)
 # $0 (variável de ambiente do nome do comando)
 LOG="/var/log/$(echo $0 | cut -d'/' -f2)"
 #
-# Declarando as variáveis de download do Unifi (Links atualizados no dia 06/01/2021)
+# Declarando as variáveis de download do Unifi (Links atualizados no dia 27/08/2022)
 KEYSRVMONGODB="https://www.mongodb.org/static/pgp/server-3.6.asc"
 KEYUNIFI="https://dl.ui.com/unifi/unifi-repo.gpg"
 #
 # Exportando o recurso de Noninteractive do Debconf para não solicitar telas de configuração
 export DEBIAN_FRONTEND="noninteractive"
 #
-# Verificando se o usuário é Root e se a Distribuição é >= 20.04 <IF MELHORADO)
+# Verificando se o usuário é Root e se a Distribuição é Linux Mint <IF MELHORADO)
 # [ ] = teste de expressão, && = operador lógico AND, == comparação de string, exit 1 = A maioria dos erros comuns na execução
 clear
-if [ "$USUARIO" == "0" ] && [ "$UBUNTU" == "20.04" ]
+if [ "$USUARIO" == "0" ] && [ "$LINUXMINT" == "Linuxmint" ]
 	then
 		echo -e "O usuário é Root, continuando com o script..."
-		echo -e "Distribuição é >= 20.04.x, continuando com o script..."
+		echo -e "Distribuição é Linux Mint, continuando com o script..."
 		sleep 5
 	else
-		echo -e "Usuário não é Root ($USUARIO) ou a Distribuição não é >= 20.04.x ($UBUNTU)"
+		echo -e "Usuário não é Root ($USUARIO) ou a Distribuição não é Linux Mint ($LINUXMINT)"
 		echo -e "Caso você não tenha executado o script com o comando: sudo -i"
 		echo -e "Execute novamente o script para verificar o ambiente."
 		exit 1
@@ -131,7 +129,7 @@ if [ "$(nc -vz 127.0.0.1 27017 ; echo $?)" == "0" ]
 		sleep 5
 fi
 #
-# Script de instalação do Unifi Controller no GNU/Linux Ubuntu Server 20.04.x
+# Script de instalação do Unifi Controller no Linux Mint 20.x
 # opção do comando echo: -e (enable interpretation of backslash escapes), \n (new line)
 # opção do comando hostname: -I (all IP address)
 # opção do comando date: + (format), %d (day), %m (month), %Y (year 1970), %H (hour 24), %M (minute 60)
@@ -140,7 +138,7 @@ echo -e "Início do script $0 em: $(date +%d/%m/%Y-"("%H:%M")")\n" &>> $LOG
 clear
 #
 echo
-echo -e "Instalação do Unifi Controller no GNU/Linux Ubuntu Server 20.04.x\n"
+echo -e "Instalação do Unifi Controller no Linux Mint 20.x\n"
 echo -e "Após a instalação do Unifi Controller acessar a URL: https://$(hostname -I | cut -d' ' -f1):8443/\n"
 echo -e "Para finalizar a instalação via Web você precisa de uma conta (ID-SSO) no https://account.ui.com\n"
 echo -e "A comunidade do Unifi recomenda utilizar o Navegador Google Chrome para sua configuração\n"
@@ -148,14 +146,23 @@ echo -e "Aguarde, esse processo demora um pouco dependendo do seu Link de Intern
 sleep 5
 #
 echo -e "Adicionando o Repositório Universal do Apt, aguarde..."
+	# Universe - Software de código aberto mantido pela comunidade:
 	# opção do comando: &>> (redirecionar a saída padrão)
 	add-apt-repository universe &>> $LOG
 echo -e "Repositório adicionado com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
 echo -e "Adicionando o Repositório Multiversão do Apt, aguarde..."
+	# Multiverse – Software não suportado, de código fechado e com patente: 
 	# opção do comando: &>> (redirecionar a saída padrão)
 	add-apt-repository multiverse &>> $LOG
+echo -e "Repositório adicionado com sucesso!!!, continuando com o script...\n"
+sleep 5
+#
+echo -e "Adicionando o Repositório Restrito do Apt, aguarde..."
+	# Restricted - Software de código fechado oficialmente suportado:
+	# opção do comando: &>> (redirecionar a saída padrão)
+	add-apt-repository restricted &>> $LOG
 echo -e "Repositório adicionado com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
@@ -165,26 +172,45 @@ echo -e "Atualizando as listas do Apt, aguarde..."
 echo -e "Listas atualizadas com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
-echo -e "Atualizando todo o sistema, aguarde..."
+echo -e "Atualizando todo o sistema operacional, aguarde..."
 	# opção do comando: &>> (redirecionar a saída padrão)
 	# opção do comando apt: -y (yes)
 	apt -y upgrade &>> $LOG
-	apt -y full-upgrade &>> $LOG
 	apt -y dist-upgrade &>> $LOG
+	apt -y full-upgrade &>> $LOG
 echo -e "Sistema atualizado com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
-echo -e "Removendo os software desnecessários, aguarde..."
+echo -e "Removendo todos os software desnecessários, aguarde..."
 	# opção do comando: &>> (redirecionar a saída padrão)
 	# opção do comando apt: -y (yes)
 	apt -y autoremove &>> $LOG
 	apt -y autoclean &>> $LOG
-echo -e "Software desnecessários removidos com sucesso!!!, continuando com o script...\n"
+echo -e "Software removidos com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
-echo -e "Instalando o Unifi Controller, aguarde...\n"
+echo -e "Iniciando a Instalação do Unifi Controller no Linux Mint 20.x, aguarde...\n"
+sleep 5
 #
-echo -e "Adicionando o repositório do MongoDB, aguarde..."
+echo -e "Instalando as dependências do Unifi Controller, aguarde..."
+	# opção do comando: &>> (redirecionar a saída padrão)
+	# opção do comando apt: -y (yes)
+	apt -y install ca-certificates apt-transport-https lsb-release net-tools vim git \
+	software-properties-common curl dirmngr netcat psmisc gnupg perl dnsutils &>> $LOG
+echo -e "Dependências do Unifi Controller instaladas com sucesso!!!, continuando com o script...\n"
+sleep 5
+#
+echo -e "Instalando o Java OpenJDK e OpenJRE, aguarde..."
+	# opção do comando: &>> (redirecionar a saída padrão)
+	# opção do comando apt: -y (yes)
+	# opção do comando update-java-alternatives: -l (list)
+	apt -y install openjdk-11-jdk openjdk-11-jre &>> $LOG
+	java -version &>> $LOG
+	update-java-alternatives -l &>> $LOG
+echo -e "OpenJDK e OpenJRE instalado com sucesso!!!, continuando com o script...\n"
+sleep 5
+#
+echo -e "Adicionando o repositório do MongoDB Server, aguarde..."
 	# opção do comando: &>> (redirecionar a saída padrão)
 	# opção do comando wget: -q (quiet), -O (output document file)
 	# opção do comando cp: -v (verbose)
@@ -202,27 +228,24 @@ echo -e "Adicionando o repositório do Unifi Controller, aguarde..."
 echo -e "Repositório do Unifi Controller adicionado com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
-echo -e "Instalando as dependências do Unifi Controller, aguarde..."
-	# opção do comando: &>> (redirecionar a saída padrão)
-	# opção do comando apt: -y (yes)
-	apt update &>> $LOG
-	apt -y install ca-certificates apt-transport-https &>> $LOG
-echo -e "Dependências do Unifi Controller instaladas com sucesso!!!, continuando com o script...\n"
+echo -e "Editando o arquivo do repositório do MongoDB Server, Pressione <Enter> para continuar"
+	# opção do comando read: -s (Do not echo keystrokes)
+	read -s
+	vim /etc/apt/sources.list.d/mongodb-org.list
+echo -e "Arquivo editado com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
-echo -e "Instalando o Java OpenJDK e OpenJRE, aguarde..."
-	# opção do comando: &>> (redirecionar a saída padrão)
-	# opção do comando apt: -y (yes)
-	# opção do comando update-java-alternatives: -l (list)
-	apt -y install openjdk-11-jdk openjdk-11-jre &>> $LOG
-	java -version &>> $LOG
-	update-java-alternatives -l &>> $LOG
-echo -e "OpenJDK e OpenJRE instalado com sucesso!!!, continuando com o script...\n"
+echo -e "Editando o arquivo do repositório do Unifi Controller, Pressione <Enter> para continuar"
+	# opção do comando read: -s (Do not echo keystrokes)
+	read -s
+	vim /etc/apt/sources.list.d/100-ubnt-unifi.list
+echo -e "Arquivo editado com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
 echo -e "Instalando o Unifi Controller, aguarde..."
 	# opção do comando: &>> (redirecionar a saída padrão)
 	# opção do comando apt: -y (yes)
+	apt update &>> $LOG
 	apt install -y unifi &>> $LOG
 echo -e "Unifi Controller instalado com sucesso!!!, continuando com o script...\n"
 sleep 5
@@ -234,11 +257,18 @@ echo -e "Habilitando o Serviço do Unifi Controller, aguarde..."
 echo -e "Serviço do Unifi Controller habilitado com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
+echo -e "Verificando o Serviço do Unifi Controller, aguarde..."
+	echo -e "Unifi....: $(systemctl status unifi | grep Active)"
+echo -e "Serviço verificado com sucesso!!!, continuando com o script...\n"
+sleep 5
+#
 echo -e "Verificando as portas de conexões do MongoDB e do Unifi Controller, aguarde..."
-	# opção do comando netstat: -a (all), -n (numeric)
-	# opção do comando grep: \| (função OU)
-	netstat -an | grep '27017\|8080\|8443'
-echo -e "Portas de conexões verificadas com sucesso!!!, continuando com o script...\n"
+	# opção do comando lsof: -n (inhibits the conversion of network numbers to host names for 
+	# network files), -P (inhibits the conversion of port numbers to port names for network files), 
+	# -i (selects the listing of files any of whose Internet address matches the address specified 
+	# in i), -s (alone directs lsof to display file size at all times)
+	lsof -nP -iTCP:'27017,8080,8443' -sTCP:LISTEN
+echo -e "Portas verificadas com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
 echo -e "Instalação do Unifi Controller feita com Sucesso!!!."
