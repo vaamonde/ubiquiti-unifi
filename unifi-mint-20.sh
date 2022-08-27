@@ -6,7 +6,7 @@
 # YouTube: youtube.com/BoraParaPratica
 # Data de criação: 27/08/2022
 # Data de atualização: 27/08/2022
-# Versão: 0.03
+# Versão: 0.04
 # Testado e homologado para a versão do Linux Mint 20.x x64
 # Testado e homologado para a versão do Unifi Controller 7.2.x, MongoDB 3.6.x, OpenJDK e OpenJRE 11.x
 #
@@ -66,6 +66,7 @@ HORAINICIAL=$(date +%T)
 # opção do shell script: aspas duplas " " = Protege uma string, mas reconhece $, \ e ` como especiais
 USUARIO=$(id -u)
 LINUXMINT=$(lsb_release -is)
+MONGODB=$(aptitude versions mongodb-server | grep focal-security | cut -d ':' -f2 | cut -d '.' -f1,2)
 #
 # Variável do caminho do Log dos Script utilizado nesse curso (VARIÁVEL MELHORADA)
 # opções do comando cut: -d (delimiter), -f (fields)
@@ -73,7 +74,6 @@ LINUXMINT=$(lsb_release -is)
 LOG="/var/log/$(echo $0 | cut -d'/' -f2)"
 #
 # Declarando as variáveis de download do Unifi (Links atualizados no dia 27/08/2022)
-KEYSRVMONGODB="https://www.mongodb.org/static/pgp/server-3.6.asc"
 KEYUNIFI="https://dl.ui.com/unifi/unifi-repo.gpg"
 #
 # Exportando o recurso de Noninteractive do Debconf para não solicitar telas de configuração
@@ -93,7 +93,22 @@ if [ "$USUARIO" == "0" ] && [ "$LINUXMINT" == "Linuxmint" ]
 		echo -e "Execute novamente o script para verificar o ambiente."
 		exit 1
 fi
-#	
+#
+# Verificando o acesso a Internet do Linux Mint
+# [ ] = teste de expressão, exit 1 = A maioria dos erros comuns na execução
+# $? código de retorno do último comando executado, ; execução de comando, 
+# opção do comando nc: -z (scan for listening daemons), -w (timeouts), 1 (one timeout), 443 (port)
+if [ "$(nc -zw1 google.com 443 &> /dev/null ; echo $?)" == "0" ]
+	then
+		echo -e "Você tem acesso a Internet, continuando com o script..."
+		sleep 5
+	else
+		echo -e "Você NÃO tem acesso a Internet, verifique suas configurações de rede IPV4"
+		echo -e "e execute novamente este script."
+		sleep 5
+		exit 1
+fi
+#
 # Verificando se as portas 27017, 8080 e 8443 não estão sendo utilizadas no servidor
 # [ ] = teste de expressão, == comparação de string, exit 1 = A maioria dos erros comuns na execução,
 # $? código de retorno do último comando executado, ; execução de comando, opção do comando nc: -v (verbose)
@@ -129,7 +144,19 @@ if [ "$(nc -vz 127.0.0.1 27017 &> /dev/null ; echo $?)" == "0" ]
 		sleep 5
 fi
 #
-# Script de instalação do Unifi Controller no Linux Mint 20.x
+# Verificando a versão do MongoDB Server do repositório do Linux Mint
+# [ ] = teste de expressão, == comparação de string, exit 1 = A maioria dos erros comuns na execução
+clear
+if [ "$MONGODB" == "3.6" ]
+	then
+		echo -e "Versão do MongoDB Sever $MONGODB homologada para o Unifi, continuando com o script..."
+		sleep 5
+	else
+		echo -e "Versão do MongoDB Sever $MONGODB NÃO homologada para o Unifi."
+		exit 1
+fi
+#
+# Script de instalação do Unifi Network Application no Linux Mint 20.x
 # opção do comando echo: -e (enable interpretation of backslash escapes), \n (new line)
 # opção do comando date: + (format), %d (day), %m (month), %Y (year 1970), %H (hour 24), %M (minute 60)
 # opção do comando cut: -d (delimiter), -f (fields)
@@ -137,8 +164,8 @@ echo -e "Início do script $0 em: $(date +%d/%m/%Y-"("%H:%M")")\n" &>> $LOG
 clear
 #
 echo
-echo -e "Instalação do Unifi Controller no Linux Mint 20.x\n"
-echo -e "Após a instalação do Unifi Controller acessar a URL: https://localhost:8443/\n"
+echo -e "Instalação do Unifi Network Application no Linux Mint 20.x\n"
+echo -e "Após a instalação do Unifi Network Application acessar a URL: https://localhost:8443/\n"
 echo -e "Para finalizar a instalação via Web você precisa de uma conta (ID-SSO) no https://account.ui.com\n"
 echo -e "A comunidade do Unifi recomenda utilizar o Navegador Google Chrome para sua configuração\n"
 echo -e "Aguarde, esse processo demora um pouco dependendo do seu Link de Internet...\n"
@@ -188,15 +215,15 @@ echo -e "Removendo todos os software desnecessários, aguarde..."
 echo -e "Software removidos com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
-echo -e "Iniciando a Instalação do Unifi Controller no Linux Mint 20.x, aguarde...\n"
+echo -e "Iniciando a Instalação do Unifi Network Application no Linux Mint 20.x, aguarde...\n"
 sleep 5
 #
-echo -e "Instalando as dependências do Unifi Controller, aguarde..."
+echo -e "Instalando as dependências do Unifi Network Application, aguarde..."
 	# opção do comando: &>> (redirecionar a saída padrão)
 	# opção do comando apt: -y (yes)
 	apt -y install ca-certificates apt-transport-https lsb-release net-tools vim git \
 	software-properties-common curl dirmngr netcat psmisc gnupg perl dnsutils &>> $LOG
-echo -e "Dependências do Unifi Controller instaladas com sucesso!!!, continuando com o script...\n"
+echo -e "Dependências instaladas com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
 echo -e "Instalando o Java OpenJDK e OpenJRE, aguarde..."
@@ -209,44 +236,44 @@ echo -e "Instalando o Java OpenJDK e OpenJRE, aguarde..."
 echo -e "OpenJDK e OpenJRE instalado com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
-echo -e "Adicionando o repositório do Unifi Controller, aguarde..."
+echo -e "Adicionando o repositório do Unifi Network Application, aguarde..."
 	# opção do comando: &>> (redirecionar a saída padrão)
     # opção do comando wget: -O (output document file)
 	# opção do comando cp: -v (verbose)
 	wget -O /etc/apt/trusted.gpg.d/unifi-repo.gpg $KEYUNIFI &>> $LOG
 	cp -v conf/100-ubnt-unifi.list /etc/apt/sources.list.d/ &>> $LOG
-echo -e "Repositório do Unifi Controller adicionado com sucesso!!!, continuando com o script...\n"
+echo -e "Repositório adicionado com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
-echo -e "Editando o arquivo do repositório do Unifi Controller, Pressione <Enter> para continuar"
+echo -e "Editando o arquivo do repositório do Unifi Network Application, Pressione <Enter> para continuar"
 	# opção do comando read: -s (Do not echo keystrokes)
 	read -s
 	vim /etc/apt/sources.list.d/100-ubnt-unifi.list
 echo -e "Arquivo editado com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
-echo -e "Instalando o Unifi Controller, aguarde..."
+echo -e "Instalando o Unifi Network Application, aguarde..."
 	# opção do comando: &>> (redirecionar a saída padrão)
 	# opção do comando apt: -y (yes)
 	apt update &>> $LOG
 	apt install -y unifi &>> $LOG
-echo -e "Unifi Controller instalado com sucesso!!!, continuando com o script...\n"
+echo -e "Unifi Network Application instalado com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
-echo -e "Habilitando o Serviço do Unifi Controller, aguarde..."
+echo -e "Habilitando o Serviço do Unifi Network Application, aguarde..."
 	# opção do comando: &>> (redirecionar a saída padrão)
 	systemctl enable unifi &>> $LOG
 	systemctl restart unifi &>> $LOG
-echo -e "Serviço do Unifi Controller habilitado com sucesso!!!, continuando com o script...\n"
+echo -e "Serviço habilitado com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
-echo -e "Verificando o Serviço do Unifi Controller e do MongoDB, aguarde..."
-	echo -e "Unifi....: $(systemctl status unifi | grep Active)"
-	echo -e "MongoDB..: $(systemctl status mongodb | grep Active)"
-echo -e "Serviço verificado com sucesso!!!, continuando com o script...\n"
+echo -e "Verificando o Serviço do Unifi Network Application e do MongoDB, aguarde..."
+	echo -e "Unifi...: $(systemctl status unifi | grep Active)"
+	echo -e "MongoDB.: $(systemctl status mongodb | grep Active)"
+echo -e "Serviços verificados com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
-echo -e "Verificando as portas de conexões do MongoDB e do Unifi Controller, aguarde..."
+echo -e "Verificando as portas de conexões do MongoDB e do Unifi Network Application, aguarde..."
 	# opção do comando lsof: -n (inhibits the conversion of network numbers to host names for 
 	# network files), -P (inhibits the conversion of port numbers to port names for network files), 
 	# -i (selects the listing of files any of whose Internet address matches the address specified 
@@ -255,7 +282,7 @@ echo -e "Verificando as portas de conexões do MongoDB e do Unifi Controller, ag
 echo -e "Portas verificadas com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
-echo -e "Instalação do Unifi Controller feita com Sucesso!!!."
+echo -e "Instalação do Unifi Network Application feita com Sucesso!!!."
 	# script para calcular o tempo gasto (SCRIPT MELHORADO, CORRIGIDO FALHA DE HORA:MINUTO:SEGUNDOS)
 	# opção do comando date: +%T (Time)
 	HORAFINAL=$(date +%T)
