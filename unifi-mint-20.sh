@@ -146,7 +146,6 @@ fi
 #
 # Verificando a versão do MongoDB Server do repositório do Linux Mint
 # [ ] = teste de expressão, == comparação de string, exit 1 = A maioria dos erros comuns na execução
-clear
 if [ "$MONGODB" == "3.6" ]
 	then
 		echo -e "Versão do MongoDB Sever $MONGODB homologada para o Unifi, continuando com o script..."
@@ -166,7 +165,7 @@ clear
 echo
 echo -e "Instalação do Unifi Network Application no Linux Mint 20.x\n"
 echo -e "Após a instalação do Unifi Network Application acessar a URL: https://localhost:8443/\n"
-echo -e "Para finalizar a instalação via Web você precisa de uma conta (ID-SSO) no https://account.ui.com\n"
+echo -e "Para finalizar a instalação via Web você precisa de uma conta (ID-SSO) no https://account.ui.com"
 echo -e "A comunidade do Unifi recomenda utilizar o Navegador Google Chrome para sua configuração\n"
 echo -e "Aguarde, esse processo demora um pouco dependendo do seu Link de Internet...\n"
 sleep 5
