@@ -5,10 +5,10 @@
 # Facebook: facebook.com/BoraParaPratica
 # YouTube: youtube.com/BoraParaPratica
 # Data de criação: 27/08/2022
-# Data de atualização: 27/08/2022
-# Versão: 0.04
+# Data de atualização: 08/09/2022
+# Versão: 0.05
 # Testado e homologado para a versão do Linux Mint 20.x x64
-# Testado e homologado para a versão do Unifi Controller 7.2.x, MongoDB 3.6.x, OpenJDK e OpenJRE 11.x
+# Testado e homologado para a versão do Unifi Controller 7.2.x, MongoDB 3.6.x, OpenJDK/OpenJRE 11.x
 #
 # O software UniFi Controller que vem com o sistema Ubiquiti UniFi tem uma interface baseada
 # em Web que facilita a administração, configuração e gerenciamento dos dispositivos Unifi 
@@ -48,6 +48,7 @@
 # Canal do YouTUBE Ubiquiti BR: https://www.youtube.com/channel/UCb_mHuP7q75OrckBcNn3p2Q
 #
 # Download do Wifiman Desktop: https://community.ui.com/releases/WiFiman-Desktop-0-2-2/74d8bc1d-6735-444b-a7fc-0ea2584ccb89
+# Download do Ubiquiti Device Discovery Tool Google Chrome: https://chrome.google.com/webstore/detail/ubiquiti-device-discovery/hmpigflbjeapnknladcfphgkemopofig
 # Site do Wifiman: http://wifiman.com/
 # Site do SIMET: https://beta.simet.nic.br/
 #
