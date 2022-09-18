@@ -28,6 +28,7 @@ Link da Playlist: https://www.youtube.com/playlist?list=PLozhsZB1lLUO293mVoY_aqO
 
 ## **Unifi UAP utilizado nos vídeos**
 ![Unifi UAP](swx-uap.png)
+![Unifi UAP](nanohd-uap.png)
 
 ## **📡 COMO instalar o UNIFI CONTROLLER no GNU/Linux Ubuntu Server 18.04.x LTS**
 
