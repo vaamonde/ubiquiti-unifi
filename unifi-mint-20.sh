@@ -5,8 +5,8 @@
 # Facebook: facebook.com/BoraParaPratica
 # YouTube: youtube.com/BoraParaPratica
 # Data de criação: 27/08/2022
-# Data de atualização: 08/09/2022
-# Versão: 0.05
+# Data de atualização: 18/09/2022
+# Versão: 0.06
 # Testado e homologado para a versão do Linux Mint 20.x x64
 # Testado e homologado para a versão do Unifi Controller 7.2.x, MongoDB 3.6.x, OpenJDK/OpenJRE 11.x
 #
@@ -16,6 +16,17 @@
 # (Software defined networking) que possibilita o gerenciamento centralizado de todos os 
 # equipamentos da infraestrutura da rede utilizando o Unifi Controller Localmente ou Remotamente, 
 # ou seja, não há necessidade de configurar individualmente cada um dos dispositivos na rede.
+#
+# Site Oficial do Ubiquiti Unifi: https://unifi-network.ui.com/
+# Site Oficial do Unifi Software: https://www.ui.com/download/unifi
+# Site Oficial do Unifi ID-SSO: https://account.ui.com
+# Blog Oficial do Unifi Brasil: https://medium.com/ubntbr
+# Canal do YouTUBE Ubiquiti BR: https://www.youtube.com/channel/UCb_mHuP7q75OrckBcNn3p2Q
+#
+# Download do Wifiman Desktop: https://community.ui.com/releases/WiFiman-Desktop-0-2-2/74d8bc1d-6735-444b-a7fc-0ea2584ccb89
+# Download do Ubiquiti Device Discovery Tool Google Chrome: https://chrome.google.com/webstore/detail/ubiquiti-device-discovery/hmpigflbjeapnknladcfphgkemopofig
+# Site do Wifiman: http://wifiman.com/
+# Site do SIMET: https://beta.simet.nic.br/
 #
 # Informações que serão solicitadas na configuração via Web do Unifi Controller
 # Step 1 of 6:
@@ -40,17 +51,6 @@
 #       Timezone: (UTC-03:00)America/Sao_Paulo <Next>
 # Security & Analytics
 #   Send to Ubiquiti
-#
-# Site Oficial do Ubiquiti Unifi: https://unifi-network.ui.com/
-# Site Oficial do Unifi Software: https://www.ui.com/download/unifi
-# Site Oficial do Unifi ID-SSO: https://account.ui.com
-# Blog Oficial do Unifi Brasil: https://medium.com/ubntbr
-# Canal do YouTUBE Ubiquiti BR: https://www.youtube.com/channel/UCb_mHuP7q75OrckBcNn3p2Q
-#
-# Download do Wifiman Desktop: https://community.ui.com/releases/WiFiman-Desktop-0-2-2/74d8bc1d-6735-444b-a7fc-0ea2584ccb89
-# Download do Ubiquiti Device Discovery Tool Google Chrome: https://chrome.google.com/webstore/detail/ubiquiti-device-discovery/hmpigflbjeapnknladcfphgkemopofig
-# Site do Wifiman: http://wifiman.com/
-# Site do SIMET: https://beta.simet.nic.br/
 #
 # Variável da Data Inicial para calcular o tempo de execução do script (VARIÁVEL MELHORADA)
 # opção do comando date: +%T (Time)
@@ -238,7 +238,7 @@ sleep 5
 #
 echo -e "Adicionando o repositório do Unifi Network Application, aguarde..."
 	# opção do comando: &>> (redirecionar a saída padrão)
-    # opção do comando wget: -O (output document file)
+	# opção do comando wget: -O (output document file)
 	# opção do comando cp: -v (verbose)
 	wget -O /etc/apt/trusted.gpg.d/unifi-repo.gpg $KEYUNIFI &>> $LOG
 	cp -v conf/100-ubnt-unifi.list /etc/apt/sources.list.d/ &>> $LOG
