@@ -81,7 +81,8 @@ KEYUNIFI="https://dl.ui.com/unifi/unifi-repo.gpg"
 export DEBIAN_FRONTEND="noninteractive"
 #
 # Verificando se o usuário é Root e se a Distribuição é Linux Mint <IF MELHORADO)
-# [ ] = teste de expressão, && = operador lógico AND, == comparação de string, exit 1 = A maioria dos erros comuns na execução
+# [ ] = teste de expressão, && = operador lógico AND, == comparação de string, exit 1 = A maioria 
+# dos erros comuns na execução do script
 clear
 if [ "$USUARIO" == "0" ] && [ "$LINUXMINT" == "Linuxmint" ]
 	then
