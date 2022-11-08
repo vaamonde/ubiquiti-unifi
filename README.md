@@ -76,3 +76,17 @@ Raspberry Pi é uma série de computadores de placa única do tamanho reduzido, 
 Link da vídeo aula: https://www.youtube.com/watch?v=DCToYDsxgyQ
 
 Link do script utilizado nesse vídeo: https://github.com/vaamonde/ubiquiti-unifi/blob/main/unifi-2004-pi.sh
+
+## **📡 COMO INSTALAR o NOVO Unifi Network Application v7.2.x no Linux Mint 20.3**
+
+Vídeo mostrando os procedimentos básicos para instalar e configurar o Unifi Network Application (antigo Unifi Controller) no Linux Mint 20.3 Una x64 Bits.
+
+O software UniFi Network Application (antigo Unifi Controller) que vem com o sistema Ubiquiti UniFi tem uma interface baseada em Web que facilita a administração, configuração e gerenciamento dos dispositivos Unifi (Access Point AP, Switch, Router, USG, etc). O sistema Unifi e baseado na arquitetura SDN (Software defined networking) que possibilita o gerenciamento centralizado de todos os equipamentos da infraestrutura da rede utilizando o Unifi Controller Localmente ou Remotamente, ou seja, não há necessidade de configurar individualmente cada um dos dispositivos na rede.
+
+[![Unifi Network no Linux Mint](http://img.youtube.com/vi/yLnSGN_hmkg/0.jpg)](https://www.youtube.com/watch?v=yLnSGN_hmkg "Unifi Network no Linux Mint")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=yLnSGN_hmkg
+
+Link do script utilizado nesse vídeo: https://github.com/vaamonde/ubiquiti-unifi/blob/main/unifi-mint-20.sh
+
+Link do procedimento no Linux Mint: https://github.com/vaamonde/dell-linuxmint/blob/master/software/16-unifi.md
