@@ -8,7 +8,7 @@
 # Data de atualização: 18/09/2022
 # Versão: 0.06
 # Testado e homologado para a versão do Linux Mint 20.x x64
-# Testado e homologado para a versão do Unifi Controller 7.2.x, MongoDB 3.6.x, OpenJDK/OpenJRE 11.x
+# Testado e homologado para a versão do Unifi Network v7.2.x, MongoDB v3.6.x, OpenJDK/OpenJRE v11.x
 #
 # O software UniFi Controller que vem com o sistema Ubiquiti UniFi tem uma interface baseada
 # em Web que facilita a administração, configuração e gerenciamento dos dispositivos Unifi 
