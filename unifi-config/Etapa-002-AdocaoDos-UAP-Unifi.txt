@@ -1,0 +1,31 @@
+Autor: Robson Vaamonde
+Procedimentos em TI: http://procedimentosemti.com.br
+Bora para Prática: http://boraparapratica.com.br
+Robson Vaamonde: http://vaamonde.com.br
+Facebook Procedimentos em TI: https://www.facebook.com/ProcedimentosEmTi
+Facebook Bora para Prática: https://www.facebook.com/BoraParaPratica
+Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem
+YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica
+LinkedIn Robson Vaamonde: https://www.linkedin.com/in/robson-vaamonde-0b029028/
+Data de criação: 17/11/2022
+Data de atualização: 17/11/2022
+Versão: 0.01
+Testado e homologado para a versão do Unifi Network Application v7.2.x
+
+Site Oficial do Ubiquiti Unifi: https://unifi-network.ui.com/
+Site Oficial do Unifi Software: https://www.ui.com/download/unifi
+Site Oficial do Unifi ID-SSO: https://account.ui.com
+Blog Oficial do Unifi Brasil: https://medium.com/ubntbr
+Canal do YouTUBE Ubiquiti BR: https://www.youtube.com/channel/UCb_mHuP7q75OrckBcNn3p2Q
+
+Download do Wifiman Desktop: https://community.ui.com/releases/WiFiman-Desktop-0-2-2/74d8bc1d-6735-444b-a7fc-0ea2584ccb89
+Download do Ubiquiti Device Discovery Tool Google Chrome: https://chrome.google.com/webstore/detail/ubiquiti-device-discovery/hmpigflbjeapnknladcfphgkemopofig
+Site do Wifiman: http://wifiman.com/
+Site do SIMET: https://beta.simet.nic.br/
+
+Primeira etapa: Adotar (Adopt - Adoption - Adopting) os UAP (Unifi Access Point) no Unifi Network Application
+Unifi Devices
+	UAP - Click to Adopt
+		
+	UAP - Click to Adopt
+	UAP-nanoHD - Click to Adopt
