@@ -32,17 +32,16 @@ Terminal: Ctrl + Alt + T
 		Informações do Sistema
 
 Segunda etapa: Atualização do Sistema Operacional Linux Mint
+_ Atualização do sistema utilizando o MintUpdate;
+_ Atualização do sistema utilizando o Apt;
 
-	_ Atualização do sistema utilizando o MintUpdate;
-	_ Atualização do sistema utilizando o Apt;
-
-	Terminal: Ctrl + Alt + T
-		sudo apt update
-		sudo apt upgrade
-		sudo apt full-upgrade
-		sudo apt dist-upgrade
-		sudo apt autoremove
-		sudo apt autoclean
+Terminal: Ctrl + Alt + T
+	sudo apt update
+	sudo apt upgrade
+	sudo apt full-upgrade
+	sudo apt dist-upgrade
+	sudo apt autoremove
+	sudo apt autoclean
 
 Terceira etapa: Ligar os Access Point Ubiquiti Unifi no Ejetor PoE ou no Switch PoE
 
@@ -85,38 +84,37 @@ Nona etapa: Acessar o Unifi Network utilizando o Navegador Google Chrome no Linu
 	chrome https://localhost:8443
 
 Décima etapa: Configurações Básicas do Unifi Network no Linux Mint
+Step 1 of 6:
+	Name Your Controller
+		Controller Name: Vaamonde
+		By selecting this you are agreeing to end user license agreement and the terms of service: ON 
+	<Next>
 
-	Step 1 of 6:
-		Name Your Controller
-			Controller Name: Vaamonde
-			By selecting this you are agreeing to end user license agreement and the terms of service: ON 
-		<Next>
+Step 2 of 6:
+	Sign in with your Ubiquiti Account
+		Username: usuário Id-SSO https://account.ui.com
+		Password: senha usuário ID-SSO 
+	<Next>
 
-	Step 2 of 6:
-		Sign in with your Ubiquiti Account
-			Username: usuário Id-SSO https://account.ui.com
-			Password: senha usuário ID-SSO 
-		<Next>
+Step 3 of 6:
+	UniFi Network Setup
+		Automatically optimize my network: ON
+		Enable Auto Backup: 
+	<Next>
 
-	Step 3 of 6:
-		UniFi Network Setup
-			Automatically optimize my network: ON
-			Enable Auto Backup: 
-		<Next>
+Step 4 of 6:
+	Devices Setup: 
+	<Next>
 
-	Step 4 of 6:
-		Devices Setup: 
-		<Next>
+Step 5 of 6:
+	WiFi Setup: 
+	<Skip>
 
-	Step 5 of 6:
-		WiFi Setup: 
-		<Skip>
+Step 6 of 6:
+	Review Configuration:
+		Country or territory: Brazil
+		Timezone: (UTC-03:00)America/Sao_Paulo 
+	<Next>
 
-	Step 6 of 6:
-		Review Configuration:
-			Country or territory: Brazil
-			Timezone: (UTC-03:00)America/Sao_Paulo 
-		<Next>
-
-	Security & Analytics
-		Send to Ubiquiti
+Security & Analytics
+	Send to Ubiquiti

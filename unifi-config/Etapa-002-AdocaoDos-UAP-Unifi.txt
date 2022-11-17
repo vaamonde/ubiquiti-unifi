@@ -24,8 +24,8 @@ Site do Wifiman: http://wifiman.com/
 Site do SIMET: https://beta.simet.nic.br/
 
 Primeira etapa: Verificando os Dispositivos Ubiquiti Unifi conectados na rede no Linux Mint
-	Terminal: Ctrl + Alt + T
-		sudo nmap 192.168.0.0/24
+Terminal: Ctrl + Alt + T
+	sudo nmap 192.168.0.0/24
 
 Segunda etapa: Adotar (Adopt - Adoption - Adopting) os UAP (Unifi Access Point) no Unifi Network Application
 Unifi Devices
