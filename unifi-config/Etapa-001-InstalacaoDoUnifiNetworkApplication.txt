@@ -9,7 +9,7 @@ YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica
 LinkedIn Robson Vaamonde: https://www.linkedin.com/in/robson-vaamonde-0b029028/
 Data de criação: 17/11/2022
 Data de atualização: 17/11/2022
-Versão: 0.01
+Versão: 0.02
 Testado e homologado para a versão do Unifi Network Application v7.2.x
 
 Site Oficial do Ubiquiti Unifi: https://unifi-network.ui.com/
@@ -23,4 +23,100 @@ Download do Ubiquiti Device Discovery Tool Google Chrome: https://chrome.google.
 Site do Wifiman: http://wifiman.com/
 Site do SIMET: https://beta.simet.nic.br/
 
-Primeira etapa: 
+Primeira etapa: Verificando as Informações do Sistema Operacional Linux Mint
+Terminal: Ctrl + Alt + T
+	OBSERVAÇÃO IMPORTANTE: Linux Mint 20.3 Una é derivado do Ubuntu Desktop 20.04.4 Focal Fossa
+	sudo cat /etc/os-release
+	sudo localectl
+	Menu
+		Informações do Sistema
+
+Segunda etapa: Atualização do Sistema Operacional Linux Mint
+
+	_ Atualização do sistema utilizando o MintUpdate;
+	_ Atualização do sistema utilizando o Apt;
+
+	Terminal: Ctrl + Alt + T
+		sudo apt update
+		sudo apt upgrade
+		sudo apt full-upgrade
+		sudo apt dist-upgrade
+		sudo apt autoremove
+		sudo apt autoclean
+
+Terceira etapa: Ligar os Access Point Ubiquiti Unifi no Ejetor PoE ou no Switch PoE
+
+	OBERVAÇÃO: verificar se os LED's de indicação do Unifi fica na cor: Ambar (laranja) ou Branco
+
+Quarta etapa: Instalar as dependências desse script no Linux Mint
+Terminal: Ctrl + Alt + T
+	sudo apt install git vim nmap
+
+Quinta etapa: Verificando os Dispositivos Ubiquiti Unifi conectados na rede no Linux Mint
+Terminal: Ctrl + Alt + T
+	sudo nmap 192.168.0.0/24
+
+	Wifiman AppImage
+	Wifiman Google Chrome
+
+Sexta etapa: Clonar o Projeto do Github do script do Ubiquiti Unifi para Linux Mint
+Terminal: Ctrl + Alt + T
+	sudo -i
+		git clone https://github.com/vaamonde/ubiquiti-unifi
+
+Sétima etapa: Acessando o diretório clocando do Ubiquiti Unifi no Linux Mint
+	ls
+	cd ubiquiti-unifi/
+
+Oitava etapa: Executando o script de Instalação do Ubiquiti Unifi Network no Linux Mint
+	ls
+	bash unifi-mint20.sh
+
+	cd /var/log/
+		ls -lh unifi-mint-20.sh
+
+Nona etapa: Acessar o Unifi Network utilizando o Navegador Google Chrome no Linux Mint
+
+	OBSERVAÇÃO: a comunidade do Ubiquiti Unifi recomendo utilizar o navegador Google Chrome
+	para a configuração e administração do Unifi Network devido a compatibilidade do Java e
+	recursos integrados no sistema que funciona perfeitamente nesse navegador, é recomendado
+	utilizar a conexão HTTPS para que o usuário e senha do Account Ui funcione corretamente.
+
+	chrome https://localhost:8443
+
+Décima etapa: Configurações Básicas do Unifi Network no Linux Mint
+
+	Step 1 of 6:
+		Name Your Controller
+			Controller Name: Vaamonde
+			By selecting this you are agreeing to end user license agreement and the terms of service: ON 
+		<Next>
+
+	Step 2 of 6:
+		Sign in with your Ubiquiti Account
+			Username: usuário Id-SSO https://account.ui.com
+			Password: senha usuário ID-SSO 
+		<Next>
+
+	Step 3 of 6:
+		UniFi Network Setup
+			Automatically optimize my network: ON
+			Enable Auto Backup: 
+		<Next>
+
+	Step 4 of 6:
+		Devices Setup: 
+		<Next>
+
+	Step 5 of 6:
+		WiFi Setup: 
+		<Skip>
+
+	Step 6 of 6:
+		Review Configuration:
+			Country or territory: Brazil
+			Timezone: (UTC-03:00)America/Sao_Paulo 
+		<Next>
+
+	Security & Analytics
+		Send to Ubiquiti

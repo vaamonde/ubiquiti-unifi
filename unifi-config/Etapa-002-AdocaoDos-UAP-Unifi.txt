@@ -23,9 +23,21 @@ Download do Ubiquiti Device Discovery Tool Google Chrome: https://chrome.google.
 Site do Wifiman: http://wifiman.com/
 Site do SIMET: https://beta.simet.nic.br/
 
-Primeira etapa: Adotar (Adopt - Adoption - Adopting) os UAP (Unifi Access Point) no Unifi Network Application
+Primeira etapa: Verificando os Dispositivos Ubiquiti Unifi conectados na rede no Linux Mint
+	Terminal: Ctrl + Alt + T
+		sudo nmap 192.168.0.0/24
+
+Segunda etapa: Adotar (Adopt - Adoption - Adopting) os UAP (Unifi Access Point) no Unifi Network Application
 Unifi Devices
 	UAP - Click to Adopt
-		
+		<Adopt Device>
 	UAP - Click to Adopt
+		<Adopt Device>
 	UAP-nanoHD - Click to Adopt
+		<Adopt Device>
+
+Unifi Topology
+	OBSERVAÇÃO: verificação da topologia dos UAP adotados e configurados.
+
+Unifi Dashboard
+	OBSERVAÇÃO: dashboard padrão do Network Application mostrando os UAP adotados.
