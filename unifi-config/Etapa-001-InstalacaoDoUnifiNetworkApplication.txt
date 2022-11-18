@@ -72,7 +72,7 @@ Oitava etapa: Executando o script de Instalação do Ubiquiti Unifi Network no L
 	bash unifi-mint20.sh
 
 	cd /var/log/
-		ls -lh unifi-mint-20.sh
+		ls -lh unifi-mint20.sh
 
 Nona etapa: Acessar o Unifi Network utilizando o Navegador Google Chrome no Linux Mint
 

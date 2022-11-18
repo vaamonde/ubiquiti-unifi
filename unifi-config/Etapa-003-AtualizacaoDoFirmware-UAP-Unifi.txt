@@ -8,8 +8,8 @@ Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem
 YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica
 LinkedIn Robson Vaamonde: https://www.linkedin.com/in/robson-vaamonde-0b029028/
 Data de criação: 17/11/2022
-Data de atualização: 17/11/2022
-Versão: 0.01
+Data de atualização: 18/11/2022
+Versão: 0.02
 Testado e homologado para a versão do Unifi Network Application v7.2.x
 
 Site Oficial do Ubiquiti Unifi: https://unifi-network.ui.com/
@@ -23,4 +23,24 @@ Download do Ubiquiti Device Discovery Tool Google Chrome: https://chrome.google.
 Site do Wifiman: http://wifiman.com/
 Site do SIMET: https://beta.simet.nic.br/
 
-Primeira etapa:
+Primeira etapa: Atualizar os Firmware do UAP no Unifi Network Application
+Unifi Devices
+	UAP
+		General
+			<Apply Update>
+				UAP Update?
+				<Confirm>
+		<Compliance>
+
+	UAP
+		General
+			<Apply Update>
+				UAP Update?
+				<Confirm>
+		<Compliance>
+
+Unifi Topology
+	OBSERVAÇÃO: verificação da topologia dos UAP adotados e configurados.
+
+Unifi Dashboard
+	OBSERVAÇÃO: dashboard padrão do Network Application mostrando os UAP adotados.
