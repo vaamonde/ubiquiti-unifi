@@ -42,6 +42,7 @@ Terminal: Ctrl + Alt + T
 	#opção do comando sudo: -i (login)
 	sudo -i 
 	cd /var/lib/unifi
+		#opção do comando ls: -l (list), -h (human)
 		ls -lh
 			backup: arquivos de backup do UniFi Network Application
 			db: arquivos do banco de dados do MongoDB do UniFi Network Application
