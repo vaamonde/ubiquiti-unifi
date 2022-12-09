@@ -101,16 +101,16 @@ O software UniFi Network Application (antigo Unifi Controller) que vem com o sis
 
 UAP é um Access Point corporativo de teto para Hotéis, Salas de Reunião, Auditório, Teatro ou empresas que precisem de alta performance e equipamentos esteticamente discretos. É um sistema WiFi revolucionário que combina um desempenho estabilidade e um controlador de gerenciamento virtual.
 
-Site Oficial do Ubiquiti Unifi: https://unifi-network.ui.com/
-Site Oficial do Unifi Software: https://www.ui.com/download/unifi
-Site Oficial do Unifi ID-SSO: https://account.ui.com
-Blog Oficial do Unifi Brasil: https://medium.com/ubntbr
+Site Oficial do Ubiquiti Unifi: https://unifi-network.ui.com/<br>
+Site Oficial do Unifi Software: https://www.ui.com/download/unifi<br>
+Site Oficial do Unifi ID-SSO: https://account.ui.com<br>
+Blog Oficial do Unifi Brasil: https://medium.com/ubntbr<br>
 Canal do YouTUBE Ubiquiti BR: https://www.youtube.com/channel/UCb_mHuP7q75OrckBcNn3p2Q
 
-Download do Wifiman Desktop: https://community.ui.com/releases/WiFiman-Desktop-0-2-2/74d8bc1d-6735-444b-a7fc-0ea2584ccb89
-Download do Ubiquiti Device Discovery Tool Google Chrome: https://chrome.google.com/webstore/detail/ubiquiti-device-discovery/hmpigflbjeapnknladcfphgkemopofig
-Site do Wifiman: http://wifiman.com/
-Site do SIMET: https://beta.simet.nic.br/
+Download do Wifiman Desktop: https://community.ui.com/releases/WiFiman-Desktop-0-2-2/74d8bc1d-6735-444b-a7fc-0ea2584ccb89<br>
+Download do Ubiquiti Device Discovery Tool Google Chrome: https://chrome.google.com/webstore/detail/ubiquiti-device-discovery/hmpigflbjeapnknladcfphgkemopofig<br>
+Site do Wifiman: http://wifiman.com/<br>
+Site do SIMET: https://beta.simet.nic.br/<br>
 Site do SpeedTest: https://www.speedtest.net/pt
 
 [![Unifi Adoption](http://img.youtube.com/vi/5mUo4ln6_HM/0.jpg)](https://www.youtube.com/watch?v=5mUo4ln6_HM "Unifi Adoption")
