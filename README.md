@@ -90,3 +90,61 @@ Link da vídeo aula: https://www.youtube.com/watch?v=yLnSGN_hmkg
 Link do script utilizado nesse vídeo: https://github.com/vaamonde/ubiquiti-unifi/blob/main/unifi-mint-20.sh
 
 Link do procedimento no Linux Mint: https://github.com/vaamonde/dell-linuxmint/blob/master/software/16-unifi.md
+
+Link do procedimento no Linux Mint: https://github.com/vaamonde/ubiquiti-unifi/blob/main/unifi-config/Etapa-001-InstalacaoDoUnifiNetworkApplication.txt
+
+## **📡 COMO ADOTAR (Adopt - Adoption) o UAP (Unifi Access Point) no Unifi Network Application v7.2.x **
+
+Vídeo mostrando os procedimentos básicos para adotar (adopt, adoption, adopting) os UAP (Unifi Access Point) no Unifi Network Application v7.2.x (antigo Unifi Controller) rodando no Linux Mint 20.3 Una x64 Bits.
+
+O software UniFi Network Application (antigo Unifi Controller) que vem com o sistema Ubiquiti UniFi tem uma interface baseada em Web que facilita a administração, configuração e gerenciamento dos dispositivos Unifi (Access Point AP, Switch, Router, USG, etc). O sistema Unifi e baseado na arquitetura SDN (Software defined networking) que possibilita o gerenciamento centralizado de todos os equipamentos da infraestrutura da rede utilizando o Unifi Controller Localmente ou Remotamente, ou seja, não há necessidade de configurar individualmente cada um dos dispositivos na rede.
+
+UAP é um Access Point corporativo de teto para Hotéis, Salas de Reunião, Auditório, Teatro ou empresas que precisem de alta performance e equipamentos esteticamente discretos. É um sistema WiFi revolucionário que combina um desempenho estabilidade e um controlador de gerenciamento virtual.
+
+Site Oficial do Ubiquiti Unifi: https://unifi-network.ui.com/
+Site Oficial do Unifi Software: https://www.ui.com/download/unifi
+Site Oficial do Unifi ID-SSO: https://account.ui.com
+Blog Oficial do Unifi Brasil: https://medium.com/ubntbr
+Canal do YouTUBE Ubiquiti BR: https://www.youtube.com/channel/UCb_mHuP7q75OrckBcNn3p2Q
+
+Download do Wifiman Desktop: https://community.ui.com/releases/WiFiman-Desktop-0-2-2/74d8bc1d-6735-444b-a7fc-0ea2584ccb89
+Download do Ubiquiti Device Discovery Tool Google Chrome: https://chrome.google.com/webstore/detail/ubiquiti-device-discovery/hmpigflbjeapnknladcfphgkemopofig
+Site do Wifiman: http://wifiman.com/
+Site do SIMET: https://beta.simet.nic.br/
+Site do SpeedTest: https://www.speedtest.net/pt
+
+[![Unifi Adoption](http://img.youtube.com/vi/5mUo4ln6_HM/0.jpg)](https://www.youtube.com/watch?v=5mUo4ln6_HM "Unifi Adoption")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=5mUo4ln6_HM
+
+Link do procedimento no Linux Mint: https://github.com/vaamonde/ubiquiti-unifi/blob/main/unifi-config/Etapa-002-AdocaoDos-UAP-Unifi.txt
+
+## **📡 COMO ATUALIZAR (Update) Firmware do UAP (Unifi Access Point) no Unifi Network Application v7.2 **
+
+Vídeo mostrando os procedimentos básicos para atualizar (Update) dos Firmware (software de controle de baixo nível) dos UAP (Unifi Access Point) no Unifi Network Application v7.2.x (antigo Unifi Controller) rodando no Linux Mint 20.3 Una x64 Bits.
+
+O software UniFi Network Application (antigo Unifi Controller) que vem com o sistema Ubiquiti UniFi tem uma interface baseada em Web que facilita a administração, configuração e gerenciamento dos dispositivos Unifi (Access Point AP, Switch, Router, USG, etc). O sistema Unifi e baseado na arquitetura SDN (Software defined networking) que possibilita o gerenciamento centralizado de todos os equipamentos da infraestrutura da rede utilizando o Unifi Controller Localmente ou Remotamente, ou seja, não há necessidade de configurar individualmente cada um dos dispositivos na rede.
+
+UAP é um Access Point corporativo de teto para Hotéis, Salas de Reunião, Auditório, Teatro ou empresas que precisem de alta performance e equipamentos esteticamente discretos. É um sistema WiFi revolucionário que combina um desempenho estabilidade e um controlador de gerenciamento virtual.
+
+Firmware é uma classe específica de software de computador que fornece controle de baixo nível para o hardware específico do dispositivo. O firmware pode fornecer um ambiente operacional padronizado para o software mais complexo do dispositivo (permitindo maior independência de hardware) ou, para dispositivos menos complexos, atuar como o sistema operacional completo do dispositivo, executando todas as funções de controle, monitoramento e manipulação de dados. Exemplos típicos de dispositivos que contêm firmware são sistemas embarcados.
+
+[![Unifi Firmware](http://img.youtube.com/vi/ercuh2lngt8/0.jpg)](https://www.youtube.com/watch?v=ercuh2lngt8 "Unifi Firmware")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=ercuh2lngt8
+
+Link do procedimento no Linux Mint: https://github.com/vaamonde/ubiquiti-unifi/blob/main/unifi-config/Etapa-003-AtualizacaoDoFirmware-UAP-Unifi.txt
+
+## **📡 COMO ATUALIZAR para NOVA VERSÃO do Unifi Network Application v7.3.x no Linux Mint 20.3**
+
+Vídeo mostrando os procedimentos básicos para atualizar (Update) para a nova Versão do Unifi Network Application v7.3.x (antigo Unifi Controller) rodando no Linux Mint 20.3 Una x64 Bits.
+
+O software UniFi Network Application (antigo Unifi Controller) que vem com o sistema Ubiquiti UniFi tem uma interface baseada em Web que facilita a administração, configuração e gerenciamento dos dispositivos Unifi (Access Point AP, Switch, Router, USG, etc). O sistema Unifi e baseado na arquitetura SDN (Software defined networking) que possibilita o gerenciamento centralizado de todos os equipamentos da infraestrutura da rede utilizando o Unifi Controller Localmente ou Remotamente, ou seja, não há necessidade de configurar individualmente cada um dos dispositivos na rede.
+
+A nova Versão do UniFi Network Application trouxe melhorias nas configurações, correção de vários Bug's e adicionou novos recursos para facilitar a configuração e suporte dos novos dispositivos da Ubiquiti.
+
+[![Unifi Network Update](http://img.youtube.com/vi/UvDmcAK2SKA/0.jpg)](https://www.youtube.com/watch?v=UvDmcAK2SKA "Unifi Network Update")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=UvDmcAK2SKA
+
+Link do procedimento no Linux Mint: https://github.com/vaamonde/ubiquiti-unifi/blob/main/unifi-config/Etapa-004-BackupUpdate-UnifiNetworkApplication.txt
