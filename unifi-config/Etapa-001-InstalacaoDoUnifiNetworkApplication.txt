@@ -10,7 +10,7 @@ LinkedIn Robson Vaamonde: https://www.linkedin.com/in/robson-vaamonde-0b029028/
 Data de criação: 17/11/2022
 Data de atualização: 17/11/2022
 Versão: 0.02
-Testado e homologado para a versão do Unifi Network Application v7.2.x
+Testado e homologado para a versão do Unifi Network Application v7.2.x e v7.3.x
 
 Site Oficial do Ubiquiti Unifi: https://unifi-network.ui.com/
 Site Oficial do Unifi Software: https://www.ui.com/download/unifi
@@ -76,7 +76,7 @@ Oitava etapa: Executando o script de Instalação do Ubiquiti Unifi Network no L
 
 Nona etapa: Acessar o Unifi Network utilizando o Navegador Google Chrome no Linux Mint
 
-	OBSERVAÇÃO: a comunidade do Ubiquiti Unifi recomendo utilizar o navegador Google Chrome
+	OBSERVAÇÃO: a comunidade do Ubiquiti Unifi recomenda utilizar o navegador Google Chrome
 	para a configuração e administração do Unifi Network devido a compatibilidade do Java e
 	recursos integrados no sistema que funciona perfeitamente nesse navegador, é recomendado
 	utilizar a conexão HTTPS para que o usuário e senha do Account Ui funcione corretamente.

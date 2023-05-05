@@ -10,7 +10,7 @@ LinkedIn Robson Vaamonde: https://www.linkedin.com/in/robson-vaamonde-0b029028/
 Data de criação: 17/11/2022
 Data de atualização: 17/11/2022
 Versão: 0.01
-Testado e homologado para a versão do Unifi Network Application v7.2.x
+Testado e homologado para a versão do Unifi Network Application v7.2.x e v7.3.x
 
 Site Oficial do Ubiquiti Unifi: https://unifi-network.ui.com/
 Site Oficial do Unifi Software: https://www.ui.com/download/unifi
@@ -23,4 +23,44 @@ Download do Ubiquiti Device Discovery Tool Google Chrome: https://chrome.google.
 Site do Wifiman: http://wifiman.com/
 Site do SIMET: https://beta.simet.nic.br/
 
-Primeira etapa:
+Primeira etapa: Configurações Básicas do Unifi Network Application
+Network Application
+	Settings
+		System
+			Device Name: Vaamonde
+			Country/Region: Brazil
+			Language: English
+			Timezone: (UTC-03:00) America/Sao Paulo
+			Time Format: 24 hours
+			Theme: Dark
+		Administration
+			(Default)
+		updates
+			(Default)
+		Backups
+			(Default)
+		Support
+			(Default)
+	<Apply Changes>
+
+Segunda etapa: Configurações Avançadas do Unifi Network Application
+Network Application
+	Settings
+		Advanced
+			Interface: Legacy
+			Web Application UI Updates: Automatically adapt
+			Debug Tools: Off
+			Data Retention: Auto
+			Network Time Protocol (NTP): Auto
+			Email Services: SSO Email
+			Analytics & Improvements: Disable
+			Network Discovery: Disable
+			Inform host: Disable
+			SNMP Monitoring: Disable
+			Device Authentication: Enable
+				Username: seu_usuario
+				Password: sua_senha
+				SSH Keys: Default
+		<Apply Changes>
+
+Terceira etapa: 

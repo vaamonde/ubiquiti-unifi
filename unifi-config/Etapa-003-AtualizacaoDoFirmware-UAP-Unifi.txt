@@ -10,7 +10,7 @@ LinkedIn Robson Vaamonde: https://www.linkedin.com/in/robson-vaamonde-0b029028/
 Data de criação: 17/11/2022
 Data de atualização: 18/11/2022
 Versão: 0.02
-Testado e homologado para a versão do Unifi Network Application v7.2.x
+Testado e homologado para a versão do Unifi Network Application v7.2.x e v7.3.x
 
 Site Oficial do Ubiquiti Unifi: https://unifi-network.ui.com/
 Site Oficial do Unifi Software: https://www.ui.com/download/unifi

@@ -67,7 +67,7 @@ Terminal: Ctrl + Alt + T
 
 Quarta etapa: Acessar o Unifi Network utilizando o Navegador Google Chrome no Linux Mint
 
-	OBSERVAÇÃO: a comunidade do Ubiquiti Unifi recomendo utilizar o navegador Google Chrome
+	OBSERVAÇÃO: a comunidade do Ubiquiti Unifi recomenda utilizar o navegador Google Chrome
 	para a configuração e administração do Unifi Network devido a compatibilidade do Java e
 	recursos integrados no sistema que funciona perfeitamente nesse navegador, é recomendado
 	utilizar a conexão HTTPS para que o usuário e senha do Account Ui funcione corretamente.
