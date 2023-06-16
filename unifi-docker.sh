@@ -5,8 +5,8 @@
 # Facebook: facebook.com/BoraParaPratica
 # YouTube: youtube.com/BoraParaPratica
 # Data de criação: 17/01/2021
-# Data de atualização: 12/09/2021
-# Versão: 0.03
+# Data de atualização: 30/05/2023
+# Versão: 0.04
 # Testado e homologado para a versão do GNU/Linux Ubuntu Server 18.x LTS x64
 # Testado e homologado para a versão do Docker 20.10.x, Portainer 1.24.x
 # Testado e homologado para a versão do Unifi Controller 6.2.x
@@ -101,12 +101,14 @@
 version: "2.1"
 services:
   unifi-controller:
-    image: ghcr.io/linuxserver/unifi-controller 
+    image: lscr.io/linuxserver/unifi-controller:latest 
     container_name: unifi-controller
     environment:
       - PUID=1000 #for UserID - see below for explanation
       - PGID=1000 #for GroupID - see below for explanation
-      - MEM_LIMIT=1024M #optional - Optionally change the Java memory limit (-Xmx) (default is 1024M).
+      - TZ=Etc/UTC #optional - Configure Timezone default
+      - MEM_LIMIT=1024M #optional - Optionally change the Java memory limit (-Xmx) (default is 1024M)
+      - MEM_STARTUP=1024 #optional - Optionally change the Java memory start limit (-Xmx) (default is 1024M)
     volumes:
       - /var/lib/docker/unifi:/config #All Unifi data stored here
     ports:
