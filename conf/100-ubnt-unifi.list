@@ -16,6 +16,9 @@ deb https://www.ui.com/downloads/unifi/debian stable ubiquiti
 #deb https://www.ui.com/downloads/unifi/debian oldstable ubiquiti
 #
 #Versão antiga do Unifi Controller: version 5
+#deb https://www.ui.com/downloads/unifi/debian unifi6 ubiquiti
+#
+#Versão antiga do Unifi Controller: version 5
 #deb https://www.ui.com/downloads/unifi/debian unifi5 ubiquiti
 #
 #Versão antiga do Unifi Controller: version 4

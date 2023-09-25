@@ -15,6 +15,9 @@ deb [arch=armhf] https://www.ui.com/downloads/unifi/debian stable ubiquiti
 #Old Stable Ubiquiti: versão antiga estável do Unifi Controller 
 #deb [arch=armhf] https://www.ui.com/downloads/unifi/debian oldstable ubiquiti
 #
+#Versão antiga do Unifi Controller: version 6
+#deb [arch=armhf] https://www.ui.com/downloads/unifi/debian unifi6 ubiquiti
+#
 #Versão antiga do Unifi Controller: version 5
 #deb [arch=armhf] https://www.ui.com/downloads/unifi/debian unifi5 ubiquiti
 #
