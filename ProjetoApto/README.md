@@ -38,10 +38,10 @@ Vídeo mostrando o Unboxing (Desembalar) o Kit Ubiquiti Unifi enviado pela Ubiqu
 
 O Kit enviado pela Ubiquiti Brasil contém:
 
-01 (um) Dream Machine Pro (SKU: UDM-Pro-BR): https://br.store.ui.com/products/udm-pro
-01 (um) Switch 16 PoE (SKU: USW-16-PoE-BR): https://br.store.ui.com/collections/unifi-network-switching/products/usw-16-poe
-01 (um) Access Point U6 Pro (SKU: U6-Pro): https://br.store.ui.com/products/unifi-ap6-professional
-01 (um) Access Point U6 Mesh (SKU: U6-Mesh-BR): https://br.store.ui.com/collections/unifi-network-wireless/products/access-point-wifi-6-mesh
+01 (um) Dream Machine Pro (SKU: UDM-Pro-BR): https://br.store.ui.com/products/udm-pro<br>
+01 (um) Switch 16 PoE (SKU: USW-16-PoE-BR): https://br.store.ui.com/collections/unifi-network-switching/products/usw-16-poe<br>
+01 (um) Access Point U6 Pro (SKU: U6-Pro): https://br.store.ui.com/products/unifi-ap6-professional<br>
+01 (um) Access Point U6 Mesh (SKU: U6-Mesh-BR): https://br.store.ui.com/collections/unifi-network-wireless/products/access-point-wifi-6-mesh<br>
 
 Todos os equipamentos serão configurados e integrados com as soluções Unifi, acompanha o canal para as novidades e sequencia do vídeos dessa série.
 
@@ -55,10 +55,10 @@ Vídeo mostrando o Unboxing (Desembalar) do Dream Machine Pro enviado pela Ubiqu
 
 O Kit enviado pela Ubiquiti Brasil contém:
 
-01 (um) Dream Machine Pro (SKU: UDM-Pro-BR): https://br.store.ui.com/products/udm-pro
-01 (um) Switch 16 PoE (SKU: USW-16-PoE-BR): https://br.store.ui.com/collections/unifi-network-switching/products/usw-16-poe
-01 (um) Access Point U6 Pro (SKU: U6-Pro): https://br.store.ui.com/products/unifi-ap6-professional
-01 (um) Access Point U6 Mesh (SKU: U6-Mesh-BR): https://br.store.ui.com/collections/unifi-network-wireless/products/access-point-wifi-6-mesh
+01 (um) Dream Machine Pro (SKU: UDM-Pro-BR): https://br.store.ui.com/products/udm-pro<br>
+01 (um) Switch 16 PoE (SKU: USW-16-PoE-BR): https://br.store.ui.com/collections/unifi-network-switching/products/usw-16-poe<br>
+01 (um) Access Point U6 Pro (SKU: U6-Pro): https://br.store.ui.com/products/unifi-ap6-professional<br>
+01 (um) Access Point U6 Mesh (SKU: U6-Mesh-BR): https://br.store.ui.com/collections/unifi-network-wireless/products/access-point-wifi-6-mesh<br>
 
 Todos os equipamentos serão configurados e integrados com as soluções Unifi, acompanha o canal para as novidades e sequencia do vídeos dessa série.
 
@@ -72,10 +72,10 @@ Vídeo mostrando o Unboxing (Desembalar) do Switching 16 Portas PoE/PoE+ enviado
 
 O Kit enviado pela Ubiquiti Brasil contém:
 
-01 (um) Dream Machine Pro (SKU: UDM-Pro-BR): https://br.store.ui.com/products/udm-pro
-01 (um) Switch 16 PoE (SKU: USW-16-PoE-BR): https://br.store.ui.com/collections/unifi-network-switching/products/usw-16-poe
-01 (um) Access Point U6 Pro (SKU: U6-Pro): https://br.store.ui.com/products/unifi-ap6-professional
-01 (um) Access Point U6 Mesh (SKU: U6-Mesh-BR): https://br.store.ui.com/collections/unifi-network-wireless/products/access-point-wifi-6-mesh
+01 (um) Dream Machine Pro (SKU: UDM-Pro-BR): https://br.store.ui.com/products/udm-pro<br>
+01 (um) Switch 16 PoE (SKU: USW-16-PoE-BR): https://br.store.ui.com/collections/unifi-network-switching/products/usw-16-poe<br>
+01 (um) Access Point U6 Pro (SKU: U6-Pro): https://br.store.ui.com/products/unifi-ap6-professional<br>
+01 (um) Access Point U6 Mesh (SKU: U6-Mesh-BR): https://br.store.ui.com/collections/unifi-network-wireless/products/access-point-wifi-6-mesh<br>
 
 Todos os equipamentos serão configurados e integrados com as soluções Unifi, acompanha o canal para as novidades e sequencia do vídeos dessa série.
 
@@ -89,10 +89,10 @@ Vídeo mostrando o Unboxing (Desembalar) do Switching 16 Portas PoE/PoE+ enviado
 
 O Kit enviado pela Ubiquiti Brasil contém:
 
-01 (um) Dream Machine Pro (SKU: UDM-Pro-BR): https://br.store.ui.com/products/udm-pro
-01 (um) Switch 16 PoE (SKU: USW-16-PoE-BR): https://br.store.ui.com/collections/unifi-network-switching/products/usw-16-poe
-01 (um) Access Point U6 Pro (SKU: U6-Pro): https://br.store.ui.com/products/unifi-ap6-professional
-01 (um) Access Point U6 Mesh (SKU: U6-Mesh-BR): https://br.store.ui.com/collections/unifi-network-wireless/products/access-point-wifi-6-mesh
+01 (um) Dream Machine Pro (SKU: UDM-Pro-BR): https://br.store.ui.com/products/udm-pro<br>
+01 (um) Switch 16 PoE (SKU: USW-16-PoE-BR): https://br.store.ui.com/collections/unifi-network-switching/products/usw-16-poe<br>
+01 (um) Access Point U6 Pro (SKU: U6-Pro): https://br.store.ui.com/products/unifi-ap6-professional<br>
+01 (um) Access Point U6 Mesh (SKU: U6-Mesh-BR): https://br.store.ui.com/collections/unifi-network-wireless/products/access-point-wifi-6-mesh<br>
 
 Todos os equipamentos serão configurados e integrados com as soluções Unifi, acompanha o canal para as novidades e sequencia do vídeos dessa série.
 
