@@ -96,6 +96,6 @@ O Kit enviado pela Ubiquiti Brasil contém:
 
 Todos os equipamentos serão configurados e integrados com as soluções Unifi, acompanha o canal para as novidades e sequencia do vídeos dessa série.
 
-[![UNBOXING Access Point U6 Pro](http://img.youtube.com/vi/FEQflkZ-u90I/0.jpg)](https://www.youtube.com/watch?v=FEQflkZ-u90I "UNBOXING Access Point U6 Pro")
+[![UNBOXING Access Point U6 Pro](http://img.youtube.com/vi/FEQflkZ-u90/0.jpg)](https://www.youtube.com/watch?v=FEQflkZ-u90 "UNBOXING Access Point U6 Pro")
 
 Link da vídeo aula: https://www.youtube.com/watch?v=FEQflkZ-u90
