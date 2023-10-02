@@ -27,8 +27,8 @@ Canal do YouTUBE Ubiquiti BR: https://www.youtube.com/channel/UCb_mHuP7q75OrckBc
 Link da Playlist: https://www.youtube.com/playlist?list=PLozhsZB1lLUO293mVoY_aqOpMKmTPRQ02
 
 ## **Unifi UAP utilizado nos vídeos**
-![Unifi UAP](swx-uap.png)
-![Unifi UAP](nanohd-uap.png)
+![Unifi UAP](img/swx-uap.png)
+![Unifi UAP](img/nanohd-uap.png)
 
 ## **📡 COMO instalar o UNIFI CONTROLLER no GNU/Linux Ubuntu Server 18.04.x LTS**
 
@@ -69,7 +69,7 @@ O software UniFi Controller que vem com o sistema Ubiquiti UniFi tem uma interfa
 
 Raspberry Pi é uma série de computadores de placa única do tamanho reduzido, que se conecta a um monitor de computador ou TV, e usa um teclado e um mouse padrão, desenvolvido no Reino Unido pela Fundação Raspberry Pi. Todo o hardware é integrado numa única placa.
 
-![Raspberry Pi 3](pi3.png)
+![Raspberry Pi 3](img/pi3.png)
 
 [![Unifi Controller no Raspberry](http://img.youtube.com/vi/DCToYDsxgyQ/0.jpg)](https://www.youtube.com/watch?v=DCToYDsxgyQ "Unifi Controller no Raspberry")
 

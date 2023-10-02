@@ -85,7 +85,7 @@ Link da vídeo aula: https://www.youtube.com/watch?v=WNIAa4bOANI
 
 ## **📡 UNBOXING Access Point U6 Pro Projeto de Rede Wireless (Sem-Fio) Residencial (Quarta Parte) 🐧🐧**
 
-Vídeo mostrando o Unboxing (Desembalar) do Switching 16 Portas PoE/PoE+ enviado pela Ubiquiti Brasil em parceria com o Canal do Bora para Prática, todos esses equipamentos serão utilizados no Projeto de Rede Sem-Fio (Wireless / Wi-Fi) na minha nova Residência (Apartamento) com o intuito de configurar toda a solução Unifi integrada com os Dispositivos de Rede Sem-Fio na minha casa.
+Vídeo mostrando o Unboxing (Desembalar) do Access Point U6 Pro enviado pela Ubiquiti Brasil em parceria com o Canal do Bora para Prática, todos esses equipamentos serão utilizados no Projeto de Rede Sem-Fio (Wireless / Wi-Fi) na minha nova Residência (Apartamento) com o intuito de configurar toda a solução Unifi integrada com os Dispositivos de Rede Sem-Fio na minha casa.
 
 O Kit enviado pela Ubiquiti Brasil contém:
 
@@ -99,3 +99,20 @@ Todos os equipamentos serão configurados e integrados com as soluções Unifi, 
 [![UNBOXING Access Point U6 Pro](http://img.youtube.com/vi/FEQflkZ-u90/0.jpg)](https://www.youtube.com/watch?v=FEQflkZ-u90 "UNBOXING Access Point U6 Pro")
 
 Link da vídeo aula: https://www.youtube.com/watch?v=FEQflkZ-u90
+
+## **📡 UNBOXING Access Point U6 Mesh Projeto de Rede Wireless (Sem-Fio) Residencial (Quarta Parte) 🐧🐧**
+
+Vídeo mostrando o Unboxing (Desembalar) do Access Point U6 Mesh enviado pela Ubiquiti Brasil em parceria com o Canal do Bora para Prática, todos esses equipamentos serão utilizados no Projeto de Rede Sem-Fio (Wireless / Wi-Fi) na minha nova Residência (Apartamento) com o intuito de configurar toda a solução Unifi integrada com os Dispositivos de Rede Sem-Fio na minha casa.
+
+O Kit enviado pela Ubiquiti Brasil contém:
+
+01 (um) Dream Machine Pro (SKU: UDM-Pro-BR): https://br.store.ui.com/products/udm-pro<br>
+01 (um) Switch 16 PoE (SKU: USW-16-PoE-BR): https://br.store.ui.com/collections/unifi-network-switching/products/usw-16-poe<br>
+01 (um) Access Point U6 Pro (SKU: U6-Pro): https://br.store.ui.com/products/unifi-ap6-professional<br>
+01 (um) Access Point U6 Mesh (SKU: U6-Mesh-BR): https://br.store.ui.com/collections/unifi-network-wireless/products/access-point-wifi-6-mesh<br>
+
+Todos os equipamentos serão configurados e integrados com as soluções Unifi, acompanha o canal para as novidades e sequencia do vídeos dessa série.
+
+[![UNBOXING Access Point U6 Mesh](http://img.youtube.com/vi//0.jpg)]( "UNBOXING Access Point U6 Mesh")
+
+Link da vídeo aula: 
