@@ -173,5 +173,5 @@ Especificações Técnicas da Ubiquiti Unifi: https://techspecs.ui.com/
 		Draw Cable (Desenhar Cabo): nesse cenário você seleciona o tipo de cabo e faz o desenho
 		Auto Cable (Cabo Automático): nesse cenário você seleciona o dispositivo que será conectado
 
-	OBSERVAÇÃO: recomendo utilizar a opção Auto Cable que é mais fácil fazer a conexão com os
+	OBSERVAÇÃO: recomendo utilizar a opção Auto Cable que é mais fácil fazer as conexões com os
 	dispositivos de rede dentro da sua topologia.
