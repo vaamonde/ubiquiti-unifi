@@ -71,7 +71,7 @@ Especificações Técnicas da Ubiquiti Unifi: https://techspecs.ui.com/
 	OBSERVAÇÃO IMPORTANTE: utilize como base de referência de linha por exemplo uma Porta ou um
 	Cômodo, faça uma medição preliminar e depois configura o seu projeto, nesse exemplo recomendo
 	utilizar a largura de uma Porta Padrão Interna (70cm = 0.7) ou Porta de Entrada (80cm = 0.8),
-	desconsiderando o Batente (Guarnição) que geralmente é de: 10cm Interna e 15cm Externa por
+	desconsiderando o Batente (Guarnição) que geralmente é de: 10cm Interna e 15cm Externa com
 	espessura máxima de 4,5cm.
 		Reference Line Length: 0.7m
 		Ceiling Height: 2.7m
@@ -84,7 +84,7 @@ Especificações Técnicas da Ubiquiti Unifi: https://techspecs.ui.com/
 
 	Para finalizar as configurações básicas no canto superior direito tem o ícone de: Preferences,
 	nessa opção temos:
-		Language: infelizmente não está essa opção para mudar para o Português do Brasil
+		Language: infelizmente não está disponível essa opção para o Português do Brasil
 		Measurement Units (Unidades de medida): Meters (Metros)
 		WiFi Coverage Color Scheme (Esquema de cores de cobertura WiFi): Heat Map (Mapa de calor)
 
@@ -102,20 +102,20 @@ Especificações Técnicas da Ubiquiti Unifi: https://techspecs.ui.com/
 		Wall (Parede): recomendado quando você está modificando um cômodo ou fazendo acertos na planta.
 
 	Na opção: Room (Sala) temos três opções:
-		Outer Wall (Parede Externa).: paredes mais grossa com maior resistência de sinal 12/20dB
+		Outer Wall (Parede Externa).: paredes mais grossa com maior absorvição de sinal 12/20dB
 			Materiais: Tijolo, Concreto e outros materiais pesados.
-		Inner Wall (Parede Interna).: paredes mais fina com menor resistência de sinal 3/6,5dB
+		Inner Wall (Parede Interna).: paredes mais fina com menor absorvição de sinal 3/6,5dB
 			Materiais: Madeira, Painéis e outras divisórias leves.
-		Divider (Divisórias)........: paredes finas com menor resistência de sinal 2,5/7,0dB
+		Divider (Divisórias)........: paredes finas com menor absorvição de sinal 2,5/7,0dB
 			Materiais: Cisalhamento (Parecido com Draywall mais é de Madeira, muito utilizado nas
-			construções de casas americanas com Lã de Vidro e matérias térmicos), vidro e outros 
+			construções de casas americanas com Lã de Vidro e materiais térmicos), vidro e outros 
 			materiais finos.
 
 	OBSERVAÇÃO IMPORTANTE: no Brasil e muito comum as construções serem de Alvenaria (Tijolo, Blocos,
 	Concreto, Ferro, etc... unidos por Argamassa), nesse cenário: Fábricas, Indústria, Comércio, Casas, 
 	etc..., segue esse padrão convencional de construção, em Apartamentos temos a opção de: Alvenaria 
 	Estrutural onde todas as paredes fazem parte da estrutura do prédio diminuindo o uso de Pilares e 
-	Vigas na edificação.
+	Vigas (Concreto) na edificação mais mantendo a estrutura de Laje.
 
 	Clicando em cima de cada linha do desenho das paredes temos quatro ícones:
 		Delete (Deletar), Change Wall Type (Mudar o tipo de parede), Break Point (Ponto de Interrupção)
