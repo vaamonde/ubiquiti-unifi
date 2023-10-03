@@ -44,10 +44,10 @@ Especificações Técnicas da Ubiquiti Unifi: https://techspecs.ui.com/
 	Acesse o site: https://design.ui.com/
 
 	OBSERVAÇÃO: por padrão do Design Center sempre inicia com o Wizard de um projeto básico
-	da Ubiquiti Unifi, esse projeto é apenas uma referência para iniciar a utilizar o site.
+	da Ubiquiti Unifi, esse projeto é apenas uma referência de como utilizar o site.
 
 	OBSERVAÇÃO IMPORTANTE: caso ainda não esteja autenticado no Design Center, no canto 
-	superior direito tem o ícone de Login, clique nele primeiro e faço o Login no ID-SSO da
+	superior direito tem o ícone de Login, clique nele primeiro e faça o Login no ID-SSO da
 	Ubiquiti para começar a utilizar o Design Center.
 
 #02_ Configurações Básicas do Design Center Unifi antes de criar o seu primeiro projeto<br>
@@ -68,8 +68,8 @@ Especificações Técnicas da Ubiquiti Unifi: https://techspecs.ui.com/
 		Primeira: Reference Line Length (Comprimento da linha de referência)
 		Segunda.: Ceiling Height (Altura do teto ou Pé Direito padrão 2,70m = 2.7)
 
-	OBSERVAÇÃO IMPORTANTE: utilize como base de referência de linha por exemplo uma porta ou um
-	comodo, faça uma medição preliminar e depois configura o seu projeto, nesse exemplo recomendo
+	OBSERVAÇÃO IMPORTANTE: utilize como base de referência de linha por exemplo uma Porta ou um
+	Comodo, faça uma medição preliminar e depois configura o seu projeto, nesse exemplo recomendo
 	utilizar a largura de uma Porta Padrão Interna (70cm = 0.7) ou Porta de Entrada (80cm = 0.8)
 		Reference Line Length: 0.7m
 		Ceiling Height: 2.7m
@@ -79,6 +79,12 @@ Especificações Técnicas da Ubiquiti Unifi: https://techspecs.ui.com/
 	alguns ajustes na opção de configuração para que a: Scale (Escala) de conversão de metros
 	para pixel seja a mais próxima possível.
 
+	Para finalizar as configurações básicas no canto superior direito tem o ícone de: Preferences,
+	nessa opções temos:
+		Language: infelizmente não tem essa opção de mudar
+		Measurement Units (Unidades de medida): Meters (Metros)
+		WiFi Coverage Color Scheme (Esquema de cores de cobertura WiFi): Heat Map (Mapa de calor)
+
 #03_ Criando as Paredes Internas e Externas no Design Center Unifi<br>
 
 	OBSERVAÇÃO IMPORTANTE: por padrão utilizamos espessuras para Paredes Externas de 20cm e para
@@ -86,7 +92,7 @@ Especificações Técnicas da Ubiquiti Unifi: https://techspecs.ui.com/
 	cerâmico.
 
 	Na barra de ferramentas do Canto Superior Direito no terceiro ícone: Draw Wall tem duas opções:
-		Room (Sala)..: recomendado quando você inicia os projeto de sala, quartos, banheiro, etc.
+		Room (Sala)..: recomendado quando você inicia o projeto de sala, quartos, banheiro, etc.
 		Wall (Parede): recomendado quando você está modificando um cômodo ou fazendo acertos na planta.
 
 	Na opção: Room (Sala) temos três opções:
@@ -108,5 +114,52 @@ Especificações Técnicas da Ubiquiti Unifi: https://techspecs.ui.com/
 	Clicando em cima de cada linha do desenho das paredes temos quatro ícones:
 		Delete (Deletar), Change Wall Type (Mudar o tipo de parede), Break Point (Ponto de Interrupção)
 		e Change Wall Type (Mudar o tipo de parede para seguir um novo caminho)
+
+#04_ Adicionando os Dispositivos no Design Center Unifi<br>
+
+	Na canto superior direito temos a opção de: Device contendo todos os dispositivos suportados
+	pelo Design Center da Unifi para a elaboração do projeto, você pode pesquisar o dispositivo
+	ou selecionar com base na categoria.
+
+	OBSERVAÇÃO IMPORTANTE: geralmente em projeto de Rede Sem-Fio ou de Cabeamento Estruturado com base
+	na Planta Baixa do Projeto determinamos o Centro de Massa ou Cortes Transversal e Longitudinal,
+	com isso temos uma referência de dimensão com base na Largura e Comprimento total do projeto a ser
+	executado, exemplo: Galpão de 500m2 (10m de Frente x 50m de Fundo): com isso usamos a fórmula:
+		Base ou Largura (b).....: b=10m/2 | b=5m
+		Altura ou Profundida (h): h=50m/2 | h=25m
+
+	Adicionando o Access Point: U6-Pro
+		Devices
+			WiFi
+				U6 Professional
 	
+	Adicionando o Access Point: U6-Mesh
+		Devices
+			WiFi
+				U6 Mesh
 	
+	Adicionando o Dream Machine Pro: UDM-Pro
+		Devices
+			WiFi
+				Dream Machine Professional
+	
+	Adicionando o Switch PoE 16 Portas: USW-16-PoE
+		Devices
+			Switching
+				Standard 16 PoE
+
+#05_ Visualizando a Potência de Sinal dos Access Point no Design Center Unifi<br>
+
+	No canto superior direito temos o ícone: Coverage (Cobertura) nele temos as opções de:
+		Hover (Fluturar): padrão do Design Center, conforme passa o mouse no Dispositivo ele mostra seu status
+		WiFi (Sem-Fio): apresenta o Mapa Térmico dos dispositivos Sem-Fio instalado
+			WiFi Band (Banda Sem-Fio): 2,4Ghz, 5Ghz e 6Ghz 
+		Camera (CFTV): mostra a posição do angulo de visão das câmeras 
+		Off (Desligar): desativa todas as opções
+
+#06_ Conectando os Dispositivos no Design Center Unifi<br>
+
+	Existe duas formas de conectar os dispositivos no Design Center Unifi, nas opções de ícones
+	no canto superior direito temos:
+		Draw Cable (Desenhar Cabo): nesse cenário você seleciona o tipo de cabo e faz o desenho
+		Auto Cable (Cabo Automático): nesse cenário você seleciona o dispositivo que será conectado
