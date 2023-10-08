@@ -53,34 +53,56 @@ Especificações Técnicas da Ubiquiti Unifi: https://techspecs.ui.com/
 #02_ Configurações Básicas do Design Center Unifi antes de criar o seu primeiro projeto<br>
 
 	No canto superior direito existe dois ícones: o primeiro é o Design Center Wizard o segundo
-	inicia um projeto padrão em branco, recomendo utilizar a segunda opção.
+	inicia um novo projeto padrão em branco, recomendo utilizar a segunda opção.
+
+	Na tela de: Add New Project (Adicionar um novo Projeto) preencha os campos abaixo:
+		Project Name (Nome do Projeto): Digite um nome para o seu projeto: Apto (por exemplo)
+		Building Location (Localização do Edifício): Digite a localização do seu projeto (SP-Brazil)
+		Building Type (Tipo de Construção): Selecione o Tipo de Construção (Home - Casa - Apto)
+		Building Size (Tamanho da Construção): Digite o tamanho da construção em Metros Quadrados Total
+			Largura: 6,14m x Comprimento: 8,51m - Total: (Arredondado) 51mt2
+		Users (Usuários): Total de usuários na rede ou dispositivos que vão acessar a Internet/Wi-Fi
+		Product Preference (Preferência do Produto): você pode selecionar: Value (Valor) ou Performance
+		(Desempenho)
+	<Create>
+
+	OBSERVAÇÃO: por padrão o Design Center fornece um projeto simples de uma Planta Baixa para iniciar
+	o uso da ferramenta, recomendo remover essa planta baixa e fazer o upload da planta do projeto.
+
+	No canto superior direito temos o ícone: Settings (Configurações), clique em: Remove (Remover) depois:
+	Confirm (Confirmar).
 
 	Na tela de: Create Your Floor Plan (Crie sua Planta Baixa) você tem duas opções:
 		Upload Plan (Carregar Planta Baixa): recomendado quando você tem a planta baixa do projeto
-		Use Drawing Tool (Utilizar a Ferramente de Desenho): recomendado quando você não tem a planta
+			Suporte para as extensões: PNG, JPG ou PDF.
+		Use Drawing Tool (Utilizar a Ferramenta de Desenho): recomendado quando você não tem a planta
 		baixa do projeto.
 
 	Clique na opção: Upload Plan e selecione o arquivo de Planta Baixa do seu Projeto
-	No campo Name: digite o nome do projeto e clique em: <Confirm>
+	No campo Name (Nome): digite o nome da planta baixa do projeto e clique em: <Confirm>
 
 	Após fazer o Upload da Planta Baixa para o Design Center duas configurações básicas são
 	importantes para iniciar o seu projeto.
 		Primeira: Reference Line Length (Comprimento da Linha de Referência)
-		Segunda.: Ceiling Height (Altura do Teto ou Pé Direito, padrão 2,70m = 2.7)
+		Segunda.: Ceiling Height (Altura do Teto ou Pé Direito, padrão 2,70m = 2.7 ou 3m = 3)
 
 	OBSERVAÇÃO IMPORTANTE: utilize como base de referência de linha por exemplo uma Porta ou um
 	Cômodo, faça uma medição preliminar e depois configura o seu projeto, nesse exemplo recomendo
 	utilizar a largura de uma Porta Padrão Interna (70cm = 0.7) ou Porta de Entrada (80cm = 0.8),
 	desconsiderando o Batente (Guarnição) que geralmente é de: 10cm Interna e 15cm Externa com
-	espessura máxima de 4,5cm.
-		Reference Line Length: 0.7m
+	espessura máxima de 4,5cm, caso você tenha a medida externa de Largura ou Comprimento também
+	é indicado usar como referência.
+		Reference Line Length: 6.14m
 		Ceiling Height: 2.7m
 		<Save>
 	
+	DICA: NA HORA DE FAZER A LINHA DE REFERÊNCIA NÃO UTILIZAR O RECURSO DE ZOOM DO NAVEGADOR,
+	TIVE PROBLEMA COM ESSA OPÇÃO NA HORA DE FAZER A LINHA DE REFERÊNCIA.
+
 	OBSERVAÇÃO IMPORTANTE: mesmo fazendo a referência da linha muitas vezes é necessário fazer
 	alguns ajustes na opção de configuração para que a: Scale (Escala) de conversão de Metros
-	para Pixel seja a mais próxima possível, no meu caso utilizei a opção: 0.6m que resolveu os
-	problemas de escala do meu projeto, ficando mais próximo do real.
+	para Pixel seja a mais próxima possível, se estiver usando Porta Interna recomendo mudar o
+	valor para: 0.6m que resolveu os problemas de escala do projeto, ficando mais próximo do real.
 
 	Para finalizar as configurações básicas no canto superior direito tem o ícone de: Preferences,
 	nessa opção temos:
@@ -91,8 +113,8 @@ Especificações Técnicas da Ubiquiti Unifi: https://techspecs.ui.com/
 #03_ Criando as Paredes Internas e Externas no Design Center Unifi<br>
 
 	OBSERVAÇÃO IMPORTANTE: por padrão utilizamos espessuras para Paredes Externas de 20cm e para
-	Paredes Internas de 15cm, sem levar em consideração paredes com revestimento de azulejos ou
-	cerâmico.
+	Paredes Internas de 15cm, sem levar em consideração paredes com revestimento de azulejos, 
+	cerâmicos ou porcelanato.
 
 	LEMBRE-SE: Rede Sem-Fio (Wireless ou Wi-Fi) tem problemas de: Reflexão, Refração, Espalhamento,
 	Difração, Absorvição, Atenuação, Interferências Eletromagnéticas, Interferências de Sinal, etc...
@@ -102,11 +124,11 @@ Especificações Técnicas da Ubiquiti Unifi: https://techspecs.ui.com/
 		Wall (Parede): recomendado quando você está modificando um cômodo ou fazendo acertos na planta.
 
 	Na opção: Room (Sala) temos três opções:
-		Outer Wall (Parede Externa).: paredes mais grossa com maior absorvição de sinal 12/20dB
+		Outer Wall (Parede Externa).: paredes mais grossa com maior absorvição/atenuação de sinal 12/20dB
 			Materiais: Tijolo, Concreto e outros materiais pesados.
-		Inner Wall (Parede Interna).: paredes mais fina com menor absorvição de sinal 3/6,5dB
+		Inner Wall (Parede Interna).: paredes mais fina com menor absorvição/atenuação de sinal 3/6,5dB
 			Materiais: Madeira, Painéis e outras divisórias leves.
-		Divider (Divisórias)........: paredes finas com menor absorvição de sinal 2,5/7,0dB
+		Divider (Divisórias)........: paredes finas com menor absorvição/atenuação de sinal 2,5/7,0dB
 			Materiais: Cisalhamento (Parecido com Draywall mais é de Madeira, muito utilizado nas
 			construções de casas americanas com Lã de Vidro e materiais térmicos), vidro e outros 
 			materiais finos.
@@ -117,13 +139,27 @@ Especificações Técnicas da Ubiquiti Unifi: https://techspecs.ui.com/
 	Estrutural onde todas as paredes fazem parte da estrutura do prédio diminuindo o uso de Pilares e 
 	Vigas (Concreto) na edificação mais mantendo a estrutura de Laje.
 
+	OBSERVAÇÃO IMPORTANTE: PARA REMOVER O RECURSO DE PAREDE OU QUALQUER OUTRO RECURSO QUANDO SELECIONADO
+	PRESSIONE: ESC
+
 	Clicando em cima de cada linha do desenho das paredes temos quatro ícones:
 		Delete (Deletar), Change Wall Type (Mudar o tipo de parede), Break Point (Ponto de Interrupção)
 		e Change Wall Type (Mudar o tipo de parede para seguir um novo caminho)
 
-#04_ Adicionando os Dispositivos no Design Center Unifi<br>
+	OBSERVAÇÃO IMPORTANTE: QUANTO MAIS DETALHADO O SEU PROJETO DE INFRAESTRUTURA DE PAREDES, PORTAS,
+	JANELAS, ETC... MELHOR VAI SER O RESULTADO FINAL, LEMBRANDO QUE SEMPRE É INDICADO FAZER UMA
+	VALIDAÇÃO/AMOSTRAGEM NO LOCAL PARA IDENTIFICAR POSSÍVEIS PROBLEMAS NO PROJETO.
 
-	Na canto superior direito temos a opção de: Device contendo todos os dispositivos suportados
+#04_ Adicionando as Rotas de Cabos no Design Center Unifi<br>
+
+	No canto superior direito temos a opção de: Draw Cable Route (Desenhar a Rota dos Cabos), recomendo
+	desenhar o caminho básico dos cabos no seu projeto, lembrando que o Design Center não é uma solução
+	100% confiável para Projetos de Cabeamento Estruturado, muitas vezes a distância projetada não é a
+	real do projeto.
+
+#05_ Adicionando os Dispositivos no Design Center Unifi<br>
+
+	No canto superior direito temos a opção de: Device contendo todos os dispositivos suportados
 	pelo Design Center da Unifi para a elaboração do projeto, você pode pesquisar o dispositivo
 	ou selecionar com base na categoria.
 
@@ -157,15 +193,6 @@ Especificações Técnicas da Ubiquiti Unifi: https://techspecs.ui.com/
 			Switching
 				Standard 16 PoE
 
-#05_ Visualizando a Potência de Sinal dos Access Point no Design Center Unifi<br>
-
-	No canto superior direito temos o ícone: Coverage (Cobertura) nele temos as opções de:
-		Hover (Flutuar): padrão do Design Center, conforme passa o mouse no Dispositivo ele mostra seu status
-		WiFi (Sem-Fio): apresenta o Mapa Térmico dos dispositivos Sem-Fio instalado
-			WiFi Band (Banda Sem-Fio): 2,4Ghz, 5Ghz e 6Ghz 
-		Camera (CFTV - Circuito Fechado de TV Câmeras): mostra a posição do angulo de visão das câmeras 
-		Off (Desligar): desativa todas as opções
-
 #06_ Conectando os Dispositivos no Design Center Unifi<br>
 
 	Existe duas formas de conectar os dispositivos no Design Center Unifi, nas opções de ícones
@@ -175,3 +202,36 @@ Especificações Técnicas da Ubiquiti Unifi: https://techspecs.ui.com/
 
 	OBSERVAÇÃO: recomendo utilizar a opção Auto Cable que é mais fácil fazer as conexões com os
 	dispositivos de rede dentro da sua topologia.
+
+	Na opção de Draw Cable temos as opções:
+		Existing Ethernet Cable (Cabo Ethernet Existente): nesse cenário você utiliza os cabos de rede
+		existente no seu projeto de cabeamento estruturado, independente se é Cat56e ou Cat6.
+		UniFi Indoor Cable CMP (Cabo interno UniFi CMP): utilizar cabo Ethernet interno da UniFi Cat6 
+		para suas implantações Unifi de alta velocidade.
+		UniFi Indoor Cable CMR (Cabo interno UniFi CMR):
+
+	OBSERVAÇÃO IMPORTANTE: Flamabilidade de cabos LAN no Brasil, pode ser classificada em quatro tipos: 
+		CMX: é uma classificação com uso restrito que requer algum tipo de proteção quanto à propagação 
+		de chamas, gases tóxicos e fumaça;
+		CM: é recomendado para uso em geral indicados para aplicação vertical em tubulações com muita 
+		ocupação, com pouca proteção contra incêndio, instalado em tubulações de grande quantidade de 
+		cabos e sem fluxo de ar forçado em um mesmo ambiente;
+		CMR: é utilizado em instalações de subida (“riser”), onde o cabo ultrapassa mais de um pavimento 
+		em instalação tipo shafts ou poços sem fluxo de ar forçado;
+		CMP: são indicados para aplicação horizontal, em locais confinados (entre pisos, forro, calhas, 
+		etc.), com ou sem fluxo de ar forçado, ou em locais com condições de propagação de fogo similares 
+		a estas;
+		LSZH: cabo de baixa emissão de fumaça e zero halógeno, ou seja, não toxica, indicado para instalações 
+		de grande afluência de público garantindo a segurança das pessoas.
+
+#07_ Visualizando a Potência de Sinal dos Access Point no Design Center Unifi<br>
+
+	No canto superior direito temos o ícone: Coverage (Cobertura) nele temos as opções de:
+		Hover (Flutuar): padrão do Design Center, conforme passa o mouse no Dispositivo ele mostra seu status
+		WiFi (Sem-Fio): apresenta o Mapa Térmico dos dispositivos Sem-Fio instalado
+			WiFi Band (Banda Sem-Fio): 2,4Ghz, 5Ghz e 6Ghz 
+		Camera (CFTV - Circuito Fechado de TV Câmeras): mostra a posição do angulo de visão das câmeras 
+		Off (Desligar): desativa todas as opções
+
+	OBSERVAÇÃO IMPORTANTE: no Design Center as versões de Access Point U6-Pro e U6-Mesh não tem suporte
+	a tecnologia de 6Ghz, essa tecnologias está disponível nos Access Point: U6 Enterprise e In-Wall.
