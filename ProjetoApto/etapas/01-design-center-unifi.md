@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 03/10/2023<br>
-#Data de atualização: 03/10/2023<br>
-#Versão: 0.01
+#Data de atualização: 08/10/2023<br>
+#Versão: 0.02
 
 Loja Oficial da Ubiquiti Unifi no Brasil: https://br.store.ui.com/<br>
 Canal Oficial da Ubiquiti Unifi no YouTUBE: https://www.youtube.com/UBNTBR<br>
@@ -17,6 +17,12 @@ Comunidade Oficial da Ubiquiti Unifi no Facebook: https://www.facebook.com/group
 Site Oficial da Ubiquiti Unifi: https://ui.com/<br>
 Central de Ajuda da Ubiquiti Unifi: https://help.ui.com/hc/en-us<br>
 Especificações Técnicas da Ubiquiti Unifi: https://techspecs.ui.com/
+
+Soluções de Sites para Criação de Planta Baixa On-Line<br>
+Floor Planner: https://floorplanner.com/demo<br>
+Floor Plan Creator: https://floorplancreator.net/plan/demo<br>
+Smart Draw: https://app.smartdraw.com/<br>
+Planner 5d: https://planner5d.com/editor
 
 #00_ Criando uma conta na Ubiquiti ID-SSO (Single sign-on)<br>
 
@@ -157,6 +163,20 @@ Especificações Técnicas da Ubiquiti Unifi: https://techspecs.ui.com/
 	100% confiável para Projetos de Cabeamento Estruturado, muitas vezes a distância projetada não é a
 	real do projeto.
 
+	OBSERVAÇÃO IMPORTANTE: no Unifi Design Center ele se baseia na adição do Rack Unifi, depois e feito
+	a criação das Rotas de Cabos e adicionado as conexões de cabos, indico essa parte do projeto para
+	redes corporativas, redes residenciais muitas vezes não existe essa necessidade.
+
+	Para adicionar os conectores no Unifi Design Center no ícone de: Devices vá em: Accessories no final
+	da lista tem as opções:
+		Cable Connections for 2 People (04 Ports): área de trabalho para 02 pessoas com 04 pontos de rede;
+		Cable Connections for 4 People (08 Ports): área de trabalho para 04 pessoas com 08 pontos de rede;
+		Cable Connections for 6 People (12 Ports): área de trabalho para 06 pessoas com 12 pontos de rede;
+		Cable Connections for 8 People (16 Ports): área de trabalho para 08 pessoas com 16 pontos de rede.
+	
+	OBSERVAÇÃO IMPORTANTE: em projeto de cabeamento estrutura trabalhamos com 02 pontos de rede para
+	cada colaborar na área de trabalho, sendo 01 para Dados e 01 para Voz (Telefonia).
+
 #05_ Adicionando os Dispositivos no Design Center Unifi<br>
 
 	No canto superior direito temos a opção de: Device contendo todos os dispositivos suportados
@@ -208,7 +228,8 @@ Especificações Técnicas da Ubiquiti Unifi: https://techspecs.ui.com/
 		existente no seu projeto de cabeamento estruturado, independente se é Cat56e ou Cat6.
 		UniFi Indoor Cable CMP (Cabo interno UniFi CMP): utilizar cabo Ethernet interno da UniFi Cat6 
 		para suas implantações Unifi de alta velocidade.
-		UniFi Indoor Cable CMR (Cabo interno UniFi CMR):
+		UniFi Indoor Cable CMR (Cabo interno UniFi CMR): utilizar cabo Ethernet interno da UniFi Cat6 
+		para suas implantações Unifi de alta velocidade.
 
 	OBSERVAÇÃO IMPORTANTE: Flamabilidade de cabos LAN no Brasil, pode ser classificada em quatro tipos: 
 		CMX: é uma classificação com uso restrito que requer algum tipo de proteção quanto à propagação 
@@ -234,4 +255,4 @@ Especificações Técnicas da Ubiquiti Unifi: https://techspecs.ui.com/
 		Off (Desligar): desativa todas as opções
 
 	OBSERVAÇÃO IMPORTANTE: no Design Center as versões de Access Point U6-Pro e U6-Mesh não tem suporte
-	a tecnologia de 6Ghz, essa tecnologias está disponível nos Access Point: U6 Enterprise e In-Wall.
+	a tecnologia de 6Ghz, essa tecnologia está disponível nos Access Point: U6 Enterprise e U6 In-Wall.
