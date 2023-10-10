@@ -100,7 +100,7 @@ Todos os equipamentos serão configurados e integrados com as soluções Unifi, 
 
 Link da vídeo aula: https://www.youtube.com/watch?v=FEQflkZ-u90
 
-## **📡 UNBOXING Access Point U6 Mesh Projeto de Rede Wireless (Sem-Fio) Residencial (Quarta Parte) 🐧🐧**
+## **📡 UNBOXING Access Point U6 Mesh Projeto de Rede Wireless (Sem-Fio) Residencial (Quinta Parte) 🐧🐧**
 
 Vídeo mostrando o Unboxing (Desembalar) do Access Point U6 Mesh enviado pela Ubiquiti Brasil em parceria com o Canal do Bora para Prática, todos esses equipamentos serão utilizados no Projeto de Rede Sem-Fio (Wireless / Wi-Fi) na minha nova Residência (Apartamento) com o intuito de configurar toda a solução Unifi integrada com os Dispositivos de Rede Sem-Fio na minha casa.
 
@@ -113,6 +113,20 @@ O Kit enviado pela Ubiquiti Brasil contém:
 
 Todos os equipamentos serão configurados e integrados com as soluções Unifi, acompanha o canal para as novidades e sequencia do vídeos dessa série.
 
-[![UNBOXING Access Point U6 Mesh](http://img.youtube.com/vi//0.jpg)]( "UNBOXING Access Point U6 Mesh")
+[![UNBOXING Access Point U6 Mesh](http://img.youtube.com/vi/ecE7C4WFltI/0.jpg)](https://www.youtube.com/watch?v=ecE7C4WFltI "UNBOXING Access Point U6 Mesh")
 
-Link da vídeo aula: 
+Link da vídeo aula: https://www.youtube.com/watch?v=ecE7C4WFltI
+
+## **📡 Unifi Design Center Projeto de Rede Wireless (Wi-Fi Sem-Fio) Residencial (Sexta Parte) 🐧🐧**
+
+Vídeo mostrando o UniFi Design Center é uma poderosa ferramenta de visualização e planejamento que permite simular gratuitamente um sistema UniFi completo. Neste vídeo destacamos as principais características do UniFi Design Center para ajudá-lo a planejar sua próxima implantação UniFi. 
+
+Cada detalhe, incluindo os ativos UniFi Network como roteadores, switches e APs Wi-Fi, além das câmeras UniFi Protect, os telefones UniFi Talk e os componentes UniFi Access podem ser visualizados na mesma interface intuitiva. 
+
+Quando você estiver pronto para começar sua implantação, basta adicionar os equipamentos utilizados na simulação no carrinho de compras e seguir com o checkout. Nós enviaremos tudo para você através da loja oficial. 
+
+Todos os equipamentos serão configurados e integrados com as soluções Unifi, acompanha o canal para as novidades e sequencia do vídeos dessa série.
+
+[![Unifi Design Center](http://img.youtube.com/vi/kg_zt3Rr_3I/0.jpg)](https://www.youtube.com/watch?v=kg_zt3Rr_3I "Unifi Design Center")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=kg_zt3Rr_3I
