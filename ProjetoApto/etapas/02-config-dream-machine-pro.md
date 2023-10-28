@@ -119,7 +119,7 @@ Datasheet do UDM-Pro: https://dl.ui.com/qig/udm-pro/#index
 		<Add>
 
 	OBSERVAÇÃO IMPORTANTE: após adotar o Switch PoE no Console do Dream Machine é iniciado o 
-	processo de atualização do Unifi no Switch, esse procedimento demora bastante dependendo
+	processo de atualização do Firmware no Switch, esse procedimento demora bastante dependendo
 	da velocidade do link de internet que você está utilizando.
 
 #05_ Conhecendo o Console do Dream Machine<br>
