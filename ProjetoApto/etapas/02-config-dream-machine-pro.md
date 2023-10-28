@@ -24,7 +24,7 @@ Datasheet do UDM-Pro: https://dl.ui.com/qig/udm-pro/#index
 #00_ Criando uma conta na Ubiquiti ID-SSO (Single sign-on)<br>
 
 	OBSERVAÇÃO: a comunidade do Ubiquiti Unifi recomenda utilizar o navegador Google Chrome para a 
-	configuração e administração do Unifi Network ou Design Center devido a compatibilidade do Java 
+	configuração e administração do Unifi Network ou Design Center, devido a compatibilidade do Java 
 	e recursos integrados no sistema que funciona perfeitamente nesse navegador.
 	
 	Acesse o site: https://account.ui.com
@@ -63,8 +63,8 @@ Datasheet do UDM-Pro: https://dl.ui.com/qig/udm-pro/#index
 
 	OBSERVAÇÃO IMPORTANTE: para utilizar o aplicativo Unifi no seu celular o recurso de Bluetooth
 	precisa está habilitado para localizar o Dream Machine na sua rede, caso o seu Dream Machine
-	ainda não foi configurado, o aplicativo do Unifi localiza o equipamento e começa o processo de
-	configuração padrão.
+	ainda não foi configurado, o aplicativo do Unifi localiza o equipamento e já começa o processo 
+	de configuração padrão.
 
 	No seu navegador Google Chrome acesse a URL: https://192.168.1.1 ou https://unifi
 	
@@ -109,7 +109,7 @@ Datasheet do UDM-Pro: https://dl.ui.com/qig/udm-pro/#index
 		(Yes) Remember my credentials
 	<Sign in>
 
-#04_ Adotando o Switch PoE no Console do Dream Machine<br>
+#04_ Adotando o Switch PoE no Console do Dream Machine Pro<br>
 
 	OBSERVAÇÃO IMPORTANTE: no primeiro login no console do Unifi, o Dream Machine já localiza
 	o Switch PoE que está no conectado e já recomenda adicionar no Topologia, fazendo o processo
@@ -122,19 +122,19 @@ Datasheet do UDM-Pro: https://dl.ui.com/qig/udm-pro/#index
 	processo de atualização do Firmware no Switch, esse procedimento demora bastante dependendo
 	da velocidade do link de internet que você está utilizando.
 
-#05_ Conhecendo o Console do Dream Machine<br>
+#05_ Conhecendo o Console do Unifi Dream Machine Pro<br>
 
-	Dashboard: Informações detalhas da topologia e configurações básicas;
-	Topology: Informações da topologia física e lógica dos equipamentos Unifi;
-	Unifi Devices: Informações dos dispositivos adotados no Unifi;
+	Dashboard.....: Informações detalhas da topologia e configurações básicas;
+	Topology......: Informações da topologia física e lógica dos equipamentos Unifi;
+	Unifi Devices.: Informações dos dispositivos adotados no Unifi;
 	Client Devices: Informações dos clientes conectados nos dispositivos Unifi;
-	Statistics: Informações de estáticas de uso dos recursos do Unifi;
-	Wifi Insights: Informações detalhadas da rede sem-fio do Unifi;
-	System Logs: Informações detalhadas dos Logs do Sistema Unifi;
-	Notifications: Informações de notificações do Unifi;
-	Settings: Configurações Básicas e Avançadas do Unifi.
+	Statistics....: Informações de estáticas de uso dos recursos do Unifi;
+	Wifi Insights.: Informações detalhadas da rede sem-fio do Unifi;
+	System Logs...: Informações detalhadas dos Logs do Sistema Unifi;
+	Notifications.: Informações de notificações do Unifi;
+	Settings......: Configurações Básicas e Avançadas do Unifi.
 
-#06_ Configurando as opções básicas do Dream Machine<br>
+#06_ Configurando as opções básicas do Dream Machine Pro<br>
 
 	Settings
 		System
@@ -147,7 +147,7 @@ Datasheet do UDM-Pro: https://dl.ui.com/qig/udm-pro/#index
 			Wifiman: On (Default)
 		<Apply Changes>
 
-#07_ Teste de conexão com a Internet<br>
+#07_ Teste de conexão com a Internet em um Desktop conectado na Rede<br>
 
 	Teste de conexão: Terminal (Atalho Ctrl + Alt + T)
 		ping 8.8.8.8

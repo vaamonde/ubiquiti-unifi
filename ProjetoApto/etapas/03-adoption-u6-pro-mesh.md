@@ -30,14 +30,14 @@ Datasheet do UDM-Pro: https://dl.ui.com/qig/udm-pro/#index
 
 #01_ Fazendo o Reset via Hardware Físico do Access Point UAP-nanoHD<br>
 
-	OBERVAÇÃO IMPORTANTE: para resetar qualquer equipamento da Ubiquiti Unifi e necessário
-	que o mesmo esteja ligado numa Porta PoE ou utilizar o Ejetor PoE. Também e recomendado
+	OBERVAÇÃO IMPORTANTE: para Resetar qualquer equipamento da Ubiquiti Unifi é necessário
+	que o mesmo esteja ligado numa Porta PoE ou utilizar o Ejetor PoE. Também é recomendado
 	que o Reset seja feito via Software utilizando a sua Controladora e Desadotando o AP ou
 	Dispositivo da sua Topologia.
 
 	O Unifi Network possui 03 (três) formas de Reset:
-		Reset via UniFi Network
-		Reset via SSH (Secure Shell)
+		Reset via UniFi Network (Software)
+		Reset via SSH (Secure Shell - Remoto)
 		Reset Físico (Hardware)
 	
 	Nesse exemplo vou utilizar um Reset Físico (Hardware): O método mais comum é fazer o reset 
@@ -63,8 +63,8 @@ Datasheet do UDM-Pro: https://dl.ui.com/qig/udm-pro/#index
 #03_ Adotando os Access Point U6 Pro e Mesh no Console do Dream Machine<br>
 
 	OBSERVAÇÃO IMPORTANTE: no primeiro login no console do Unifi, o Dream Machine já localiza
-	os Access Point que está no conectado e já recomenda adicionar na Topologia, fazendo o 
-	processo de Adotar o equipamento no Console do Dream Machine (Recomendado sempre)
+	os Access Point que está conectado no seu Switch ou Dream MAchine e já recomenda adicionar 
+	na Topologia, fazendo o processo de Adotar o equipamento no Console do Dream Machine.
 
 	Ready to Add: (3) Network devices
 		<Add>
