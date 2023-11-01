@@ -53,15 +53,6 @@ Link da vídeo aula: https://www.youtube.com/watch?v=tJecBbCpZpc
 
 Vídeo mostrando o Unboxing (Desembalar) do Dream Machine Pro enviado pela Ubiquiti Brasil em parceria com o Canal do Bora para Prática, todos esses equipamentos serão utilizados no Projeto de Rede Sem-Fio (Wireless / Wi-Fi) na minha nova Residência (Apartamento) com o intuito de configurar toda a solução Unifi integrada com os Dispositivos de Rede Sem-Fio na minha casa.
 
-O Kit enviado pela Ubiquiti Brasil contém:
-
-01 (um) Dream Machine Pro (SKU: UDM-Pro-BR): https://br.store.ui.com/products/udm-pro<br>
-01 (um) Switch 16 PoE (SKU: USW-16-PoE-BR): https://br.store.ui.com/collections/unifi-network-switching/products/usw-16-poe<br>
-01 (um) Access Point U6 Pro (SKU: U6-Pro): https://br.store.ui.com/products/unifi-ap6-professional<br>
-01 (um) Access Point U6 Mesh (SKU: U6-Mesh-BR): https://br.store.ui.com/collections/unifi-network-wireless/products/access-point-wifi-6-mesh<br>
-
-Todos os equipamentos serão configurados e integrados com as soluções Unifi, acompanha o canal para as novidades e sequencia do vídeos dessa série.
-
 [![UNBOXING Dream Machine Pro](http://img.youtube.com/vi/E4U_jfp3T2A/0.jpg)](https://www.youtube.com/watch?v=E4U_jfp3T2A "UNBOXING Dream Machine Pro")
 
 Link da vídeo aula: https://www.youtube.com/watch?v=E4U_jfp3T2A
@@ -69,15 +60,6 @@ Link da vídeo aula: https://www.youtube.com/watch?v=E4U_jfp3T2A
 ## **📡 UNBOXING Switch 16P PoE USW-16-PoE Projeto de Rede Wireless (Sem-Fio) Residencial (Terceira Parte) 🐧🐧**
 
 Vídeo mostrando o Unboxing (Desembalar) do Switching 16 Portas PoE/PoE+ enviado pela Ubiquiti Brasil em parceria com o Canal do Bora para Prática, todos esses equipamentos serão utilizados no Projeto de Rede Sem-Fio (Wireless / Wi-Fi) na minha nova Residência (Apartamento) com o intuito de configurar toda a solução Unifi integrada com os Dispositivos de Rede Sem-Fio na minha casa.
-
-O Kit enviado pela Ubiquiti Brasil contém:
-
-01 (um) Dream Machine Pro (SKU: UDM-Pro-BR): https://br.store.ui.com/products/udm-pro<br>
-01 (um) Switch 16 PoE (SKU: USW-16-PoE-BR): https://br.store.ui.com/collections/unifi-network-switching/products/usw-16-poe<br>
-01 (um) Access Point U6 Pro (SKU: U6-Pro): https://br.store.ui.com/products/unifi-ap6-professional<br>
-01 (um) Access Point U6 Mesh (SKU: U6-Mesh-BR): https://br.store.ui.com/collections/unifi-network-wireless/products/access-point-wifi-6-mesh<br>
-
-Todos os equipamentos serão configurados e integrados com as soluções Unifi, acompanha o canal para as novidades e sequencia do vídeos dessa série.
 
 [![UNBOXING Switch 16P PoE](http://img.youtube.com/vi/WNIAa4bOANI/0.jpg)](https://www.youtube.com/watch?v=WNIAa4bOANI "UNBOXING Switch 16P PoE")
 
@@ -87,15 +69,6 @@ Link da vídeo aula: https://www.youtube.com/watch?v=WNIAa4bOANI
 
 Vídeo mostrando o Unboxing (Desembalar) do Access Point U6 Pro enviado pela Ubiquiti Brasil em parceria com o Canal do Bora para Prática, todos esses equipamentos serão utilizados no Projeto de Rede Sem-Fio (Wireless / Wi-Fi) na minha nova Residência (Apartamento) com o intuito de configurar toda a solução Unifi integrada com os Dispositivos de Rede Sem-Fio na minha casa.
 
-O Kit enviado pela Ubiquiti Brasil contém:
-
-01 (um) Dream Machine Pro (SKU: UDM-Pro-BR): https://br.store.ui.com/products/udm-pro<br>
-01 (um) Switch 16 PoE (SKU: USW-16-PoE-BR): https://br.store.ui.com/collections/unifi-network-switching/products/usw-16-poe<br>
-01 (um) Access Point U6 Pro (SKU: U6-Pro): https://br.store.ui.com/products/unifi-ap6-professional<br>
-01 (um) Access Point U6 Mesh (SKU: U6-Mesh-BR): https://br.store.ui.com/collections/unifi-network-wireless/products/access-point-wifi-6-mesh<br>
-
-Todos os equipamentos serão configurados e integrados com as soluções Unifi, acompanha o canal para as novidades e sequencia do vídeos dessa série.
-
 [![UNBOXING Access Point U6 Pro](http://img.youtube.com/vi/FEQflkZ-u90/0.jpg)](https://www.youtube.com/watch?v=FEQflkZ-u90 "UNBOXING Access Point U6 Pro")
 
 Link da vídeo aula: https://www.youtube.com/watch?v=FEQflkZ-u90
@@ -103,15 +76,6 @@ Link da vídeo aula: https://www.youtube.com/watch?v=FEQflkZ-u90
 ## **📡 UNBOXING Access Point U6 Mesh Projeto de Rede Wireless (Sem-Fio) Residencial (Quinta Parte) 🐧🐧**
 
 Vídeo mostrando o Unboxing (Desembalar) do Access Point U6 Mesh enviado pela Ubiquiti Brasil em parceria com o Canal do Bora para Prática, todos esses equipamentos serão utilizados no Projeto de Rede Sem-Fio (Wireless / Wi-Fi) na minha nova Residência (Apartamento) com o intuito de configurar toda a solução Unifi integrada com os Dispositivos de Rede Sem-Fio na minha casa.
-
-O Kit enviado pela Ubiquiti Brasil contém:
-
-01 (um) Dream Machine Pro (SKU: UDM-Pro-BR): https://br.store.ui.com/products/udm-pro<br>
-01 (um) Switch 16 PoE (SKU: USW-16-PoE-BR): https://br.store.ui.com/collections/unifi-network-switching/products/usw-16-poe<br>
-01 (um) Access Point U6 Pro (SKU: U6-Pro): https://br.store.ui.com/products/unifi-ap6-professional<br>
-01 (um) Access Point U6 Mesh (SKU: U6-Mesh-BR): https://br.store.ui.com/collections/unifi-network-wireless/products/access-point-wifi-6-mesh<br>
-
-Todos os equipamentos serão configurados e integrados com as soluções Unifi, acompanha o canal para as novidades e sequencia do vídeos dessa série.
 
 [![UNBOXING Access Point U6 Mesh](http://img.youtube.com/vi/ecE7C4WFltI/0.jpg)](https://www.youtube.com/watch?v=ecE7C4WFltI "UNBOXING Access Point U6 Mesh")
 
@@ -125,8 +89,22 @@ Cada detalhe, incluindo os ativos UniFi Network como roteadores, switches e APs 
 
 Quando você estiver pronto para começar sua implantação, basta adicionar os equipamentos utilizados na simulação no carrinho de compras e seguir com o checkout. Nós enviaremos tudo para você através da loja oficial. 
 
-Todos os equipamentos serão configurados e integrados com as soluções Unifi, acompanha o canal para as novidades e sequencia do vídeos dessa série.
-
 [![Unifi Design Center](http://img.youtube.com/vi/kg_zt3Rr_3I/0.jpg)](https://www.youtube.com/watch?v=kg_zt3Rr_3I "Unifi Design Center")
 
 Link da vídeo aula: https://www.youtube.com/watch?v=kg_zt3Rr_3I
+
+## **📡 Configuração Básica do Dream Machine Pro e Switch PoE - Rede Wireless  Residencial (Sétima Parte) 🐧🐧**
+
+Vídeo mostrando as configurações básicas do Unifi Dream Machine e do Switch PoE para o projeto de Rede Residencial, nesse vídeo vou mostrar o primeira acesso ao Dream Machine e sua configuração via Navegador ou Celular, adotar o Switch PoE em nosso topologia e fazer uma simples configuração, nos próximos vídeos começa as configurações avanças e dos Access Point.
+
+[![Config Basic UDM-Pro](http://img.youtube.com/vi/Yz0rHcEfD-A/0.jpg)](https://www.youtube.com/watch?v=Yz0rHcEfD-A "Config Basic UDM-Pro")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=Yz0rHcEfD-A
+
+## **📡 Adotando (Adopt - Adoption) Access Point U6-Pro e Mesh no Unifi Dream Machine Pro (Oitava Parte) 🐧🐧**
+
+Vídeo mostrando os procedimentos básicos para adotar os Access Point U6-Pro e U6 Mesh no Dream Machine Pro do projeto de Rede Residencial, nesse vídeo eu vou mostrar os procedimentos básicos de escanear a rede para localizar os Access Point, fazer um Reset Físico do UPA-nanoHD, acessar o Dream Machine Pro e adotar os equipamentos e fazer um Reset via Software do UPA-nanoHD.
+
+[![Adoption UAP](http://img.youtube.com/vi/Yz0rHcEfD-A/0.jpg)](https://www.youtube.com/watch?v=EZzLNIoK-Kw "Config Adoption UAP")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=EZzLNIoK-Kw
