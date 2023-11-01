@@ -105,6 +105,6 @@ Link da vídeo aula: https://www.youtube.com/watch?v=Yz0rHcEfD-A
 
 Vídeo mostrando os procedimentos básicos para adotar os Access Point U6-Pro e U6 Mesh no Dream Machine Pro do projeto de Rede Residencial, nesse vídeo eu vou mostrar os procedimentos básicos de escanear a rede para localizar os Access Point, fazer um Reset Físico do UPA-nanoHD, acessar o Dream Machine Pro e adotar os equipamentos e fazer um Reset via Software do UPA-nanoHD.
 
-[![Adoption UAP](http://img.youtube.com/vi/EZzLNIoK-K/0.jpg)](https://www.youtube.com/watch?v=EZzLNIoK-Kw "Config Adoption UAP")
+[![Adoption UAP](http://img.youtube.com/vi/EZzLNIoK-Kw/0.jpg)](https://www.youtube.com/watch?v=EZzLNIoK-Kw "Config Adoption UAP")
 
 Link da vídeo aula: https://www.youtube.com/watch?v=EZzLNIoK-Kw
