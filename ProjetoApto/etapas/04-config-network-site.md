@@ -89,18 +89,48 @@ Datasheet do UDM-Pro: https://dl.ui.com/qig/udm-pro/#index
 		Topology
 			Clique em: USW-16-PoE
 				Settings
-					Name: uws-apto
+					Name: usw-apto
 				Network
 					Configure IP: Static IP (Enable)
 					IP Address: 172.16.1.50
-					Preferred DNS: 172.17.1.254
+					Preferred DNS: 172.16.1.254
 					Subnet Mask: 255.255.255.0
 					Alternative DNS: Default
 					Gateway: 172.16.1.254
 					DNS Sufix: apto.intra
 				<Apply Changes>
 
-#03_ Alterando as configurações da Acesso a Internet Cabeada no Dream Machine Pro<br>
+#03_ Alterando as configurações de Rede do Access Point U6 Pro e Mesh<br>
+
+	No Dashboard do Dream Machine Pro clique em: Topology
+		Topology
+			Clique em: U6-Pro
+				Settings
+					Name: sala
+				Network
+					Configure IP: Static IP (Enable)
+					IP Address: 172.16.1.60
+					Preferred DNS: 172.16.1.254
+					Subnet Mask: 255.255.255.0
+					Alternative DNS: Default
+					Gateway: 172.16.1.254
+					DNS Sufix: apto.intra
+				<Apply Changes>
+			
+			Clique em: U6-Mesh
+				Settings
+					Name: sala
+				Network
+					Configure IP: Static IP (Enable)
+					IP Address: 172.16.1.60
+					Preferred DNS: 172.16.1.254
+					Subnet Mask: 255.255.255.0
+					Alternative DNS: Default
+					Gateway: 172.16.1.254
+					DNS Sufix: apto.intra
+				<Apply Changes>
+
+#04_ Alterando as configurações da Acesso a Internet Cabeada no Dream Machine Pro<br>
 
 	Settings
 		Internet
