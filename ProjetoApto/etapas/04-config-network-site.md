@@ -92,7 +92,7 @@ Datasheet do UDM-Pro: https://dl.ui.com/qig/udm-pro/#index
 					Name: uws-apto
 				Network
 					Configure IP: Static IP (Enable)
-					IP Address: 172.16.1.10
+					IP Address: 172.16.1.50
 					Preferred DNS: 172.17.1.254
 					Subnet Mask: 255.255.255.0
 					Alternative DNS: Default
