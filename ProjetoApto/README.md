@@ -108,3 +108,11 @@ Vídeo mostrando os procedimentos básicos para adotar os Access Point U6-Pro e 
 [![Adoption UAP](http://img.youtube.com/vi/EZzLNIoK-Kw/0.jpg)](https://www.youtube.com/watch?v=EZzLNIoK-Kw "Config Adoption UAP")
 
 Link da vídeo aula: https://www.youtube.com/watch?v=EZzLNIoK-Kw
+
+## **📡 Configuração IPv4 LAN no UDM Pro Projeto de Rede Wireless (Sem-Fio) Residencial (Nona Parte)  🐧🐧**
+
+Vídeo mostrando os procedimentos básicos para configurar uma nova rede e endereçamento IPv4 no Dream Machine Pro, altera e setar os endereços IPv4 do Switch PoE e dos Access Point U6 Pro e U6 Mesh.
+
+[![IPv4 LAN UDM](http://img.youtube.com/vi/04ygRoPKKuc/0.jpg)](https://www.youtube.com/watch?v=04ygRoPKKuc "IPv4 LAN UDMP")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=04ygRoPKKuc
