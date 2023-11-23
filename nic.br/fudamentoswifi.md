@@ -109,8 +109,12 @@ Resumo: #01_ Antenas e Wi-Fi
 			Ataque Man-in-the Middle
 			AP's Rogue (redes no mesmo nome dos seus vizinhos)
 			WPA Pairwise Shared Key (PSK)
+			EAP 
 				Hierarquia de Chaves
 					Nível 1: PMK = Gerada pela Senha/PSK
 					Nível 2: PTK = 
 					Chaves GTK (Chaves de Grupos)
 					Autenticador (A) <-----> Suplicante (S)
+			PPSK - Private Pairwise Shared Kay (Proprietário)
+				Rede 	VLAN 	Password
+				SSID	 10		123@senha	(associar uma política) (trabalhar com profile)
