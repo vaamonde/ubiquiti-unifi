@@ -49,3 +49,24 @@ Resumo: #01_ Antenas e Wi-Fi
 													Retry (taxa de retransmissão)
 													To DS
 													From DS
+				Diminuir a potência do AP e adicionar mais AP's por área de cobertura;
+				Taxa de Retransmissão é "Falha de Projeto"
+										Diminuir a Potência TX do AP
+										Desativas as Taxas Baixas
+										Adicionar APs (diferentes canais)
+										Fazer Reuso de Canais Sem Sobreposição
+										Manter os AP's Estrategicamente
+										Sala de Aula (Não usar LR - usar o Lite e Pro)
+										Hospital e Hotel (Estudar usar LR)
+
+										Projeto Legado (área de cobertura)
+										Projeto Por Capacidade (células pequenas, cliente com TP alto)
+				Área de Sobre (isso não deixa fazer )
+				Não pode existir sobreposição de canais, pois preciso ter sobreposição de células;
+				Boa Práticas em Projeto de Rede Sem-Fio (Verticalidade de Projetos)
+				Tecnologia LoRaWAN (“Long Range” (longo alcance) com WAN (Wide Area Network – rede de longo alcance)) - focado em Agro.
+
+				SSID's (SService Set Identifiers)
+					Grau de sobreposição: 10/20% 
+					Cuidado com área de sombra;
+					Utilizar Canais diferentes
