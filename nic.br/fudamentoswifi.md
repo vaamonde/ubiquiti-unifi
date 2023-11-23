@@ -20,3 +20,32 @@ Segundo dia: 22/11/2023
 Resumo: #01_ Especto de Radiofrequência;
         #02_ Potência Absoluta e Relativa
         #03_ Propagação de Onda
+
+Terceiro dia: 23/11/2023
+Resumo: #01_ Antenas e Wi-Fi
+		#02_ Evolução do Wi-Fi (4 (legado), 5 (não é mais o padrão de mercado) e 6 (atual))
+		#03_ OFDMA=6 OFDM=5 (segunda grande evolução) = Latência
+		#04_ Modulação de Sinal: BPSK (ser pior indexe/técnica de modulação - não é ruim)
+								(mais tolerante a ruído interferências - capacidade de operar em ambiente
+								com muitas)
+		#05_ Indexes de Modulação (TOPO): Wi-fi=4 64-QAM | Wi-Fi=5 256-QAM | Wi-Fi=6 1024-QAM
+		(Link para consulta: https://mcsindex.com/)
+		(Link para Wi-Fi7: https://mcsindex.net/)
+		#06_ DRS (Dynamic Rate Selection) SNR - Tabela MCS (TH +- 50%)
+		#07_ Banda de 2.4Ghz (Canais Disponíveis) - Canais Sobrepostos;
+		#08_ Banda de 5.0Ghz (Agregar Canais) mais fácil fazer o reuso de canais (tem mais canais);
+		#09_ Wi-fi-6 (não pode operar em Outdoor) - 
+		#10_ CSMA-CA (carrier-sense multiple access with collision avoidance) - Rádio Half-Duplex
+				LBT = Listen Before Talk (escutar o meio) para toda RF (lógica)
+				CCA = (Dentro do Wi-Fi) Clear Channel Assessment (camada física)
+				NAV = Network Allocation Vector (camada de enlace) - tempos menores (QoS - ToS)
+				Cada cliente tem uma célula Wi-Fi: 
+		#11_ Problema de Nó Escondido: (a célula do cliente muda o tempo todo);
+				Problema: AP - todos os dispositivo (todo os SM são AP): CSMA-CA Falhar
+				Aqui que acontece a colisão do meio, retransmissão (ACK - Flag - Timeout), % de Retransmissão
+				Métrica TS: Taxa de Retransmissão: 20% (nota de corte: -70dBm - Ruim) - Wireshark
+					Wireshark: Primeiro campo FC: 16 bits
+													Type (gerencia=0, controle=1 ou dados=2)
+													Retry (taxa de retransmissão)
+													To DS
+													From DS
