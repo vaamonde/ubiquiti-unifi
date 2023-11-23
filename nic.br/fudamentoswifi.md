@@ -61,12 +61,56 @@ Resumo: #01_ Antenas e Wi-Fi
 
 										Projeto Legado (área de cobertura)
 										Projeto Por Capacidade (células pequenas, cliente com TP alto)
-				Área de Sobre (isso não deixa fazer )
+				Área de Sobreposição (isso não deixa fazer )
 				Não pode existir sobreposição de canais, pois preciso ter sobreposição de células;
-				Boa Práticas em Projeto de Rede Sem-Fio (Verticalidade de Projetos)
+				Boas Práticas em Projeto de Rede Sem-Fio (Verticalidade de Projetos)
 				Tecnologia LoRaWAN (“Long Range” (longo alcance) com WAN (Wide Area Network – rede de longo alcance)) - focado em Agro.
+
+				Roaming () Mobilidade: ficar preso em um única célula
+					para isso acontecer precisar 
 
 				SSID's (SService Set Identifiers)
 					Grau de sobreposição: 10/20% 
 					Cuidado com área de sombra;
 					Utilizar Canais diferentes
+					RTS (Request to Send)
+					CTS (Clear to Send) - Subtype - FLAG: 12
+						Latência - Overhead (monitorar as taxas de transmissão e retransmissão)
+				Beacon (quadros de controle da propagação das células que ele gerencia 10 quadros por segundos)
+				O cliente sempre decide em qual AP ele vai ser conectar, o cliente é 100%
+				responsável pela escolha do AP que ele vai se conectar.
+					SSID (Nome Lógico da WLAN)	(indicado apenas um nome, mais fácil)
+					Basic SSID BSSID (AP MAC & WLAN - Nomenclatura), preciso identificar para AP's na Topologia
+					Extended SSID ESSID (Todos os AP's da WLAN) soma de todos os AP (áre de cobertura)
+					Basic Service Area BSA (Célula do AP)
+					RSSI (Receive Signal Strength Indicator)
+				Caixa preta-ruim (Stick Client) - cache do tolerado do SSID,
+				Cliente suportar o protocolo 802.11K (dataset do fabricante)
+				Mesh (residencial - proprietário - usar o mesmo canal - Rx Rate 800Mbps) não é Roaming
+					Toda a repetição de Mesh cria uma Macro-Célula, cuidado com o Nó Escondido
+				Bridge (repetição sem via WDS)
+				Private Pre-Share Keys - para VLAN associar para a VLAN por senha
+				NPS (Radius) - autenticação para o lado cliente
+				--------------------------------------------------------------------------------------
+		#12_ Quadros Beacon & Probing
+			Scan Passivo VS Ativo
+				Probe Request
+				Probe Response
+			Roaming & Reassociação
+				Roaming: sobreposição de célula, cliente faz reaming utilizando métricas proprietárias
+				Autenticação: Pessoal ou Empresarial
+			802.11r & Unifi Fast Roaming
+				VoIP não utilizar o recurso 802.1x (RADIUS), devido a quantidade de mensagens trocadas
+				entre os AP's. 
+		#13_ Segurança
+			WPA-Personal (2|3)
+			WPA-Enterprise (2|3)
+			Ataque Wireless OTA
+			Ataque Man-in-the Middle
+			AP's Rogue (redes no mesmo nome dos seus vizinhos)
+			WPA Pairwise Shared Key (PSK)
+				Hierarquia de Chaves
+					Nível 1: PMK = Gerada pela Senha/PSK
+					Nível 2: PTK = 
+					Chaves GTK (Chaves de Grupos)
+					Autenticador (A) <-----> Suplicante (S)
