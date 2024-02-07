@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 03/10/2023<br>
-#Data de atualização: 11/11/2023<br>
-#Versão: 0.02
+#Data de atualização: 30/01/2024<br>
+#Versão: 0.03
 
 Loja Oficial da Ubiquiti Unifi no Brasil: https://br.store.ui.com/<br>
 Canal Oficial da Ubiquiti Unifi no YouTUBE: https://www.youtube.com/UBNTBR<br>
@@ -119,10 +119,10 @@ Datasheet do UDM-Pro: https://dl.ui.com/qig/udm-pro/#index
 			
 			Clique em: U6-Mesh
 				Settings
-					Name: sala
+					Name: quarto
 				Network
 					Configure IP: Static IP (Enable)
-					IP Address: 172.16.1.60
+					IP Address: 172.16.1.61
 					Preferred DNS: 172.16.1.254
 					Subnet Mask: 255.255.255.0
 					Alternative DNS: Default
