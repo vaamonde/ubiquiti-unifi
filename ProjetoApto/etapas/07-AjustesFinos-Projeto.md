@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 10/02/2024<br>
-#Data de atualização: 19/02/2024<br>
-#Versão: 0.02
+#Data de atualização: 22/02/2024<br>
+#Versão: 0.03
 
 Loja Oficial da Ubiquiti Unifi no Brasil: https://br.store.ui.com/<br>
 Canal Oficial da Ubiquiti Unifi no YouTUBE: https://www.youtube.com/UBNTBR<br>
@@ -70,6 +70,7 @@ Download SIMET Mobile: https://simet.nic.br/sobresimetmobile.html
 						Band Steering
 							Prefer 5.0 GHz
 				<Apply Changes>
+
 			Clicar em: Quarto
 				Settings
 					Radios
@@ -85,4 +86,87 @@ Download SIMET Mobile: https://simet.nic.br/sobresimetmobile.html
 							Prefer 5.0 GHz
 				<Apply Changes>
 
-#03_ 
+#03_ Configuração do suporte ao SNMP V1/2 e Acesso Remoto via SSH<br>
+
+	Na tela do Unifi OS clique no Dream Machine Pro (vaamonde)
+		Settings
+			Advanced
+				SNMP Monitoring
+					SNMP Version 1 & 2 (Enable)
+					Community String: apto
+				Device Authentication
+					Username: SEU_USUÁRIO
+					Password: SUA_SENHA
+			<Apply Changes>
+	
+		UniFi Devices
+			Clicar em: Sala
+				Settings
+					Manage
+						SNMP (Enable)
+							Location: Sala
+							Contact: Vaamonde
+				<Apply Changes>
+
+			Clicar em: Quarto
+				Settings
+					Manage
+						SNMP (Enable)
+							Location: Quarto
+							Contact: Vaamonde
+				<Apply Changes>
+
+			Clicar em: USW-Apto
+				Settings
+					Advanced
+						SNMP (Enable)
+							Location: Rack
+							Contact: Vaamonde
+				<Apply Changes>
+
+#04_ Testando a conexão via SSH e o monitoramento via SNMP no GNU/Linux<br>
+
+	#pingando os dispositivos na rede
+	ping 172.16.1.254	(Dream Machine / Gateway)
+	ping 172.16.1.50	(Switch PoE)
+	ping 172.16.1.60	(Access Point U6-Pro)
+	ping 172.16.1.61	(Access Point U6-Mesh)
+
+	#atualizando e instalando o software nmap no GNU/Linux
+	sudo apt update && sudo apt install nmap snmp
+
+	#verificando as portas abertas em cada dispositivo na rede
+	#opção do comando nmap: -p- (port ranges all)
+	sudo nmap -p- 172.16.1.254	(Dream Machine / Gateway)
+	sudo nmap 172.16.1.50		(Switch PoE)
+	sudo nmap -p- 172.16.1.60	(Access Point U6-Pro)
+	sudo nmap -p- 172.16.1.61	(Access Point U6-Mesh)
+
+	#acessando via SSH os dispositivos da Ubiquiti Unifi no GNU/Linux
+	ssh vaamonde@172.16.1.50	(Switch PoE)
+		Are you sure you want to continue connecting (yes/no/[fingerprint])?yes
+			help
+			info
+			exit
+	ssh vaamonde@172.16.1.60	(Access Point U6-Pro)
+		Are you sure you want to continue connecting (yes/no/[fingerprint])?yes
+			help
+			info
+			exit
+	ssh vaamonde@172.16.1.61	(Access Point U6-Mesh)
+		Are you sure you want to continue connecting (yes/no/[fingerprint])?yes
+			help
+			info
+			exit
+	
+	#verificando as informações de SNMP dos dispositivos da Ubiquiti Unifi no GNU/Linux
+	#opção do comando snmpwalk: -c (set the community string), -v (specifies SNMP version to use)
+	snmpwalk -c apto -v 2c 172.16.1.50
+	snmpwalk -c apto -v 2c 172.16.1.60
+	snmpwalk -c apto -v 2c 172.16.1.61
+
+	#verificando as informações de OID da MIB dos dispositivos  da Ubiquiti Unifi no GNU/Linux
+	#opção do comando snmpwalk: -c (set the community string), -v (specifies SNMP version to use)
+	snmpwalk -c apto -v 2c 172.16.1.60 1.3.6.1.2.1.1.1.0	(Modelo e Versão do OS)
+	snmpwalk -c apto -v 2c 172.16.1.60 1.3.6.1.2.1.4.22.1.2	(Endereço MAC Address Conectados)
+	snmpwalk -c apto -v 2c 172.16.1.60 1.3.6.1.2.1.4.20.1.1	(Endereço IPv4 Configurado no AP)

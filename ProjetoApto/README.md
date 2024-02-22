@@ -109,10 +109,26 @@ Vídeo mostrando os procedimentos básicos para adotar os Access Point U6-Pro e 
 
 Link da vídeo aula: https://www.youtube.com/watch?v=EZzLNIoK-Kw
 
-## **📡 Configuração IPv4 LAN no UDM Pro Projeto de Rede Wireless (Sem-Fio) Residencial (Nona Parte)  🐧🐧**
+## **📡 Configuração IPv4 LAN no UDM Pro Projeto de Rede Wireless (Sem-Fio) Residencial (Nona Parte) 🐧🐧**
 
 Vídeo mostrando os procedimentos básicos para configurar uma nova rede e endereçamento IPv4 no Dream Machine Pro, altera e setar os endereços IPv4 do Switch PoE e dos Access Point U6 Pro e U6 Mesh.
 
 [![IPv4 LAN UDM](http://img.youtube.com/vi/04ygRoPKKuc/0.jpg)](https://www.youtube.com/watch?v=04ygRoPKKuc "IPv4 LAN UDMP")
 
 Link da vídeo aula: https://www.youtube.com/watch?v=04ygRoPKKuc
+
+## **📡 Infraestrutura de Cabeamento do Projeto de Rede Wireless (Sem-Fio) Residencial (Décima Parte) 🐧🐧**
+
+Vídeo mostrando todos os detalhes da Infraestrutura de Rede e a forma como montei o cabeamento e localização do  Dream Machine Pro, Switch PoE e dos Access Point U6 Pro e U6 Mesh.
+
+[![Cabeamento](http://img.youtube.com/vi/9jteQZ_v0Hk/0.jpg)](https://www.youtube.com/watch?v=9jteQZ_v0Hk "Cabeamento")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=9jteQZ_v0Hk
+
+## **📡 Configuração BÁSICA da Rede Wireless (Sem-Fio) Residencial (Décima Primeira Parte) FIM 🐧🐧**
+
+Vídeo mostrando todos os procedimentos para a configuração do Roteador da Claro em Modo Bridged, criação da Rede Sem-Fio Dual Band de 2.4 e 5Ghz, conexão dos clientes nos Access Point UC-6 Pro e UC-6 Mesh, testes básicos de rede e muito mais.
+
+[![Rede Wi-Fi](http://img.youtube.com/vi/fwp3CZ1ITJ0/0.jpg)](https://www.youtube.com/watch?v=fwp3CZ1ITJ0 "Rede-Wi-")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=fwp3CZ1ITJ0
