@@ -22,7 +22,7 @@ Guia de início rápido do UDM-Pro: http://dl-origin.ubnt.com/qsg/UDM-Pro/UDM-Pr
 Datasheet do UDM-Pro: https://dl.ui.com/qig/udm-pro/#index
 
 Download WiFiman Desktop: https://ui.com/download/app/wifiman-desktop<br>
-Download WiFiman Mobile: https://play.google.com/store/apps/details?id=com.ubnt.usurvey&hl=pt_BR&gl=US
+Download WiFiman Mobile: https://play.google.com/store/apps/details?id=com.ubnt.usurvey&hl=pt_BR&gl=US<br>
 Download SIMET Mobile: https://simet.nic.br/sobresimetmobile.html
 
 #00_ Acessando o Dream Machine Pro com a sua conta da Ubiquiti ID-SSO (Single sign-on)<br>
@@ -60,12 +60,12 @@ Download SIMET Mobile: https://simet.nic.br/sobresimetmobile.html
 				Settings
 					Radios
 						2.4 Ghz
-							Channel Width: 20 Mhz
+							Channel Width: 40 Mhz
 							Channel: 6
 							Transmit Power: Medium
 						5.0 Ghz
-							Channel Width: 40 Mhz
-							Channel: 44
+							Channel Width: 80 Mhz
+							Channel: 153
 							Transmit Power: High
 						Band Steering
 							Prefer 5.0 GHz
@@ -75,19 +75,38 @@ Download SIMET Mobile: https://simet.nic.br/sobresimetmobile.html
 				Settings
 					Radios
 						2.4 Ghz
-							Channel Width: 20 Mhz
+							Channel Width: 40 Mhz
 							Channel: 11
 							Transmit Power: Medium
 						5.0 Ghz
-							Channel Width: 40 Mhz
+							Channel Width: 80 Mhz
 							Channel: 36
 							Transmit Power: High
 						Band Steering
 							Prefer 5.0 GHz
 				<Apply Changes>
 
-#03_ Configuração do suporte ao SNMP V1/2 e Acesso Remoto via SSH<br>
+#03_ Configuração do suporte ao SNMP V1/2C e Acesso Remoto via SSH<br>
 
+	OBSERVAÇÃO IMPORTANTE: O Ubiquiti Unifi Dream Machine Pro não tem suporte ao Protocolo
+	SNMP nativamente no seu Hardware, para habilitar esse recurso e necessário acessar via
+	SSH o UDM-Pro e fazer a instalação do pacote manualmente do Protocolo SNMP V1/2C.
+
+	OBSERVAÇÃO IMPORTANTE: O Ubiquiti Unifi Dream Machine Pro recomenda não habilitar o
+	Protocolo de Acesso Remoto SSH no Console, conforme mensagem: O uso do Secure Shell 
+	(SSH) pode potencialmente danificar os dispositivos Ubiquiti e resultar na perda de 
+	acesso a esses dispositivos e aos seus dados. Após habilitar o SSH no UDM-Pro por
+	padrão e liberado o acesso ao usuário: root e a senha cadastrada
+	
+	Na tela do Unifi OS Console
+		Console Settings
+			Advanced
+				SSH (Enable)
+					SSH Password
+						Password: SUA_SENHA_SSH
+						Confirm Password: SUA_SENHA_SSH
+				<Enable>
+ 
 	Na tela do Unifi OS clique no Dream Machine Pro (vaamonde)
 		Settings
 			Advanced
@@ -127,7 +146,7 @@ Download SIMET Mobile: https://simet.nic.br/sobresimetmobile.html
 #04_ Testando a conexão via SSH e o monitoramento via SNMP no GNU/Linux<br>
 
 	#pingando os dispositivos na rede
-	ping 172.16.1.254	(Dream Machine / Gateway)
+	ping 172.16.1.254	(Dream Machine Pro / Gateway)
 	ping 172.16.1.50	(Switch PoE)
 	ping 172.16.1.60	(Access Point U6-Pro)
 	ping 172.16.1.61	(Access Point U6-Mesh)
@@ -137,7 +156,7 @@ Download SIMET Mobile: https://simet.nic.br/sobresimetmobile.html
 
 	#verificando as portas abertas em cada dispositivo na rede
 	#opção do comando nmap: -p- (port ranges all)
-	sudo nmap -p- 172.16.1.254	(Dream Machine / Gateway)
+	sudo nmap -p- 172.16.1.254	(Dream Machine Pro / Gateway)
 	sudo nmap 172.16.1.50		(Switch PoE)
 	sudo nmap -p- 172.16.1.60	(Access Point U6-Pro)
 	sudo nmap -p- 172.16.1.61	(Access Point U6-Mesh)
@@ -158,6 +177,11 @@ Download SIMET Mobile: https://simet.nic.br/sobresimetmobile.html
 			help
 			info
 			exit
+	ssh root@172.16.1.254		(Dream Machine Pro / Gateway)
+		Are you sure you want to continue connecting (yes/no/[fingerprint])?yes
+			help
+			info
+			exit
 	
 	#verificando as informações de SNMP dos dispositivos da Ubiquiti Unifi no GNU/Linux
 	#opção do comando snmpwalk: -c (set the community string), -v (specifies SNMP version to use)
@@ -170,3 +194,9 @@ Download SIMET Mobile: https://simet.nic.br/sobresimetmobile.html
 	snmpwalk -c apto -v 2c 172.16.1.60 1.3.6.1.2.1.1.1.0	(Modelo e Versão do OS)
 	snmpwalk -c apto -v 2c 172.16.1.60 1.3.6.1.2.1.4.22.1.2	(Endereço MAC Address Conectados)
 	snmpwalk -c apto -v 2c 172.16.1.60 1.3.6.1.2.1.4.20.1.1	(Endereço IPv4 Configurado no AP)
+
+#05_ Estudos e melhorias futuras:
+
+	_01: https://evanmccann.net/blog/2021/11/unifi-advanced-wi-fi-settings
+	_02: https://www.wiisfi.com/
+	
