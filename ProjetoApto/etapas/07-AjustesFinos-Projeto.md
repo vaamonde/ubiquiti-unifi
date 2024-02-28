@@ -195,6 +195,18 @@ Download SIMET Mobile: https://simet.nic.br/sobresimetmobile.html
 	snmpwalk -c apto -v 2c 172.16.1.60 1.3.6.1.2.1.4.22.1.2	(Endereço MAC Address Conectados)
 	snmpwalk -c apto -v 2c 172.16.1.60 1.3.6.1.2.1.4.20.1.1	(Endereço IPv4 Configurado no AP)
 
+#06_ Mudando a Porta WAN de SFP para Porta 8
+
+	Dream Machine;
+	Overview
+		Port Manager
+		Clicando na Porta 9 (padrão WAN cabeada)
+			Configure Interfaces
+			Será apresentado as Interfaces: 8 e 9 GE, 10 e 11 SFP
+			Port 10 SFP: selecionar Disabled ou LAN
+			Port 8 GE: selecionar WAN2
+			<Apply>
+
 #05_ Estudos e melhorias futuras:
 
 	_01: https://evanmccann.net/blog/2021/11/unifi-advanced-wi-fi-settings
