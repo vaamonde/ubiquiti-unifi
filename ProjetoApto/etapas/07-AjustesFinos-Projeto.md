@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 10/02/2024<br>
-#Data de atualização: 22/02/2024<br>
-#Versão: 0.03
+#Data de atualização: 11/03/2024<br>
+#Versão: 0.04
 
 Loja Oficial da Ubiquiti Unifi no Brasil: https://br.store.ui.com/<br>
 Canal Oficial da Ubiquiti Unifi no YouTUBE: https://www.youtube.com/UBNTBR<br>
@@ -24,6 +24,10 @@ Datasheet do UDM-Pro: https://dl.ui.com/qig/udm-pro/#index
 Download WiFiman Desktop: https://ui.com/download/app/wifiman-desktop<br>
 Download WiFiman Mobile: https://play.google.com/store/apps/details?id=com.ubnt.usurvey&hl=pt_BR&gl=US<br>
 Download SIMET Mobile: https://simet.nic.br/sobresimetmobile.html
+
+Calculadora de Capacidade Unifi: https://www.ui.com/cloud-gateways/resource-calculator<br>
+Calculadora de Wi-Fi Unifi: https://wifi.ui.com/<br>
+Calculadora de Armazenamento: https://zufall.co/protect-calculator/
 
 #00_ Acessando o Dream Machine Pro com a sua conta da Ubiquiti ID-SSO (Single sign-on)<br>
 
