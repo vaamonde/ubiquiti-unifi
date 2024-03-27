@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 10/02/2024<br>
-#Data de atualização: 11/03/2024<br>
-#Versão: 0.04
+#Data de atualização: 27/03/2024<br>
+#Versão: 0.05
 
 Loja Oficial da Ubiquiti Unifi no Brasil: https://br.store.ui.com/<br>
 Canal Oficial da Ubiquiti Unifi no YouTUBE: https://www.youtube.com/UBNTBR<br>
@@ -55,7 +55,9 @@ Calculadora de Armazenamento: https://zufall.co/protect-calculator/
 						Interface Type: Prefix Delegation (Enable)
 						Prefix Delegation Interface: claro-net
 					<Apply>
-	
+
+	Site para testar o IPv6: https://test-ipv6.com/
+
 #02_ Alterando a Potência e Canais das Redes Sem-Fio 2.4Ghz e 5.0Ghz<br>
 
 	Na tela do Unifi OS clique no Dream Machine Pro (vaamonde)
@@ -199,7 +201,7 @@ Calculadora de Armazenamento: https://zufall.co/protect-calculator/
 	snmpwalk -c apto -v 2c 172.16.1.60 1.3.6.1.2.1.4.22.1.2	(Endereço MAC Address Conectados)
 	snmpwalk -c apto -v 2c 172.16.1.60 1.3.6.1.2.1.4.20.1.1	(Endereço IPv4 Configurado no AP)
 
-#06_ Mudando a Porta WAN de SFP para Porta 8
+#05_ Mudando a Porta WAN de SFP para Porta 8<br>
 
 	Dream Machine;
 	Overview
@@ -211,8 +213,11 @@ Calculadora de Armazenamento: https://zufall.co/protect-calculator/
 			Port 8 GE: selecionar WAN2
 			<Apply>
 
-#05_ Estudos e melhorias futuras:
+#06_ Estudos e melhorias futuras para o cenário<br>
 
+	Link-01: UniFi's Advanced Wi-Fi Settings Explained
 	_01: https://evanmccann.net/blog/2021/11/unifi-advanced-wi-fi-settings
+
+	Link-02: Understanding Wi-Fi 4/5/6/6E/7 (802.11 n/ac/ax/be)
 	_02: https://www.wiisfi.com/
 	
