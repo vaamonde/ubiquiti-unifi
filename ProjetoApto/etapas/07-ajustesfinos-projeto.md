@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 10/02/2024<br>
-#Data de atualização: 27/03/2024<br>
-#Versão: 0.05
+#Data de atualização: 18/04/2024<br>
+#Versão: 0.06
 
 Loja Oficial da Ubiquiti Unifi no Brasil: https://br.store.ui.com/<br>
 Canal Oficial da Ubiquiti Unifi no YouTUBE: https://www.youtube.com/UBNTBR<br>
@@ -162,10 +162,10 @@ Calculadora de Armazenamento: https://zufall.co/protect-calculator/
 
 	#verificando as portas abertas em cada dispositivo na rede
 	#opção do comando nmap: -p- (port ranges all)
-	sudo nmap -p- 172.16.1.254	(Dream Machine Pro / Gateway)
-	sudo nmap 172.16.1.50		(Switch PoE)
-	sudo nmap -p- 172.16.1.60	(Access Point U6-Pro)
-	sudo nmap -p- 172.16.1.61	(Access Point U6-Mesh)
+	sudo nmap -p- 172.16.1.254  (Dream Machine Pro / Gateway)
+	sudo nmap 172.16.1.50       (Switch PoE)
+	sudo nmap -p- 172.16.1.60   (Access Point U6-Pro)
+	sudo nmap -p- 172.16.1.61   (Access Point U6-Mesh)
 
 	#acessando via SSH os dispositivos da Ubiquiti Unifi no GNU/Linux
 	ssh vaamonde@172.16.1.50	(Switch PoE)
@@ -197,11 +197,11 @@ Calculadora de Armazenamento: https://zufall.co/protect-calculator/
 
 	#verificando as informações de OID da MIB dos dispositivos  da Ubiquiti Unifi no GNU/Linux
 	#opção do comando snmpwalk: -c (set the community string), -v (specifies SNMP version to use)
-	snmpwalk -c apto -v 2c 172.16.1.60 1.3.6.1.2.1.1.1.0	(Modelo e Versão do OS)
-	snmpwalk -c apto -v 2c 172.16.1.60 1.3.6.1.2.1.4.22.1.2	(Endereço MAC Address Conectados)
-	snmpwalk -c apto -v 2c 172.16.1.60 1.3.6.1.2.1.4.20.1.1	(Endereço IPv4 Configurado no AP)
+	snmpwalk -c apto -v 2c 172.16.1.60 1.3.6.1.2.1.1.1.0     (Modelo e Versão do OS)
+	snmpwalk -c apto -v 2c 172.16.1.60 1.3.6.1.2.1.4.22.1.2  (Endereço MAC Address Conectados)
+	snmpwalk -c apto -v 2c 172.16.1.60 1.3.6.1.2.1.4.20.1.1  (Endereço IPv4 Configurado no AP)
 
-#05_ Mudando a Porta WAN de SFP para Porta 8<br>
+#05_ Mudando a Porta WAN de SFP (Small Form Pluggable) para Porta 8<br>
 
 	Dream Machine;
 	Overview
@@ -213,7 +213,17 @@ Calculadora de Armazenamento: https://zufall.co/protect-calculator/
 			Port 8 GE: selecionar WAN2
 			<Apply>
 
-#06_ Estudos e melhorias futuras para o cenário<br>
+#06_ Alterando o nome dos Dispositivos Conectados na Rede Unifi<br>
+
+	Dream Machine;
+		Client Devices
+			Selecione o Dispositivo
+				Settings
+					Name: Box-TV Quarto
+					Note: MXQ-Pro
+				<Apply Changes>
+
+#07_ Estudos e melhorias futuras para o cenário<br>
 
 	Link-01: UniFi's Advanced Wi-Fi Settings Explained
 	_01: https://evanmccann.net/blog/2021/11/unifi-advanced-wi-fi-settings
