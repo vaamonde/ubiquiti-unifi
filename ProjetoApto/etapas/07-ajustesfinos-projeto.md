@@ -223,11 +223,38 @@ Calculadora de Armazenamento: https://zufall.co/protect-calculator/
 					Note: MXQ-Pro
 				<Apply Changes>
 
-#07_ Estudos e melhorias futuras para o cenário<br>
+#07_ Alterando o DNS Preferencial e Alternativo da Claro-NET<br>
+
+	Indicação do DNS da CloudFlare: https://blog.cloudflare.com/introducing-1-1-1-1-for-families
+
+	Dream Machine;
+		Settings
+			Internet
+				Selecionar: claro-net
+					IPv4 Configuration
+						DNS Server Auto (OFF) (DISABLE)
+							#Malware and Adult Content
+							Primary Server: 1.1.1.3
+							Secondary Server: 1.0.0.3
+					IPv6 Configuration
+						DNS Server Auto (OFF) (DISABLE)
+							#Malware and Adult Content
+							Primary Server: 2606:4700:4700::1113
+							Secondary Server: 2606:4700:4700::1003
+					<Apply Changes>
+
+	#testando as resoluções de DNS Server com o comando nslookup
+	nslookup google.com
+	nslookup vaamonde.com.br
+
+	#testando as resoluções de DNS Server com o comando dig
+	dig google.com
+	dig vaamonde.com.br
+
+#08_ Estudos e melhorias futuras para o cenário<br>
 
 	Link-01: UniFi's Advanced Wi-Fi Settings Explained
 	_01: https://evanmccann.net/blog/2021/11/unifi-advanced-wi-fi-settings
 
 	Link-02: Understanding Wi-Fi 4/5/6/6E/7 (802.11 n/ac/ax/be)
 	_02: https://www.wiisfi.com/
-	
