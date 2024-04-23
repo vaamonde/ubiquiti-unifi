@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 10/02/2024<br>
-#Data de atualização: 18/04/2024<br>
-#Versão: 0.06
+#Data de atualização: 23/04/2024<br>
+#Versão: 0.07
 
 Loja Oficial da Ubiquiti Unifi no Brasil: https://br.store.ui.com/<br>
 Canal Oficial da Ubiquiti Unifi no YouTUBE: https://www.youtube.com/UBNTBR<br>
@@ -60,6 +60,8 @@ Calculadora de Armazenamento: https://zufall.co/protect-calculator/
 
 #02_ Alterando a Potência e Canais das Redes Sem-Fio 2.4Ghz e 5.0Ghz<br>
 
+	Site para analisar o desempenho o Wi-Fi: https://wifi.ui.com/
+	
 	Na tela do Unifi OS clique no Dream Machine Pro (vaamonde)
 		UniFi Devices
 			Clicar em: Sala
