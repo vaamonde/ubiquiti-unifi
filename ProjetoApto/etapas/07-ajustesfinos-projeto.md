@@ -127,14 +127,15 @@ Calculadora de Armazenamento: https://zufall.co/protect-calculator/
  
 	Na tela do Unifi OS clique no Dream Machine Pro (vaamonde)
 		Settings
-			Advanced
-				SNMP Monitoring
-					SNMP Version 1 & 2 (Enable)
-					Community String: apto
-				Device Authentication
-					Username: SEU_USUÁRIO
-					Password: SUA_SENHA
-			<Apply Changes>
+			System
+				Advanced
+					SNMP Monitoring
+						SNMP Version 1 & 2 (Enable)
+						Community String: apto
+					Device Authentication
+						Username: SEU_USUÁRIO
+						Password: SUA_SENHA
+				<Apply Changes>
 	
 		UniFi Devices
 			Clicar em: Sala
