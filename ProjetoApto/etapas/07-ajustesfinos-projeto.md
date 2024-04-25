@@ -49,6 +49,7 @@ Calculadora de Armazenamento: https://zufall.co/protect-calculator/
 							IPv6 Connection: DHCPv6 (Enable)
 							Prefix Delegation Size: 64 
 				<Apply>
+			
 			Networks
 				Clicar em: apto
 					IPv6
