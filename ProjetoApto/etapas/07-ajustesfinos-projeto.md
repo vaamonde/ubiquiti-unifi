@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 10/02/2024<br>
-#Data de atualização: 23/04/2024<br>
-#Versão: 0.07
+#Data de atualização: 25/04/2024<br>
+#Versão: 0.08
 
 Loja Oficial da Ubiquiti Unifi no Brasil: https://br.store.ui.com/<br>
 Canal Oficial da Ubiquiti Unifi no YouTUBE: https://www.youtube.com/UBNTBR<br>
@@ -60,7 +60,7 @@ Calculadora de Armazenamento: https://zufall.co/protect-calculator/
 
 #02_ Alterando a Potência e Canais das Redes Sem-Fio 2.4Ghz e 5.0Ghz<br>
 
-	Site para analisar o desempenho o Wi-Fi: https://wifi.ui.com/
+	Site para dimensionar o desempenho da Rede Sem-Fio: https://wifi.ui.com/
 	
 	Na tela do Unifi OS clique no Dream Machine Pro (vaamonde)
 		UniFi Devices
@@ -93,6 +93,15 @@ Calculadora de Armazenamento: https://zufall.co/protect-calculator/
 						Band Steering
 							Prefer 5.0 GHz
 				<Apply Changes>
+
+	#atualizando e instalando o software nmap, snmp, wavemon e linssid no GNU/Linux
+	sudo apt update && sudo apt install nmap snmp wavemon linssid
+
+	#verificando as informações de monitoramento da rede Sem-Fio
+	sudo wavemon
+
+	#escaneando a rede Sem-Fio 2.4Ghz e 5Ghz
+	sudo linssid
 
 #03_ Configuração do suporte ao SNMP V1/2C e Acesso Remoto via SSH<br>
 
@@ -159,9 +168,6 @@ Calculadora de Armazenamento: https://zufall.co/protect-calculator/
 	ping 172.16.1.60	(Access Point U6-Pro)
 	ping 172.16.1.61	(Access Point U6-Mesh)
 
-	#atualizando e instalando o software nmap no GNU/Linux
-	sudo apt update && sudo apt install nmap snmp
-
 	#verificando as portas abertas em cada dispositivo na rede
 	#opção do comando nmap: -p- (port ranges all)
 	sudo nmap -p- 172.16.1.254  (Dream Machine Pro / Gateway)
@@ -197,25 +203,25 @@ Calculadora de Armazenamento: https://zufall.co/protect-calculator/
 	snmpwalk -c apto -v 2c 172.16.1.60
 	snmpwalk -c apto -v 2c 172.16.1.61
 
-	#verificando as informações de OID da MIB dos dispositivos  da Ubiquiti Unifi no GNU/Linux
+	#verificando as informações de OID da MIB dos dispositivos da Ubiquiti Unifi no GNU/Linux
 	#opção do comando snmpwalk: -c (set the community string), -v (specifies SNMP version to use)
 	snmpwalk -c apto -v 2c 172.16.1.60 1.3.6.1.2.1.1.1.0     (Modelo e Versão do OS)
 	snmpwalk -c apto -v 2c 172.16.1.60 1.3.6.1.2.1.4.22.1.2  (Endereço MAC Address Conectados)
 	snmpwalk -c apto -v 2c 172.16.1.60 1.3.6.1.2.1.4.20.1.1  (Endereço IPv4 Configurado no AP)
 
-#05_ Mudando a Porta WAN de SFP (Small Form Pluggable) para Porta 8<br>
+#05_ Mudando a Porta WAN de SFP (Small Form Pluggable) para Porta 8 GigabitEthernet<br>
 
 	Dream Machine;
-	Overview
-		Port Manager
-		Clicando na Porta 9 (padrão WAN cabeada)
-			Configure Interfaces
-			Será apresentado as Interfaces: 8 e 9 GE, 10 e 11 SFP
-			Port 10 SFP: selecionar Disabled ou LAN
-			Port 8 GE: selecionar WAN2
-			<Apply>
+		Overview
+			Port Manager
+				Clicando na Porta 9 (padrão WAN cabeada)
+					Configure Interfaces
+					Será apresentado as Interfaces: 8 e 9 GE, 10 e 11 SFP
+					Port 10 SFP: selecionar Disabled ou LAN
+					Port 8 GE: selecionar WAN2
+					<Apply>
 
-#06_ Alterando o nome dos Dispositivos Conectados na Rede Unifi<br>
+#06_ Alterando o nome dos Dispositivos Conectados na Rede Unifi (Cabeado e Wi-Fi)<br>
 
 	Dream Machine;
 		Client Devices
@@ -245,15 +251,22 @@ Calculadora de Armazenamento: https://zufall.co/protect-calculator/
 							Secondary Server: 2606:4700:4700::1003
 					<Apply Changes>
 
+	#verificando os endereços IPv4 e IPv6 via terminal
+	Endereço IPv6: curl -6 https://ifconfig.co/ip
+	Endereço IPv4: curl -4 https://ifconfig.co/ip
+
 	#testando as resoluções de DNS Server com o comando nslookup
 	nslookup google.com
 	nslookup vaamonde.com.br
 
 	#testando as resoluções de DNS Server com o comando dig
-	dig google.com
-	dig vaamonde.com.br
+	dig google.com AAAA
+	dig google.com A
 
-#08_ Estudos e melhorias futuras para o cenário<br>
+	dig vaamonde.com.br AAAA
+	dig vaamonde.com.br A
+
+#08_ Estudos e melhorias futuras para o cenário de Rede Sem-Fio Residencial<br>
 
 	Link-01: UniFi's Advanced Wi-Fi Settings Explained
 	_01: https://evanmccann.net/blog/2021/11/unifi-advanced-wi-fi-settings
