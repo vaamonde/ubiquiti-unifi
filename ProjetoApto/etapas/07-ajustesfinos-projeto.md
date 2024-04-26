@@ -8,7 +8,7 @@
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 10/02/2024<br>
 #Data de atualização: 25/04/2024<br>
-#Versão: 0.08
+#Versão: 0.09
 
 Loja Oficial da Ubiquiti Unifi no Brasil: https://br.store.ui.com/<br>
 Canal Oficial da Ubiquiti Unifi no YouTUBE: https://www.youtube.com/UBNTBR<br>
@@ -104,7 +104,7 @@ Calculadora de Armazenamento: https://zufall.co/protect-calculator/
 	#escaneando a rede Sem-Fio 2.4Ghz e 5Ghz
 	sudo linssid
 
-#03_ Configuração do suporte ao SNMP V1/2C e Acesso Remoto via SSH<br>
+#03_ Configuração do suporte ao SNMP V1/2C e Acesso Remoto via SSH e Nuvem Hibrida<br>
 
 	OBSERVAÇÃO IMPORTANTE: O Ubiquiti Unifi Dream Machine Pro não tem suporte ao Protocolo
 	SNMP nativamente no seu Hardware, para habilitar esse recurso e necessário acessar via
@@ -116,15 +116,18 @@ Calculadora de Armazenamento: https://zufall.co/protect-calculator/
 	acesso a esses dispositivos e aos seus dados. Após habilitar o SSH no UDM-Pro por
 	padrão e liberado o acesso ao usuário: root e a senha cadastrada
 	
+	#LIBERANDO O ACESSO REMOTO E ACESSO VIA SSH NO DREAM MACHINE
 	Na tela do Unifi OS Console
 		Console Settings
 			Advanced
+				Remote Access (Enable)
 				SSH (Enable)
 					SSH Password
 						Password: SUA_SENHA_SSH
 						Confirm Password: SUA_SENHA_SSH
 				<Enable>
  
+	#CONFIGURANDO O SNMP E SSH NO DREAM MACHINE E DISPOSITIVOS REMOTOS
 	Na tela do Unifi OS clique no Dream Machine Pro (vaamonde)
 		Settings
 			System
@@ -133,6 +136,7 @@ Calculadora de Armazenamento: https://zufall.co/protect-calculator/
 						SNMP Version 1 & 2 (Enable)
 						Community String: apto
 					Device Authentication
+						Device SSH Authentication (Enable)
 						Username: SEU_USUÁRIO
 						Password: SUA_SENHA
 				<Apply Changes>
@@ -221,7 +225,7 @@ Calculadora de Armazenamento: https://zufall.co/protect-calculator/
 					Será apresentado as Interfaces: 8 e 9 GE, 10 e 11 SFP
 					Port 10 SFP: selecionar Disabled ou LAN
 					Port 8 GE: selecionar WAN2
-					<Apply>
+				<Apply>
 
 #06_ Alterando o nome dos Dispositivos Conectados na Rede Unifi (Cabeado e Wi-Fi)<br>
 
