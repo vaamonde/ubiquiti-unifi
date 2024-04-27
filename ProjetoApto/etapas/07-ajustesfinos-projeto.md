@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 10/02/2024<br>
-#Data de atualização: 25/04/2024<br>
-#Versão: 0.09
+#Data de atualização: 27/04/2024<br>
+#Versão: 0.10
 
 Loja Oficial da Ubiquiti Unifi no Brasil: https://br.store.ui.com/<br>
 Canal Oficial da Ubiquiti Unifi no YouTUBE: https://www.youtube.com/UBNTBR<br>
@@ -58,6 +58,7 @@ Calculadora de Armazenamento: https://zufall.co/protect-calculator/
 					<Apply>
 
 	Site para testar o IPv6: https://test-ipv6.com/
+	Site para testar o IPv6: https://ipv6-test.com/ (NÃO COMENTADO NO VÍDEO)
 
 #02_ Alterando a Potência e Canais das Redes Sem-Fio 2.4Ghz e 5.0Ghz<br>
 
@@ -101,7 +102,7 @@ Calculadora de Armazenamento: https://zufall.co/protect-calculator/
 	#verificando as informações de monitoramento da rede Sem-Fio
 	sudo wavemon
 
-	#escaneando a rede Sem-Fio 2.4Ghz e 5Ghz
+	#escaneando as Redes Sem-Fio 2.4Ghz e 5Ghz
 	sudo linssid
 
 #03_ Configuração do suporte ao SNMP V1/2C e Acesso Remoto via SSH e Nuvem Hibrida<br>
@@ -127,7 +128,7 @@ Calculadora de Armazenamento: https://zufall.co/protect-calculator/
 						Confirm Password: SUA_SENHA_SSH
 				<Enable>
  
-	#CONFIGURANDO O SNMP E SSH NO DREAM MACHINE E DISPOSITIVOS REMOTOS
+	#CONFIGURANDO O SNMP E SSH NO DREAM MACHINE PARA TODOS OS DISPOSITIVOS REMOTOS
 	Na tela do Unifi OS clique no Dream Machine Pro (vaamonde)
 		Settings
 			System
@@ -209,7 +210,8 @@ Calculadora de Armazenamento: https://zufall.co/protect-calculator/
 	snmpwalk -c apto -v 2c 172.16.1.60
 	snmpwalk -c apto -v 2c 172.16.1.61
 
-	#verificando as informações de OID da MIB dos dispositivos da Ubiquiti Unifi no GNU/Linux
+	#verificando as informações de OID (Object Identifier) da MIB (Management Information Bases)
+	#dos dispositivos da Ubiquiti Unifi no GNU/Linux
 	#opção do comando snmpwalk: -c (set the community string), -v (specifies SNMP version to use)
 	snmpwalk -c apto -v 2c 172.16.1.60 1.3.6.1.2.1.1.1.0     (Modelo e Versão do OS)
 	snmpwalk -c apto -v 2c 172.16.1.60 1.3.6.1.2.1.4.22.1.2  (Endereço MAC Address Conectados)
@@ -258,6 +260,7 @@ Calculadora de Armazenamento: https://zufall.co/protect-calculator/
 					<Apply Changes>
 
 	#verificando os endereços IPv4 e IPv6 via terminal
+	#opção do comando curl: -4 (IPv4), -6 (IPv6)
 	Endereço IPv6: curl -6 https://ifconfig.co/ip
 	Endereço IPv4: curl -4 https://ifconfig.co/ip
 
@@ -266,11 +269,31 @@ Calculadora de Armazenamento: https://zufall.co/protect-calculator/
 	nslookup vaamonde.com.br
 
 	#testando as resoluções de DNS Server com o comando dig
+	#opções do comando dig: A (Type A IPv4), AAA (Type AAAA IPv6)
 	dig google.com AAAA
 	dig google.com A
 
 	dig vaamonde.com.br AAAA
 	dig vaamonde.com.br A
+
+	#comandos de verificação dos Endereços IPv6 no GNU/Linux (NÃO COMENTADO NO VÍDEO)
+	#opção do comando ip: -6 (shortcut for -family inet6)
+	ifconfig wlp4s0
+	ip -6 address show
+
+	#comandos de verificação das Rotas IPv6 no GNU/Linux (NÃO COMENTADO NO VÍDEO)
+	#opções do comando route: -A (af), inet6 (IPv6 Protocol), -n (numeric address)
+	#opção do comando ip: -6 (shortcut for -family inet6)
+	route -A inet6 -n
+	ip -6 route show
+
+	#comandos de verificação dos DNS IPv6 no GNU/Linux (NÃO COMENTADO NO VÍDEO)
+	resolvectl dns
+
+	#comandos de verificação do Ping IPv4 e IPv6 no GNU/Linux (NÃO COMENTADO NO VÍDEO)
+	#opções do comando ping: -c (Count), -4 (Use IPv4 only), -6 (Use IPv6 only)
+	ping -c 2 -4 google.com
+	ping -c 2 -6 google.com
 
 #08_ Estudos e melhorias futuras para o cenário de Rede Sem-Fio Residencial<br>
 

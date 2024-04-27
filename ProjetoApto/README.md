@@ -93,6 +93,8 @@ Quando você estiver pronto para começar sua implantação, basta adicionar os 
 
 Link da vídeo aula: https://www.youtube.com/watch?v=kg_zt3Rr_3I
 
+Link da documentação: https://github.com/vaamonde/ubiquiti-unifi/blob/main/ProjetoApto/etapas/01-design-center-unifi.md
+
 ## **📡 Configuração Básica do Dream Machine Pro e Switch PoE - Rede Wireless  Residencial (Sétima Parte) 🐧🐧**
 
 Vídeo mostrando as configurações básicas do Unifi Dream Machine e do Switch PoE para o projeto de Rede Residencial, nesse vídeo vou mostrar o primeira acesso ao Dream Machine e sua configuração via Navegador ou Celular, adotar o Switch PoE em nosso topologia e fazer uma simples configuração, nos próximos vídeos começa as configurações avanças e dos Access Point.
@@ -100,6 +102,8 @@ Vídeo mostrando as configurações básicas do Unifi Dream Machine e do Switch 
 [![Config Basic UDM-Pro](http://img.youtube.com/vi/Yz0rHcEfD-A/0.jpg)](https://www.youtube.com/watch?v=Yz0rHcEfD-A "Config Basic UDM-Pro")
 
 Link da vídeo aula: https://www.youtube.com/watch?v=Yz0rHcEfD-A
+
+Link da documentação: https://github.com/vaamonde/ubiquiti-unifi/blob/main/ProjetoApto/etapas/02-config-dream-machine-pro.md
 
 ## **📡 Adotando (Adopt - Adoption) Access Point U6-Pro e Mesh no Unifi Dream Machine Pro (Oitava Parte) 🐧🐧**
 
@@ -109,6 +113,8 @@ Vídeo mostrando os procedimentos básicos para adotar os Access Point U6-Pro e 
 
 Link da vídeo aula: https://www.youtube.com/watch?v=EZzLNIoK-Kw
 
+Link da documentação: https://github.com/vaamonde/ubiquiti-unifi/blob/main/ProjetoApto/etapas/03-adoption-u6-pro-mesh.md
+
 ## **📡 Configuração IPv4 LAN no UDM Pro Projeto de Rede Wireless (Sem-Fio) Residencial (Nona Parte) 🐧🐧**
 
 Vídeo mostrando os procedimentos básicos para configurar uma nova rede e endereçamento IPv4 no Dream Machine Pro, altera e setar os endereços IPv4 do Switch PoE e dos Access Point U6 Pro e U6 Mesh.
@@ -116,6 +122,8 @@ Vídeo mostrando os procedimentos básicos para configurar uma nova rede e ender
 [![IPv4 LAN UDM](http://img.youtube.com/vi/04ygRoPKKuc/0.jpg)](https://www.youtube.com/watch?v=04ygRoPKKuc "IPv4 LAN UDMP")
 
 Link da vídeo aula: https://www.youtube.com/watch?v=04ygRoPKKuc
+
+Link da documentação: https://github.com/vaamonde/ubiquiti-unifi/blob/main/ProjetoApto/etapas/04-config-network-site.md
 
 ## **📡 Infraestrutura de Cabeamento do Projeto de Rede Wireless (Sem-Fio) Residencial (Décima Parte) 🐧🐧**
 
@@ -125,10 +133,24 @@ Vídeo mostrando todos os detalhes da Infraestrutura de Rede e a forma como mont
 
 Link da vídeo aula: https://www.youtube.com/watch?v=9jteQZ_v0Hk
 
+Link da documentação: https://github.com/vaamonde/ubiquiti-unifi/blob/main/ProjetoApto/etapas/05-claro-bridge.md
+
 ## **📡 Configuração BÁSICA da Rede Wireless (Sem-Fio) Residencial (Décima Primeira Parte) FIM 🐧🐧**
 
 Vídeo mostrando todos os procedimentos para a configuração do Roteador da Claro em Modo Bridged, criação da Rede Sem-Fio Dual Band de 2.4 e 5Ghz, conexão dos clientes nos Access Point UC-6 Pro e UC-6 Mesh, testes básicos de rede e muito mais.
 
-[![Rede Wi-Fi](http://img.youtube.com/vi/fwp3CZ1ITJ0/0.jpg)](https://www.youtube.com/watch?v=fwp3CZ1ITJ0 "Rede-Wi-")
+[![Rede Wi-Fi](http://img.youtube.com/vi/fwp3CZ1ITJ0/0.jpg)](https://www.youtube.com/watch?v=fwp3CZ1ITJ0 "Rede-Wi-Fi")
 
 Link da vídeo aula: https://www.youtube.com/watch?v=fwp3CZ1ITJ0
+
+Link da documentação: https://github.com/vaamonde/ubiquiti-unifi/blob/main/ProjetoApto/etapas/06-config-wireless.md
+
+## **📡 Ajustes FINOS da Rede Wireless (Wi-Fi Sem-Fio) Residencial (Décima Segunda Parte) 🐧🐧**
+
+Vídeo mostrando todos os procedimentos dos ajustes finos que fiz no meu projeto de rede Sem-Fio Residencial para melhorar o desempenho e qualidade do serviço.
+
+[![Ajustes Finos](http://img.youtube.com/vi/f0uy_cGftkzU/0.jpg)](https://www.youtube.com/watch?v=0uy_cGftkzU "Ajustes Finos")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=0uy_cGftkzU 
+
+Link da documentação: https://github.com/vaamonde/ubiquiti-unifi/blob/main/ProjetoApto/etapas/07-ajustesfinos-projeto.md
