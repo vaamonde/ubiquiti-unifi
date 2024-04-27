@@ -149,7 +149,7 @@ Link da documentação: https://github.com/vaamonde/ubiquiti-unifi/blob/main/Pro
 
 Vídeo mostrando todos os procedimentos dos ajustes finos que fiz no meu projeto de rede Sem-Fio Residencial para melhorar o desempenho e qualidade do serviço.
 
-[![Ajustes Finos](http://img.youtube.com/vi/f0uy_cGftkzU/0.jpg)](https://www.youtube.com/watch?v=0uy_cGftkzU "Ajustes Finos")
+[![Ajustes Finos](http://img.youtube.com/vi/0uy_cGftkzU/0.jpg)](https://www.youtube.com/watch?v=0uy_cGftkzU  "Ajustes Finos")
 
 Link da vídeo aula: https://www.youtube.com/watch?v=0uy_cGftkzU 
 
