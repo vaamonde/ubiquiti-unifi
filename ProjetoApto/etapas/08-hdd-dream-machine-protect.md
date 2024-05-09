@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 01/05/2024<br>
-#Data de atualização: 07/05/2024<br>
-#Versão: 0.02
+#Data de atualização: 09/05/2024<br>
+#Versão: 0.03
 
 Loja Oficial da Ubiquiti Unifi no Brasil: https://br.store.ui.com/<br>
 Canal Oficial da Ubiquiti Unifi no YouTUBE: https://www.youtube.com/UBNTBR<br>
@@ -42,5 +42,14 @@ Calculadora de Wi-Fi Unifi: https://wifi.ui.com/
 
 	Unifi OS
 		Storage
+		OBSERVAÇÃOl Life Span (vida útil) do HDD (Hard Drive Disk)
+		Mais informações acesse: https://www.enterprisestorageforum.com/hardware/life-expectancy-of-a-drive/
+		Reformat
+			<Reformat>
+
+#02_ Habilitando o suporte ao Unifi Protect no Dream Machine Pro<br>
+
+	Unifi OS
+		Protect
 
 
