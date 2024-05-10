@@ -154,3 +154,13 @@ Vídeo mostrando todos os procedimentos dos ajustes finos que fiz no meu projeto
 Link da vídeo aula: https://www.youtube.com/watch?v=0uy_cGftkzU 
 
 Link da documentação: https://github.com/vaamonde/ubiquiti-unifi/blob/main/ProjetoApto/etapas/07-ajustesfinos-projeto.md
+
+## **📡 Adicionando o HDD (Hard Disk Drive) no Dream Machine Pro (Décima Terceira Parte) 🐧🐧**
+
+Vídeo mostrando todos os procedimentos para adicionar o HDD (Hard Disk Drive) no Dream Machine Pro no meu projeto de rede Sem-Fio Residencial para Gravar os Vídeos das Câmeras de Monitoramento de CFTV (Circuito Fechado de TV) da Unifi que será adicionado futuramente no projeto.
+
+[![HDD Dream Machine](http://img.youtube.com/vi/7FafCCnrm4/0.jpg)](https://www.youtube.com/watch?v=67FafCCnrm4  "HDD Dream Machine")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=67FafCCnrm4
+
+Link da documentação: https://github.com/vaamonde/ubiquiti-unifi/blob/main/ProjetoApto/etapas/08-hdd-dream-machine-protect.md
