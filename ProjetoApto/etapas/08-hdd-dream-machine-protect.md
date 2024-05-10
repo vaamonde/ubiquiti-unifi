@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 01/05/2024<br>
-#Data de atualização: 09/05/2024<br>
-#Versão: 0.03
+#Data de atualização: 10/05/2024<br>
+#Versão: 0.04
 
 Loja Oficial da Ubiquiti Unifi no Brasil: https://br.store.ui.com/<br>
 Canal Oficial da Ubiquiti Unifi no YouTUBE: https://www.youtube.com/UBNTBR<br>
@@ -42,7 +42,7 @@ Calculadora de Wi-Fi Unifi: https://wifi.ui.com/
 
 	Unifi OS
 		Storage
-		OBSERVAÇÃOl Life Span (vida útil) do HDD (Hard Drive Disk)
+		OBSERVAÇÃO: Life Span (vida útil) do HDD (Hard Drive Disk)
 		Mais informações acesse: https://www.enterprisestorageforum.com/hardware/life-expectancy-of-a-drive/
 		Reformat
 			<Reformat>
@@ -51,5 +51,21 @@ Calculadora de Wi-Fi Unifi: https://wifi.ui.com/
 
 	Unifi OS
 		Protect
+		OBSERVAÇÃO: APÓS ADICIONAR O HDD NO DREAM MACHINE O SUPORTE AO UNIFI PROTECT JÁ ESTÁ
+		DISPONÍVEL PARA USO, SEM NECESSIDADE DE INSTALAÇÃO.
+
+#03_ Informações técnicas importantes do Storage e HD no Dream Machine
+
+	a) Life Span (vida útil) do HDD (Hard Drive Disk);
+	
+	b) ATA ATA ACS-3:
+	
+	c) SATA 3.1: O SATA 3.1 (julho de 2011) vem com suporte melhorado ao mSATA e ao recurso TRIM.
+	
+	d) Bad Sector Count:
+	
+	e) HDD CMR: No CMR, cada trilha é escrita separadamente das trilhas vizinhas adjacentes. Nesta
+	abordagem, há interação mínima entre as faixas. Os setores de dados podem ser gravados e reescritos repetidamente. Além disso, a localização do LBA (Endereço de Bloco Lógico) é absoluta e imóvel, 
+	após formatação.
 
 
