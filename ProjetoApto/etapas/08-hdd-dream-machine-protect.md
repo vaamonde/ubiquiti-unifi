@@ -54,7 +54,7 @@ Calculadora de Wi-Fi Unifi: https://wifi.ui.com/
 		OBSERVAÇÃO: APÓS ADICIONAR O HDD NO DREAM MACHINE O SUPORTE AO UNIFI PROTECT JÁ ESTÁ
 		DISPONÍVEL PARA USO, SEM NECESSIDADE DE INSTALAÇÃO.
 
-#03_ Informações técnicas importantes do Storage e HD no Dream Machine
+#03_ Informações técnicas importantes do Storage e HD no Dream Machine<br>
 
 	a) Life Span (vida útil) do HDD (Hard Drive Disk): Na maioria dos casos, a vida útil de um disco
 	rígido depende principalmente de sua capacidade. A principal razão pela qual os usuários de 
@@ -79,5 +79,3 @@ Calculadora de Wi-Fi Unifi: https://wifi.ui.com/
 	desktop geralmente oferecem pouca ou nenhuma proteção contra ruído e vibração presentes em um
 	sistema de várias unidades. Os discos rígidos WD Red incluem sensores de Rotation Vibration
 	(RV) que antecipam e atuam proativamente contra perturbações causadas pela maior vibração
-
-

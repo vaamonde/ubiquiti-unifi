@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 10/02/2024<br>
-#Data de atualização: 27/04/2024<br>
-#Versão: 0.10
+#Data de atualização: 12/05/2024<br>
+#Versão: 0.11
 
 Loja Oficial da Ubiquiti Unifi no Brasil: https://br.store.ui.com/<br>
 Canal Oficial da Ubiquiti Unifi no YouTUBE: https://www.youtube.com/UBNTBR<br>
@@ -75,7 +75,7 @@ Calculadora de Armazenamento: https://zufall.co/protect-calculator/
 							Transmit Power: Medium
 						5.0 Ghz
 							Channel Width: 80 Mhz
-							Channel: 153
+							Channel: 100 (DFS)
 							Transmit Power: High
 						Band Steering
 							Prefer 5.0 GHz
@@ -89,7 +89,7 @@ Calculadora de Armazenamento: https://zufall.co/protect-calculator/
 							Channel: 11
 							Transmit Power: Medium
 						5.0 Ghz
-							Channel Width: 80 Mhz
+							Channel Width: 160 Mhz
 							Channel: 36
 							Transmit Power: High
 						Band Steering
@@ -295,7 +295,32 @@ Calculadora de Armazenamento: https://zufall.co/protect-calculator/
 	ping -c 2 -4 google.com
 	ping -c 2 -6 google.com
 
-#08_ Estudos e melhorias futuras para o cenário de Rede Sem-Fio Residencial<br>
+#08_ Configurando o Fast Roaming e Minimum RSSI no Access Point U6-Pro e Mesh<br>
+
+	Dream Machine;
+		Settings
+			WiFi
+				Clicar em: @VAAMONDE
+					Fast Roaming: ON (Enable)
+				<Apply Changes>
+	
+	Dream Machine
+		Unifi Devices
+			Access Point: sala
+				Settings
+					Minimum RSSI: ON (Enable)
+					RSSI (dBm): -80
+			<Apply Changes>
+	
+	Dream Machine
+		Unifi Devices
+			Access Point: quarto
+				Settings
+					Minimum RSSI: ON (Enable)
+					RSSI (dBm): -80
+			<Apply Changes>
+
+#09_ Estudos e melhorias futuras para o cenário de Rede Sem-Fio Residencial<br>
 
 	Link-01: UniFi's Advanced Wi-Fi Settings Explained
 	_01: https://evanmccann.net/blog/2021/11/unifi-advanced-wi-fi-settings
