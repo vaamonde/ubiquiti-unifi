@@ -97,7 +97,7 @@ Datasheet do UDM-Pro: https://dl.ui.com/qig/udm-pro/#index
 					Subnet Mask: 255.255.255.0
 					Alternative DNS: Default
 					Gateway: 172.16.1.254
-					DNS Sufix: apto.intra
+					DNS Suffix: apto.intra
 				<Apply Changes>
 
 #03_ Alterando as configurações de Rede do Access Point U6 Pro e Mesh<br>
@@ -114,7 +114,7 @@ Datasheet do UDM-Pro: https://dl.ui.com/qig/udm-pro/#index
 					Subnet Mask: 255.255.255.0
 					Alternative DNS: Default
 					Gateway: 172.16.1.254
-					DNS Sufix: apto.intra
+					DNS Suffix: apto.intra
 				<Apply Changes>
 			
 			Clique em: U6-Mesh
@@ -127,7 +127,7 @@ Datasheet do UDM-Pro: https://dl.ui.com/qig/udm-pro/#index
 					Subnet Mask: 255.255.255.0
 					Alternative DNS: Default
 					Gateway: 172.16.1.254
-					DNS Sufix: apto.intra
+					DNS Suffix: apto.intra
 				<Apply Changes>
 
 #04_ Alterando as configurações da Acesso a Internet Cabeada no Dream Machine Pro<br>

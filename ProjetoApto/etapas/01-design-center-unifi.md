@@ -257,23 +257,23 @@ Planner 5d: https://planner5d.com/editor
 	OBSERVAÇÃO IMPORTANTE: no Design Center as versões de Access Point U6-Pro e U6-Mesh não tem suporte
 	a tecnologia de 6Ghz, essa tecnologia está disponível nos Access Point: U6 Enterprise e U6 In-Wall.
 
-#08 _ Visualizando as Plantas Baixa, Topoloiga, Portas, e Lista de Equipamentos no Design Center Unifi<br>
+#08 _ Visualizando as Plantas Baixa, Topologia, Portas, e Lista de Equipamentos no Design Center Unifi<br>
 
 	No canto superior esquerdo temos as opções:
 		Floor Plans (Planta Baixa): utilizado para visualizar a projetar as plantas baixas no Design Center
 		Topology (Topologia): utilizado para visualizar a topologia física e lógica dos equipamentos
-		Port View (Visão das Portas): utilziado para visualziar as conexões de portas entre os equipamentos
+		Port View (Visão das Portas): utilizado para visualizar as conexões de portas entre os equipamentos
 		Equipment List (Lista de Equipamentos): utilizado para gerar a lista de equipamentos com valores direito da loja Unifi
 
 #09_ Exportando as informações do Projeto em PDF no Design Center Unifi<br>
 
 	No canto superior direito clique no ícone: Export as PDF (Exportar para PDF)
 		Floor Plans (Plantas Baixas): você pode selecionar as plantas baixas do projeto a ser exportada;
-		Feature to Include (Recursos Incluidos): você pode habilitar os desabilitar os recursos exportados;
+		Feature to Include (Recursos Incluídos): você pode habilitar os desabilitar os recursos exportados;
 		Project Name (Nome do Projeto): novo do projeto a ser exportado;
 		Project Location (Localização do Projeto): localização física do projeto a ser exportado;
 		Prepared By (Preparado/Criado por): responsável pela criação do projeto a ser exportado;
-		Company Name (Nome da Empresa/Compania): nome da empresa do projeto a ser exportado;
+		Company Name (Nome da Empresa/Companhia): nome da empresa do projeto a ser exportado;
 		Upload Company Logo (Logo da Empresa): upload da imagem do Logo da Empresa a ser exportado.
 		<Export PDF>
 

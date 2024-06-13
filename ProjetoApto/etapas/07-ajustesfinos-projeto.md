@@ -317,7 +317,8 @@ Calculadora de Armazenamento: https://zufall.co/protect-calculator/
 			Access Point: quarto
 				Settings
 					Minimum RSSI: ON (Enable)
-					RSSI (dBm): -80
+					RSSI (dBm): -40
+					Strict Mode
 			<Apply Changes>
 
 #09_ Estudos e melhorias futuras para o cenário de Rede Sem-Fio Residencial<br>
