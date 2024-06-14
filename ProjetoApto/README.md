@@ -28,6 +28,7 @@ Site Oficial do Unifi ID-SSO: https://account.ui.com<br>
 Blog Oficial do Unifi Brasil: https://medium.com/ubntbr<br>
 Canal do YouTUBE Ubiquiti BR: https://www.youtube.com/UBNTBR<br>
 Facebook da Ubiquiti Brasil: https://www.facebook.com/groups/ubnt.unifi.br<br>
+LinkedIn da Ubiquiti Brasil: https://www.linkedin.com/groups/12135007/<br>
 
 ## **Playlist do YouTUBE com todos os Vídeos do Ubiquiti Unifi:**
 Link da Playlist: https://www.youtube.com/playlist?list=PLozhsZB1lLUO293mVoY_aqOpMKmTPRQ02
@@ -164,3 +165,11 @@ Vídeo mostrando todos os procedimentos para adicionar o HDD (Hard Disk Drive) n
 Link da vídeo aula: https://www.youtube.com/watch?v=67FafCCnrm4
 
 Link da documentação: https://github.com/vaamonde/ubiquiti-unifi/blob/main/ProjetoApto/etapas/08-hdd-dream-machine-protect.md
+
+## **📡 UNBOXING Switch Lite 8 Portas PoE/PoE+ Câmeras G5 Bullet Projeto de Rede Wireless (Sem-Fio) Residencial (Décima Quarta Parte) 🐧🐧**
+
+Vídeo mostrando o Unboxing (Desembalar) do Switching Lite 08 Portas PoE/PoE+ e das Câmeras de CFTV (Circuito Fechado de TV) G5 Bullet enviado pela Ubiquiti Brasil em parceria com o Canal do Bora para Prática, todos esses equipamentos serão utilizados no Projeto de Rede Sem-Fio (Wireless / Wi-Fi) na minha nova Residência (Apartamento) com o intuito de configurar toda a solução Unifi integrada com os Dispositivos de Rede Sem-Fio na minha casa.
+
+[![G5 Bullet Switch Lite](http://img.youtube.com/vi/EuWG4NLlWIw/0.jpg)](https://www.youtube.com/watch?v=EuWG4NLlWIw "G5 Bullet Switch Lite")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=EuWG4NLlWIw
