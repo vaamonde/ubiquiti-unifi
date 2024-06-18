@@ -38,4 +38,43 @@ Calculadora de Wi-Fi Unifi: https://wifi.ui.com/
 	OBSERVAÇÃO IMPORTANTE: não habilite o recurso de tradução do Inglês para o Português do Google
 	Chrome, geralmente acontece alguns problemas na configuração ou tradução do termo técnico.
 
-#01_ 
+#01_ Verificando os Dispositivos Ubiquiti Unifi conectados no Switch PoE<br
+	
+	OBSERVAÇÃO: para facilitar as configurações iniciais das Câmeras, recomendo está
+	conectado via Cabo de Rede no seu Switch PoE e fazer os escaneamento da rede, depois
+	que configurar as Câmeras ai sim podemos testar as conexões.
+
+	Terminal: (Atalho Ctrl + Alt + T)
+		OBSERVAÇÃO IMPORTANTE: caso você não tenha instalado o comando Nmap no seu GNU/Linux
+		digite o comando: sudo apt update && sudo apt install nmap <Enter>
+		sudo nmap 172.16.1.0/24
+	
+	Unifi OS
+		Network
+			Unifi Devices
+				OBSERVAÇÃO IMPORTANTE: Deve aparecer as Câmeras G5 nos dispositivos conectados
+			Topology
+				OBSERVAÇÃO IMPORTANTE: Deve aparecer as Câmeras G5 nos dispositivos conectados
+			Ports
+				OBSERVAÇÃO IMPORTANTE: Deve aparecer as Câmeras G5 nos dispositivos conectados
+
+#02_ Adotando as Câmeras no Unifi OS Protect<br>
+
+	OBSERVAÇÃO IMPORTANTE: no primeiro login no console do Unifi, o Dream Machine já localiza
+	os Câmeras G5 que está conectado no seu Switch ou Dream Machine e já recomenda adicionar 
+	na Topologia, fazendo o processo de Adotar o equipamento no Console do Dream Machine.
+
+	Unifi OS
+		Protect
+			<Adopt Devices>
+				G5 Bullet <Click to Adopt>
+					Introducing Smart Detection
+					<Enable Smart Detection>
+				G5 Bullet <Click to Adopt>
+					Introducing Smart Detection
+					<Enable Smart Detection>
+	
+	OBSERVAÇÃO IMPORTANTE: após adotar as câmeras G5 Bullet no Unifi Protect o processo de 
+	atualizar o Firmware é iniciado, esse processo demora um pouco.
+
+	
