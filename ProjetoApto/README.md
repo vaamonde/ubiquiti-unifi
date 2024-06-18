@@ -173,3 +173,13 @@ Vídeo mostrando o Unboxing (Desembalar) do Switching Lite 08 Portas PoE/PoE+ e 
 [![G5 Bullet Switch Lite](http://img.youtube.com/vi/EuWG4NLlWIw/0.jpg)](https://www.youtube.com/watch?v=EuWG4NLlWIw "G5 Bullet Switch Lite")
 
 Link da vídeo aula: https://www.youtube.com/watch?v=EuWG4NLlWIw
+
+## **📡 Adotando (Adopt - Adoption) as Câmeras G5 Bullet no Unifi Protect (Décima Quinta Parte) 🐧🐧**
+
+Vídeo mostrando os procedimentos básicos para adotar as Câmeras G5 Bullet no Unifi OS, Unifi Protect/Dream Machine Pro do projeto de Rede Residencial, nesse vídeo eu vou mostrar os procedimentos básicos de escanear a rede para localizar as G5 Bullet, acessar o Dream Machine Pro e adotar os equipamentos.
+
+[![Adoption UVC](http://img.youtube.com/vi//0.jpg)]( "Adoption UVC")
+
+Link da vídeo aula: 
+
+Link da documentação: https://github.com/vaamonde/ubiquiti-unifi/blob/main/ProjetoApto/etapas/09-cameras-dream-machine-protect.md

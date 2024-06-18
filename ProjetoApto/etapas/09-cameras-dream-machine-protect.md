@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 29/05/2024<br>
-#Data de atualização: 29/05/2024<br>
-#Versão: 0.01
+#Data de atualização: 18/06/2024<br>
+#Versão: 0.02
 
 Loja Oficial da Ubiquiti Unifi no Brasil: https://br.store.ui.com/<br>
 Canal Oficial da Ubiquiti Unifi no YouTUBE: https://www.youtube.com/UBNTBR<br>
@@ -77,4 +77,9 @@ Calculadora de Wi-Fi Unifi: https://wifi.ui.com/
 	OBSERVAÇÃO IMPORTANTE: após adotar as câmeras G5 Bullet no Unifi Protect o processo de 
 	atualizar o Firmware é iniciado, esse processo demora um pouco.
 
-	
+#03_ Instalando o Unifi Protect no Android ou iPhone (Apple)<br>
+
+	Instalação no Android
+		Play Store
+			Pesquisar apps: Unifi Protect
+				<Instalar>
