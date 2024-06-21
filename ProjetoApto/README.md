@@ -178,8 +178,8 @@ Link da vídeo aula: https://www.youtube.com/watch?v=EuWG4NLlWIw
 
 Vídeo mostrando os procedimentos básicos para adotar as Câmeras G5 Bullet no Unifi OS, Unifi Protect/Dream Machine Pro do projeto de Rede Residencial, nesse vídeo eu vou mostrar os procedimentos básicos de escanear a rede para localizar as G5 Bullet, acessar o Dream Machine Pro e adotar os equipamentos.
 
-[![Adoption UVC](http://img.youtube.com/vi//0.jpg)]( "Adoption UVC")
+[![Adoption UVC](http://img.youtube.com/vi/ldHnSpdFEhE/0.jpg)](https://www.youtube.com/watch?v=ldHnSpdFEhE "Adoption UVC")
 
-Link da vídeo aula: 
+Link da vídeo aula: https://www.youtube.com/watch?v=ldHnSpdFEhE
 
 Link da documentação: https://github.com/vaamonde/ubiquiti-unifi/blob/main/ProjetoApto/etapas/09-cameras-dream-machine-protect.md
