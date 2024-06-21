@@ -21,7 +21,11 @@ Site Oficial do Ubiquiti Unifi: https://unifi-network.ui.com/<br>
 Site Oficial do Unifi Software: https://www.ui.com/download/unifi<br>
 Site Oficial do Unifi ID-SSO: https://account.ui.com<br>
 Blog Oficial do Unifi Brasil: https://medium.com/ubntbr<br>
-Canal do YouTUBE Ubiquiti BR: https://www.youtube.com/channel/UCb_mHuP7q75OrckBcNn3p2Q<br>
+
+Loja Oficial da Ubiquiti Unifi no Brasil: https://br.store.ui.com/<br>
+Canal Oficial da Ubiquiti Unifi no YouTUBE: https://www.youtube.com/UBNTBR<br>
+Comunidade Oficial da Ubiquiti Unifi no Facebook: https://www.facebook.com/groups/ubnt.unifi.br<br>
+Comunidade Oficial da Ubiquiti Unifi no LinkedIn: https://www.linkedin.com/groups/12135007/
 
 ## **Playlist do YouTUBE com todos os Vídeos do Ubiquiti Unifi:**
 Link da Playlist: https://www.youtube.com/playlist?list=PLozhsZB1lLUO293mVoY_aqOpMKmTPRQ02

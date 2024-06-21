@@ -12,7 +12,8 @@
 
 Loja Oficial da Ubiquiti Unifi no Brasil: https://br.store.ui.com/<br>
 Canal Oficial da Ubiquiti Unifi no YouTUBE: https://www.youtube.com/UBNTBR<br>
-Comunidade Oficial da Ubiquiti Unifi no Facebook: https://www.facebook.com/groups/ubnt.unifi.br
+Comunidade Oficial da Ubiquiti Unifi no Facebook: https://www.facebook.com/groups/ubnt.unifi.br<br>
+Comunidade Oficial da Ubiquiti Unifi no LinkedIn: https://www.linkedin.com/groups/12135007/
 
 Site Oficial da Ubiquiti Unifi: https://ui.com/<br>
 Central de Ajuda da Ubiquiti Unifi: https://help.ui.com/hc/en-us<br>
@@ -76,17 +77,6 @@ Calculadora de Wi-Fi Unifi: https://wifi.ui.com/
 	
 	OBSERVAÇÃO IMPORTANTE: após adotar as câmeras G5 Bullet no Unifi Protect o processo de 
 	atualizar o Firmware é iniciado, esse processo demora um pouco.
-
-#03_ Configurando o Endereço IPv4 Estática nas Câmeras G5 Bullet
-
-	OBSERVAÇÃO IMPORTANTE: igual nos Access Point, as câmeras G5 por padrão são configuradas
-	com endereço IPv4 Dinâmico (DHCP), é recomendado sempre setar um Endereço IPv4 Estático
-	e se possível utilizar uma VLAN (Virtual-LAN) independente para o gerenciamento e controle
-	das câmeras (com isso aumenta a segurança e desempenho na rede).
-
-	Unifi OS
-		Network
-			Devices
 
 #03_ Instalando o Unifi Protect no Android ou iPhone (Apple)<br>
 
