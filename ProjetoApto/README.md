@@ -30,6 +30,19 @@ Canal do YouTUBE Ubiquiti BR: https://www.youtube.com/UBNTBR<br>
 Facebook da Ubiquiti Brasil: https://www.facebook.com/groups/ubnt.unifi.br<br>
 LinkedIn da Ubiquiti Brasil: https://www.linkedin.com/groups/12135007/<br>
 
+## **Links Oficiais da UNICASERV Infraestrutura de Rede:**
+Loja Oficial UNICASERV: https://www.unicaserv.com.br/?parceiro=9489<br>
+SUPER CUPOM DE DESCONTO NA LOJA UNICASERV: borapratica1<br>
+Alicate de Crimpar EZ Crimp: https://www.unicaserv.com.br/fer0069/?parceiro=9489<br>
+Pote de Conector RJ45 Cat6 com Capa Ez Crimp: https://www.unicaserv.com.br/conectividade/conectores/pote-conector-macho-plug-rj45-cat6-de-passagem-ez-crimp-50-pecas-capa-rj45-snap-in-c-trava-vermelha-50-pecas/?parceiro=9489<br>
+Refil de Conector RJ45 CAt5e Ez Crimp: https://www.unicaserv.com.br/con0029/?parceiro=9489
+
+## **Links Oficiais da Cabos Patch Cord Personalizados:**
+Loja Oficial da Cabos Patch Cord: https://www.cabospatchcord.com.br/<br>
+CUPOM DE DESCONTO: procedimentos10 - SITE: https://www.cabospatchcord.com.br/?cupom=procedimentos10<br>
+Facebook da Cabos Patch Cord: https://www.facebook.com/cabospatchcord<br>
+Instagram Cabos Patch Cord: https://www.instagram.com/cabospatchcord/
+
 ## **Playlist do YouTUBE com todos os Vídeos do Ubiquiti Unifi:**
 Link da Playlist: https://www.youtube.com/playlist?list=PLozhsZB1lLUO293mVoY_aqOpMKmTPRQ02
 
@@ -169,6 +182,11 @@ Link da documentação: https://github.com/vaamonde/ubiquiti-unifi/blob/main/Pro
 ## **📡 UNBOXING Switch Lite 8 Portas PoE/PoE+ Câmeras G5 Bullet Projeto de Rede Wireless (Sem-Fio) Residencial (Décima Quarta Parte) 🐧🐧**
 
 Vídeo mostrando o Unboxing (Desembalar) do Switching Lite 08 Portas PoE/PoE+ e das Câmeras de CFTV (Circuito Fechado de TV) G5 Bullet enviado pela Ubiquiti Brasil em parceria com o Canal do Bora para Prática, todos esses equipamentos serão utilizados no Projeto de Rede Sem-Fio (Wireless / Wi-Fi) na minha nova Residência (Apartamento) com o intuito de configurar toda a solução Unifi integrada com os Dispositivos de Rede Sem-Fio na minha casa.
+
+Novo Kit enviado pela Ubiquiti Brasil contém:
+
+01 (um) Switch Lite 8 PoE (SKU: USW-Lite-8-POE): https://br.store.ui.com/br/pt/pro/category/all-switching/products/usw-lite-8-poe<br>
+04 (quatro) Câmeras de CFTV G5 Bullet 2K (SKU: UVC-G5-Bullet): https://br.store.ui.com/br/pt/pro/category/cameras-bullet/products/uvc-g5-bullet
 
 [![G5 Bullet Switch Lite](http://img.youtube.com/vi/EuWG4NLlWIw/0.jpg)](https://www.youtube.com/watch?v=EuWG4NLlWIw "G5 Bullet Switch Lite")
 
