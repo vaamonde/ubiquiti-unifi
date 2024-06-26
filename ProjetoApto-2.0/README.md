@@ -48,7 +48,7 @@ Link da Playlist: https://www.youtube.com/playlist?list=PLozhsZB1lLUO293mVoY_aqO
 
 ## **📡 UNBOXING Unifi Express Projeto de Rede Wireless (Sem-Fio) Residencial (Pequeno/Médio Porte) Etapa-01 🐧🐧**
 
-Vídeo mostrando o Unboxing (Desembalar) do Unifi EXpress enviado pela Ubiquiti Brasil em parceria com o Canal do Bora para Prática, todos esses equipamentos serão utilizados no Projeto de Rede Sem-Fio (Wireless / Wi-Fi) na minha nova Residência (Apartamento) com o intuito de configurar toda a solução Unifi integrada com os Dispositivos de Rede Sem-Fio na minha casa e interligar uma casa remota.
+Vídeo mostrando o Unboxing (Desembalar) do Unifi Express enviado pela Ubiquiti Brasil em parceria com o Canal do Bora para Prática, todos esses equipamentos serão utilizados no Projeto de Rede Sem-Fio (Wireless / Wi-Fi) na minha nova Residência (Apartamento) com o intuito de configurar toda a solução Unifi integrada com os Dispositivos de Rede Sem-Fio na minha casa e interligar uma casa remota.
 
 O Kit enviado pela Ubiquiti Brasil contém:
 
@@ -58,7 +58,7 @@ O Kit enviado pela Ubiquiti Brasil contém:
 
 Todos os equipamentos serão configurados e integrados com as soluções Unifi, acompanha o canal para as novidades e sequencia do vídeos dessa série.
 
-[![UNBOXING UX Unifi](http://img.youtube.com/vi//0.jpg)]( "UNBOXING UX Unifi")
+[![UNBOXING UX Unifi](http://img.youtube.com/vi/zyHnDf6S_gE/0.jpg)](https://www.youtube.com/watch?v=zyHnDf6S_gE "UNBOXING UX Unifi")
 
-Link da vídeo aula: 
+Link da vídeo aula: https://www.youtube.com/watch?v=zyHnDf6S_gE
 
