@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 30/01/2024<br>
-#Data de atualização: 07/02/2024<br>
-#Versão: 0.02
+#Data de atualização: 03/08/2024<br>
+#Versão: 0.03
 
 Loja Oficial da Ubiquiti Unifi no Brasil: https://br.store.ui.com/<br>
 Canal Oficial da Ubiquiti Unifi no YouTUBE: https://www.youtube.com/UBNTBR<br>
@@ -23,44 +23,49 @@ Guia de início rápido do UDM-Pro: http://dl-origin.ubnt.com/qsg/UDM-Pro/UDM-Pr
 Datasheet do UDM-Pro: https://dl.ui.com/qig/udm-pro/#index
 
 #00_ Resetando o Modem da Claro-NET CGA4233<br>
+```bash
+Link de referência dos modens da Claro: https://configuraraparelhos.claro.com.br/tipos-de-aparelhos/internet-fixa
 
-	Link de referência dos modens da Claro: https://configuraraparelhos.claro.com.br/tipos-de-aparelhos/internet-fixa
+Link de referência Modem CGA4233: https://configuraraparelhos.claro.com.br/technicolor/cga4233
 
-	Link de referência Modem CGA4233: https://configuraraparelhos.claro.com.br/technicolor/cga4233
+Link de referência de Usuário e Senha: https://configuraraparelhos.claro.com.br/technicolor/cga4233/primeiros-passos/onde-localizar-as-informacoes-de-acesso-do-modem-wi-fi
 
-	Link de referência de Usuário e Senha: https://configuraraparelhos.claro.com.br/technicolor/cga4233/primeiros-passos/onde-localizar-as-informacoes-de-acesso-do-modem-wi-fi
+Procedimento para Resetar (Restaurar) as Configurações de Fábrica
 
-	Procedimento para Resetar (Restaurar) as Configurações de Fábrica
-		a) aperte e segure o botão reset, que está na parte traseira do aparelho utilizando um
-		palito de dente ou material fino, por 30 segundos até que todas as luzes do modem se 
-		apaguem e seja feito a reinicialização do equipamento;
-		b) após a restauração, as senhas voltarão a ser as mesmas da etiqueta de identificação 
-		que está debaixo do modem.
+A) aperte e segure o botão reset, que está na parte traseira do aparelho utilizando um
+palito de dente ou material fino, por 30 segundos até que todas as luzes do modem se 
+apaguem e seja feito a reinicialização do equipamento;
+
+B) após a restauração, as senhas voltarão a ser as mesmas da etiqueta de identificação 
+que está debaixo do modem.
+```
 
 #01_ Acessando o Modem da Claro-NET com as Configurações Padrão de Fábrica<br>
+```bash
+Link de referência Reset Modem: https://configuraraparelhos.claro.com.br/technicolor/cga4233/funcoes-basicas/como-acessar-as-configuracoes-do-modem-wi-fi-pelo-computador
 
-	Link de referência Reset Modem: https://configuraraparelhos.claro.com.br/technicolor/cga4233/funcoes-basicas/como-acessar-as-configuracoes-do-modem-wi-fi-pelo-computador
+A) Endereço IPv4 padrão do Modem: 192.168.0.1
+B) Usuário padrão do Modem: CLARO_?????? (SEIS ÚLTIMOS DÍGITOS DO MAC ADDRESS)
+C) Senha padrão do Modem: ETIQUETA NA PARTE DE BAIXO DO MODEM
 
-	Endereço IPv4 padrão do Modem: 192.168.0.1
-	Usuário padrão do Modem: CLARO_?????? (SEIS ÚLTIMOS DÍGITOS DO MAC ADDRESS)
-	Senha padrão do Modem: ETIQUETA NA PARTE DE BAIXO DO MODEM
-
-	APÓS O RESET SERÁ NECESSÁRIO FAZER AS CONFIGURAÇÕES BÁSICAS DO MODEM NOVAMENTE.
+APÓS O RESET SERÁ NECESSÁRIO FAZER AS CONFIGURAÇÕES BÁSICAS DO MODEM NOVAMENTE.
+```
 
 #02_ Configurando o Modem Claro-NET em Modo Bridge<br>
+```bash
+Link de referência Modo Bridge: https://configuraraparelhos.claro.com.br/technicolor/cga4233/funcoes-avancadas/como-configurar-o-modem-wi-fi-no-modo-bridge
 
-	Link de referência Modo Bridge: https://configuraraparelhos.claro.com.br/technicolor/cga4233/funcoes-avancadas/como-configurar-o-modem-wi-fi-no-modo-bridge
+A) após acessar as configurações do Modem clique em: Configurações Avançadas;
+B) após habilitar as opções avançadas clique no ícone do: Menu no canto superior esquerdo;
+C) no Menu, clique em: Rede para expandir as opções e clique em: Configurações Básicas;
+D) em: Tipo de Conexão WAN mude de: Roteador para: Bridged (Em Ponte) clique em: OK;
 
-	a) após acessar as configurações do Modem clique em: Configurações Avançadas;
-	b) após habilitar as opções avançadas clique no ícone do: Menu no canto superior esquerdo;
-	c) no Menu, clique em: Rede para expandir as opções e clique em: Configurações Básicas;
-	d) em: Tipo de Conexão WAN mude de: Roteador para: Bridged (Em Ponte) clique em: OK;
+#OBSERVAÇÃO IMPORTANTE: AUTOMATICAMENTE O MODEM SERÁ RECONFIGURADO E REINICIADO APÓS 1 (UM) MINUTO, 
+#AS CONFIGURAÇÕES ANTERIORES NÃO SERÃO PERDIDAS, SOMENTE A REDE SEM-FIO SERÁ DESATIVADA E OS RECURSOS
+#EXISTENTES NO ROTEADOR SERÃO DESATIVADOS.
 
-	OBSERVAÇÃO IMPORTANTE: AUTOMATICAMENTE O MODEM SERÁ RECONFIGURADO E REINICIADO APÓS 1 (UM) MINUTO, 
-	AS CONFIGURAÇÕES ANTERIORES NÃO SERÃO PERDIDAS, SOMENTE A REDE SEM-FIO SERÁ DESATIVADA E OS RECURSOS
-	EXISTENTES NO ROTEADOR SERÃO DESATIVADOS.
-
-	OBSERVAÇÃO: o IP para acessar as configurações foi alterado para 192.168.100.1/24. Caso não seja 
-	possível através desse IP, é necessário configurar o IP da placa de rede nas configurações do 
-	seu computador. Também é possível restaurar o modem Wi-Fi para as configurações de fábrica para 
-	acessar pelo IP padrão.
+#OBSERVAÇÃO: o IP para acessar as configurações foi alterado para 192.168.100.1/24. Caso não seja 
+#possível através desse IP, é necessário configurar o IP da placa de rede nas configurações do 
+#seu computador. Também é possível restaurar o modem Wi-Fi para as configurações de fábrica para 
+#acessar pelo IP padrão.
+```

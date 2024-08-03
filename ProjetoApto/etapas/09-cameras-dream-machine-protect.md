@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 29/05/2024<br>
-#Data de atualização: 19/06/2024<br>
-#Versão: 0.03
+#Data de atualização: 03/08/2024<br>
+#Versão: 0.04
 
 Loja Oficial da Ubiquiti Unifi no Brasil: https://br.store.ui.com/<br>
 Canal Oficial da Ubiquiti Unifi no YouTUBE: https://www.youtube.com/UBNTBR<br>
@@ -33,54 +33,59 @@ Calculadora de Armazenamento: https://zufall.co/protect-calculator/<br>
 Calculadora de Wi-Fi Unifi: https://wifi.ui.com/
 
 #00_ Acessando o Dream Machine Pro com a sua conta da Ubiquiti ID-SSO (Single sign-on)<br>
+```bash
+No seu navegador Google Chrome acesse a URL: https://172.16.1.254 ou https://unifi
 
-	No seu navegador Google Chrome acesse a URL: https://172.16.1.254 ou https://unifi
-	
-	OBSERVAÇÃO IMPORTANTE: não habilite o recurso de tradução do Inglês para o Português do Google
-	Chrome, geralmente acontece alguns problemas na configuração ou tradução do termo técnico.
+#OBSERVAÇÃO IMPORTANTE: não habilite o recurso de tradução do Inglês para o Português do Google
+#Chrome, geralmente acontece alguns problemas na configuração ou tradução do termo técnico.
+```
 
 #01_ Verificando os Dispositivos Ubiquiti Unifi conectados no Switch PoE<br
-	
-	OBSERVAÇÃO: para facilitar as configurações iniciais das Câmeras, recomendo está
-	conectado via Cabo de Rede no seu Switch PoE e fazer os escaneamento da rede, depois
-	que configurar as Câmeras ai sim podemos testar as conexões.
+```bash
+#OBSERVAÇÃO: para facilitar as configurações iniciais das Câmeras, recomendo está
+#conectado via Cabo de Rede no seu Switch PoE e fazer os escaneamento da rede, depois
+#que configurar as Câmeras ai sim podemos testar as conexões.
 
-	Terminal: (Atalho Ctrl + Alt + T)
-		OBSERVAÇÃO IMPORTANTE: caso você não tenha instalado o comando Nmap no seu GNU/Linux
-		digite o comando: sudo apt update && sudo apt install nmap <Enter>
-		sudo nmap 172.16.1.0/24
-	
-	Unifi OS
-		Network
-			Unifi Devices
-				OBSERVAÇÃO IMPORTANTE: Deve aparecer as Câmeras G5 nos dispositivos conectados
-			Topology
-				OBSERVAÇÃO IMPORTANTE: Deve aparecer as Câmeras G5 nos dispositivos conectados
-			Ports
-				OBSERVAÇÃO IMPORTANTE: Deve aparecer as Câmeras G5 nos dispositivos conectados
+Terminal: (Atalho Ctrl + Alt + T)
+
+#OBSERVAÇÃO IMPORTANTE: caso você não tenha instalado o comando Nmap no seu GNU/Linux
+#digite o comando: sudo apt update && sudo apt install nmap <Enter>
+sudo nmap 172.16.1.0/24
+
+Unifi OS
+	Network
+		Unifi Devices
+			#OBSERVAÇÃO IMPORTANTE: Deve aparecer as Câmeras G5 nos dispositivos conectados
+		Topology
+			#OBSERVAÇÃO IMPORTANTE: Deve aparecer as Câmeras G5 nos dispositivos conectados
+		Ports
+			#OBSERVAÇÃO IMPORTANTE: Deve aparecer as Câmeras G5 nos dispositivos conectados
+```
 
 #02_ Adotando as Câmeras no Unifi OS Protect<br>
+```bash
+#OBSERVAÇÃO IMPORTANTE: no primeiro login no console do Unifi, o Dream Machine já localiza
+#os Câmeras G5 que está conectado no seu Switch ou Dream Machine e já recomenda adicionar 
+#na Topologia, fazendo o processo de Adotar o equipamento no Console do Dream Machine.
 
-	OBSERVAÇÃO IMPORTANTE: no primeiro login no console do Unifi, o Dream Machine já localiza
-	os Câmeras G5 que está conectado no seu Switch ou Dream Machine e já recomenda adicionar 
-	na Topologia, fazendo o processo de Adotar o equipamento no Console do Dream Machine.
+Unifi OS
+	Protect
+		<Adopt Devices>
+			G5 Bullet <Click to Adopt>
+				Introducing Smart Detection
+				<Enable Smart Detection>
+			G5 Bullet <Click to Adopt>
+				Introducing Smart Detection
+				<Enable Smart Detection>
 
-	Unifi OS
-		Protect
-			<Adopt Devices>
-				G5 Bullet <Click to Adopt>
-					Introducing Smart Detection
-					<Enable Smart Detection>
-				G5 Bullet <Click to Adopt>
-					Introducing Smart Detection
-					<Enable Smart Detection>
-	
-	OBSERVAÇÃO IMPORTANTE: após adotar as câmeras G5 Bullet no Unifi Protect o processo de 
-	atualizar o Firmware é iniciado, esse processo demora um pouco.
+#OBSERVAÇÃO IMPORTANTE: após adotar as câmeras G5 Bullet no Unifi Protect o processo de 
+#atualizar o Firmware é iniciado, esse processo demora um pouco.
+```
 
 #03_ Instalando o Unifi Protect no Android ou iPhone (Apple)<br>
-
-	Instalação no Android
-		Play Store
-			Pesquisar apps: Unifi Protect
-				<Instalar>
+```bash
+Instalação no Android
+	Play Store
+		Pesquisar apps: Unifi Protect
+			<Instalar>
+```

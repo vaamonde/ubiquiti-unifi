@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 10/02/2024<br>
-#Data de atualização: 12/05/2024<br>
-#Versão: 0.11
+#Data de atualização: 03/08/2024<br>
+#Versão: 0.12
 
 Loja Oficial da Ubiquiti Unifi no Brasil: https://br.store.ui.com/<br>
 Canal Oficial da Ubiquiti Unifi no YouTUBE: https://www.youtube.com/UBNTBR<br>
@@ -31,301 +31,311 @@ Calculadora de Wi-Fi Unifi: https://wifi.ui.com/<br>
 Calculadora de Armazenamento: https://zufall.co/protect-calculator/
 
 #00_ Acessando o Dream Machine Pro com a sua conta da Ubiquiti ID-SSO (Single sign-on)<br>
+```bash
+No seu navegador Google Chrome acesse a URL: https://172.16.1.254 ou https://unifi
 
-	No seu navegador Google Chrome acesse a URL: https://172.16.1.254 ou https://unifi
-	
-	OBSERVAÇÃO IMPORTANTE: não habilite o recurso de tradução do Inglês para o Português do Google
-	Chrome, geralmente acontece alguns problemas na configuração ou tradução do termo técnico.
+#OBSERVAÇÃO IMPORTANTE: não habilite o recurso de tradução do Inglês para o Português do Google
+#Chrome, geralmente acontece alguns problemas na configuração ou tradução do termo técnico.
+```
 
 #01_ Habilitando o suporte ao IPv6 no Link de Internet e na Rede LAN<br>
-
-	Na tela do Unifi OS clique no Dream Machine Pro (vaamonde)
-		Settings
-			Internet
-				Clicar em: claro-net
-					Advanced: Manual (Enable)
-						IPv4 Configuration
-							IPv4 Connection: DHCPv4
-						IPv6 Configuration
-							IPv6 Connection: DHCPv6 (Enable)
-							Prefix Delegation Size: 64 
+```bash
+Na tela do Unifi OS clique no Dream Machine Pro (vaamonde)
+	Settings
+		Internet
+			Clicar em: claro-net
+				Advanced: Manual (Enable)
+					IPv4 Configuration
+						IPv4 Connection: DHCPv4
+					IPv6 Configuration
+						IPv6 Connection: DHCPv6 (Enable)
+						Prefix Delegation Size: 64 
+			<Apply>
+		
+		Networks
+			Clicar em: apto
+				IPv6
+					Interface Type: Prefix Delegation (Enable)
+					Prefix Delegation Interface: claro-net
 				<Apply>
-			
-			Networks
-				Clicar em: apto
-					IPv6
-						Interface Type: Prefix Delegation (Enable)
-						Prefix Delegation Interface: claro-net
-					<Apply>
 
-	Site para testar o IPv6: https://test-ipv6.com/
-	Site para testar o IPv6: https://ipv6-test.com/ (NÃO COMENTADO NO VÍDEO)
+Site para testar o IPv6: https://test-ipv6.com/
+Site para testar o IPv6: https://ipv6-test.com/ (NÃO COMENTADO NO VÍDEO)
+```
 
 #02_ Alterando a Potência e Canais das Redes Sem-Fio 2.4Ghz e 5.0Ghz<br>
+```bash
+Site para dimensionar o desempenho da Rede Sem-Fio: https://wifi.ui.com/
 
-	Site para dimensionar o desempenho da Rede Sem-Fio: https://wifi.ui.com/
-	
-	Na tela do Unifi OS clique no Dream Machine Pro (vaamonde)
-		UniFi Devices
-			Clicar em: Sala
-				Settings
-					Radios
-						2.4 Ghz
-							Channel Width: 40 Mhz
-							Channel: 6
-							Transmit Power: Medium
-						5.0 Ghz
-							Channel Width: 80 Mhz
-							Channel: 100 (DFS)
-							Transmit Power: High
-						Band Steering
-							Prefer 5.0 GHz
-				<Apply Changes>
+Na tela do Unifi OS clique no Dream Machine Pro (vaamonde)
+	UniFi Devices
+		Clicar em: Sala
+			Settings
+				Radios
+					2.4 Ghz
+						Channel Width: 40 Mhz
+						Channel: 6
+						Transmit Power: Medium
+					5.0 Ghz
+						Channel Width: 80 Mhz
+						Channel: 100 (DFS)
+						Transmit Power: High
+					Band Steering
+						Prefer 5.0 GHz
+			<Apply Changes>
 
-			Clicar em: Quarto
-				Settings
-					Radios
-						2.4 Ghz
-							Channel Width: 40 Mhz
-							Channel: 11
-							Transmit Power: Medium
-						5.0 Ghz
-							Channel Width: 160 Mhz
-							Channel: 36
-							Transmit Power: High
-						Band Steering
-							Prefer 5.0 GHz
-				<Apply Changes>
+		Clicar em: Quarto
+			Settings
+				Radios
+					2.4 Ghz
+						Channel Width: 40 Mhz
+						Channel: 11
+						Transmit Power: Medium
+					5.0 Ghz
+						Channel Width: 160 Mhz
+						Channel: 36
+						Transmit Power: High
+					Band Steering
+						Prefer 5.0 GHz
+			<Apply Changes>
 
-	#atualizando e instalando o software nmap, snmp, wavemon e linssid no GNU/Linux
-	sudo apt update && sudo apt install nmap snmp wavemon linssid
+#atualizando e instalando o software nmap, snmp, wavemon e linssid no GNU/Linux
+sudo apt update && sudo apt install nmap snmp wavemon linssid
 
-	#verificando as informações de monitoramento da rede Sem-Fio
-	sudo wavemon
+#verificando as informações de monitoramento da rede Sem-Fio
+sudo wavemon
 
-	#escaneando as Redes Sem-Fio 2.4Ghz e 5Ghz
-	sudo linssid
+#escaneando as Redes Sem-Fio 2.4Ghz e 5Ghz
+sudo linssid
+```
 
 #03_ Configuração do suporte ao SNMP V1/2C e Acesso Remoto via SSH e Nuvem Hibrida<br>
+```bash
+#OBSERVAÇÃO IMPORTANTE: O Ubiquiti Unifi Dream Machine Pro não tem suporte ao Protocolo
+#SNMP nativamente no seu Hardware, para habilitar esse recurso e necessário acessar via
+#SSH o UDM-Pro e fazer a instalação do pacote manualmente do Protocolo SNMP V1/2C.
 
-	OBSERVAÇÃO IMPORTANTE: O Ubiquiti Unifi Dream Machine Pro não tem suporte ao Protocolo
-	SNMP nativamente no seu Hardware, para habilitar esse recurso e necessário acessar via
-	SSH o UDM-Pro e fazer a instalação do pacote manualmente do Protocolo SNMP V1/2C.
+#OBSERVAÇÃO IMPORTANTE: O Ubiquiti Unifi Dream Machine Pro recomenda não habilitar o
+#Protocolo de Acesso Remoto SSH no Console, conforme mensagem: O uso do Secure Shell 
+#(SSH) pode potencialmente danificar os dispositivos Ubiquiti e resultar na perda de 
+#acesso a esses dispositivos e aos seus dados. Após habilitar o SSH no UDM-Pro por
+#padrão e liberado o acesso ao usuário: root e a senha cadastrada
 
-	OBSERVAÇÃO IMPORTANTE: O Ubiquiti Unifi Dream Machine Pro recomenda não habilitar o
-	Protocolo de Acesso Remoto SSH no Console, conforme mensagem: O uso do Secure Shell 
-	(SSH) pode potencialmente danificar os dispositivos Ubiquiti e resultar na perda de 
-	acesso a esses dispositivos e aos seus dados. Após habilitar o SSH no UDM-Pro por
-	padrão e liberado o acesso ao usuário: root e a senha cadastrada
-	
-	#LIBERANDO O ACESSO REMOTO E ACESSO VIA SSH NO DREAM MACHINE
-	Na tela do Unifi OS Console
-		Console Settings
+#LIBERANDO O ACESSO REMOTO E ACESSO VIA SSH NO DREAM MACHINE
+Na tela do Unifi OS Console
+	Console Settings
+		Advanced
+			Remote Access (Enable)
+			SSH (Enable)
+				SSH Password
+					Password: SUA_SENHA_SSH
+					Confirm Password: SUA_SENHA_SSH
+			<Enable>
+
+#CONFIGURANDO O SNMP E SSH NO DREAM MACHINE PARA TODOS OS DISPOSITIVOS REMOTOS
+Na tela do Unifi OS clique no Dream Machine Pro (vaamonde)
+	Settings
+		System
 			Advanced
-				Remote Access (Enable)
-				SSH (Enable)
-					SSH Password
-						Password: SUA_SENHA_SSH
-						Confirm Password: SUA_SENHA_SSH
-				<Enable>
- 
-	#CONFIGURANDO O SNMP E SSH NO DREAM MACHINE PARA TODOS OS DISPOSITIVOS REMOTOS
-	Na tela do Unifi OS clique no Dream Machine Pro (vaamonde)
-		Settings
-			System
+				SNMP Monitoring
+					SNMP Version 1 & 2 (Enable)
+					Community String: apto
+				Device Authentication
+					Device SSH Authentication (Enable)
+					Username: SEU_USUÁRIO
+					Password: SUA_SENHA
+			<Apply Changes>
+
+	UniFi Devices
+		Clicar em: Sala
+			Settings
+				Manage
+					SNMP (Enable)
+						Location: Sala
+						Contact: Vaamonde
+			<Apply Changes>
+
+		Clicar em: Quarto
+			Settings
+				Manage
+					SNMP (Enable)
+						Location: Quarto
+						Contact: Vaamonde
+			<Apply Changes>
+
+		Clicar em: USW-Apto
+			Settings
 				Advanced
-					SNMP Monitoring
-						SNMP Version 1 & 2 (Enable)
-						Community String: apto
-					Device Authentication
-						Device SSH Authentication (Enable)
-						Username: SEU_USUÁRIO
-						Password: SUA_SENHA
-				<Apply Changes>
-	
-		UniFi Devices
-			Clicar em: Sala
-				Settings
-					Manage
-						SNMP (Enable)
-							Location: Sala
-							Contact: Vaamonde
-				<Apply Changes>
-
-			Clicar em: Quarto
-				Settings
-					Manage
-						SNMP (Enable)
-							Location: Quarto
-							Contact: Vaamonde
-				<Apply Changes>
-
-			Clicar em: USW-Apto
-				Settings
-					Advanced
-						SNMP (Enable)
-							Location: Rack
-							Contact: Vaamonde
-				<Apply Changes>
+					SNMP (Enable)
+						Location: Rack
+						Contact: Vaamonde
+			<Apply Changes>
+```
 
 #04_ Testando a conexão via SSH e o monitoramento via SNMP no GNU/Linux<br>
+```bash
+#pingando os dispositivos na rede
+ping 172.16.1.254	(Dream Machine Pro / Gateway)
+ping 172.16.1.50	(Switch PoE)
+ping 172.16.1.60	(Access Point U6-Pro)
+ping 172.16.1.61	(Access Point U6-Mesh)
 
-	#pingando os dispositivos na rede
-	ping 172.16.1.254	(Dream Machine Pro / Gateway)
-	ping 172.16.1.50	(Switch PoE)
-	ping 172.16.1.60	(Access Point U6-Pro)
-	ping 172.16.1.61	(Access Point U6-Mesh)
+#verificando as portas abertas em cada dispositivo na rede
+#opção do comando nmap: -p- (port ranges all)
+sudo nmap -p- 172.16.1.254  (Dream Machine Pro / Gateway)
+sudo nmap 172.16.1.50       (Switch PoE)
+sudo nmap -p- 172.16.1.60   (Access Point U6-Pro)
+sudo nmap -p- 172.16.1.61   (Access Point U6-Mesh)
 
-	#verificando as portas abertas em cada dispositivo na rede
-	#opção do comando nmap: -p- (port ranges all)
-	sudo nmap -p- 172.16.1.254  (Dream Machine Pro / Gateway)
-	sudo nmap 172.16.1.50       (Switch PoE)
-	sudo nmap -p- 172.16.1.60   (Access Point U6-Pro)
-	sudo nmap -p- 172.16.1.61   (Access Point U6-Mesh)
+#acessando via SSH os dispositivos da Ubiquiti Unifi no GNU/Linux
+ssh vaamonde@172.16.1.50	(Switch PoE)
+	Are you sure you want to continue connecting (yes/no/[fingerprint])?yes
+		help
+		info
+		exit
+ssh vaamonde@172.16.1.60	(Access Point U6-Pro)
+	Are you sure you want to continue connecting (yes/no/[fingerprint])?yes
+		help
+		info
+		exit
+ssh vaamonde@172.16.1.61	(Access Point U6-Mesh)
+	Are you sure you want to continue connecting (yes/no/[fingerprint])?yes
+		help
+		info
+		exit
+ssh root@172.16.1.254		(Dream Machine Pro / Gateway)
+	Are you sure you want to continue connecting (yes/no/[fingerprint])?yes
+		help
+		info
+		exit
 
-	#acessando via SSH os dispositivos da Ubiquiti Unifi no GNU/Linux
-	ssh vaamonde@172.16.1.50	(Switch PoE)
-		Are you sure you want to continue connecting (yes/no/[fingerprint])?yes
-			help
-			info
-			exit
-	ssh vaamonde@172.16.1.60	(Access Point U6-Pro)
-		Are you sure you want to continue connecting (yes/no/[fingerprint])?yes
-			help
-			info
-			exit
-	ssh vaamonde@172.16.1.61	(Access Point U6-Mesh)
-		Are you sure you want to continue connecting (yes/no/[fingerprint])?yes
-			help
-			info
-			exit
-	ssh root@172.16.1.254		(Dream Machine Pro / Gateway)
-		Are you sure you want to continue connecting (yes/no/[fingerprint])?yes
-			help
-			info
-			exit
-	
-	#verificando as informações de SNMP dos dispositivos da Ubiquiti Unifi no GNU/Linux
-	#opção do comando snmpwalk: -c (set the community string), -v (specifies SNMP version to use)
-	snmpwalk -c apto -v 2c 172.16.1.50
-	snmpwalk -c apto -v 2c 172.16.1.60
-	snmpwalk -c apto -v 2c 172.16.1.61
+#verificando as informações de SNMP dos dispositivos da Ubiquiti Unifi no GNU/Linux
+#opção do comando snmpwalk: -c (set the community string), -v (specifies SNMP version to use)
+snmpwalk -c apto -v 2c 172.16.1.50
+snmpwalk -c apto -v 2c 172.16.1.60
+snmpwalk -c apto -v 2c 172.16.1.61
 
-	#verificando as informações de OID (Object Identifier) da MIB (Management Information Bases)
-	#dos dispositivos da Ubiquiti Unifi no GNU/Linux
-	#opção do comando snmpwalk: -c (set the community string), -v (specifies SNMP version to use)
-	snmpwalk -c apto -v 2c 172.16.1.60 1.3.6.1.2.1.1.1.0     (Modelo e Versão do OS)
-	snmpwalk -c apto -v 2c 172.16.1.60 1.3.6.1.2.1.4.22.1.2  (Endereço MAC Address Conectados)
-	snmpwalk -c apto -v 2c 172.16.1.60 1.3.6.1.2.1.4.20.1.1  (Endereço IPv4 Configurado no AP)
+#verificando as informações de OID (Object Identifier) da MIB (Management Information Bases)
+#dos dispositivos da Ubiquiti Unifi no GNU/Linux
+#opção do comando snmpwalk: -c (set the community string), -v (specifies SNMP version to use)
+snmpwalk -c apto -v 2c 172.16.1.60 1.3.6.1.2.1.1.1.0     (Modelo e Versão do OS)
+snmpwalk -c apto -v 2c 172.16.1.60 1.3.6.1.2.1.4.22.1.2  (Endereço MAC Address Conectados)
+snmpwalk -c apto -v 2c 172.16.1.60 1.3.6.1.2.1.4.20.1.1  (Endereço IPv4 Configurado no AP)
+```
 
 #05_ Mudando a Porta WAN de SFP (Small Form Pluggable) para Porta 8 GigabitEthernet<br>
-
-	Dream Machine;
-		Overview
-			Port Manager
-				Clicando na Porta 9 (padrão WAN cabeada)
-					Configure Interfaces
-					Será apresentado as Interfaces: 8 e 9 GE, 10 e 11 SFP
-					Port 10 SFP: selecionar Disabled ou LAN
-					Port 8 GE: selecionar WAN2
-				<Apply>
+```bash
+Dream Machine;
+	Overview
+		Port Manager
+			Clicando na Porta 9 (padrão WAN cabeada)
+				Configure Interfaces
+				Será apresentado as Interfaces: 8 e 9 GE, 10 e 11 SFP
+				Port 10 SFP: selecionar Disabled ou LAN
+				Port 8 GE: selecionar WAN2
+			<Apply>
+```
 
 #06_ Alterando o nome dos Dispositivos Conectados na Rede Unifi (Cabeado e Wi-Fi)<br>
-
-	Dream Machine;
-		Client Devices
-			Selecione o Dispositivo
-				Settings
-					Name: Box-TV Quarto
-					Note: MXQ-Pro
-				<Apply Changes>
+```bash
+Dream Machine;
+	Client Devices
+		Selecione o Dispositivo
+			Settings
+				Name: Box-TV Quarto
+				Note: MXQ-Pro
+			<Apply Changes>
+```
 
 #07_ Alterando o DNS Preferencial e Alternativo da Claro-NET<br>
+```bash
+Indicação do DNS da CloudFlare: https://blog.cloudflare.com/introducing-1-1-1-1-for-families
 
-	Indicação do DNS da CloudFlare: https://blog.cloudflare.com/introducing-1-1-1-1-for-families
+Dream Machine;
+	Settings
+		Internet
+			Selecionar: claro-net
+				IPv4 Configuration
+					DNS Server Auto (OFF) (DISABLE)
+						#Malware and Adult Content
+						Primary Server: 1.1.1.3
+						Secondary Server: 1.0.0.3
+				IPv6 Configuration
+					DNS Server Auto (OFF) (DISABLE)
+						#Malware and Adult Content
+						Primary Server: 2606:4700:4700::1113
+						Secondary Server: 2606:4700:4700::1003
+				<Apply Changes>
 
-	Dream Machine;
-		Settings
-			Internet
-				Selecionar: claro-net
-					IPv4 Configuration
-						DNS Server Auto (OFF) (DISABLE)
-							#Malware and Adult Content
-							Primary Server: 1.1.1.3
-							Secondary Server: 1.0.0.3
-					IPv6 Configuration
-						DNS Server Auto (OFF) (DISABLE)
-							#Malware and Adult Content
-							Primary Server: 2606:4700:4700::1113
-							Secondary Server: 2606:4700:4700::1003
-					<Apply Changes>
+#verificando os endereços IPv4 e IPv6 via terminal
+#opção do comando curl: -4 (IPv4), -6 (IPv6)
+Endereço IPv6: curl -6 https://ifconfig.co/ip
+Endereço IPv4: curl -4 https://ifconfig.co/ip
 
-	#verificando os endereços IPv4 e IPv6 via terminal
-	#opção do comando curl: -4 (IPv4), -6 (IPv6)
-	Endereço IPv6: curl -6 https://ifconfig.co/ip
-	Endereço IPv4: curl -4 https://ifconfig.co/ip
+#testando as resoluções de DNS Server com o comando nslookup
+nslookup google.com
+nslookup vaamonde.com.br
 
-	#testando as resoluções de DNS Server com o comando nslookup
-	nslookup google.com
-	nslookup vaamonde.com.br
+#testando as resoluções de DNS Server com o comando dig
+#opções do comando dig: A (Type A IPv4), AAA (Type AAAA IPv6)
+dig google.com AAAA
+dig google.com A
 
-	#testando as resoluções de DNS Server com o comando dig
-	#opções do comando dig: A (Type A IPv4), AAA (Type AAAA IPv6)
-	dig google.com AAAA
-	dig google.com A
+dig vaamonde.com.br AAAA
+dig vaamonde.com.br A
 
-	dig vaamonde.com.br AAAA
-	dig vaamonde.com.br A
+#comandos de verificação dos Endereços IPv6 no GNU/Linux (NÃO COMENTADO NO VÍDEO)
+#opção do comando ip: -6 (shortcut for -family inet6)
+ifconfig wlp4s0
+ip -6 address show
 
-	#comandos de verificação dos Endereços IPv6 no GNU/Linux (NÃO COMENTADO NO VÍDEO)
-	#opção do comando ip: -6 (shortcut for -family inet6)
-	ifconfig wlp4s0
-	ip -6 address show
+#comandos de verificação das Rotas IPv6 no GNU/Linux (NÃO COMENTADO NO VÍDEO)
+#opções do comando route: -A (af), inet6 (IPv6 Protocol), -n (numeric address)
+#opção do comando ip: -6 (shortcut for -family inet6)
+route -A inet6 -n
+ip -6 route show
 
-	#comandos de verificação das Rotas IPv6 no GNU/Linux (NÃO COMENTADO NO VÍDEO)
-	#opções do comando route: -A (af), inet6 (IPv6 Protocol), -n (numeric address)
-	#opção do comando ip: -6 (shortcut for -family inet6)
-	route -A inet6 -n
-	ip -6 route show
+#comandos de verificação dos DNS IPv6 no GNU/Linux (NÃO COMENTADO NO VÍDEO)
+resolvectl dns
 
-	#comandos de verificação dos DNS IPv6 no GNU/Linux (NÃO COMENTADO NO VÍDEO)
-	resolvectl dns
-
-	#comandos de verificação do Ping IPv4 e IPv6 no GNU/Linux (NÃO COMENTADO NO VÍDEO)
-	#opções do comando ping: -c (Count), -4 (Use IPv4 only), -6 (Use IPv6 only)
-	ping -c 2 -4 google.com
-	ping -c 2 -6 google.com
+#comandos de verificação do Ping IPv4 e IPv6 no GNU/Linux (NÃO COMENTADO NO VÍDEO)
+#opções do comando ping: -c (Count), -4 (Use IPv4 only), -6 (Use IPv6 only)
+ping -c 2 -4 google.com
+ping -c 2 -6 google.com
+```
 
 #08_ Configurando o Fast Roaming e Minimum RSSI no Access Point U6-Pro e Mesh<br>
+```bash
+Dream Machine;
+	Settings
+		WiFi
+			Clicar em: @VAAMONDE
+				Fast Roaming: ON (Enable)
+			<Apply Changes>
 
-	Dream Machine;
-		Settings
-			WiFi
-				Clicar em: @VAAMONDE
-					Fast Roaming: ON (Enable)
-				<Apply Changes>
-	
-	Dream Machine
-		Unifi Devices
-			Access Point: sala
-				Settings
-					Minimum RSSI: ON (Enable)
-					RSSI (dBm): -80
-			<Apply Changes>
-	
-	Dream Machine
-		Unifi Devices
-			Access Point: quarto
-				Settings
-					Minimum RSSI: ON (Enable)
-					RSSI (dBm): -40
-					Strict Mode
-			<Apply Changes>
+Dream Machine
+	Unifi Devices
+		Access Point: sala
+			Settings
+				Minimum RSSI: ON (Enable)
+				RSSI (dBm): -80
+		<Apply Changes>
+
+Dream Machine
+	Unifi Devices
+		Access Point: quarto
+			Settings
+				Minimum RSSI: ON (Enable)
+				RSSI (dBm): -40
+				Strict Mode
+		<Apply Changes>
+```
 
 #09_ Estudos e melhorias futuras para o cenário de Rede Sem-Fio Residencial<br>
+```bash
+Link-01: UniFi's Advanced Wi-Fi Settings Explained
+https://evanmccann.net/blog/2021/11/unifi-advanced-wi-fi-settings
 
-	Link-01: UniFi's Advanced Wi-Fi Settings Explained
-	_01: https://evanmccann.net/blog/2021/11/unifi-advanced-wi-fi-settings
-
-	Link-02: Understanding Wi-Fi 4/5/6/6E/7 (802.11 n/ac/ax/be)
-	_02: https://www.wiisfi.com/
+Link-02: Understanding Wi-Fi 4/5/6/6E/7 (802.11 n/ac/ax/be)
+https://www.wiisfi.com/
+```
