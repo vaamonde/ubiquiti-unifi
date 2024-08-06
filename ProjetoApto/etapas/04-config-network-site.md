@@ -34,7 +34,7 @@ No seu navegador Google Chrome acesse a URL: https://192.168.1.1 ou https://unif
 ```bash
 #OBSERVAÇÃO IMPORTANTE: por padrão as configurações básicas de rede do Dream Machine Pro e 
 #todos os equipamentos de rede da Ubiquiti Unifi está na Faixa de IPv4 Classe C começando
-#com os endereços IP: 192.168.1.0/24, recomendo alterar os endereços IP andes de começar a
+#com os endereços IP: 192.168.1.0/24, recomendo alterar os endereços IP antes de começar a
 #configurar os equipamentos na rede.
 
 Na tela do Unifi OS clique no Dream Machine Pro (vaamonde)

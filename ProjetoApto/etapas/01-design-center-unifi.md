@@ -38,6 +38,12 @@ Link da vídeo aula: https://www.youtube.com/watch?v=kg_zt3Rr_3I
 #OBSERVAÇÃO IMPORTANTE: não recomendo utilizar o recurso do Google Chrome de Tradução, muitas 
 #vezes esses recursos traduzem o termo técnico ou gera problemas no site.
 
+#OBSERVAÇÃO IMPORTANTE: A partir de 22 de julho, a autenticação multifator será obrigatória para 
+#todas as contas Ubiquiti. Essa mudança é um passo significativo em nosso compromisso de garantir 
+#o mais alto nível de segurança e proteção de dados. A Ubiquiti Unifi recomenda usar o UI Verify
+#como um método de autenticação de um clique diretamente do seu dispositivo móvel, mas também 
+#oferecemos suporte a vários outros métodos.
+
 Acesse o site: https://account.ui.com
 	Caso não tenha uma conta clique em: Don't have an account? Create one.
 
@@ -55,7 +61,7 @@ Criando uma conta no: UI Account
 ```bash
 Acesse o site: https://design.ui.com/
 
-#OBSERVAÇÃO: por padrão do Design Center sempre inicia com o Wizard de um projeto básico
+#OBSERVAÇÃO: por padrão o Design Center sempre inicia com o Wizard de um projeto básico
 #da Ubiquiti Unifi, esse projeto é apenas uma referência de como utilizar o site.
 
 #OBSERVAÇÃO IMPORTANTE: caso ainda não esteja autenticado no Design Center, no canto 
@@ -65,8 +71,8 @@ Acesse o site: https://design.ui.com/
 
 #02_ Configurações Básicas do Design Center Unifi antes de criar o seu primeiro projeto<br>
 ```bash
-No canto superior direito existe dois ícones: o primeiro é o Design Center Wizard o segundo
-inicia um novo projeto padrão em branco, recomendo utilizar a segunda opção.
+#No canto superior direito existe dois ícones: o primeiro é o Design Center Wizard o segundo
+#inicia um novo projeto padrão em branco, recomendo utilizar a segunda opção.
 
 Na tela de: Add New Project (Adicionar um novo Projeto) preencha os campos abaixo:
 	Project Name (Nome do Projeto): Digite um nome para o seu projeto: Apto (por exemplo)
@@ -82,8 +88,8 @@ Na tela de: Add New Project (Adicionar um novo Projeto) preencha os campos abaix
 #OBSERVAÇÃO: por padrão o Design Center fornece um projeto simples de uma Planta Baixa para iniciar
 #o uso da ferramenta, recomendo remover essa planta baixa e fazer o upload da planta do projeto.
 
-No canto superior direito temos o ícone: Settings (Configurações), clique em: Remove (Remover) depois:
-Confirm (Confirmar).
+#No canto superior direito temos o ícone: Settings (Configurações), clique em: Remove (Remover) depois:
+#Confirm (Confirmar).
 
 Na tela de: Create Your Floor Plan (Crie sua Planta Baixa) você tem duas opções:
 	Upload Plan (Carregar Planta Baixa): recomendado quando você tem a planta baixa do projeto
@@ -94,10 +100,11 @@ Na tela de: Create Your Floor Plan (Crie sua Planta Baixa) você tem duas opçõ
 Clique na opção: Upload Plan e selecione o arquivo de Planta Baixa do seu Projeto
 No campo Name (Nome): digite o nome da planta baixa do projeto e clique em: <Confirm>
 
-Após fazer o Upload da Planta Baixa para o Design Center duas configurações básicas são
-importantes para iniciar o seu projeto.
-	Primeira: Reference Line Length (Comprimento da Linha de Referência)
-	Segunda.: Ceiling Height (Altura do Teto ou Pé Direito, padrão 2,70m = 2.7 ou 3m = 3)
+#Após fazer o Upload da Planta Baixa para o Design Center duas configurações básicas são
+#importantes para iniciar o seu projeto.
+
+Primeira: Reference Line Length (Comprimento da Linha de Referência)
+Segunda.: Ceiling Height (Altura do Teto ou Pé Direito, padrão 2,70m = 2.7 ou 3m = 3)
 
 #OBSERVAÇÃO IMPORTANTE: utilize como base de referência de linha por exemplo uma Porta ou um
 #Cômodo, faça uma medição preliminar e depois configura o seu projeto, nesse exemplo recomendo
@@ -117,11 +124,12 @@ importantes para iniciar o seu projeto.
 #para Pixel seja a mais próxima possível, se estiver usando Porta Interna recomendo mudar o
 #valor para: 0.6m que resolveu os problemas de escala do projeto, ficando mais próximo do real.
 
-Para finalizar as configurações básicas no canto superior direito tem o ícone de: Preferences,
-nessa opção temos:
-	Language: infelizmente não está disponível essa opção para o Português do Brasil
-	Measurement Units (Unidades de medida): Meters (Metros)
-	WiFi Coverage Color Scheme (Esquema de cores de cobertura WiFi): Heat Map (Mapa de calor)
+#Para finalizar as configurações básicas no canto superior direito tem o ícone de: Preferences,
+#nessa opção temos:
+
+Language: infelizmente não está disponível essa opção para o Português do Brasil
+Measurement Units (Unidades de medida): Meters (Metros)
+WiFi Coverage Color Scheme (Esquema de cores de cobertura WiFi): Heat Map (Mapa de calor)
 ```
 
 #03_ Criando as Paredes Internas e Externas no Design Center Unifi<br>
@@ -167,10 +175,10 @@ Clicando em cima de cada linha do desenho das paredes temos quatro ícones:
 
 #04_ Adicionando as Rotas de Cabos no Design Center Unifi<br>
 ```bash
-No canto superior direito temos a opção de: Draw Cable Route (Desenhar a Rota dos Cabos), recomendo
-desenhar o caminho básico dos cabos no seu projeto, lembrando que o Design Center não é uma solução
-100% confiável para Projetos de Cabeamento Estruturado, muitas vezes a distância projetada não é a
-real do projeto.
+#No canto superior direito temos a opção de: Draw Cable Route (Desenhar a Rota dos Cabos), recomendo
+#desenhar o caminho básico dos cabos no seu projeto, lembrando que o Design Center não é uma solução
+#100% confiável para Projetos de Cabeamento Estruturado, muitas vezes a distância projetada não é a
+#real do projeto.
 
 #OBSERVAÇÃO IMPORTANTE: no Unifi Design Center ele se baseia na adição do Rack Unifi, depois e feito
 #a criação das Rotas de Cabos e adicionado as conexões de cabos, indico essa parte do projeto para
@@ -190,9 +198,9 @@ D) Cable Connections for 8 People (16 Ports): área de trabalho para 08 pessoas 
 
 #05_ Adicionando os Dispositivos no Design Center Unifi<br>
 ```bash
-No canto superior direito temos a opção de: Device contendo todos os dispositivos suportados
-pelo Design Center da Unifi para a elaboração do projeto, você pode pesquisar o dispositivo
-ou selecionar com base na categoria.
+#No canto superior direito temos a opção de: Device contendo todos os dispositivos suportados
+#pelo Design Center da Unifi para a elaboração do projeto, você pode pesquisar o dispositivo
+#ou selecionar com base na categoria.
 
 #OBSERVAÇÃO IMPORTANTE: geralmente em projeto de Rede Sem-Fio ou de Cabeamento Estruturado com base
 #na Planta Baixa do Projeto determinamos o Centro de Massa ou Cortes Transversal e Longitudinal,
@@ -228,8 +236,8 @@ Adicionando o Switch PoE 16 Portas: USW-16-PoE
 
 #06_ Conectando os Dispositivos no Design Center Unifi<br>
 ```bash
-Existe duas formas de conectar os dispositivos no Design Center Unifi, nas opções de ícones
-no canto superior direito temos:
+#Existe duas formas de conectar os dispositivos no Design Center Unifi, nas opções de ícones
+#no canto superior direito temos:
 
 A) Draw Cable (Desenhar Cabo): nesse cenário você seleciona o tipo de cabo e faz o desenho
 B) Auto Cable (Cabo Automático): nesse cenário você seleciona o dispositivo que será conectado
@@ -264,12 +272,13 @@ D) LSZH: cabo de baixa emissão de fumaça e zero halógeno, ou seja, não toxic
 
 #07_ Visualizando a Potência de Sinal dos Access Point no Design Center Unifi<br>
 ```bash
-No canto superior direito temos o ícone: Coverage (Cobertura) nele temos as opções de:
-	Hover (Flutuar): padrão do Design Center, conforme passa o mouse no Dispositivo ele mostra seu status
-	WiFi (Sem-Fio): apresenta o Mapa Térmico dos dispositivos Sem-Fio instalado
-		WiFi Band (Banda Sem-Fio): 2,4Ghz, 5Ghz e 6Ghz 
-	Camera (CFTV - Circuito Fechado de TV Câmeras): mostra a posição do angulo de visão das câmeras 
-	Off (Desligar): desativa todas as opções
+#No canto superior direito temos o ícone: Coverage (Cobertura) nele temos as opções de:
+
+Hover (Flutuar): padrão do Design Center, conforme passa o mouse no Dispositivo ele mostra seu status
+WiFi (Sem-Fio): apresenta o Mapa Térmico dos dispositivos Sem-Fio instalado
+WiFi Band (Banda Sem-Fio): 2,4Ghz, 5Ghz e 6Ghz 
+Camera (CFTV - Circuito Fechado de TV Câmeras): mostra a posição do angulo de visão das câmeras 
+Off (Desligar): desativa todas as opções
 
 #OBSERVAÇÃO IMPORTANTE: no Design Center as versões de Access Point U6-Pro e U6-Mesh não tem suporte
 #a tecnologia de 6Ghz, essa tecnologia está disponível nos Access Point: U6 Enterprise e U6 In-Wall.
@@ -277,24 +286,26 @@ No canto superior direito temos o ícone: Coverage (Cobertura) nele temos as op�
 
 #08 _ Visualizando as Plantas Baixa, Topologia, Portas, e Lista de Equipamentos no Design Center Unifi<br>
 ```bash
-No canto superior esquerdo temos as opções:
-	Floor Plans (Planta Baixa): utilizado para visualizar a projetar as plantas baixas no Design Center
-	Topology (Topologia): utilizado para visualizar a topologia física e lógica dos equipamentos
-	Port View (Visão das Portas): utilizado para visualizar as conexões de portas entre os equipamentos
-	Equipment List (Lista de Equipamentos): utilizado para gerar a lista de equipamentos com valores direito da loja Unifi
+#No canto superior esquerdo temos as opções:
+
+Floor Plans (Planta Baixa): utilizado para visualizar a projetar as plantas baixas no Design Center
+Topology (Topologia): utilizado para visualizar a topologia física e lógica dos equipamentos
+Port View (Visão das Portas): utilizado para visualizar as conexões de portas entre os equipamentos
+Equipment List (Lista de Equipamentos): utilizado para gerar a lista de equipamentos com valores direito da loja Unifi
 ```
 
 #09_ Exportando as informações do Projeto em PDF no Design Center Unifi<br>
 ```bash
-No canto superior direito clique no ícone: Export as PDF (Exportar para PDF)
-	Floor Plans (Plantas Baixas): você pode selecionar as plantas baixas do projeto a ser exportada;
-	Feature to Include (Recursos Incluídos): você pode habilitar os desabilitar os recursos exportados;
-	Project Name (Nome do Projeto): novo do projeto a ser exportado;
-	Project Location (Localização do Projeto): localização física do projeto a ser exportado;
-	Prepared By (Preparado/Criado por): responsável pela criação do projeto a ser exportado;
-	Company Name (Nome da Empresa/Companhia): nome da empresa do projeto a ser exportado;
-	Upload Company Logo (Logo da Empresa): upload da imagem do Logo da Empresa a ser exportado.
-	<Export PDF>
+#No canto superior direito clique no ícone: Export as PDF (Exportar para PDF)
+
+Floor Plans (Plantas Baixas): você pode selecionar as plantas baixas do projeto a ser exportada;
+Feature to Include (Recursos Incluídos): você pode habilitar os desabilitar os recursos exportados;
+Project Name (Nome do Projeto): novo do projeto a ser exportado;
+Project Location (Localização do Projeto): localização física do projeto a ser exportado;
+Prepared By (Preparado/Criado por): responsável pela criação do projeto a ser exportado;
+Company Name (Nome da Empresa/Companhia): nome da empresa do projeto a ser exportado;
+Upload Company Logo (Logo da Empresa): upload da imagem do Logo da Empresa a ser exportado.
+<Export PDF>
 ```
 
 #10_ Gerenciando projetos no Design Center Unifi<br>

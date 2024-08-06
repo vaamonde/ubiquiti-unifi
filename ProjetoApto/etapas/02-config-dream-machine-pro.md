@@ -28,6 +28,12 @@ Datasheet do UDM-Pro: https://dl.ui.com/qig/udm-pro/#index
 #configuração e administração do Unifi Network ou Design Center, devido a compatibilidade do Java 
 #e recursos integrados no sistema que funciona perfeitamente nesse navegador.
 
+#OBSERVAÇÃO IMPORTANTE: A partir de 22 de julho, a autenticação multifator será obrigatória para 
+#todas as contas Ubiquiti. Essa mudança é um passo significativo em nosso compromisso de garantir 
+#o mais alto nível de segurança e proteção de dados. A Ubiquiti Unifi recomenda usar o UI Verify
+#como um método de autenticação de um clique diretamente do seu dispositivo móvel, mas também 
+#oferecemos suporte a vários outros métodos.
+
 Acesse o site: https://account.ui.com
 	Caso não tenha uma conta clique em: Don't have an account? Create one.
 
@@ -60,7 +66,7 @@ ping 192.168.1.66
 #02_ Configurando o Dream Machine Pro via Navegador ou Celular<br>
 ```bash
 #DICA IMPORTANTE: você pode configurar o Dream Machine via Navegador ou Celular, nesse caso
-#utilizando o aplicativo: Unifi para as plataformas Android ou Apple
+#utilizando o aplicativo: Unifi Network para as plataformas Android ou Apple
 
 Google Play - Unifi: https://play.google.com/store/apps/details?id=com.ubnt.easyunifi&hl=pt_BR&gl=US
 Apple Store - Unifi: https://apps.apple.com/br/app/unifi/id1057750338
@@ -101,7 +107,7 @@ No seu navegador Google Chrome acesse a URL: https://192.168.1.1 ou https://unif
 		<Next>
 
 #OBSERVAÇÃO IMPORTANTE: após a primeira configuração do Dream Machine será feito o Update
-#do Unifi, esse processo demora bastante dependendo do seu Link de Internet.
+#do Unifi Network, esse processo demora bastante dependendo do seu Link de Internet.
 ```
 
 #03_ Acessando o Console do Dream Machine Pro via Navegador ou Celular<br>
@@ -118,8 +124,8 @@ Unifi OS
 #04_ Adotando o Switch PoE no Console do Dream Machine Pro<br>
 ```bash
 #OBSERVAÇÃO IMPORTANTE: no primeiro login no console do Unifi, o Dream Machine já localiza
-#o Switch PoE que está no conectado e já recomenda adicionar no Topologia, fazendo o processo
-3de Adotar o equipamento no Console do Dream Machine (Recomendado sempre)
+#o Switch PoE que está conectado e já recomenda adicionar no Topologia, fazendo o processo
+#de Adotar o equipamento no Console do Dream Machine (Recomendado sempre)
 
 Ready to Add: USW 16 PoE
 	<Add>

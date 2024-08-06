@@ -56,7 +56,7 @@ Mais informações leia o How-To: https://medium.com/ubntbr/como-resetar-um-acce
 ```bash	
 #OBSERVAÇÃO: para facilitar as configurações iniciais dos Access Point, recomendo está
 #conectado via Cabo de Rede no seu Switch PoE e fazer os escaneamento da rede, depois
-3que configurar a Rede Sem-Fio ai sim podemos testar as conexões.
+#que configurar a Rede Sem-Fio ai sim podemos testar as conexões.
 
 Terminal: (Atalho Ctrl + Alt + T)
 
@@ -68,7 +68,7 @@ sudo nmap 192.168.1.0/24
 #03_ Adotando os Access Point U6 Pro e Mesh no Console do Dream Machine<br>
 ```bash
 #OBSERVAÇÃO IMPORTANTE: no primeiro login no console do Unifi, o Dream Machine já localiza
-#os Access Point que está conectado no seu Switch ou Dream MAchine e já recomenda adicionar 
+#os Access Point que está conectado no seu Switch ou Dream Machine e já recomenda adicionar 
 #na Topologia, fazendo o processo de Adotar o equipamento no Console do Dream Machine.
 
 Ready to Add: (3) Network devices
