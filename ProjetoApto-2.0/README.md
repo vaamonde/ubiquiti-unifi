@@ -78,4 +78,4 @@ Todos os equipamentos serão configurados e integrados com as soluções Unifi, 
 
 Link da vídeo aula: https://www.youtube.com/watch?v=AhiSnHJPrYo
 
-Link da documentação: 
+Link da documentação: https://github.com/vaamonde/ubiquiti-unifi/blob/main/ProjetoApto-2.0/etapas/01-config-express.md
