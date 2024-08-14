@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 06/08/2024<br>
-#Data de atualização: 06/08/2024<br>
-#Versão: 0.01
+#Data de atualização: 14/08/2024<br>
+#Versão: 0.03
 
 Loja Oficial da Ubiquiti Unifi no Brasil: https://br.store.ui.com/<br>
 Canal Oficial da Ubiquiti Unifi no YouTUBE: https://www.youtube.com/UBNTBR<br>
@@ -21,6 +21,10 @@ Especificações Técnicas da Ubiquiti Unifi: https://techspecs.ui.com/
 
 Guia de início rápido do Unifi Express: https://br.store.ui.com/br/pt/pro/category/cloud-gateways-wifi-integrated/products/ux<br>
 Datasheet do UDM-Pro: https://techspecs.ui.com/unifi/unifi-cloud-gateways/ux
+
+[![Config Unifi Express](http://img.youtube.com/vi/AhiSnHJPrYo/0.jpg)](https://www.youtube.com/watch?v=AhiSnHJPrYo "Config Unifi Express")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=AhiSnHJPrYo
 
 #00_ Criando uma conta na Ubiquiti ID-SSO (Single sign-on)<br>
 ```bash
@@ -49,18 +53,23 @@ Criando uma conta no: UI Account
 
 #01_ Configurações Básicas de Rede do Unifi Express e Switch PoE<br>
 ```bash
-Endereço IPv4 padrão Dream Machine: 192.168.1.1
-	Recursos habilitados por padrão: DHCP Server, Compartilhamento de Internet e
-	DNS Cache/Resolver para navegação.
+Endereço IPv4 padrão Unifi Express: 192.168.1.1
 
-Endereço IPv4 padrão Switch PoE 8 Portas: 192.168.1.20
+Recursos habilitados por padrão: 
+A) DHCP Server, 
+B) Compartilhamento de Internet,
+C) DNS Cache/Resolver para navegação.
+
+Endereço IPv4 padrão Switch Lite PoE 8 Portas: 192.168.1.23
 
 Teste de conexão: Terminal (Atalho Ctrl + Alt + T)
 
 #opção do comando route: -n (shows numeric addresses)
+ifconfig enp0s3
 route -n
+resolvectl
 ping 192.168.1.1
-ping 192.168.1.20
+ping 192.168.1.23
 ```
 
 #02_ Configurando o Unifi Express via Navegador ou Celular<br>
@@ -81,30 +90,23 @@ No seu navegador Google Chrome acesse a URL: https://192.168.1.1 ou https://unif
 #OBSERVAÇÃO IMPORTANTE: não habilite o recurso de tradução do Inglês para o Português do Google
 #Chrome, geralmente acontece alguns problemas na configuração ou tradução do termo técnico.
 
-<Setup Unifi Express>
+<Set Up the Unifi Express>
 	Unifi Unifi Express Setup
-		Console Name: Vaamonde
+		Console Name: unifiexpress
 		(YES) Agree to the Terms of Service and End User License Agreement
 		<Next>
 	Sign in to UI.com
 		Email or Username: seu_usuário_ui
 		Password: sua_senha_ui
 		<Next>
-	No Backup Files Found
-		<Continue>
-	Update Schedule
-		Frequency: Daily (Default)
-		Hour: 3 AM (Default)
-		<Next>
-	Configuration
-		(Enable) Send Diagnostics & Performance Information
-		<Next>
-	Starting Speedtests
-		Test Results
-			Adjust your speeds to what your ISP has promised you
-				Download (Mbps): sua_velocidade_de_download
-				Upload (Mbps): sua_velocidade_de_upload
-		<Next>
+	Confirm Login in the UI Verify Mobile App
+		<UI Mobile>
+	Restore Console with a Backup Files
+		<Continue Without a Backup>
+	Wi-Fi Setup
+		Wi-Fi Name (SSID): seu_ssid_wifi
+		Password: sua_senha_wifi
+		<Finish>
 
 #OBSERVAÇÃO IMPORTANTE: após a primeira configuração do Unifi Express será feito o Update
 #do Unifi Network, esse processo demora bastante dependendo do seu Link de Internet.
@@ -115,9 +117,9 @@ No seu navegador Google Chrome acesse a URL: https://192.168.1.1 ou https://unif
 No seu navegador Google Chrome acesse a URL: https://192.168.1.1 ou https://unifi
 
 Unifi OS
-	Email or username: seu_usuário_ui
-	Password: sua_senha_ui
-	(Yes) Remember my credentials
+  Email or username: seu_usuário_ui
+  Password: sua_senha_ui
+  (Yes) Remember my credentials
 <Sign in>
 ```
 
@@ -127,8 +129,10 @@ Unifi OS
 #o Switch PoE que está conectado e já recomenda adicionar na Topologia, fazendo o processo
 #de Adotar o equipamento no Console do Unifi Express (Recomendado sempre)
 
-Ready to Add: USW 8 PoE
-	<Add>
+Unifi Network
+  Unifi Devices
+    Ready to Add: USW-Lite-8-PoE
+      <Click to Adopt>
 
 #OBSERVAÇÃO IMPORTANTE: após adotar o Switch PoE no Console do Unifi Express é iniciado o 
 #processo de atualização do Firmware no Switch, esse procedimento demora bastante dependendo
@@ -137,32 +141,18 @@ Ready to Add: USW 8 PoE
 
 #05_ Conhecendo o Console do Unifi Express<br>
 ```bash
-Dashboard.....: Informações detalhas da topologia e configurações básicas;
-Topology......: Informações da topologia física e lógica dos equipamentos Unifi;
-Unifi Devices.: Informações dos dispositivos adotados no Unifi;
-Client Devices: Informações dos clientes conectados nos dispositivos Unifi;
-Statistics....: Informações de estáticas de uso dos recursos do Unifi;
-Wifi Insights.: Informações detalhadas da rede sem-fio do Unifi;
-System Logs...: Informações detalhadas dos Logs do Sistema Unifi;
-Notifications.: Informações de notificações do Unifi;
-Settings......: Configurações Básicas e Avançadas do Unifi.
+A) Dashboard.....: Informações detalhas da topologia e configurações básicas;
+B) Topology......: Informações da topologia física e lógica dos equipamentos Unifi;
+C) Unifi Devices.: Informações dos dispositivos adotados no Unifi;
+D) Client Devices: Informações dos clientes conectados nos dispositivos Unifi;
+E) Statistics....: Informações de estáticas de uso dos recursos do Unifi;
+F) Wifi Insights.: Informações detalhadas da rede sem-fio do Unifi;
+G) System Logs...: Informações detalhadas dos Logs do Sistema Unifi;
+H) Notifications.: Informações de notificações do Unifi;
+I) Settings......: Configurações Básicas e Avançadas do Unifi.
 ```
 
-#06_ Configurando as opções básicas do Unifi Express<br>
-```bash
-Settings
-	System
-		Network Notification: Off (Default)
-		Territory: Brazil (Enable)
-		Language: English (Default)
-		Time Format: 24 Hours (Enable)
-		Legacy Interface: Off (Default)
-		Theme: Dark (Enable)
-		Wifiman: On (Default)
-	<Apply Changes>
-```
-
-#07_ Teste de conexão com a Internet em um Desktop conectado na Rede<br>
+#06_ Teste de conexão com a Internet em um Desktop conectado na Rede<br>
 ```bash
 Teste de conexão: Terminal (Atalho Ctrl + Alt + T)
 	ping 8.8.8.8

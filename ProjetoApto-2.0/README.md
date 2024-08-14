@@ -62,3 +62,20 @@ Todos os equipamentos serão configurados e integrados com as soluções Unifi, 
 
 Link da vídeo aula: https://www.youtube.com/watch?v=zyHnDf6S_gE
 
+## **📡 UNBOXING Unifi Express Projeto de Rede Wireless (Sem-Fio) Residencial (Pequeno/Médio Porte) Etapa-01 🐧🐧**
+
+Vídeo mostrando a configuração básico do Unifi Express e adotando o Switch PoE 8 Portas enviado pela Ubiquiti Brasil em parceria com o Canal do Bora para Prática, todos esses equipamentos serão utilizados no Projeto de Rede Sem-Fio (Wireless / Wi-Fi) na minha nova Residência (Apartamento) com o intuito de configurar toda a solução Unifi integrada com os Dispositivos de Rede Sem-Fio na minha casa e interligar uma casa remota.
+
+O Kit enviado pela Ubiquiti Brasil contém:
+
+01 (um) Unifi Express (SKU: UX-BR): https://br.store.ui.com/br/pt/pro/category/cloud-gateways-wifi-integrated/products/ux<br>
+01 (um) Switch Lite 8 PoE (SKU: USW-Lite-8-POE-BR): https://br.store.ui.com/br/pt/pro/category/all-switching/products/usw-lite-8-poe<br>
+04 (quatro) Câmeras de CFTV G5 Bullet 2K (SKU: UVC-G5-Bullet-BR):https://br.store.ui.com/br/pt/pro/category/all-cameras-nvrs/products/uvc-g5-bullet
+
+Todos os equipamentos serão configurados e integrados com as soluções Unifi, acompanha o canal para as novidades e sequencia do vídeos dessa série.
+
+[![Config Unifi Express](http://img.youtube.com/vi/AhiSnHJPrYo/0.jpg)](https://www.youtube.com/watch?v=AhiSnHJPrYo "Config Unifi Express")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=AhiSnHJPrYo
+
+Link da documentação: 
