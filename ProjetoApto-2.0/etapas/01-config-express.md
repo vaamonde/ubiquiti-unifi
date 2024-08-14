@@ -62,6 +62,8 @@ C) DNS Cache/Resolver para navegação.
 
 Endereço IPv4 padrão Switch Lite PoE 8 Portas: 192.168.1.23
 
+Download do Wifiman Desktop: https://ui.com/download/app/wifiman-desktop
+
 Teste de conexão: Terminal (Atalho Ctrl + Alt + T)
 
 #opção do comando route: -n (shows numeric addresses)
