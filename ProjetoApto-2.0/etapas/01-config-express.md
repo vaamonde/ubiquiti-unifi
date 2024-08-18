@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 06/08/2024<br>
-#Data de atualização: 14/08/2024<br>
-#Versão: 0.03
+#Data de atualização: 18/08/2024<br>
+#Versão: 0.04
 
 Loja Oficial da Ubiquiti Unifi no Brasil: https://br.store.ui.com/<br>
 Canal Oficial da Ubiquiti Unifi no YouTUBE: https://www.youtube.com/UBNTBR<br>
@@ -39,16 +39,16 @@ Link da vídeo aula: https://www.youtube.com/watch?v=AhiSnHJPrYo
 #oferecemos suporte a vários outros métodos.
 
 Acesse o site: https://account.ui.com
-	Caso não tenha uma conta clique em: Don't have an account? Create one.
+  Caso não tenha uma conta clique em: Don't have an account? Create one.
 
 Criando uma conta no: UI Account
-	Username: seu_nome_de_usuario
-	Email: seu_email
-	Password: sua_senha (OBSERVAÇÃO: mínimo de 12 caracteres)
-	Confirm Password: sua_senha
-	Yes: By creating this account
-	Yes: Register to receive newsletters
-	<Create Account>
+  Username: seu_nome_de_usuario
+  Email: seu_email
+  Password: sua_senha (OBSERVAÇÃO: mínimo de 12 caracteres)
+  Confirm Password: sua_senha
+  Yes: By creating this account
+  Yes: Register to receive newsletters
+<Create Account>
 ```
 
 #01_ Configurações Básicas de Rede do Unifi Express e Switch PoE<br>
@@ -93,22 +93,22 @@ No seu navegador Google Chrome acesse a URL: https://192.168.1.1 ou https://unif
 #Chrome, geralmente acontece alguns problemas na configuração ou tradução do termo técnico.
 
 <Set Up the Unifi Express>
-	Unifi Unifi Express Setup
-		Console Name: unifiexpress
-		(YES) Agree to the Terms of Service and End User License Agreement
-		<Next>
-	Sign in to UI.com
-		Email or Username: seu_usuário_ui
-		Password: sua_senha_ui
-		<Next>
-	Confirm Login in the UI Verify Mobile App
-		<UI Mobile>
-	Restore Console with a Backup Files
-		<Continue Without a Backup>
-	Wi-Fi Setup
-		Wi-Fi Name (SSID): seu_ssid_wifi
-		Password: sua_senha_wifi
-		<Finish>
+Unifi Unifi Express Setup
+  Console Name: unifiexpress
+  (YES) Agree to the Terms of Service and End User License Agreement
+  <Next>
+Sign in to UI.com
+  Email or Username: seu_usuário_ui
+  Password: sua_senha_ui
+  <Next>
+Confirm Login in the UI Verify Mobile App
+  <UI Mobile>
+Restore Console with a Backup Files
+  <Continue Without a Backup>
+Wi-Fi Setup
+  Wi-Fi Name (SSID): seu_ssid_wifi
+  Password: sua_senha_wifi
+  <Finish>
 
 #OBSERVAÇÃO IMPORTANTE: após a primeira configuração do Unifi Express será feito o Update
 #do Unifi Network, esse processo demora bastante dependendo do seu Link de Internet.
@@ -157,8 +157,11 @@ I) Settings......: Configurações Básicas e Avançadas do Unifi.
 #06_ Teste de conexão com a Internet em um Desktop conectado na Rede<br>
 ```bash
 Teste de conexão: Terminal (Atalho Ctrl + Alt + T)
-	ping 8.8.8.8
-	ping google.com
 
-Navegador: https://youtube.com/boraparapratica
+#resolvendo o DNS utilizando o terminal
+ping 8.8.8.8
+ping google.com
+
+#testando a navegação e resolução de nomes
+Navegador firefox ou google chrome: https://youtube.com/boraparapratica
 ```
