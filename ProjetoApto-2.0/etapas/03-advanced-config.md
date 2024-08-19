@@ -46,19 +46,78 @@ No seu navegador Google Chrome acesse a URL: https://192.168.1.1 ou https://unif
 
 #01_ Configurando as opções básicas do Unifi Express no Unifi OS<br>
 ```bash
-Settings
-  System
-    Network Notification: Off (Default)
-    Territory: Brazil (Enable)
-    Language: English (Default)
-    Time Format: 24 Hours (Enable)
-    Legacy Interface: Off (Default)
-    Theme: Dark (Enable)
-    Wifiman: On (Default)
+OS Settings
+  Console Settings
+    Console name: unifiexpress
+    System Config Backup: (ON) Auto (Weekly)
+    Location/Time Zone: (UTC -03:00) Sao Paulo
+    LED/LCM Scree: (ON) LCM Screen (Default)
+    Advanced: (ON) Remote Access
+              (ON) SSH
+```
+
+#02_ Configurando as opções básicas do Unifi Express no Unifi Network<br>
+```bash
+Network
+  Settings
+    System
+      General
+        Country/Region: Brazil
+        Language: English (Default)
+        Time Format: 24 hours
+        Theme: Dark
+      Updates
+        Automate Device Updates: (ON) Daily At: 3 AM (Default)
+      Backup
+        (ON) Auto Backup Monthly
+      Advanced
+        WiFiMan Support: (ON) Default
+        Network Time Protocol (NTP): (OFF) Disable
+          <Edit>
+            Enter NTP Server Hostname: a.st1.ntp.br
+            Enter NTP Server Hostname: a.ntp.br
+          <Save Changes>
+        SNMP Monitoring: (ON) SNMP Version 1 & 2C
+        Device Authentication: (ON) Device SSH Authentication
+          Username: seu_usuário
+          Password: sua_senha
   <Apply Changes>
 ```
 
-#02_ Teste de conexão com a Internet em um Desktop conectado na Rede<br>
+#03_ Configurando as opções básicas de Internet (WAN) no Unifi Network<br>
+```bash
+Indicação do DNS da CloudFlare: https://blog.cloudflare.com/introducing-1-1-1-1-for-families
+
+Settings
+  Internet
+    Clique em: Primary (WAN1)
+      Name: claro
+      Advanced: Manual
+        IPv4 Configuration
+          IPv4 Connection: DHCPv4
+          DNS Server: (OFF) Auto (Disable)
+            #Malware and Adult Content
+            Primary Server: 1.1.1.3
+            Secondary Server: 1.0.0.3
+        IPV6 Configuration
+          IPv6 Connection: DHCPv6
+            Prefix Delegation Size: 64
+          DNS Server: (OFF) Auto
+            #Malware and Adult Content
+            Primary Server: 2606:4700:4700::1113
+            Secondary Server: 2606:4700:4700::1003
+    <Apply Changes>
+```
+
+#04_ Configurando as opções básicas da Rede Local (LAN) no Unifi Network<br>
+```bash
+Settings
+  Networks
+    Clique em: Default
+      
+```
+
+#05_ Teste de conexão com a Internet em um Desktop conectado na Rede<br>
 ```bash
 Teste de conexão: Terminal (Atalho Ctrl + Alt + T)
 

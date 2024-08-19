@@ -38,9 +38,10 @@ No seu navegador Google Chrome acesse a URL: https://192.168.1.1 ou https://unif
 #Dispositivo da sua Topologia.
 
 O Unifi Network possui 03 (três) formas de Reset:
-	Reset via UniFi Network (Software)
-	Reset via SSH (Secure Shell - Remoto)
-	Reset Físico (Hardware)
+
+A) Reset via UniFi Network (Software);
+B) Reset via SSH (Secure Shell - Remoto);
+C) Reset Físico (Hardware).
 
 #Nesse exemplo vou utilizar um Reset Físico (Hardware): O método mais comum é fazer o reset 
 #físico do UAP através de um botão localizado na parte traseira do equipamento. Usando um 
@@ -72,7 +73,7 @@ sudo nmap 192.168.1.0/24
 #na Topologia, fazendo o processo de Adotar o equipamento no Console do Dream Machine.
 
 Ready to Add: (3) Network devices
-	<Add>
+  <Add>
 
 #OBSERVAÇÃO IMPORTANTE: após adotar os Access Point no Console do Dream Machine é iniciado
 #o processo de atualização do Firmware nos Access Point, esse procedimento demora bastante 
@@ -82,9 +83,9 @@ Ready to Add: (3) Network devices
 #04_ Desadotando (Forget - Esquecer) Access Point UAP-nanoHD no Dream Machine<br>
 ```bash
 Devices
-	UAP-nanoHD
-		Settings
-			Manage
-				Forget
-				<Confirm>
+  UAP-nanoHD
+    Settings
+      Manage
+       Forget
+    <Confirm>
 ```

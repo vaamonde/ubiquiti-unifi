@@ -38,31 +38,32 @@ No seu navegador Google Chrome acesse a URL: https://192.168.1.1 ou https://unif
 #configurar os equipamentos na rede.
 
 Na tela do Unifi OS clique no Dream Machine Pro (vaamonde)
-	Settings
+
+Settings
+	Networks
 		Networks
-			Networks
-				Clique em: Default
-					Default
-						Network name: apto
-						Router: Vaamonde (Default Dream Machine Pro)
-						Gateway IP/Subnet: Auto-Scale Network (Disable)
-							Host Address: 172.16.1.254
-							Netmask: 24 (249 usable host)
-					Advanced Configuration: Manual (Enable)
-						Network Type: Standard (Default)
-						Content Filtering: None (Default)
-						IGMP Snooping: Disable (Default)
-						Multicast DNS: Enable (Default)
-					DHCP
-						DHCP Mode: DHCP Server (Default)
-						DHCP Range:
-							Start: 172.16.1.100
-							Stop: 172.17.1.200
-						DHCP Guarding: Disable (Default)
-						DHCP Service Management: (Default)
-					IPv6
-						IPv6 Interface Type: Nome (Default)
-				<Apply Changes>
+			Clique em: Default
+				Default
+					Network name: apto
+					Router: Vaamonde (Default Dream Machine Pro)
+					Gateway IP/Subnet: Auto-Scale Network (Disable)
+						Host Address: 172.16.1.254
+						Netmask: 24 (249 usable host)
+				Advanced Configuration: Manual (Enable)
+					Network Type: Standard (Default)
+					Content Filtering: None (Default)
+					IGMP Snooping: Disable (Default)
+					Multicast DNS: Enable (Default)
+				DHCP
+					DHCP Mode: DHCP Server (Default)
+					DHCP Range:
+						Start: 172.16.1.100
+						Stop: 172.17.1.200
+					DHCP Guarding: Disable (Default)
+					DHCP Service Management: (Default)
+				IPv6
+					IPv6 Interface Type: Nome (Default)
+			<Apply Changes>
 
 #OBSERVAÇÃO IMPORTANTE: após a mudança do endereço de rede do Dream Machine Pro, faça
 #um release do DHCP Client para obter os novos endereços IPv4 da faixa alterada no UDM,
@@ -71,68 +72,71 @@ Na tela do Unifi OS clique no Dream Machine Pro (vaamonde)
 No seu navegador Google Chrome acesse a URL: https://172.16.1.254 ou https://unifi
 
 Na tela do Unifi OS clique no Dream Machine Pro (vaamonde)
-	Settings
+
+Settings
+	Networks
 		Networks
-			Networks
-				Global Network Settings
-					Multicast DNS: Enable apto (Default)
-					IGMP Snooping: Disable apto (Default)
-				Global Switch Settings
-					DHCP Snooping: Enable (Default)
-					Jumbo Frames: Disable (Default)
-					Flow Control: Disable (Default)
-					Spanning Tree: RSTP (Default)
-					802.1X Control: Disable (Default)
-					Switch Exclusions: Default
+			Global Network Settings
+				Multicast DNS: Enable apto (Default)
+				IGMP Snooping: Disable apto (Default)
+			Global Switch Settings
+				DHCP Snooping: Enable (Default)
+				Jumbo Frames: Disable (Default)
+				Flow Control: Disable (Default)
+				Spanning Tree: RSTP (Default)
+				802.1X Control: Disable (Default)
+				Switch Exclusions: Default
 ```
 
 #02_ Alterando as configurações de Rede do Switch PoE<br>
 ```bash
 No Dashboard do Dream Machine Pro clique em: Topology
-	Topology
-		Clique em: USW-16-PoE
-			Settings
-				Name: usw-apto
-			Network
-				Configure IP: Static IP (Enable)
-				IP Address: 172.16.1.50
-				Preferred DNS: 172.16.1.254
-				Subnet Mask: 255.255.255.0
-				Alternative DNS: Default
-				Gateway: 172.16.1.254
-				DNS Suffix: apto.intra
-			<Apply Changes>
+
+Topology
+	Clique em: USW-16-PoE
+		Settings
+			Name: usw-apto
+		Network
+			Configure IP: Static IP (Enable)
+			IP Address: 172.16.1.50
+			Preferred DNS: 172.16.1.254
+			Subnet Mask: 255.255.255.0
+			Alternative DNS: Default
+			Gateway: 172.16.1.254
+			DNS Suffix: apto.intra
+		<Apply Changes>
 ```
 
 #03_ Alterando as configurações de Rede do Access Point U6 Pro e Mesh<br>
 ```bash
 No Dashboard do Dream Machine Pro clique em: Topology
-	Topology
-		Clique em: U6-Pro
-			Settings
-				Name: sala
-			Network
-				Configure IP: Static IP (Enable)
-				IP Address: 172.16.1.60
-				Preferred DNS: 172.16.1.254
-				Subnet Mask: 255.255.255.0
-				Alternative DNS: Default
-				Gateway: 172.16.1.254
-				DNS Suffix: apto.intra
-			<Apply Changes>
-		
-		Clique em: U6-Mesh
-			Settings
-				Name: quarto
-			Network
-				Configure IP: Static IP (Enable)
-				IP Address: 172.16.1.61
-				Preferred DNS: 172.16.1.254
-				Subnet Mask: 255.255.255.0
-				Alternative DNS: Default
-				Gateway: 172.16.1.254
-				DNS Suffix: apto.intra
-			<Apply Changes>
+
+Topology
+	Clique em: U6-Pro
+		Settings
+			Name: sala
+		Network
+			Configure IP: Static IP (Enable)
+			IP Address: 172.16.1.60
+			Preferred DNS: 172.16.1.254
+			Subnet Mask: 255.255.255.0
+			Alternative DNS: Default
+			Gateway: 172.16.1.254
+			DNS Suffix: apto.intra
+		<Apply Changes>
+	
+	Clique em: U6-Mesh
+		Settings
+			Name: quarto
+		Network
+			Configure IP: Static IP (Enable)
+			IP Address: 172.16.1.61
+			Preferred DNS: 172.16.1.254
+			Subnet Mask: 255.255.255.0
+			Alternative DNS: Default
+			Gateway: 172.16.1.254
+			DNS Suffix: apto.intra
+		<Apply Changes>
 ```
 
 #04_ Alterando as configurações da Acesso a Internet Cabeada no Dream Machine Pro<br>

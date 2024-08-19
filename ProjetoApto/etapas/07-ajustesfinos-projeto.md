@@ -41,23 +41,24 @@ No seu navegador Google Chrome acesse a URL: https://172.16.1.254 ou https://uni
 #01_ Habilitando o suporte ao IPv6 no Link de Internet e na Rede LAN<br>
 ```bash
 Na tela do Unifi OS clique no Dream Machine Pro (vaamonde)
-	Settings
-		Internet
-			Clicar em: claro-net
-				Advanced: Manual (Enable)
-					IPv4 Configuration
-						IPv4 Connection: DHCPv4
-					IPv6 Configuration
-						IPv6 Connection: DHCPv6 (Enable)
-						Prefix Delegation Size: 64 
+
+Settings
+	Internet
+		Clicar em: claro-net
+			Advanced: Manual (Enable)
+				IPv4 Configuration
+					IPv4 Connection: DHCPv4
+				IPv6 Configuration
+					IPv6 Connection: DHCPv6 (Enable)
+					Prefix Delegation Size: 64 
+		<Apply>
+	
+	Networks
+		Clicar em: apto
+			IPv6
+				Interface Type: Prefix Delegation (Enable)
+				Prefix Delegation Interface: claro-net
 			<Apply>
-		
-		Networks
-			Clicar em: apto
-				IPv6
-					Interface Type: Prefix Delegation (Enable)
-					Prefix Delegation Interface: claro-net
-				<Apply>
 
 Site para testar o IPv6: https://test-ipv6.com/
 Site para testar o IPv6: https://ipv6-test.com/ (NÃO COMENTADO NO VÍDEO)
@@ -68,36 +69,37 @@ Site para testar o IPv6: https://ipv6-test.com/ (NÃO COMENTADO NO VÍDEO)
 Site para dimensionar o desempenho da Rede Sem-Fio: https://wifi.ui.com/
 
 Na tela do Unifi OS clique no Dream Machine Pro (vaamonde)
-	UniFi Devices
-		Clicar em: Sala
-			Settings
-				Radios
-					2.4 Ghz
-						Channel Width: 40 Mhz
-						Channel: 6
-						Transmit Power: Medium
-					5.0 Ghz
-						Channel Width: 80 Mhz
-						Channel: 100 (DFS)
-						Transmit Power: High
-					Band Steering
-						Prefer 5.0 GHz
-			<Apply Changes>
 
-		Clicar em: Quarto
-			Settings
-				Radios
-					2.4 Ghz
-						Channel Width: 40 Mhz
-						Channel: 11
-						Transmit Power: Medium
-					5.0 Ghz
-						Channel Width: 160 Mhz
-						Channel: 36
-						Transmit Power: High
-					Band Steering
-						Prefer 5.0 GHz
-			<Apply Changes>
+UniFi Devices
+	Clicar em: Sala
+		Settings
+			Radios
+				2.4 Ghz
+					Channel Width: 40 Mhz
+					Channel: 6
+					Transmit Power: Medium
+				5.0 Ghz
+					Channel Width: 80 Mhz
+					Channel: 100 (DFS)
+					Transmit Power: High
+				Band Steering
+					Prefer 5.0 GHz
+		<Apply Changes>
+
+	Clicar em: Quarto
+		Settings
+			Radios
+				2.4 Ghz
+					Channel Width: 40 Mhz
+					Channel: 11
+					Transmit Power: Medium
+				5.0 Ghz
+					Channel Width: 160 Mhz
+					Channel: 36
+					Transmit Power: High
+				Band Steering
+					Prefer 5.0 GHz
+		<Apply Changes>
 
 #atualizando e instalando o software nmap, snmp, wavemon e linssid no GNU/Linux
 sudo apt update && sudo apt install nmap snmp wavemon linssid
@@ -123,53 +125,55 @@ sudo linssid
 
 #LIBERANDO O ACESSO REMOTO E ACESSO VIA SSH NO DREAM MACHINE
 Na tela do Unifi OS Console
-	Console Settings
-		Advanced
-			Remote Access (Enable)
-			SSH (Enable)
-				SSH Password
-					Password: SUA_SENHA_SSH
-					Confirm Password: SUA_SENHA_SSH
-			<Enable>
+
+Console Settings
+	Advanced
+		Remote Access (Enable)
+		SSH (Enable)
+			SSH Password
+				Password: SUA_SENHA_SSH
+				Confirm Password: SUA_SENHA_SSH
+		<Enable>
 
 #CONFIGURANDO O SNMP E SSH NO DREAM MACHINE PARA TODOS OS DISPOSITIVOS REMOTOS
 Na tela do Unifi OS clique no Dream Machine Pro (vaamonde)
-	Settings
-		System
+
+Settings
+	System
+		Advanced
+			SNMP Monitoring
+				SNMP Version 1 & 2 (Enable)
+				Community String: apto
+			Device Authentication
+				Device SSH Authentication (Enable)
+				Username: SEU_USUÁRIO
+				Password: SUA_SENHA
+		<Apply Changes>
+
+UniFi Devices
+	Clicar em: Sala
+		Settings
+			Manage
+				SNMP (Enable)
+					Location: Sala
+					Contact: Vaamonde
+		<Apply Changes>
+
+	Clicar em: Quarto
+		Settings
+			Manage
+				SNMP (Enable)
+					Location: Quarto
+					Contact: Vaamonde
+		<Apply Changes>
+
+	Clicar em: USW-Apto
+		Settings
 			Advanced
-				SNMP Monitoring
-					SNMP Version 1 & 2 (Enable)
-					Community String: apto
-				Device Authentication
-					Device SSH Authentication (Enable)
-					Username: SEU_USUÁRIO
-					Password: SUA_SENHA
-			<Apply Changes>
-
-	UniFi Devices
-		Clicar em: Sala
-			Settings
-				Manage
-					SNMP (Enable)
-						Location: Sala
-						Contact: Vaamonde
-			<Apply Changes>
-
-		Clicar em: Quarto
-			Settings
-				Manage
-					SNMP (Enable)
-						Location: Quarto
-						Contact: Vaamonde
-			<Apply Changes>
-
-		Clicar em: USW-Apto
-			Settings
-				Advanced
-					SNMP (Enable)
-						Location: Rack
-						Contact: Vaamonde
-			<Apply Changes>
+				SNMP (Enable)
+					Location: Rack
+					Contact: Vaamonde
+		<Apply Changes>
 ```
 
 #04_ Testando a conexão via SSH e o monitoramento via SNMP no GNU/Linux<br>
