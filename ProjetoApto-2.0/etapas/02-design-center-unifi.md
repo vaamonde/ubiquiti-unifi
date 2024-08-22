@@ -25,9 +25,9 @@ Floor Plan Creator: https://floorplancreator.net/plan/demo<br>
 Smart Draw: https://app.smartdraw.com/<br>
 Planner 5d: https://planner5d.com/editor
 
-[![Unifi Design Center](http://img.youtube.com/vi/k/0.jpg)]( "Unifi Design Center")
+[![Unifi Design Center](http://img.youtube.com/vi/AMd4-dzqPqs/0.jpg)](https://www.youtube.com/watch?v=AMd4-dzqPqs "Unifi Design Center")
 
-Link da vídeo aula: 
+Link da vídeo aula: https://www.youtube.com/watch?v=AMd4-dzqPqs
 
 #00_ Criando uma conta na Ubiquiti ID-SSO (Single sign-on)<br>
 ```bash
