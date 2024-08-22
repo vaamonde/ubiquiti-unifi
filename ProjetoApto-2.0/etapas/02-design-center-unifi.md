@@ -45,23 +45,23 @@ Link da vídeo aula:
 #oferecemos suporte a vários outros métodos.
 
 Acesse o site: https://account.ui.com
-	Caso não tenha uma conta clique em: Don't have an account? Create one.
+  Caso não tenha uma conta clique em: Don't have an account? Create one.
 
 Criando uma conta no: UI Account
-	Username: seu_nome_de_usuario
-	Email: seu_email
-	Password: sua_senha (OBSERVAÇÃO: mínimo de 12 caracteres)
-	Confirm Password: sua_senha
-	Yes: By creating this account
-	Yes: Register to receive newsletters
-	<Create Account>
+  Username: seu_nome_de_usuario
+  Email: seu_email
+  Password: sua_senha (OBSERVAÇÃO: mínimo de 12 caracteres)
+  Confirm Password: sua_senha
+  Yes: By creating this account
+  Yes: Register to receive newsletters
+<Create Account>
 ```
 
 #01_ Criando o seu primeiro projeto no Design Center Unifi<br>
 ```bash
 Acesse o site: https://design.ui.com/
 
-#OBSERVAÇÃO: por padrão do Design Center sempre inicia com o Wizard de um projeto básico
+#OBSERVAÇÃO: por padrão o Design Center sempre inicia com o Wizard de um projeto básico
 #da Ubiquiti Unifi, esse projeto é apenas uma referência de como utilizar o site.
 
 #OBSERVAÇÃO IMPORTANTE: caso ainda não esteja autenticado no Design Center, no canto 
@@ -71,39 +71,27 @@ Acesse o site: https://design.ui.com/
 
 #02_ Configurações Básicas do Design Center Unifi antes de criar o seu primeiro projeto<br>
 ```bash
-No canto superior direito existe dois ícones: o primeiro é o Design Center Wizard o segundo
-inicia um novo projeto padrão em branco, recomendo utilizar a segunda opção.
+#No canto superior direito existe dois ícones: o primeiro é o Design Center Wizard o segundo
+#inicia um novo projeto padrão em branco, recomendo utilizar a segunda opção.
 
 Na tela de: Add New Project (Adicionar um novo Projeto) preencha os campos abaixo:
 	Project Name (Nome do Projeto): Digite um nome para o seu projeto: Apto (por exemplo)
-	Building Location (Localização do Edifício): Digite a localização do seu projeto (SP-Brazil)
 	Building Type (Tipo de Construção): Selecione o Tipo de Construção (Home - Casa - Apto)
 	Building Size (Tamanho da Construção): Digite o tamanho da construção em Metros Quadrados Total
-		Largura: 6,14m x Comprimento: 8,51m - Total: (Arredondado) 51mt2
+		Largura: 11m x Comprimento: 35m - Total: (Arredondado) 350mt2
 	Users (Usuários): Total de usuários na rede ou dispositivos que vão acessar a Internet/Wi-Fi
 	Product Preference (Preferência do Produto): você pode selecionar: Value (Valor) ou Performance
 	(Desempenho)
 <Create>
 
-#OBSERVAÇÃO: por padrão o Design Center fornece um projeto simples de uma Planta Baixa para iniciar
-#o uso da ferramenta, recomendo remover essa planta baixa e fazer o upload da planta do projeto.
+#Criando uma nova Planta Baixa do ambiente, nesse cenário será utilizado o recurso de desenhar
+#a planta baixa.
+Create Your Floor Plan
+  Use Drawing Tool
 
-No canto superior direito temos o ícone: Settings (Configurações), clique em: Remove (Remover) depois:
-Confirm (Confirmar).
-
-Na tela de: Create Your Floor Plan (Crie sua Planta Baixa) você tem duas opções:
-	Upload Plan (Carregar Planta Baixa): recomendado quando você tem a planta baixa do projeto
-		Suporte para as extensões: PNG, JPG ou PDF.
-	Use Drawing Tool (Utilizar a Ferramenta de Desenho): recomendado quando você não tem a planta
-	baixa do projeto.
-
-Clique na opção: Upload Plan e selecione o arquivo de Planta Baixa do seu Projeto
-No campo Name (Nome): digite o nome da planta baixa do projeto e clique em: <Confirm>
-
-Após fazer o Upload da Planta Baixa para o Design Center duas configurações básicas são
-importantes para iniciar o seu projeto.
-	Primeira: Reference Line Length (Comprimento da Linha de Referência)
-	Segunda.: Ceiling Height (Altura do Teto ou Pé Direito, padrão 2,70m = 2.7 ou 3m = 3)
+Name Your Floor Plan
+  Name: Nome do andar, local, ou posição da planta
+<Confirm>
 
 #OBSERVAÇÃO IMPORTANTE: utilize como base de referência de linha por exemplo uma Porta ou um
 #Cômodo, faça uma medição preliminar e depois configura o seu projeto, nesse exemplo recomendo
