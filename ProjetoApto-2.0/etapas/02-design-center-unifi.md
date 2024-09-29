@@ -75,13 +75,13 @@ Acesse o site: https://design.ui.com/
 #inicia um novo projeto padrão em branco, recomendo utilizar a segunda opção.
 
 Na tela de: Add New Project (Adicionar um novo Projeto) preencha os campos abaixo:
-	Project Name (Nome do Projeto): Digite um nome para o seu projeto: Apto (por exemplo)
-	Building Type (Tipo de Construção): Selecione o Tipo de Construção (Home - Casa - Apto)
-	Building Size (Tamanho da Construção): Digite o tamanho da construção em Metros Quadrados Total
-		Largura: 11m x Comprimento: 35m - Total: (Arredondado) 350mt2
-	Users (Usuários): Total de usuários na rede ou dispositivos que vão acessar a Internet/Wi-Fi
-	Product Preference (Preferência do Produto): você pode selecionar: Value (Valor) ou Performance
-	(Desempenho)
+  Project Name (Nome do Projeto): Digite um nome para o seu projeto: Apto (por exemplo)
+  Building Type (Tipo de Construção): Selecione o Tipo de Construção (Home - Casa - Apto)
+  Building Size (Tamanho da Construção): Digite o tamanho da construção em Metros Quadrados Total
+    Largura: 11m x Comprimento: 35m - Total: (Arredondado) 350mt2
+  Users (Usuários): Total de usuários na rede ou dispositivos que vão acessar a Internet/Wi-Fi
+  Product Preference (Preferência do Produto): você pode selecionar: Value (Valor) ou Performance
+  (Desempenho)
 <Create>
 
 #Criando uma nova Planta Baixa do ambiente, nesse cenário será utilizado o recurso de desenhar
@@ -99,9 +99,9 @@ Name Your Floor Plan
 #desconsiderando o Batente (Guarnição) que geralmente é de: 10cm Interna e 15cm Externa com
 #espessura máxima de 4,5cm, caso você tenha a medida externa de Largura ou Comprimento também
 #é indicado usar como referência.
-	Reference Line Length: 6.14m
-	Ceiling Height: 2.7m
-	<Save>
+  Reference Line Length: 6.14m
+  Ceiling Height: 2.7m
+  <Save>
 
 #DICA: NA HORA DE FAZER A LINHA DE REFERÊNCIA NÃO UTILIZAR O RECURSO DE ZOOM DO NAVEGADOR,
 #TIVE PROBLEMA COM ESSA OPÇÃO NA HORA DE FAZER A LINHA DE REFERÊNCIA.
@@ -113,7 +113,7 @@ Name Your Floor Plan
 
 Para finalizar as configurações básicas no canto superior direito tem o ícone de: Preferences,
 nessa opção temos:
-	Language: infelizmente não está disponível essa opção para o Português do Brasil
-	Measurement Units (Unidades de medida): Meters (Metros)
-	WiFi Coverage Color Scheme (Esquema de cores de cobertura WiFi): Heat Map (Mapa de calor)
+  Language: infelizmente não está disponível essa opção para o Português do Brasil
+  Measurement Units (Unidades de medida): Meters (Metros)
+  WiFi Coverage Color Scheme (Esquema de cores de cobertura WiFi): Heat Map (Mapa de calor)
 ```

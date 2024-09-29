@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 18/08/2024<br>
-#Data de atualização: 18/08/2024<br>
-#Versão: 0.01
+#Data de atualização: 30/09/2024<br>
+#Versão: 0.02
 
 Loja Oficial da Ubiquiti Unifi no Brasil: https://br.store.ui.com/<br>
 Canal Oficial da Ubiquiti Unifi no YouTUBE: https://www.youtube.com/UBNTBR<br>
@@ -53,7 +53,13 @@ OS Settings
     Location/Time Zone: (UTC -03:00) Sao Paulo
     LED/LCM Scree: (ON) LCM Screen (Default)
     Advanced: (ON) Remote Access
+              (ON) Analytics & Improvements
               (ON) SSH
+              Enable SSH: (ON) I agree to enable SSH <Continue>
+                SSH Password:
+                  Password: SUA_SENHA
+                  Confirm Password: SUA_SENHA
+                <Enable>
 ```
 
 #02_ Configurando as opções básicas do Unifi Express no Unifi Network<br>
@@ -72,15 +78,30 @@ Network
         (ON) Auto Backup Monthly
       Advanced
         WiFiMan Support: (ON) Default
+        Side Panel Tabs: (ON) Enable
+        Interface Refresh Rate: Automatically adapt
+        Profissional Installer: (OFF) Default
+        Debug Tools: (OFF) Default
+        Data Retention: (ON) Default
         Network Time Protocol (NTP): (OFF) Disable
           <Edit>
             Enter NTP Server Hostname: a.st1.ntp.br
             Enter NTP Server Hostname: a.ntp.br
           <Save Changes>
+        Email Service: SSO Email (ON) Default
+        Inform Host: (OFF) Default
         SNMP Monitoring: (ON) SNMP Version 1 & 2C
+          Community String: public (Default)
         Device Authentication: (ON) Device SSH Authentication
           Username: seu_usuário
           Password: sua_senha
+        Logging Levels: Auto (Default)
+        Remote Logging Location: (ON) Network Application (Default)
+        Wireless Connectivity:
+          (ON) Wireless Meshing (Default)
+          (ON) New WiFi Device Auto-Link (Default)
+        Connectivity Monitor Type: (ON) Custom IP
+          Monitor IP Address: 8.8.8.8
   <Apply Changes>
 ```
 
@@ -91,18 +112,27 @@ Indicação do DNS da CloudFlare: https://blog.cloudflare.com/introducing-1-1-1-
 Settings
   Internet
     Clique em: Primary (WAN1)
-      Name: claro
+      Name: Claro
+      Expected ISP Speeds: Default
       Advanced: Manual
+        VLAN ID: (OFF) Default
+        MAC Address Clone: (OFF) Default
+        Smart Queues: (OFF) Default
+        IPTV Streaming IGMP Proxy: (OFF) Default
+        UPnP: (OFF) Default
+        Dynamic DNS: (OFF) Default
+        DHCP CoS: (OFF) Default
         IPv4 Configuration
-          IPv4 Connection: DHCPv4
+          IPv4 Connection: (ON) DHCPv4
+          DHCP Client Options: (OFF) Default
           DNS Server: (OFF) Auto (Disable)
             #Malware and Adult Content
             Primary Server: 1.1.1.3
             Secondary Server: 1.0.0.3
         IPV6 Configuration
-          IPv6 Connection: DHCPv6
+          IPv6 Connection: (ON) DHCPv6 (Enable)
             Prefix Delegation Size: 64
-          DNS Server: (OFF) Auto
+          DNS Server: (OFF) Auto (Disable)
             #Malware and Adult Content
             Primary Server: 2606:4700:4700::1113
             Secondary Server: 2606:4700:4700::1003
@@ -114,10 +144,144 @@ Settings
 Settings
   Networks
     Clique em: Default
-      
+      IPv4
+        Gateway IP/Subnet: (OFF) Auto-Scale Network (Disable)
+          Host Address: 192.168.1.1 (Default)
+          Netmask: 24 (Default)
+          254 Usable Hosts (Default)
+        Advanced: Manual (Enable)
+          Guest Network: (OFF) Default
+          Isolate Network: (OFF) Default
+          Allow Internet Access: (ON) Default
+          Content Filtering: (ON) None (Default)
+            (OFF) IGMP Snooping (Default)
+            (ON) mDNS (Default)
+          DHCP
+            DHCP Mode: DHCP Server
+            DHCP Range
+              Start: 192.168.1.100
+              Stop: 192.168.1.150
+              (OFF) DHCP Guarding
+            DHCP Service Management: Show Options
+              (OFF) NTP Server (Default)
+              (OFF) Network Boot (Default)
+              (OFF) Time Offset (Default)
+              (OFF) Option 43 (Default)
+              (OFF) WPAD URL (Default)
+              (OFF) TFTP Server (Default)
+              (ON) Ping Conflict Detection (Default)
+              Default Gateway: (ON) Auto (Default)
+              DNS Server: (ON) (Default)
+              Lease Time: 86500 Sec (Default)
+              Domain Name: casa.intra
+              Custo  DHCP Option: (Default)
+      <Apply Changes>
+    Clique em: Default
+      IPv6
+        Interface Type: (ON) Prefix Delegation (Enable)
+        Prefix Delegation Interface: Claro
+        Prefix Delegation ID: (ON) Auto (Default)
+        Advanced: (ON) Auto (Default)
+      <Apply Changes>
+    Multicast Settings
+      IoT Auto-Discovery mDNS: (ON) Default
+      Multicast Filtering IGMP Snooping: (OFF) Default
+    Switch Isolation Settings
+      L3 Network Isolation (ACL): (OFF) Default
+      Device Isolation (ACL): (OFF) Default
+    Global Switch Settings
+      Spanning Tree Protocol: (ON) RSTP (Default)
+      Rogue DHCP Server Detection DHCP Snooping: (ON) Default
+      Jumbo Frames: (OFF) Default
+      Flow Control: (OFF) Default
+      802.1X Control: (OFF) Default
 ```
 
-#05_ Teste de conexão com a Internet em um Desktop conectado na Rede<br>
+#05_ Configurando as opções básicas da Rede Sem-Fio (WiFi - Wireless) no Unifi Network<br>
+```bash
+Settings
+  Networks
+    Clique em: teste
+      Name: @CasaVaamonde
+      Password: SUA_SENHA
+      Broadcasting APs: (ON) All (Default)
+      Advanced: (ON) Manual (Enable)
+        Private Pre-Shared Keys: (OFF) Default
+        Hotspot Portal: (OFF) Default
+        WiFi Band: (ON) 2.4Ghz (ON) 5 Ghz (OFF) 6 Ghz (Default)
+        Band Steering: (ON) Default
+        Hide WiFi Name: (OFF) Default
+        Client Device Isolation: (OFF) Default
+        Proxy ARP: (OFF) Default
+        BSS Transition: (ON) Default
+        UAPSD: (OFF) Default
+        Fast Roaming: (OFF) Default
+        WiFi Speed Limit: (OFF) Default
+        Multicast Enhancement: (OFF) Default
+        Multicast and Broadcast Control: (OFF) Default
+        802.11 DTIM Period: (ON) Auto (Default)
+        Minimum Data Rate Control: (ON) Auto (Default)
+        MAC Address Filter: (OFF) Default
+        RADIUS MAC Authentication: (OFF) Default
+        Security Protocol: WPA2 (Default)
+        PMF: (ON) Disabled (Default)
+        Group Rekey Interval: (OFF) Default
+        WiFi Blackout Scheduler: (OFF) Default
+      <Apply Changes>
+```
+
+#06_ Configurando as opções básicas dos Rádios Sem-Fio (WiFi - Wireless) no Unifi Network<br>
+```bash
+Network
+  Unifi Devices
+    Clique em: unifiexpress
+      Settings:
+        Radios
+          2.4 GHz
+            Channel Width: 40 (Enable)
+            Channel: 11
+            Transmit Power: Medium
+            (OFF) Minimum RSSI (Default)
+          5 GHz
+            Channel Width: 80
+            Channel: 36 (Enable)
+            Transmit Power: High
+            (OFF) Minimum RSSI (Default)
+          (ON) Meshing (Default)
+        Service
+          MSS Clamping: (ON) Auto (Default)
+          ARP Cache Timeout: (ON) Normal (Default)
+          Internet Verification Server: (ON) ping.ui.com (Default)
+      <Apply Changes>
+```
+
+#07_ Configurando as opções básicas do Switch PoE no Unifi Network<br>
+```bash
+Network
+  Unifi Devices
+    Clique em: USW Lite 8 PoE
+      Settings:
+        Name: SwitchCasa
+        IP Settings
+          IP Configuration: (ON) Static (Enable)
+            IP Address: 192.168.1.50
+            Subnet Mask: 255.255.255.0
+            Gateway: 192.168.1.1
+            Preferred DNS: 192.168.1.1
+            Alternate DNS: (OFF)
+            DNS Suffix: casa.intra
+        Advanced
+          (ON) Global Switch Settings (Default)
+          Priority: 32768 (Default)
+          (ON) SNMP (Enable)
+            Location: Sala
+            Contact: Robson Vaamonde
+        Manage
+          (ON) LED (Default)
+      <Apply Change>
+```
+
+#08_ Teste de conexão com a Internet em um Desktop conectado na Rede<br>
 ```bash
 Teste de conexão: Terminal (Atalho Ctrl + Alt + T)
 
@@ -129,3 +293,19 @@ ping google.com
 Navegador firefox ou google chrome: https://youtube.com/boraparapratica
 ```
 
+#09_ Configurando as opções básicas do Switch PoE no Unifi Network<br>
+```bash
+Celular 2.4GHZ
+  WiFiman
+    <Iniciar o teste de velocidade>
+  <Concluir>
+
+Celular 5.0GHz
+  WiFiman
+    <Iniciar o teste de velocidade>
+  <Concluir>
+
+Network
+  Radios
+    Speed Tests
+```
