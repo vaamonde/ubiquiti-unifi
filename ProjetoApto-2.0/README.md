@@ -97,3 +97,21 @@ Todos os equipamentos serão configurados e integrados com as soluções Unifi, 
 Link da vídeo aula: https://www.youtube.com/watch?v=AMd4-dzqPqs
 
 Link da documentação: https://github.com/vaamonde/ubiquiti-unifi/blob/main/ProjetoApto-2.0/etapas/02-design-center-unifi.md
+
+## **Configurações Avançadas do Novo Projeto de Rede Wi-Fi6 Residencial (Pequeno/Médio Porte) Etapa-04 🐧🐧**
+
+Vídeo mostrando os procedimentos básicos das configurações avançadas do projeto da Casa Conectada (Connected Home) utilizando os dispositivos da Ubiquiti o Unifi Express, Switch PoE 8 Portas e Câmeras G5 Bullet enviados pela Ubiquiti Brasil em parceria com o Canal do Bora para Prática, todos esses equipamentos serão utilizados no Projeto de Rede Sem-Fio (Wireless / Wi-Fi) na minha nova Residência (Apartamento) com o intuito de configurar toda a solução Unifi integrada com os Dispositivos de Rede Sem-Fio na minha casa e interligar uma casa remota.
+
+O Kit enviado pela Ubiquiti Brasil contém:
+
+01 (um) Unifi Express (SKU: UX-BR): https://br.store.ui.com/br/pt/pro/category/cloud-gateways-wifi-integrated/products/ux<br>
+01 (um) Switch Lite 8 PoE (SKU: USW-Lite-8-POE-BR): https://br.store.ui.com/br/pt/pro/category/all-switching/products/usw-lite-8-poe<br>
+04 (quatro) Câmeras de CFTV G5 Bullet 2K (SKU: UVC-G5-Bullet-BR):https://br.store.ui.com/br/pt/pro/category/all-cameras-nvrs/products/uvc-g5-bullet
+
+Todos os equipamentos serão configurados e integrados com as soluções Unifi, acompanha o canal para as novidades e sequencia do vídeos dessa série.
+
+[![Advanced Config](http://img.youtube.com/vi/XUFe0H7b12U/0.jpg)](https://www.youtube.com/watch?v=XUFe0H7b12U "Advanced Config")
+
+Link da vídeo aula: https://www.youtube.com/watch?v=XUFe0H7b12U
+
+Link da documentação: https://github.com/vaamonde/ubiquiti-unifi/blob/main/ProjetoApto-2.0/etapas/03-advanced-config.md

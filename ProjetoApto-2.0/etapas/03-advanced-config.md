@@ -22,9 +22,9 @@ Especificações Técnicas da Ubiquiti Unifi: https://techspecs.ui.com/
 Guia de início rápido do Unifi Express: https://br.store.ui.com/br/pt/pro/category/cloud-gateways-wifi-integrated/products/ux<br>
 Datasheet do UDM-Pro: https://techspecs.ui.com/unifi/unifi-cloud-gateways/ux
 
-[![Advanced Config](http://img.youtube.com/vi//0.jpg)]( "Advanced Config")
+[![Advanced Config](http://img.youtube.com/vi/XUFe0H7b12U/0.jpg)](https://www.youtube.com/watch?v=XUFe0H7b12U "Advanced Config")
 
-Link da vídeo aula: 
+Link da vídeo aula: https://www.youtube.com/watch?v=XUFe0H7b12U
 
 #00_ Acessando o Unifi Express com a sua conta da Ubiquiti ID-SSO (Single sign-on)<br>
 ```bash
@@ -47,14 +47,24 @@ No seu navegador Google Chrome acesse a URL: https://192.168.1.1 ou https://unif
 #01_ Configurando as opções básicas do Unifi Express no Unifi OS<br>
 ```bash
 OS Settings
-  Console Settings
+  (01) Applications
+    Unifi OS
+      Release Channel: Official
+    Auto Update
+      (ON) Unifi OS (Default)
+      (ON) Application (Default)
+      Occurs: Weekly (semanalmente) (Default)
+      at: 12 AM (Default)
+      Repeat On: S (Sunday-Domingo) (Default)
+  (02) Console Settings
     Console name: unifiexpress
     System Config Backup: (ON) Auto (Weekly)
     Location/Time Zone: (UTC -03:00) Sao Paulo
     LED/LCM Scree: (ON) LCM Screen (Default)
-    Advanced: (ON) Remote Access
-              (ON) Analytics & Improvements
-              (ON) SSH
+    Advanced: (ON) Remote Access (Enable)
+              (OFF) Direct REmote Connection (Default)
+              (ON) Analytics & Improvements (Enable)
+              (ON) SSH (Enable)
               Enable SSH: (ON) I agree to enable SSH <Continue>
                 SSH Password:
                   Password: SUA_SENHA
@@ -73,9 +83,9 @@ Network
         Time Format: 24 hours
         Theme: Dark
       Updates
-        Automate Device Updates: (ON) Daily At: 3 AM (Default)
+        Automate Device Updates: (ON) Daily At: 03:00 AM (Default)
       Backup
-        (ON) Auto Backup Monthly
+        (ON) Auto Backup Monthly (Default)
       Advanced
         WiFiMan Support: (ON) Default
         Side Panel Tabs: (ON) Enable
@@ -92,7 +102,7 @@ Network
         Inform Host: (OFF) Default
         SNMP Monitoring: (ON) SNMP Version 1 & 2C
           Community String: public (Default)
-        Device Authentication: (ON) Device SSH Authentication
+        Device Authentication: (ON) Device SSH Authentication (Enable)
           Username: seu_usuário
           Password: sua_senha
         Logging Levels: Auto (Default)
@@ -100,7 +110,7 @@ Network
         Wireless Connectivity:
           (ON) Wireless Meshing (Default)
           (ON) New WiFi Device Auto-Link (Default)
-        Connectivity Monitor Type: (ON) Custom IP
+        Connectivity Monitor Type: (ON) Custom IP (Enabled)
           Monitor IP Address: 8.8.8.8
   <Apply Changes>
 ```
@@ -114,7 +124,7 @@ Settings
     Clique em: Primary (WAN1)
       Name: Claro
       Expected ISP Speeds: Default
-      Advanced: Manual
+      Advanced: Manual (Enable)
         VLAN ID: (OFF) Default
         MAC Address Clone: (OFF) Default
         Smart Queues: (OFF) Default
@@ -159,9 +169,9 @@ Settings
           DHCP
             DHCP Mode: DHCP Server
             DHCP Range
-              Start: 192.168.1.100
-              Stop: 192.168.1.150
-              (OFF) DHCP Guarding
+              Start: 192.168.1.100 (Enable)
+              Stop: 192.168.1.150 (Enable)
+              (OFF) DHCP Guarding (Default)
             DHCP Service Management: Show Options
               (OFF) NTP Server (Default)
               (OFF) Network Boot (Default)
@@ -200,10 +210,10 @@ Settings
 #05_ Configurando as opções básicas da Rede Sem-Fio (WiFi - Wireless) no Unifi Network<br>
 ```bash
 Settings
-  Networks
+  WiFi
     Clique em: teste
       Name: @CasaVaamonde
-      Password: SUA_SENHA
+      Password: SUA_SENHA_DO_WIFI
       Broadcasting APs: (ON) All (Default)
       Advanced: (ON) Manual (Enable)
         Private Pre-Shared Keys: (OFF) Default
@@ -238,12 +248,12 @@ Network
       Settings:
         Radios
           2.4 GHz
-            Channel Width: 40 (Enable)
+            Channel Width: 40 MHz (Enable)
             Channel: 11
             Transmit Power: Medium
             (OFF) Minimum RSSI (Default)
           5 GHz
-            Channel Width: 80
+            Channel Width: 80 MHz
             Channel: 36 (Enable)
             Transmit Power: High
             (OFF) Minimum RSSI (Default)
@@ -295,17 +305,23 @@ Navegador firefox ou google chrome: https://youtube.com/boraparapratica
 
 #09_ Teste de conexão com a Internet em um Smartphone conectado na Rede Sem-Fio<br>
 ```bash
+#testando a velocidade utilizando Smartphone 2.4 GHz
 Celular 2.4GHZ
   WiFiman
     <Iniciar o teste de velocidade>
   <Concluir>
 
+#testando a velocidade utilizando Smartphone 5.0 GHz
 Celular 5.0GHz
   WiFiman
     <Iniciar o teste de velocidade>
   <Concluir>
 
+#visualizando os Testes no Unifi Network
 Network
   Radios
     Speed Tests
+
+#testando a velocidade utilizando o Site Fast
+Navegador firefox ou google chrome: https://fast.com/pt/
 ```
