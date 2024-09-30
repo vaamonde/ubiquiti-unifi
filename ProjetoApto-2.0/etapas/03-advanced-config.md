@@ -293,7 +293,7 @@ ping google.com
 Navegador firefox ou google chrome: https://youtube.com/boraparapratica
 ```
 
-#09_ Configurando as opções básicas do Switch PoE no Unifi Network<br>
+#09_ Teste de conexão com a Internet em um Smartphone conectado na Rede Sem-Fio<br>
 ```bash
 Celular 2.4GHZ
   WiFiman
