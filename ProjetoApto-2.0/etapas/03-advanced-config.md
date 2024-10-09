@@ -59,7 +59,7 @@ OS Settings
   (02) Console Settings
     Console name: unifiexpress
     System Config Backup: (ON) Auto (Weekly)
-    Location/Time Zone: (UTC -03:00) Sao Paulo
+    Location/Time Zone: (UTC -03:00) Sao Paulo (Change)
     LED/LCM Scree: (ON) LCM Screen (Default)
     Advanced: (ON) Remote Access (Enable)
               (OFF) Direct REmote Connection (Default)
@@ -78,10 +78,10 @@ Network
   Settings
     System
       General
-        Country/Region: Brazil
+        Country/Region: Brazil (Change)
         Language: English (Default)
-        Time Format: 24 hours
-        Theme: Dark
+        Time Format: 24 hours (Enable)
+        Theme: Dark (Enable)
       Updates
         Automate Device Updates: (ON) Daily At: 03:00 AM (Default)
       Backup
@@ -90,15 +90,15 @@ Network
         WiFiMan Support: (ON) Default
         Side Panel Tabs: (ON) Enable
         Interface Refresh Rate: Automatically adapt
-        Profissional Installer: (OFF) Default
-        Debug Tools: (OFF) Default
-        Data Retention: (ON) Default
-        Network Time Protocol (NTP): (OFF) Disable
+        Profissional Installer: (OFF) (Default)
+        Debug Tools: (OFF) (Default)
+        Data Retention: (ON) (Default)
+        Network Time Protocol (NTP): (OFF) (Disable)
           <Edit>
-            Enter NTP Server Hostname: a.st1.ntp.br
-            Enter NTP Server Hostname: a.ntp.br
+            Enter NTP Server Hostname: a.st1.ntp.br (Change)
+            Enter NTP Server Hostname: a.ntp.br (Change)
           <Save Changes>
-        Email Service: SSO Email (ON) Default
+        Email Service: SSO Email (ON) (Default)
         Inform Host: (OFF) Default
         SNMP Monitoring: (ON) SNMP Version 1 & 2C
           Community String: public (Default)
@@ -122,7 +122,7 @@ Indicação do DNS da CloudFlare: https://blog.cloudflare.com/introducing-1-1-1-
 Settings
   Internet
     Clique em: Primary (WAN1)
-      Name: Claro
+      Name: Claro (Change)
       Expected ISP Speeds: Default
       Advanced: Manual (Enable)
         VLAN ID: (OFF) Default
@@ -144,8 +144,8 @@ Settings
             Prefix Delegation Size: 64
           DNS Server: (OFF) Auto (Disable)
             #Malware and Adult Content
-            Primary Server: 2606:4700:4700::1113
-            Secondary Server: 2606:4700:4700::1003
+            Primary Server: 2606:4700:4700::1113 (Change)
+            Secondary Server: 2606:4700:4700::1003 (Change)
     <Apply Changes>
 ```
 
@@ -183,13 +183,13 @@ Settings
               Default Gateway: (ON) Auto (Default)
               DNS Server: (ON) (Default)
               Lease Time: 86500 Sec (Default)
-              Domain Name: casa.intra
+              Domain Name: casa.intra (Change)
               Custo  DHCP Option: (Default)
       <Apply Changes>
     Clique em: Default
       IPv6
         Interface Type: (ON) Prefix Delegation (Enable)
-        Prefix Delegation Interface: Claro
+        Prefix Delegation Interface: Claro (Enable)
         Prefix Delegation ID: (ON) Auto (Default)
         Advanced: (ON) Auto (Default)
       <Apply Changes>
@@ -212,7 +212,7 @@ Settings
 Settings
   WiFi
     Clique em: teste
-      Name: @CasaVaamonde
+      Name: @CasaVaamonde (Change)
       Password: SUA_SENHA_DO_WIFI
       Broadcasting APs: (ON) All (Default)
       Advanced: (ON) Manual (Enable)
@@ -249,13 +249,13 @@ Network
         Radios
           2.4 GHz
             Channel Width: 40 MHz (Enable)
-            Channel: 11
-            Transmit Power: Medium
+            Channel: 11 (Change)
+            Transmit Power: Medium (Change)
             (OFF) Minimum RSSI (Default)
           5 GHz
-            Channel Width: 80 MHz
+            Channel Width: 80 MHz (Change)
             Channel: 36 (Enable)
-            Transmit Power: High
+            Transmit Power: High (Change)
             (OFF) Minimum RSSI (Default)
           (ON) Meshing (Default)
         Service
@@ -271,7 +271,7 @@ Network
   Unifi Devices
     Clique em: USW Lite 8 PoE
       Settings:
-        Name: SwitchCasa
+        Name: SwitchCasa (Change)
         IP Settings
           IP Configuration: (ON) Static (Enable)
             IP Address: 192.168.1.50
