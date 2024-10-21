@@ -28,15 +28,15 @@ Link da vídeo aula:
 
 O QUE É E PARA QUE SERVER O SD-WAN: Software-Defined Wide Area Network (Rede de longa distância definida por software) é uma tecnologia que utiliza software para gerenciar e otimizar a conectividade em redes de longa distância (WAN). Ela permite a conexão de filiais, data centers e aplicativos na nuvem de forma mais eficiente e flexível, usando múltiplos tipos de conexão, como MPLS, LTE e banda larga. O SD-WAN melhora o desempenho, a segurança e a redução de custos ao priorizar o tráfego e otimizar a largura de banda, além de facilitar a administração centralizada de redes distribuídas.
 
-O QUE É E PARA QUE SERVER O CGNAT: CGNAT (Carrier-Grade NAT) é uma técnica usada por provedores de internet para permitir que vários dispositivos compartilhem um único endereço IP público. Isso é feito porque os endereços IPv4 estão se esgotando. Com o CGNAT, o provedor usa um único IP público para muitos clientes, traduzindo os endereços IP privados da rede interna de cada cliente para o IP público compartilhado. Embora ajude a economizar endereços IP, pode causar problemas com serviços que exigem um IP exclusivo, como VPN, jogos online e algumas aplicações P2P.
+O QUE É E PARA QUE SERVER O CGNAT: Carrier-Grade NAT (NAT (Network Address Translation/Masquerading - Tradução de Endereço de Rede/Mascaramento) de Nível de Operadora) é uma técnica usada por provedores de internet para permitir que vários dispositivos compartilhem um único endereço IP público. Isso é feito porque os endereços IPv4 estão se esgotando. Com o CGNAT, o provedor usa um único IP público para muitos clientes, traduzindo os endereços IP privados da rede interna de cada cliente para o IP público compartilhado. Embora ajude a economizar endereços IP, pode causar problemas com serviços que exigem um IP exclusivo, como VPN, jogos online e algumas aplicações P2P.
 
 QUAL A FAIXA DE ENDEREÇOS DO CGNAT: A faixa de endereços IP usada pelo CGNAT segue o padrão definido pelo RFC-6598, que designa a rede 100.64.0.0/10 para esse propósito. Essa faixa abrange os endereços: 100.64.0.0 até 100.127.255.255. Ela foi criada especificamente para ser usada pelos provedores de serviços de internet (ISPs) para realizar a tradução de endereços entre redes internas e a internet pública, evitando o uso de IPs públicos desnecessários.
 
 A) Rede WAN Claro UDM-Pro (Apto)......: 100.83.41.x/19 (255.255.224.0) (Faixa CGNAT)
 B) Rede WAN Claro Unifi Express (Casa): 177.32.207.x/  (Fora da Faixa CGNAT)
 
-A) Rede LAN UDM-Pro (Apto): 172.16.1.0/24   -  Gateway: 172.16.1.254
-B) Rede LAN Unifi Express.: 192.168.1.0/24  -  Gateway: 192.168.1.1
+A) Rede LAN UDM-Pro (Apto): 172.16.1.0/24   -  Gateway: 172.16.1.254  -  Classe B com Máscara de Classe C
+B) Rede LAN Unifi Express.: 192.168.1.0/24  -  Gateway: 192.168.1.1   -  Classe C Padrão
 
 #00_ Acessando o Unifi Ui da Ubiquiti ID-SSO (Single sign-on)<br>
 ```bash
@@ -95,4 +95,17 @@ ping 192.168.1.50
 #traçando as rotas de rede do Switch Lite no Linux Mint
 #opção do comando traceroute: -n (Do not try to map IP addresses to host names)
 traceroute -n 192.168.1.50
+```
+
+```bash
+#link: https://help.ui.com/hc/en-us/articles/360012622613-UniFi-Device-Adoption
+#link: https://support.hostifi.com/en/articles/3044211-unifi-cloud-adoption-getting-started
+#link: https://help.ui.com/hc/en-us/articles/360012097513-UniFi-DHCP-Server
+#link: https://medium.com/ubntbr/ado%C3%A7%C3%A3o-em-l3-como-utilizar-o-unifi-controller-na-nuvem-para-gerenciar-m%C3%BAltiplos-sites-remotos-98681fc215b4
+#em desenvolvimento
+ssh user@ipv4_address
+set-inform http://ip-of-host:8080/inform
+
+#Ferramentas de teste:
+https://www.ui.com/search/?q=discovery%20tool
 ```
