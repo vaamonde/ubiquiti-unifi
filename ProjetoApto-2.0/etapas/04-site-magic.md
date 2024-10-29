@@ -32,8 +32,8 @@ O QUE É E PARA QUE SERVER O CGNAT: Carrier-Grade NAT (NAT (Network Address Tran
 
 QUAL A FAIXA DE ENDEREÇOS DO CGNAT: A faixa de endereços IP usada pelo CGNAT segue o padrão definido pelo RFC-6598, que designa a rede 100.64.0.0/10 para esse propósito. Essa faixa abrange os endereços: 100.64.0.0 até 100.127.255.255. Ela foi criada especificamente para ser usada pelos provedores de serviços de internet (ISPs) para realizar a tradução de endereços entre redes internas e a internet pública, evitando o uso de IPs públicos desnecessários.
 
-A) Rede WAN Claro UDM-Pro (Apto)......: 100.83.41.x/19 (255.255.224.0) (Faixa CGNAT)
-B) Rede WAN Claro Unifi Express (Casa): 177.32.207.x/  (Fora da Faixa CGNAT)
+A) Rede WAN Claro UDM-Pro (Apto)......: 100.83.41.x/19  (255.255.224.0) (Faixa CGNAT)
+B) Rede WAN Claro Unifi Express (Casa): 177.32.207.x/22 (255.255.252.0) (Fora da Faixa CGNAT)
 
 A) Rede LAN UDM-Pro (Apto): 172.16.1.0/24   -  Gateway: 172.16.1.254  -  Classe B com Máscara de Classe C
 B) Rede LAN Unifi Express.: 192.168.1.0/24  -  Gateway: 192.168.1.1   -  Classe C Padrão
