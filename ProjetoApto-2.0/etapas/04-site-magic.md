@@ -75,6 +75,7 @@ Site Manager
 
 #02_ Testando a conectividade entre o UDM-Pro e Unifi Express via Site Magic<br>
 ```bash
+#atalho do Terminal no Linux Mint
 Terminal: Ctrl + Alt + T
 
 #verificando as informações de rede do UDM-Pro no Linux Mint
@@ -95,17 +96,4 @@ ping 192.168.1.50
 #traçando as rotas de rede do Switch Lite no Linux Mint
 #opção do comando traceroute: -n (Do not try to map IP addresses to host names)
 traceroute -n 192.168.1.50
-```
-
-```bash
-#link: https://help.ui.com/hc/en-us/articles/360012622613-UniFi-Device-Adoption
-#link: https://support.hostifi.com/en/articles/3044211-unifi-cloud-adoption-getting-started
-#link: https://help.ui.com/hc/en-us/articles/360012097513-UniFi-DHCP-Server
-#link: https://medium.com/ubntbr/ado%C3%A7%C3%A3o-em-l3-como-utilizar-o-unifi-controller-na-nuvem-para-gerenciar-m%C3%BAltiplos-sites-remotos-98681fc215b4
-#em desenvolvimento
-ssh user@ipv4_address
-set-inform http://ip-of-host:8080/inform
-
-#Ferramentas de teste:
-https://www.ui.com/search/?q=discovery%20tool
 ```
