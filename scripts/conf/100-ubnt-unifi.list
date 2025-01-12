@@ -21,6 +21,8 @@ deb https://www.ui.com/downloads/unifi/debian stable ubiquiti
 #deb https://www.ui.com/downloads/unifi/debian unifi-8.1 ubiquiti
 #deb https://www.ui.com/downloads/unifi/debian unifi-8.2 ubiquiti
 #deb https://www.ui.com/downloads/unifi/debian unifi-8.3 ubiquiti
+#deb https://www.ui.com/downloads/unifi/debian unifi-8.4 ubiquiti
+#deb https://www.ui.com/downloads/unifi/debian unifi-8.5 ubiquiti
 #
 #Versão antiga do Unifi Controller: version 7
 #deb https://www.ui.com/downloads/unifi/debian unifi7 ubiquiti
