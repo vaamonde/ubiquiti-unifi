@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 18/08/2024<br>
-#Data de atualização: 30/09/2024<br>
-#Versão: 0.02
+#Data de atualização: 13/04/2025<br>
+#Versão: 0.03
 
 Loja Oficial da Ubiquiti Unifi no Brasil: https://br.store.ui.com/<br>
 Canal Oficial da Ubiquiti Unifi no YouTUBE: https://www.youtube.com/UBNTBR<br>
@@ -26,25 +26,17 @@ Datasheet do UDM-Pro: https://techspecs.ui.com/unifi/unifi-cloud-gateways/ux
 
 Link da vídeo aula: https://www.youtube.com/watch?v=XUFe0H7b12U
 
-#00_ Acessando o Unifi Express com a sua conta da Ubiquiti ID-SSO (Single sign-on)<br>
-```bash
-#OBSERVAÇÃO: a comunidade do Ubiquiti Unifi recomenda utilizar o navegador Google Chrome para a 
-#configuração e administração do Unifi Network ou Design Center, devido a compatibilidade do Java 
-#e recursos integrados no sistema que funciona perfeitamente nesse navegador.
+## 00_ Acessando o Unifi Express com a sua conta da Ubiquiti ID-SSO (Single sign-on)
 
-#OBSERVAÇÃO IMPORTANTE: não habilite o recurso de tradução do Inglês para o Português do Google
-#Chrome, geralmente acontece alguns problemas na configuração ou tradução do termo técnico.
+**OBSERVAÇÃO:** a comunidade do Ubiquiti Unifi recomenda utilizar o navegador *Google Chrome* para a configuração e administração do **Unifi Network ou Design Center**, devido a compatibilidade do *Java* e recursos integrados no sistema que funciona perfeitamente nesse navegador.
 
-#OBSERVAÇÃO IMPORTANTE: A partir de 22 de julho, a autenticação multifator será obrigatória para 
-#todas as contas Ubiquiti. Essa mudança é um passo significativo em nosso compromisso de garantir 
-#o mais alto nível de segurança e proteção de dados. A Ubiquiti Unifi recomenda usar o UI Verify
-#como um método de autenticação de um clique diretamente do seu dispositivo móvel, mas também 
-#oferecemos suporte a vários outros métodos.
+**OBSERVAÇÃO IMPORTANTE:** não habilite o recurso de *Tradução do Inglês para o Português do Google Chrome*, geralmente acontece alguns problemas na configuração ou tradução do termo técnico.
+
+**OBSERVAÇÃO IMPORTANTE:** A partir de *22 de julho 2024*, a autenticação **multifator** será obrigatória para todas as contas Ubiquiti. Essa mudança é um passo significativo em nosso compromisso de garantir o mais alto nível de segurança e proteção de dados. A Ubiquiti Unifi recomenda usar o *UI Verify* como um método de autenticação de um clique diretamente do seu dispositivo móvel, mas também oferecemos suporte a vários outros métodos.
 
 No seu navegador Google Chrome acesse a URL: https://192.168.1.1 ou https://unifi
-```
 
-#01_ Configurando as opções básicas do Unifi Express no Unifi OS<br>
+## 01_ Configurando as opções básicas do Unifi Express no Unifi OS
 ```bash
 OS Settings
   (01) Applications
@@ -72,7 +64,7 @@ OS Settings
                 <Enable>
 ```
 
-#02_ Configurando as opções básicas do Unifi Express no Unifi Network<br>
+## 02_ Configurando as opções básicas do Unifi Express no Unifi Network
 ```bash
 Network
   Settings
@@ -115,10 +107,11 @@ Network
   <Apply Changes>
 ```
 
-#03_ Configurando as opções básicas de Internet (WAN) no Unifi Network<br>
-```bash
+## 03_ Configurando as opções básicas de Internet (WAN) no Unifi Network
+
 Indicação do DNS da CloudFlare: https://blog.cloudflare.com/introducing-1-1-1-1-for-families
 
+```bash
 Settings
   Internet
     Clique em: Primary (WAN1)
@@ -149,7 +142,7 @@ Settings
     <Apply Changes>
 ```
 
-#04_ Configurando as opções básicas da Rede Local (LAN) no Unifi Network<br>
+## 04_ Configurando as opções básicas da Rede Local (LAN) no Unifi Network
 ```bash
 Settings
   Networks
@@ -207,7 +200,7 @@ Settings
       802.1X Control: (OFF) Default
 ```
 
-#05_ Configurando as opções básicas da Rede Sem-Fio (WiFi - Wireless) no Unifi Network<br>
+## 05_ Configurando as opções básicas da Rede Sem-Fio (WiFi - Wireless) no Unifi Network
 ```bash
 Settings
   WiFi
@@ -240,7 +233,7 @@ Settings
       <Apply Changes>
 ```
 
-#06_ Configurando as opções básicas dos Rádios Sem-Fio (WiFi - Wireless) no Unifi Network<br>
+## 06_ Configurando as opções básicas dos Rádios Sem-Fio (WiFi - Wireless) no Unifi Network
 ```bash
 Network
   Unifi Devices
@@ -265,7 +258,7 @@ Network
       <Apply Changes>
 ```
 
-#07_ Configurando as opções básicas do Switch PoE no Unifi Network<br>
+## 07_ Configurando as opções básicas do Switch PoE no Unifi Network
 ```bash
 Network
   Unifi Devices
@@ -291,19 +284,19 @@ Network
       <Apply Change>
 ```
 
-#08_ Teste de conexão com a Internet em um Desktop conectado na Rede<br>
+## 08_ Teste de conexão com a Internet em um Desktop conectado na Rede
 ```bash
 Teste de conexão: Terminal (Atalho Ctrl + Alt + T)
 
 #resolvendo o DNS utilizando o terminal
 ping 8.8.8.8
 ping google.com
-
-#testando a navegação e resolução de nomes
-Navegador firefox ou google chrome: https://youtube.com/boraparapratica
 ```
 
-#09_ Teste de conexão com a Internet em um Smartphone conectado na Rede Sem-Fio<br>
+Testando a navegação e resolução de nomes<br>
+Navegador firefox ou google chrome: https://youtube.com/boraparapratica
+
+## 09_ Teste de conexão com a Internet em um Smartphone conectado na Rede Sem-Fio
 ```bash
 #testando a velocidade utilizando Smartphone 2.4 GHz
 Celular 2.4GHZ
@@ -321,7 +314,7 @@ Celular 5.0GHz
 Network
   Radios
     Speed Tests
-
-#testando a velocidade utilizando o Site Fast
-Navegador firefox ou google chrome: https://fast.com/pt/
 ```
+
+Testando a velocidade utilizando o Site Fast<br>
+Navegador firefox ou google chrome: https://fast.com/pt/

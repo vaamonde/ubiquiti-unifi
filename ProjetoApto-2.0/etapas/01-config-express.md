@@ -7,8 +7,8 @@
 #Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
 #YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
 #Data de criação: 06/08/2024<br>
-#Data de atualização: 18/08/2024<br>
-#Versão: 0.04
+#Data de atualização: 13/04/2025<br>
+#Versão: 0.05
 
 Loja Oficial da Ubiquiti Unifi no Brasil: https://br.store.ui.com/<br>
 Canal Oficial da Ubiquiti Unifi no YouTUBE: https://www.youtube.com/UBNTBR<br>
@@ -22,25 +22,22 @@ Especificações Técnicas da Ubiquiti Unifi: https://techspecs.ui.com/
 Guia de início rápido do Unifi Express: https://br.store.ui.com/br/pt/pro/category/cloud-gateways-wifi-integrated/products/ux<br>
 Datasheet do UDM-Pro: https://techspecs.ui.com/unifi/unifi-cloud-gateways/ux
 
+
 [![Config Unifi Express](http://img.youtube.com/vi/AhiSnHJPrYo/0.jpg)](https://www.youtube.com/watch?v=AhiSnHJPrYo "Config Unifi Express")
 
 Link da vídeo aula: https://www.youtube.com/watch?v=AhiSnHJPrYo
 
-#00_ Criando uma conta na Ubiquiti ID-SSO (Single sign-on)<br>
+## 00_ Criando uma conta na Ubiquiti ID-SSO (Single sign-on)
+
+**OBSERVAÇÃO:** a comunidade do Ubiquiti Unifi recomenda utilizar o navegador *Google Chrome* para a configuração e administração do **Unifi Network ou Design Center**, devido a compatibilidade do *Java* e recursos integrados no sistema que funciona perfeitamente nesse navegador.
+
+**OBSERVAÇÃO IMPORTANTE:** A partir de *22 de Julho 2024*, a autenticação **multifator** será obrigatória para todas as contas Ubiquiti. Essa mudança é um passo significativo em nosso compromisso de garantir o mais alto nível de segurança e proteção de dados. A Ubiquiti Unifi recomenda usar o **UI Verify** como um método de autenticação de um clique diretamente do seu *dispositivo móvel*, mas também oferecemos suporte a vários outros métodos.
+
+
+Acesse o site: https://account.ui.com<br>
+  Caso não tenha uma conta clique em: **Don't have an account? Create one.**
+
 ```bash
-#OBSERVAÇÃO: a comunidade do Ubiquiti Unifi recomenda utilizar o navegador Google Chrome para a 
-#configuração e administração do Unifi Network ou Design Center, devido a compatibilidade do Java 
-#e recursos integrados no sistema que funciona perfeitamente nesse navegador.
-
-#OBSERVAÇÃO IMPORTANTE: A partir de 22 de julho, a autenticação multifator será obrigatória para 
-#todas as contas Ubiquiti. Essa mudança é um passo significativo em nosso compromisso de garantir 
-#o mais alto nível de segurança e proteção de dados. A Ubiquiti Unifi recomenda usar o UI Verify
-#como um método de autenticação de um clique diretamente do seu dispositivo móvel, mas também 
-#oferecemos suporte a vários outros métodos.
-
-Acesse o site: https://account.ui.com
-  Caso não tenha uma conta clique em: Don't have an account? Create one.
-
 Criando uma conta no: UI Account
   Username: seu_nome_de_usuario
   Email: seu_email
@@ -51,19 +48,21 @@ Criando uma conta no: UI Account
 <Create Account>
 ```
 
-#01_ Configurações Básicas de Rede do Unifi Express e Switch PoE<br>
-```bash
-Endereço IPv4 padrão Unifi Express: 192.168.1.1
+## 01_ Configurações Básicas de Rede do Unifi Express e Switch PoE
 
-Recursos habilitados por padrão: 
-A) DHCP Server, 
-B) Compartilhamento de Internet,
-C) DNS Cache/Resolver para navegação.
+Endereço IPv4 padrão Unifi Express: **192.168.1.1/24**
+
+Recursos habilitados por padrão no Unifi Express:<br>
+
+1. DHCP Server; <br>
+2. Compartilhamento de Internet; <br>
+3. DNS Cache/Resolver para navegação.<br>
 
 Endereço IPv4 padrão Switch Lite PoE 8 Portas: 192.168.1.23
 
 Download do Wifiman Desktop: https://ui.com/download/app/wifiman-desktop
 
+```bash
 Teste de conexão: Terminal (Atalho Ctrl + Alt + T)
 
 #opção do comando route: -n (shows numeric addresses)
@@ -74,24 +73,20 @@ ping 192.168.1.1
 ping 192.168.1.23
 ```
 
-#02_ Configurando o Unifi Express via Navegador ou Celular<br>
-```bash
-#DICA IMPORTANTE: você pode configurar o Unifi Express via Navegador ou Celular, nesse caso
-#utilizando o aplicativo: Unifi Network para as plataformas Android ou Apple
+## 02_ Configurando o Unifi Express via Navegador ou Celular
 
-Google Play - Unifi: https://play.google.com/store/apps/details?id=com.ubnt.easyunifi&hl=pt_BR&gl=US
+**DICA IMPORTANTE:** você pode configurar o *Unifi Express* via Navegador ou Celular, nesse caso utilizando o aplicativo: *Unifi Network* para as plataformas Android ou Apple
+
+Google Play - Unifi: https://play.google.com/store/apps/details?id=com.ubnt.easyunifi&hl=pt_BR&gl=US<br>
 Apple Store - Unifi: https://apps.apple.com/br/app/unifi/id1057750338
 
-#OBSERVAÇÃO IMPORTANTE: para utilizar o aplicativo Unifi no seu celular o recurso de Bluetooth
-#precisa está habilitado para localizar o Unifi Express na sua rede, caso o seu Unifi Express
-#ainda não foi configurado, o aplicativo do Unifi localiza o equipamento e já começa o processo 
-#de configuração padrão.
+**OBSERVAÇÃO IMPORTANTE:** para utilizar o aplicativo *Unifi* no seu celular o recurso de **Bluetooth** precisa está habilitado para localizar o *Unifi Express* na sua rede, caso o seu Unifi Express ainda não foi configurado, o aplicativo do Unifi localiza o equipamento e já começa o processo de configuração padrão.
 
 No seu navegador Google Chrome acesse a URL: https://192.168.1.1 ou https://unifi
 
-#OBSERVAÇÃO IMPORTANTE: não habilite o recurso de tradução do Inglês para o Português do Google
-#Chrome, geralmente acontece alguns problemas na configuração ou tradução do termo técnico.
+**OBSERVAÇÃO IMPORTANTE:** não habilite o recurso de *tradução do Inglês para o Português do Google Chrome*, geralmente acontece algumas falhas na configuração ou tradução do termo técnico.
 
+```bash
 <Set Up the Unifi Express>
 Unifi Unifi Express Setup
   Console Name: unifiexpress
@@ -109,15 +104,15 @@ Wi-Fi Setup
   Wi-Fi Name (SSID): seu_ssid_wifi
   Password: sua_senha_wifi
   <Finish>
-
-#OBSERVAÇÃO IMPORTANTE: após a primeira configuração do Unifi Express será feito o Update
-#do Unifi Network, esse processo demora bastante dependendo do seu Link de Internet.
 ```
 
-#03_ Acessando o Console do Unifi Express via Navegador ou Celular<br>
-```bash
+**OBSERVAÇÃO IMPORTANTE:** após a primeira configuração do Unifi Express será feito o **Update do Unifi Network**, esse processo demora bastante dependendo do seu Link de Internet.
+
+## 03_ Acessando o Console do Unifi Express via Navegador ou Celular
+
 No seu navegador Google Chrome acesse a URL: https://192.168.1.1 ou https://unifi
 
+```bash
 Unifi OS
   Email or username: seu_usuário_ui
   Password: sua_senha_ui
@@ -125,36 +120,34 @@ Unifi OS
 <Sign in>
 ```
 
-#04_ Adotando o Switch PoE no Console do Unifi Express<br>
-```bash
-#OBSERVAÇÃO IMPORTANTE: no primeiro login no console do Unifi, o Unifi Express já localiza
-#o Switch PoE que está conectado e já recomenda adicionar na Topologia, fazendo o processo
-#de Adotar o equipamento no Console do Unifi Express (Recomendado sempre)
+## 04_ Adotando o Switch PoE no Console do Unifi Express
 
+**OBSERVAÇÃO IMPORTANTE:** no primeiro login no console do Unifi, o Unifi Express já localiza o *Switch PoE* que está conectado e já recomenda adicionar (adotar) na Topologia, fazendo o processo de **Adotar** o equipamento no Console do Unifi Express *(Recomendado sempre)*.
+
+```bash
 Unifi Network
   Unifi Devices
     Ready to Add: USW-Lite-8-PoE
       <Click to Adopt>
-
-#OBSERVAÇÃO IMPORTANTE: após adotar o Switch PoE no Console do Unifi Express é iniciado o 
-#processo de atualização do Firmware no Switch, esse procedimento demora bastante dependendo
-#da velocidade do link de internet que você está utilizando.
 ```
 
-#05_ Conhecendo o Console do Unifi Express<br>
-```bash
-A) Dashboard.....: Informações detalhas da topologia e configurações básicas;
-B) Topology......: Informações da topologia física e lógica dos equipamentos Unifi;
-C) Unifi Devices.: Informações dos dispositivos adotados no Unifi;
-D) Client Devices: Informações dos clientes conectados nos dispositivos Unifi;
-E) Statistics....: Informações de estáticas de uso dos recursos do Unifi;
-F) Wifi Insights.: Informações detalhadas da rede sem-fio do Unifi;
-G) System Logs...: Informações detalhadas dos Logs do Sistema Unifi;
-H) Notifications.: Informações de notificações do Unifi;
-I) Settings......: Configurações Básicas e Avançadas do Unifi.
-```
+**OBSERVAÇÃO IMPORTANTE:** após adotar o *Switch PoE no Console do Unifi Express* é iniciado o processo de **atualização do Firmware no Switch**, esse procedimento demora bastante dependendo da velocidade do link de internet que você está utilizando.
 
-#06_ Teste de conexão com a Internet em um Desktop conectado na Rede<br>
+## 05_ Conhecendo o Console do Unifi Express
+
+| Recurso | Descrição |
+|---------|-----------|
+| Dashboard | Informações detalhas da topologia e configurações básicas; |
+| Topology | Informações da topologia física e lógica dos equipamentos Unifi; |
+| Unifi Devices | Informações dos dispositivos adotados no Unifi; |
+| Client Devices | Informações dos clientes conectados nos dispositivos Unifi; |
+| Statistics | Informações de estáticas de uso dos recursos do Unifi; |
+| Wifi Insights | Informações detalhadas da rede sem-fio do Unifi; |
+| System Logs | Informações detalhadas dos Logs do Sistema Unifi; |
+| Notifications | Informações de notificações do Unifi; |
+| Settings | Configurações Básicas e Avançadas do Unifi. |
+
+## 06_ Teste de conexão com a Internet em um Desktop conectado na Rede
 ```bash
 Teste de conexão: Terminal (Atalho Ctrl + Alt + T)
 
