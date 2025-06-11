@@ -25,77 +25,70 @@ Floor Plan Creator: https://floorplancreator.net/plan/demo<br>
 Smart Draw: https://app.smartdraw.com/<br>
 Planner 5d: https://planner5d.com/editor
 
+**O QUE É E PARA QUE SERVER O UNIFI DESIGN CENTER:** O Unifi Design Center é uma ferramenta online desenvolvida pela *Ubiquiti* que serve para planejar visualmente redes Wi-Fi utilizando os dispositivos da linha UniFi. Ele é muito útil para projetar a cobertura de redes sem fio em diferentes ambientes — como casas, escritórios, escolas, empresas ou até galpões industriais.
+
 [![Unifi Design Center](http://img.youtube.com/vi/kg_zt3Rr_3I/0.jpg)](https://www.youtube.com/watch?v=kg_zt3Rr_3I "Unifi Design Center")
 
 Link da vídeo aula: https://www.youtube.com/watch?v=kg_zt3Rr_3I
 
-#00_ Criando uma conta na Ubiquiti ID-SSO (Single sign-on)<br>
+## 00_ Criando uma conta na Ubiquiti ID-SSO (Single sign-on)
+
+**OBSERVAÇÃO:** a comunidade do *Ubiquiti Unifi* recomenda utilizar o navegador **Google Chrome** para a configuração e administração do *Unifi Network* ou *Design Center* devido a compatibilidade do **Java** e recursos integrados no sistema que funciona perfeitamente nesse navegador.
+
+**OBSERVAÇÃO IMPORTANTE:** não recomendo utilizar o recurso do *Google Chrome de Tradução*, muitas vezes esses recursos traduzem o termo técnico ou gera problemas no site.
+
+**OBSERVAÇÃO IMPORTANTE:** A partir de *22 de Julho*, a autenticação **multifator** será obrigatória para todas as *Contas Ubiquiti*. Essa mudança é um passo significativo em nosso compromisso de garantir o mais alto nível de segurança e proteção de dados. A Ubiquiti Unifi recomenda usar o UI Verify como um método de autenticação de um clique diretamente do seu dispositivo móvel, mas também oferecemos suporte a vários outros métodos.
+
 ```bash
-#OBSERVAÇÃO: a comunidade do Ubiquiti Unifi recomenda utilizar o navegador Google Chrome para a 
-#configuração e administração do Unifi Network ou Design Center devido a compatibilidade do Java 
-#e recursos integrados no sistema que funciona perfeitamente nesse navegador.
-
-#OBSERVAÇÃO IMPORTANTE: não recomendo utilizar o recurso do Google Chrome de Tradução, muitas 
-#vezes esses recursos traduzem o termo técnico ou gera problemas no site.
-
-#OBSERVAÇÃO IMPORTANTE: A partir de 22 de julho, a autenticação multifator será obrigatória para 
-#todas as contas Ubiquiti. Essa mudança é um passo significativo em nosso compromisso de garantir 
-#o mais alto nível de segurança e proteção de dados. A Ubiquiti Unifi recomenda usar o UI Verify
-#como um método de autenticação de um clique diretamente do seu dispositivo móvel, mas também 
-#oferecemos suporte a vários outros métodos.
-
 Acesse o site: https://account.ui.com
-	Caso não tenha uma conta clique em: Don't have an account? Create one.
+  Caso não tenha uma conta clique em: Don't have an account? Create one.
 
 Criando uma conta no: UI Account
-	Username: seu_nome_de_usuario
-	Email: seu_email
-	Password: sua_senha (OBSERVAÇÃO: mínimo de 12 caracteres)
-	Confirm Password: sua_senha
-	Yes: By creating this account
-	Yes: Register to receive newsletters
-	<Create Account>
+  Username: seu_nome_de_usuario
+  Email: seu_email
+  Password: sua_senha (OBSERVAÇÃO: mínimo de 12 caracteres)
+  Confirm Password: sua_senha
+  Yes: By creating this account
+  Yes: Register to receive newsletters
+<Create Account>
 ```
 
-#01_ Criando o seu primeiro projeto no Design Center Unifi<br>
+## 01_ Criando o seu primeiro projeto no Design Center Unifi
+
+Acesse o site Oficial do Design Center: https://design.ui.com/
+
+**OBSERVAÇÃO:** por padrão o *Design Center* sempre inicia com o **Wizard** de um projeto básico da Ubiquiti Unifi, esse projeto é apenas uma referência de como utilizar o site.
+
+**OBSERVAÇÃO IMPORTANTE:** caso ainda não esteja autenticado no *Design Center*, no canto superior direito tem o **ícone de Login**, clique nele primeiro e faça o Login no *ID-SSO da Ubiquiti* para começar a utilizar o Design Center.
+
+## 02_ Configurações Básicas do Design Center Unifi antes de criar o seu primeiro projeto
+
+**OBSERVAÇÃO:** No canto superior direito existe dois ícones: *o primeiro é o Design Center Wizard o segundo inicia um novo projeto padrão em branco*, recomendo utilizar a segunda opção.
+
 ```bash
-Acesse o site: https://design.ui.com/
-
-#OBSERVAÇÃO: por padrão o Design Center sempre inicia com o Wizard de um projeto básico
-#da Ubiquiti Unifi, esse projeto é apenas uma referência de como utilizar o site.
-
-#OBSERVAÇÃO IMPORTANTE: caso ainda não esteja autenticado no Design Center, no canto 
-#superior direito tem o ícone de Login, clique nele primeiro e faça o Login no ID-SSO da
-#Ubiquiti para começar a utilizar o Design Center.
-```
-
-#02_ Configurações Básicas do Design Center Unifi antes de criar o seu primeiro projeto<br>
-```bash
-#No canto superior direito existe dois ícones: o primeiro é o Design Center Wizard o segundo
-#inicia um novo projeto padrão em branco, recomendo utilizar a segunda opção.
-
 Na tela de: Add New Project (Adicionar um novo Projeto) preencha os campos abaixo:
-	Project Name (Nome do Projeto): Digite um nome para o seu projeto: Apto (por exemplo)
-	Building Location (Localização do Edifício): Digite a localização do seu projeto (SP-Brazil)
-	Building Type (Tipo de Construção): Selecione o Tipo de Construção (Home - Casa - Apto)
-	Building Size (Tamanho da Construção): Digite o tamanho da construção em Metros Quadrados Total
-		Largura: 6,14m x Comprimento: 8,51m - Total: (Arredondado) 51mt2
-	Users (Usuários): Total de usuários na rede ou dispositivos que vão acessar a Internet/Wi-Fi
-	Product Preference (Preferência do Produto): você pode selecionar: Value (Valor) ou Performance
-	(Desempenho)
+  Project Name (Nome do Projeto): Digite um nome para o seu projeto: Apto (por exemplo)
+  Building Location (Localização do Edifício): Digite a localização do seu projeto (SP-Brazil)
+  Building Type (Tipo de Construção): Selecione o Tipo de Construção (Home - Casa - Apto)
+  Building Size (Tamanho da Construção): Digite o tamanho da construção em Metros Quadrados Total
+    Largura: 6,14m x Comprimento: 8,51m - Total: (Arredondado) 51mt2
+  Users (Usuários): Total de usuários na rede ou dispositivos que vão acessar a Internet/Wi-Fi
+  Product Preference (Preferência do Produto): você pode selecionar: Value (Valor) ou Performance
+  (Desempenho)
 <Create>
+```
 
-#OBSERVAÇÃO: por padrão o Design Center fornece um projeto simples de uma Planta Baixa para iniciar
-#o uso da ferramenta, recomendo remover essa planta baixa e fazer o upload da planta do projeto.
+**OBSERVAÇÃO:** Por padrão o Design Center fornece um *projeto simples* de uma **Planta Baixa** para iniciar o uso da ferramenta, recomendo remover essa planta, baixar e fazer o upload da nova planta do projeto.
 
-#No canto superior direito temos o ícone: Settings (Configurações), clique em: Remove (Remover) depois:
-#Confirm (Confirmar).
+**OBSERVAÇÃO:** No canto superior direito temos o ícone: **Settings (Configurações)**, clique em: **Remove (Remover)** depois: **Confirm (Confirmar)**.
 
+```bash
 Na tela de: Create Your Floor Plan (Crie sua Planta Baixa) você tem duas opções:
-	Upload Plan (Carregar Planta Baixa): recomendado quando você tem a planta baixa do projeto
-		Suporte para as extensões: PNG, JPG ou PDF.
-	Use Drawing Tool (Utilizar a Ferramenta de Desenho): recomendado quando você não tem a planta
-	baixa do projeto.
+  Upload Plan (Carregar Planta Baixa): recomendado quando você tem a planta baixa do projeto
+    Suporte para as extensões: PNG, JPG ou PDF.
+  Use Drawing Tool (Utilizar a Ferramenta de Desenho): recomendado quando você não tem a planta
+  baixa do projeto.
+```
 
 Clique na opção: Upload Plan e selecione o arquivo de Planta Baixa do seu Projeto
 No campo Name (Nome): digite o nome da planta baixa do projeto e clique em: <Confirm>
