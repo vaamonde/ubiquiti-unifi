@@ -49,3 +49,11 @@ UCG: https://techspecs.ui.com/unifi/cloud-gateways/ucg-max
 (Tem função de Cloud Gateway - Roda o UnifiOS)
 
 Cuidado: o que está na lista: Cloud Gateway roda o UnifiOS sendo a solução completa
+================================================================
+Topologia WAN/LAN Technologies
+
+Edge (Core) WAN-LAN..............: Cloud Gateway
+Core (Aggregation Distribution)..: Layer 2 / Layer 3 (RSTP)
+Access (Users /Devices)..........: Layer 2
+
+Tratativa de Broadcast para Redes LAN, Virtual Network VLAN, segmentação de Redes por tipos de serviços: Default (VLAN padrão), Guests (Convidados, colocar em outra VLAN), Corporate (administrativo), VoIP (obrigatório UDP), CFTV (obrigatório UDP - Streaming / Surveillance), trabalhar com Redundância e Alta Disponibilidade de Links utilizando os UpLinks.
