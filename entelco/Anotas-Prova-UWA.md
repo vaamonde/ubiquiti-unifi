@@ -100,3 +100,77 @@ Estudar: https://help.ui.com/hc/en-us/articles/115005212927-AP-Antenna-Radiation
 Antenna Gain & Function
 Utilizar o WiFi Calculator: https://wifi.ui.com/
 
+Qual AP's tem antena Externa: UK-Ultra (Panel Antenna)
+Intro to WLAN Design - CSMA/CA (Carrier-Sense Multiple Access / Collision Avoidance)
+STA: Station / Client
+AP.: Access Point
+LBT: Listen Before Talk
+CCA: Clear Channel Assessment
+NAV: Network Allocation Vector
+RTS/CTS: Request to Send / Clear to Send
+ACK: acknowledgement
+Intro to WLAN Design: Hidden Nodes (estudar para a prova)
+
+Mensagens do 802.11 Frame Types (MGMT, CTRL, DATA)
+Management (MGMT): Association Request/Response, Reassociation, Beacon, Disassociation, Authentication, Probe Request/Responde
+Control: 
+
+802.11 Beacon Frames & Probing: Client passive VS Active Scanning: 
+Placa de Rede em modo Monitor: sudo tcpdump -vv -i wlp7s0 -e -I type mgt subtype beacon
+(Testar placa de rede swm-fio com suporte ao TCPdump)
+
+802.11 Service Set Identifiers (SSID's)
+  SSID: logical name of WLAN
+  Basic SSID (BSSID) = AP MAC + WLAN
+  Extend SSID (ESSID) = All AP's
+  Basic Services Area (BSA)
+  Fewer (Menor) SSID's = improved airtime efficiency
+
+802.11ax/be - BSS Coloring (Co-Channel Interface) os terminais tem que ter suporte
+Analisar Frame TCP do BSS Coloring com o TCPdump no Endpoint:
+
+
+2.4GHz: b, n, g
+5.0GHz: a, n, ac
+
+HT (High Throughput): OFDM
+VHT: OFDM
+HE: OFDMA
+EHT: OFDMA
+
+Key Features of WiFi7: 4096QAM
+
+Máxima modulação do WiFi 4   64-QAM (Quadrature Amplitude Modulation)  6 bits OFDM
+Máxima modulação do WiFi 5  256-QAM (Quadrature Amplitude Modulation)  8 bits OFDM
+Máxima modulação do WiFi 6 1024-QAM (Quadrature Amplitude Modulation) 10 bits OFDMA
+Máxima modulação do WiFi 7 4096-QAM (Quadrature Amplitude Modulation) 12 bits OFDMA
+
+Multi-Link Operation (MLO): Lower MAC (Backhaul)
+
+Multi-User (MU)-OFDMA Transmission: RU's (Resource Unit) usado no LTE (5G Celular)
+4096-QAM
+
+Channel Puncturing (802.11be 160MHz + 80MHz - faz parte do protocolo)
+Target Wake Tme (TWT): a partir do Wi-Fi6 - consumo de energia: Zigbee vs 
+
+Ubiquiti Portal App: ChatGPT - Wi-Fi Calculator, 
+Wi-Fi Calculator...:
+
+Power Amp, utilizar em automação: 
+
+Method LAN (cuidado para a prova)
+
+UniFi AP Minimum RSSI (minRSSI): thresholds
+Fast Roaming
+
+802.11 Dynamic Rate Selection (DRS)
+
+802.11 Roaming & Reassociation: WPA3-Enterprise
+
+802.11r Unifi Fast Roaming: <100ms VoIP>
+
+WPA2 Wireless Security Overview: dependendo 
+WPA2, Pairwise Shared Key (PPSK) Handshake
+WPA Enterprise Overview: Client Laptop (Supplicant) -- Unifi AP (Authentication) -- UDM-Pro (Authentication Server)
+
+Wi-Fi 6/6E - 7& WPA3 Overview
