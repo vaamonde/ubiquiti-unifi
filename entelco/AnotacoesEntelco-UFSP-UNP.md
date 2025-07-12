@@ -94,3 +94,15 @@ Modificar toda a estrutura da Página de Autenticação
 ===========================================================================
 
 Estudar mais sobre: New Zone-Based Firewall versão nova do Firewall do UnifiOS, Upgrade to CyberSecure by Proofpoint
+
+
+accounts.ui.com/backups
+owner
+administrador
+identity (local) no site
+enterprise (nuvem) vários sites
+equipamentos que suporta 2.4 5.0 e 6.0
+cloud gateways
+design center - simular rede, lista de material, consegue fazer o desenho da rede
+network, protect, driver, connect, talk, voip
+UCG vx UXG (funcionalidade)
