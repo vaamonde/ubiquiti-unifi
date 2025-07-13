@@ -174,3 +174,17 @@ WPA2, Pairwise Shared Key (PPSK) Handshake
 WPA Enterprise Overview: Client Laptop (Supplicant) -- Unifi AP (Authentication) -- UDM-Pro (Authentication Server)
 
 Wi-Fi 6/6E - 7& WPA3 Overview
+
+Estudar o Handover (ou handoff): Em redes Wi-Fi, "handover" (ou "handoff") se refere ao processo de transferência contínua de conexão de um dispositivo móvel de um ponto de acesso (AP) para outro, sem interrupção perceptível da conexão. Isso garante que o usuário permaneça conectado enquanto se move pela área de cobertura da rede
+
+Estudar WifiMan Wizard Scan: https://eu.store.ui.com/eu/en/products/wm-w
+
+Quality-of-Service (QoS): Layer 2, Layer 3, Layer 4 e Layer Information: Trabalha só com Layer 2 no Access Point: CoS: Limitar banda por usuário e por aplicação nos Access Point
+
+Power-over-Ethernet (PoE): PoE 802.3af, PoE+ 802.3at, PoE++ 802.3bt, PoE+++ 802.3bt (Budget W)
+Power Sourcing Equipment PSE: Switching ou Injector <Passive> 100m =  
+
+Power Device: PD
+Long-Range Ethernet Repeater: https://eu.store.ui.com/eu/en/products/uacc-lre
+
+High Density HD Deployments: Cenários de alta densidade: Interferência, 
