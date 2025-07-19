@@ -188,3 +188,57 @@ Power Device: PD
 Long-Range Ethernet Repeater: https://eu.store.ui.com/eu/en/products/uacc-lre
 
 High Density HD Deployments: Cenários de alta densidade: Interferência, 
+Creating Effecting Coverage Areas: Trabalhar analise de Planta Baixa e Andares Multi-Floor:
+Cell Overlap Requirements: problemas nos extremos: -70 até -75dBm (perigo: -90 até -95dBm)
+Recomendações: minRSSI, Interference Blocker, minRATES (Rede Wi-Fi)
+Overlap in Poorly-Designed WLAN: CCI e ACI: focar sempre no SNR e PHY boa.
+5.0GHz espaçamento de 02 (duas) Células de Distância (Cell Distance)
+Site Survey: Antes de Depois: Kit para testar o ambiente: design
+Minimum Data Rate Control (minRates): Na rede sem-fio: SSID (cliente sempre tomada a decisão)
+WLAN Scenario No minRate Controls: AP broadcast beacon 
+MCS usar sempre o TX do AP: https://wlanprofessionals.com/mcs-table-and-how-to-use-it/
+WiFiMan Client WLAN Scanning 
+Unifi AirView: 
+
+Cabo Irradiante: https://store.ui.com/us/en/category/wireless-airmax-5ghz/products/bulletac-ip67
+airMAX Bullet AC: https://store.ui.com/us/en/category/wireless-airmax-5ghz/products/b-db-ac
+
+Site Surveys (Post-Installation): Sizes TX, minRates and min
+
+Wireless Airtime vs Capacity: Airtime: 100% da disponibilidade de rádio
+Capacity: PHY daa rate (diferente) TCP throughput
+Avg. Mbps = (SUM_STA - RATES) / (#-STA): ESTIMAR: TOTAL DE DEVICES (CONFIGURAÇÃO): 
+450Mbps = 3x3:3 | 300Mbps 2x2:2 | 150Mbps = 1x1:1 - considerar velocidades.
+100% - 70% - 
+
+Spectrum Analysis via Unifi Tools
+
+Wireless Uplink & Mesh Networks: cair o downlink em 50%: problema o Mesh
+
+Analyze & Adjust Wi-Fi Coverage
+Software-Driven Client
+Tips of SSID's: Max 8 SSID sem o Mesh
+
+Network Traffic Review: Unicast 1:1 | Multicast 1:some | Broadcast = 1:all
+Mitigar o Multicast e Broadcast: Port Isolation Enable Downlink Port (Fluxo)
+
+Download WiFiMan Desktop: https://ui.com/download/app/wifiman-desktop
+
+===============================================================================================
+
+
+Questões de produtos: 
+Questões dos padrões:
+Questões de frequências:
+Questões sobre o EIRP: Soma de Transmissão + Ganho da Antena
+Questões do ganho de antena: Ganho de sinal no AP e o Cliente
+Questões de ACI e CCI: Canais adjacentes / co-channel
+Questões sobre o RSSI e balanceamento entre o 5GHz
+Questões 6.0GHz + Canais
+Questões de MLO (Todas as Frequências)
+Questões Interferência Channel-Punctured
+Questões sobre CAMA/CA
+Questões sobre o RTS/CTS: NAV e 
+Questões sobre a quantidade de SSI
+Questões sobre o Mesh
+Questões sobre a Tabela do MCS
